@@ -8,6 +8,52 @@ def powerset(seq):
     		yield item
     		yield [seq[0]]+item
 
+class LookupTable(object):
+	def __init__(self, *symbols):
+		super(LookupTable, self).__init__()
+		self.symbols = frozenset(symbols)
+		self.compositions = dict()
+		self.converses = dict()
+
+	def checkIntegrity(self):
+		for sym_a in self.symbols:
+			try: self.converses[sym_a]
+			except KeyError as e:
+				print("Couldn't find converse for symbol '%s'" % sym_a)
+			for sym_b in self.symbols:
+				try: self.compositions[sym_a, sym_b]
+				except KeyError as e:
+					print("Couldn't find compositions for {'%s','%s'}" % (sym_a,sym_b))
+
+	def addConverse(self, symbol, converse, BiDirectional = False):
+		self.converses[symbol] = converse
+		if BiDirectional:
+			self.converses[converse] = symbol
+	
+	def converse(self, symbol):
+		return self.converses[symbol]
+
+	def addComposition(self, s1, s2, composition, OrderIrrelevant = False):
+		self.compositions[s1, s2] = frozenset(composition)
+		if OrderIrrelevant:
+			self.compositions[s2, s1] = frozenset(composition)
+	
+	def composition(self, symbol):
+		return self.compositions[symbol]
+
+	def setEquiCompositions(self):
+		for s in self.symbols:
+			self.compositions[s, s] = frozenset(s)
+
+L = LookupTable("<",">","=")
+L.addConverse("=", "=")
+L.addConverse("<", ">", True) # True means bidirectional converse
+L.setEquiCompositions() # set << = <  AND  >> = >  AND == = =
+L.addComposition("<", "=", "<", True) # True means order doesn't matter
+L.addComposition(">", "=", ">", True)
+L.addComposition("<", ">", ["<",">","="], True)
+L.checkIntegrity()
+
 
 class Algebra(object):
 	def __init__(self, name, *symbols):
