@@ -116,6 +116,6 @@ for graph in tf.processNext():
     pre = timeit.default_timer()
     consistent = net.aClosureV1()
     print timeit.default_timer() - pre
-    # print "Done:", net
+    # print "Resulting QCSP:", net
     print "  >", net.description, "is", consistent
     break
