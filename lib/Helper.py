@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf8
+import re
 
 
 def powerset(seq):
@@ -22,3 +23,10 @@ def tripleNested(maxi):
         for y in range(maxi):
             for z in range(maxi):
                 yield (x, y, z)
+
+
+def splitTripple(line):
+    """ Parse line of the format: "A B (C D E)"
+    to array with format: ['A', 'B', ['C', 'D', 'E']] """
+    arr = [x for x in re.split(' |\(|\)', line) if x is not ""]
+    return [arr[0], arr[1], arr[2:]]
