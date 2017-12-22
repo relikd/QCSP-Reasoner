@@ -1,0 +1,18 @@
+interval-relations
+< > =
+
+table of converses
+= =
+< >
+> <
+
+composition table
+<  <  (<)
+<  >  (< > =)
+<  =  (<)
+>  <  (< > =)
+>  >  (>)
+>  =  (>)
+=  <  (<)
+=  >  (>)
+=  =  (=)
