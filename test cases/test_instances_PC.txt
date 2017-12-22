@@ -1,0 +1,35 @@
+
+2 # test-consistent-0
+0 1 (<)
+1 0 (>)
+2 2 (< =)
+.
+
+3 # test-consistent-1
+0 1 (< )
+1 2 (< =)
+2 3 (> =)
+.
+
+2 # test-inconsistent-2
+0 1 (<)
+1 2 (<)
+2 0 (<)
+.
+
+1 # test-inconsistent-3
+0 1 (<)
+1 0 (<)
+.
+
+2 # test-inconsistent-4
+0 1 (<)
+1 2 (<)
+0 2 (=)
+.
+
+2 # test-inconsistent-5
+0 1 (<)
+1 0 (<)
+0 2 (=)
+.
