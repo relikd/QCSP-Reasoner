@@ -8,10 +8,10 @@ class Converse(object):
         self.baseCount = numberOfBaseRelations
         self.converses = [None for x in range(self.baseCount)]
 
-    def setConverse(self, a, b):
+    def setConverseIndex(self, a, b):
         self.converses[a] = b
 
-    def converse(self, a):
+    def converseIndex(self, a):
         return self.converses[a]
 
     def checkIntegrity(self):
@@ -30,10 +30,10 @@ class Composition(object):
                              for a in range(self.baseCount)]
                              for b in range(self.baseCount)]
 
-    def setComposition(self, a, b, composition):
-        self.compositions[a][b] = composition
+    def setCompositionMask(self, a, b, compositionMask):
+        self.compositions[a][b] = compositionMask
 
-    def composition(self, a, b):
+    def compositionMask(self, a, b):
         return self.compositions[a][b]
 
     def checkIntegrity(self):
