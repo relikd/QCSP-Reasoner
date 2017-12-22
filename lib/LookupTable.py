@@ -6,7 +6,7 @@ class Converse(object):
     def __init__(self, numberOfBaseRelations):
         super(Converse, self).__init__()
         self.baseCount = numberOfBaseRelations
-        self.converses = [None] * self.baseCount
+        self.converses = [None for x in range(self.baseCount)]
 
     def setConverse(self, a, b):
         self.converses[a] = b

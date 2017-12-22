@@ -2,6 +2,7 @@
 # coding: utf8
 from lib import Algebra, ReadFile, Helper
 import timeit
+import Queue
 
 
 class Network(object):
@@ -25,9 +26,14 @@ class Network(object):
             print "Error: Adding Relation to Network (Max Index)"
         else:
             constraintMask = self.algebra.bitmaskFromList(constraint)
+            converseRelation = self.algebra.converse(constraintMask)
             self.cs[nodeA][nodeB] = constraintMask
-            # if self.cs[nodeB][nodeA] == self.algebra.Universal:
-            #     self.cs[nodeB][nodeA] = self.algebra.converse(constraintMask)
+            if self.cs[nodeB][nodeA] == self.algebra.Universal:
+                self.cs[nodeB][nodeA] = converseRelation
+            # elif not (self.cs[nodeB][nodeA] & converseRelation):
+            #     print "ERROR adding inconsistent constraint:", \
+            #         nodeA, nodeB, constraint, "::", self.description
+            #     self.cs[nodeA][nodeB] = 0
 
     def aClosureV1(self):
         s = True
@@ -42,12 +48,37 @@ class Network(object):
                 #    Cjk != self.algebra.Universal:
                 Cik_star = Cik & self.algebra.compose(Cij, Cjk)
                 if Cik != Cik_star:
-                    # print i, j, k, Cik_star
                     self.cs[i][k] = Cik_star
-                    if Cik_star == 0:
-                        return False  # early exit
                     s = True
-        return True
+                if Cik_star == 0:
+                    return "Inconsistent"  # early exit
+        return "Consistent"
+
+    def aClosureV15(self):
+        q = Queue.Queue()
+        for (i, j) in Helper.doubleNested(self.nodeCount):
+            q.put([i, j])
+        while not q.empty():
+            (i, j) = q.get()
+            for k in range(self.nodeCount):
+                if k == i or k == j:
+                    continue
+                Cij = self.cs[i][j]
+                Cjk = self.cs[j][k]
+                Cik = self.cs[i][k]
+                Cik_star = Cik & self.algebra.compose(Cij, Cjk)
+                if Cik_star != Cik:
+                    self.cs[i][k] = Cik_star
+                    q.put([i, k])
+                Ckj = self.cs[k][j]
+                Cki = self.cs[k][i]
+                Ckj_star = Ckj & self.algebra.compose(Cki, Cij)
+                if Ckj_star != Ckj:
+                    self.cs[k][j] = Ckj_star
+                    q.put([k, j])
+                if Cik_star == 0 or Ckj_star == 0:
+                    return "Inconsistent"  # early exit
+        return "Consistent"
 
     def __str__(self):
         relCount = 0
@@ -61,29 +92,30 @@ class Network(object):
             self.description, self.nodeCount, relCount, s)
 
 
-algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
-# algFile = ReadFile.AlgebraFile("algebra/allen.txt")
+# algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
+algFile = ReadFile.AlgebraFile("algebra/allen.txt")
 alg = Algebra.Algebra(algFile)
 # print alg.TName
 alg.checkIntegrity()
 print "\n"
 
 # Load test case
-tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
-# tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+# tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
+tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
 for graph in tf.processNext():
     net = Network(alg, *graph[0])  # First row is always header
-    # if net.description != "instance 0: NOT consistent":
+    # if net.description != "test-inconsistent-3":
     #     continue
     for i in range(1, len(graph)):
         net.addConstraint(*graph[i])
 
-    print "processing:", net
-    net.enforceOneConsistency("=")
-    # net.enforceOneConsistency("EQ")
+    # print "processing:", net
+    # net.enforceOneConsistency("=")
+    net.enforceOneConsistency("EQ")
 
     pre = timeit.default_timer()
     consistent = net.aClosureV1()
     print timeit.default_timer() - pre
     # print "Done:", net
-    print "  > Is", net.description, "consistent? ", consistent
+    print "  >", net.description, "is", consistent
+    break
