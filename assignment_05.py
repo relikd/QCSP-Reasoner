@@ -10,7 +10,6 @@ class Network(object):
         super(Network, self).__init__()
         self.algebra = algebra
         self.nodeCount = maxIndex + 1
-        self.csCount = 0
         self.description = description
         self.cs = [[self.algebra.Universal
                    for a in range(self.nodeCount)]
@@ -23,7 +22,7 @@ class Network(object):
 
     def addConstraint(self, A, B, constraint):
         if A >= self.nodeCount or B >= self.nodeCount:
-            print "Error: Adding Relation to Network (Max Index)"
+            print "ERROR: Adding Relation to Network (Max Index)"
             return
         constraintMask = self.algebra.bitmaskFromList(constraint)
         converseRelation = self.algebra.converse(constraintMask)
@@ -31,7 +30,7 @@ class Network(object):
         if self.cs[B][A] == self.algebra.Universal:
             self.cs[B][A] = converseRelation
         elif not (self.cs[B][A] & converseRelation):
-            print "ERROR adding inconsistent constraint:", \
+            print "ERROR: Adding inconsistent constraint:", \
                 A, B, constraint, "::", self.description
             self.cs[A][B] = 0
 
