@@ -6,18 +6,26 @@ class Converse(object):
     def __init__(self, numberOfBaseRelations):
         super(Converse, self).__init__()
         self.baseCount = numberOfBaseRelations
-        self.converses = [None for x in range(self.baseCount)]
+        self.converses = dict()
 
-    def setConverseIndex(self, a, b):
+    def setConverse(self, a, b):
         self.converses[a] = b
 
-    def converseIndex(self, a):
-        return self.converses[a]
+    def converse(self, a):
+        try:
+            return self.converses[a]
+        except KeyError:
+            result = 0
+            for x in range(self.baseCount):
+                if a & (1 << x):
+                    result |= self.converses[1 << x]
+            self.setConverse(a, result)
+            return result
 
     def checkIntegrity(self):
         print "Checking Converse Integrity ..."
         for i in range(self.baseCount):
-            if self.converses[1] is None:  # Only base relations
+            if self.converses[1 << i] is None:  # Only base relations
                 print "Couldn't find converse for '{:0{}b}'"\
                     .format(1 << i, self.baseCount)
 
@@ -26,21 +34,28 @@ class Composition(object):
     def __init__(self, numberOfBaseRelations):
         super(Composition, self).__init__()
         self.baseCount = numberOfBaseRelations
-        self.compositions = [[None
-                             for a in range(self.baseCount)]
-                             for b in range(self.baseCount)]
+        self.compositions = dict()
 
-    def setCompositionMask(self, a, b, compositionMask):
-        self.compositions[a][b] = compositionMask
+    def setComposition(self, a, b, compositionMask):
+        self.compositions[a, b] = compositionMask
 
-    def compositionMask(self, a, b):
-        return self.compositions[a][b]
+    def composition(self, a, b):
+        try:
+            return self.compositions[a, b]
+        except KeyError:
+            result = 0
+            for xA in range(self.baseCount):
+                for xB in range(self.baseCount):
+                    if a & (1 << xA) and b & (1 << xB):
+                        result |= self.compositions[1 << xA, 1 << xB]
+            self.setComposition(a, b, result)
+            return result
 
     def checkIntegrity(self):
         print "Checking Composition Integrity ..."
         n = self.baseCount
         for (x, y) in [(i / n, i % n) for i in range(n**2)]:
-            if self.compositions[x][y] is None:
+            if self.compositions[1 << x, 1 << y] is None:
                 print "Couldn't find composition for '{0:0{2}b} * {1:0{2}b}'"\
                     .format(1 << x, 1 << y, self.baseCount)
 
@@ -65,6 +80,8 @@ class Names(object):
         return self.labels[i]
 
     def getBitmask(self, symbols):
+        if not isinstance(symbols, list):
+            symbols = [symbols]
         mask = 0
         for i in range(self.baseCount):
             if self.labels[1 << i] in symbols:

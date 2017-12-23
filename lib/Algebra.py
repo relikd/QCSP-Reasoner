@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf8
 import LookupTable
 
 
@@ -12,16 +13,16 @@ class Algebra(object):
         # Process converses
         self.TConverse = LookupTable.Converse(self.baseCount)
         for cv in _algebraFile.readConverse():
-            a = self.BaseRelations.index(cv[0])
-            b = self.BaseRelations.index(cv[1])
-            self.TConverse.setConverseIndex(a, b)
+            a = self.TName.getBitmask(cv[0])
+            b = self.TName.getBitmask(cv[1])
+            self.TConverse.setConverse(a, b)
         # Process compositions
         self.TComposition = LookupTable.Composition(self.baseCount)
         for cp in _algebraFile.readComposition():  # format: B1 B2 [B1 B2 B3]
-            a = self.BaseRelations.index(cp[0])
-            b = self.BaseRelations.index(cp[1])
+            a = self.TName.getBitmask(cp[0])
+            b = self.TName.getBitmask(cp[1])
             c = self.TName.getBitmask(cp[2])
-            self.TComposition.setCompositionMask(a, b, c)
+            self.TComposition.setComposition(a, b, c)
 
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()
@@ -34,16 +35,24 @@ class Algebra(object):
         return self.TName.getBitmask(array)
 
     def converse(self, rel):
-        result = 0
-        for x in range(self.baseCount):
-            if rel & (1 << x):
-                result |= (1 << self.TConverse.converseIndex(x))
-        return result
+        return self.TConverse.converse(rel)
 
     def compose(self, relA, relB):
-        result = 0
-        for xA in range(self.baseCount):
-            for xB in range(self.baseCount):
-                if relA & (1 << xA) and relB & (1 << xB):
-                    result |= self.TComposition.compositionMask(xA, xB)
-        return result
+        return self.TComposition.composition(relA, relB)
+
+    def __str__(self):
+        txt = "Name Mapping:\n%s" % str(self.TName)
+
+        txt += "\nTable of Converses:\n"
+        for x in self.TConverse.converses:
+            txt += "  {:2} : {:2}\n".format(
+                self.TName.getName(x),
+                self.TName.getName(self.TConverse.converses[x]))
+
+        txt += "\nComposition Table:\n"
+        for x in self.TComposition.compositions:
+            txt += "  {:2} ⟐ {:2} : {}\n".format(
+                self.TName.getName(x[0]),
+                self.TName.getName(x[1]),
+                self.TName.getName(self.TComposition.compositions[x]))
+        return txt

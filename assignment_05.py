@@ -21,19 +21,19 @@ class Network(object):
         for i in range(self.nodeCount):
             self.cs[i][i] = bitmask
 
-    def addConstraint(self, nodeA, nodeB, constraint):
-        if nodeA >= self.nodeCount or nodeB >= self.nodeCount:
+    def addConstraint(self, A, B, constraint):
+        if A >= self.nodeCount or B >= self.nodeCount:
             print "Error: Adding Relation to Network (Max Index)"
-        else:
-            constraintMask = self.algebra.bitmaskFromList(constraint)
-            converseRelation = self.algebra.converse(constraintMask)
-            self.cs[nodeA][nodeB] = constraintMask
-            if self.cs[nodeB][nodeA] == self.algebra.Universal:
-                self.cs[nodeB][nodeA] = converseRelation
-            # elif not (self.cs[nodeB][nodeA] & converseRelation):
-            #     print "ERROR adding inconsistent constraint:", \
-            #         nodeA, nodeB, constraint, "::", self.description
-            #     self.cs[nodeA][nodeB] = 0
+            return
+        constraintMask = self.algebra.bitmaskFromList(constraint)
+        converseRelation = self.algebra.converse(constraintMask)
+        self.cs[A][B] = constraintMask
+        if self.cs[B][A] == self.algebra.Universal:
+            self.cs[B][A] = converseRelation
+        elif not (self.cs[B][A] & converseRelation):
+            print "ERROR adding inconsistent constraint:", \
+                A, B, constraint, "::", self.description
+            self.cs[A][B] = 0
 
     def aClosureV1(self):
         s = True
@@ -95,7 +95,7 @@ class Network(object):
 # algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
 algFile = ReadFile.AlgebraFile("algebra/allen.txt")
 alg = Algebra.Algebra(algFile)
-# print alg.TName
+# print alg
 alg.checkIntegrity()
 print "\n"
 
@@ -114,8 +114,9 @@ for graph in tf.processNext():
     net.enforceOneConsistency("EQ")
 
     pre = timeit.default_timer()
-    consistent = net.aClosureV1()
+    valid = net.aClosureV1()
     print timeit.default_timer() - pre
     # print "Resulting QCSP:", net
-    print "  >", net.description, "is", consistent
+    print "  >", net.description, "is:", valid
+    # print alg
     break
