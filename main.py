@@ -53,14 +53,14 @@ class Network(object):
         return "Consistent"
 
     def aClosureV2(self, arcs=[]):
-        q = Queue.QQueue()
+        q = Queue.QQueue(self.cs)
         if len(arcs) == 0:
             for (i, j) in Helper.doubleNested(self.nodeCount):
-                q.enqueueNew([i, j])
+                q.enqueue([i, j])
         else:
             for arc in arcs:
-                q.enqueueNew(arc)
-        q.init()
+                q.enqueue(arc)
+
         while not q.isEmpty():
             (i, j) = q.dequeue()
             for k in range(self.nodeCount):
