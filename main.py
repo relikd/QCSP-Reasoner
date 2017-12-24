@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf8
-from lib import Algebra, ReadFile, Helper
+from lib import Algebra, ReadFile, Helper, Queue
 import timeit
-import Queue
 
 
 class Network(object):
@@ -53,12 +52,17 @@ class Network(object):
                     return "Inconsistent"  # early exit
         return "Consistent"
 
-    def aClosureV15(self):
-        q = Queue.Queue()
-        for (i, j) in Helper.doubleNested(self.nodeCount):
-            q.put([i, j])
-        while not q.empty():
-            (i, j) = q.get()
+    def aClosureV2(self, arcs=[]):
+        q = Queue.QQueue()
+        if len(arcs) == 0:
+            for (i, j) in Helper.doubleNested(self.nodeCount):
+                q.enqueueNew([i, j])
+        else:
+            for arc in arcs:
+                q.enqueueNew(arc)
+        q.init()
+        while not q.isEmpty():
+            (i, j) = q.dequeue()
             for k in range(self.nodeCount):
                 if k == i or k == j:
                     continue
@@ -68,13 +72,13 @@ class Network(object):
                 Cik_star = Cik & self.algebra.compose(Cij, Cjk)
                 if Cik_star != Cik:
                     self.cs[i][k] = Cik_star
-                    q.put([i, k])
+                    q.enqueueNew([i, k])
                 Ckj = self.cs[k][j]
                 Cki = self.cs[k][i]
                 Ckj_star = Ckj & self.algebra.compose(Cki, Cij)
                 if Ckj_star != Ckj:
                     self.cs[k][j] = Ckj_star
-                    q.put([k, j])
+                    q.enqueueNew([k, j])
                 if Cik_star == 0 or Ckj_star == 0:
                     return "Inconsistent"  # early exit
         return "Consistent"
@@ -113,7 +117,7 @@ for graph in tf.processNext():
     net.enforceOneConsistency("EQ")
 
     pre = timeit.default_timer()
-    valid = net.aClosureV15()
+    valid = net.aClosureV2()
     print timeit.default_timer() - pre
     # print "Resulting QCSP:", net
     print "  >", net.description, "is:", valid
