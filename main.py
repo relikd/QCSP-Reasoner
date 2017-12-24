@@ -100,7 +100,7 @@ print "\n"
 
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
-tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+tf = ReadFile.TestFile("test cases/ia_test_instances_10_simple.txt")
 for graph in tf.processNext():
     net = Network(alg, *graph[0])  # First row is always header
     # if net.description != "test-inconsistent-3":
@@ -113,7 +113,7 @@ for graph in tf.processNext():
     net.enforceOneConsistency("EQ")
 
     pre = timeit.default_timer()
-    valid = net.aClosureV1()
+    valid = net.aClosureV15()
     print timeit.default_timer() - pre
     # print "Resulting QCSP:", net
     print "  >", net.description, "is:", valid
