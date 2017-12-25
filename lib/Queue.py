@@ -15,7 +15,7 @@ class QQueue(object):
         var = heapq.heappop(self.stack)
         while var == self.previousItem and len(self.stack) > 0:
             var = heapq.heappop(self.stack)
-        # print "get", var
+        # print("get %s" % str(var))
         return var[1]
 
     def getPriority(self, element):
@@ -26,7 +26,7 @@ class QQueue(object):
     def enqueue(self, element):
         prio = self.getPriority(element)
         var = (prio, element)
-        # print " -> put", var
+        # print(" -> put %s" % str(var))
         heapq.heappush(self.stack, var)
 
     def enqueueNew(self, element):

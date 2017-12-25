@@ -1,0 +1,614 @@
+Checking Converse Integrity ...
+Checking Composition Integrity ...
+
+
+processing: 'instance 0: NOT consistent'
+589 Iterations
+  > 'instance 0: NOT consistent' is INCONSISTENT (0.247049 s)
+
+
+
+processing: 'instance 1: NOT consistent'
+605 Iterations
+  > 'instance 1: NOT consistent' is INCONSISTENT (0.241300 s)
+
+
+
+processing: 'instance 2: consistent'
+32 Iterations
+  > 'instance 2: consistent' is CONSISTENT (0.069702 s)
+
+
+
+processing: 'instance 3: NOT consistent'
+27337 Iterations
+  > 'instance 3: NOT consistent' is INCONSISTENT (8.018646 s)
+
+
+
+processing: 'instance 4: consistent'
+15 Iterations
+  > 'instance 4: consistent' is CONSISTENT (0.054332 s)
+
+
+
+processing: 'instance 5: NOT consistent'
+1150 Iterations
+  > 'instance 5: NOT consistent' is INCONSISTENT (0.342846 s)
+
+
+
+processing: 'instance 6: consistent'
+14 Iterations
+  > 'instance 6: consistent' is CONSISTENT (0.060233 s)
+
+
+
+processing: 'instance 7: consistent'
+1774 Iterations
+  > 'instance 7: consistent' is CONSISTENT (0.611641 s)
+
+
+
+processing: 'instance 8: NOT consistent'
+1316 Iterations
+  > 'instance 8: NOT consistent' is INCONSISTENT (0.461976 s)
+
+
+
+processing: 'instance 9: NOT consistent'
+1642 Iterations
+  > 'instance 9: NOT consistent' is INCONSISTENT (0.471511 s)
+
+
+
+processing: 'instance 10: consistent'
+31 Iterations
+  > 'instance 10: consistent' is CONSISTENT (0.089945 s)
+
+
+
+processing: 'instance 11: NOT consistent'
+4103 Iterations
+  > 'instance 11: NOT consistent' is INCONSISTENT (1.218587 s)
+
+
+
+processing: 'instance 12: NOT consistent'
+731 Iterations
+  > 'instance 12: NOT consistent' is INCONSISTENT (0.282080 s)
+
+
+
+processing: 'instance 13: consistent'
+42 Iterations
+  > 'instance 13: consistent' is CONSISTENT (0.088214 s)
+
+
+
+processing: 'instance 14: consistent'
+27 Iterations
+  > 'instance 14: consistent' is CONSISTENT (0.038214 s)
+
+
+
+processing: 'instance 15: consistent'
+31 Iterations
+  > 'instance 15: consistent' is CONSISTENT (0.136952 s)
+
+
+
+processing: 'instance 16: NOT consistent'
+615 Iterations
+  > 'instance 16: NOT consistent' is INCONSISTENT (0.255126 s)
+
+
+
+processing: 'instance 17: consistent'
+11 Iterations
+  > 'instance 17: consistent' is CONSISTENT (0.046983 s)
+
+
+
+processing: 'instance 18: NOT consistent'
+3082 Iterations
+  > 'instance 18: NOT consistent' is INCONSISTENT (0.966989 s)
+
+
+
+processing: 'instance 19: consistent'
+20 Iterations
+  > 'instance 19: consistent' is CONSISTENT (0.112460 s)
+
+
+
+processing: 'instance 20: consistent'
+36 Iterations
+  > 'instance 20: consistent' is CONSISTENT (0.077464 s)
+
+
+
+processing: 'instance 21: NOT consistent'
+647 Iterations
+  > 'instance 21: NOT consistent' is INCONSISTENT (0.249264 s)
+
+
+
+processing: 'instance 22: consistent'
+13 Iterations
+  > 'instance 22: consistent' is CONSISTENT (0.036233 s)
+
+
+
+processing: 'instance 23: consistent'
+25 Iterations
+  > 'instance 23: consistent' is CONSISTENT (0.065793 s)
+
+
+
+processing: 'instance 24: NOT consistent'
+5034 Iterations
+  > 'instance 24: NOT consistent' is INCONSISTENT (1.550046 s)
+
+
+
+processing: 'instance 25: NOT consistent'
+477 Iterations
+  > 'instance 25: NOT consistent' is INCONSISTENT (0.187400 s)
+
+
+
+processing: 'instance 26: consistent'
+23 Iterations
+  > 'instance 26: consistent' is CONSISTENT (0.077471 s)
+
+
+
+processing: 'instance 27: NOT consistent'
+693 Iterations
+  > 'instance 27: NOT consistent' is INCONSISTENT (0.247053 s)
+
+
+
+processing: 'instance 28: consistent'
+13 Iterations
+  > 'instance 28: consistent' is CONSISTENT (0.022723 s)
+
+
+
+processing: 'instance 29: consistent'
+28 Iterations
+  > 'instance 29: consistent' is CONSISTENT (0.097787 s)
+
+
+
+processing: 'instance 30: consistent'
+19 Iterations
+  > 'instance 30: consistent' is CONSISTENT (0.035079 s)
+
+
+
+processing: 'instance 31: consistent'
+25 Iterations
+  > 'instance 31: consistent' is CONSISTENT (0.025730 s)
+
+
+
+processing: 'instance 32: NOT consistent'
+615 Iterations
+  > 'instance 32: NOT consistent' is INCONSISTENT (0.256005 s)
+
+
+
+processing: 'instance 33: consistent'
+20 Iterations
+  > 'instance 33: consistent' is CONSISTENT (0.032835 s)
+
+
+
+processing: 'instance 34: consistent'
+2834 Iterations
+  > 'instance 34: consistent' is CONSISTENT (0.891681 s)
+
+
+
+processing: 'instance 35: consistent'
+23 Iterations
+  > 'instance 35: consistent' is CONSISTENT (0.058629 s)
+
+
+
+processing: 'instance 36: consistent'
+33 Iterations
+  > 'instance 36: consistent' is CONSISTENT (0.079028 s)
+
+
+
+processing: 'instance 37: NOT consistent'
+15506 Iterations
+  > 'instance 37: NOT consistent' is INCONSISTENT (4.027176 s)
+
+
+
+processing: 'instance 38: NOT consistent'
+677 Iterations
+  > 'instance 38: NOT consistent' is INCONSISTENT (0.281030 s)
+
+
+
+processing: 'instance 39: NOT consistent'
+679 Iterations
+  > 'instance 39: NOT consistent' is INCONSISTENT (0.228789 s)
+
+
+
+processing: 'instance 40: consistent'
+592 Iterations
+  > 'instance 40: consistent' is CONSISTENT (0.299547 s)
+
+
+
+processing: 'instance 41: NOT consistent'
+601 Iterations
+  > 'instance 41: NOT consistent' is INCONSISTENT (0.201541 s)
+
+
+
+processing: 'instance 42: consistent'
+37 Iterations
+  > 'instance 42: consistent' is CONSISTENT (0.094185 s)
+
+
+
+processing: 'instance 43: consistent'
+450 Iterations
+  > 'instance 43: consistent' is CONSISTENT (0.215852 s)
+
+
+
+processing: 'instance 44: consistent'
+34 Iterations
+  > 'instance 44: consistent' is CONSISTENT (0.108800 s)
+
+
+
+processing: 'instance 45: NOT consistent'
+625 Iterations
+  > 'instance 45: NOT consistent' is INCONSISTENT (0.213676 s)
+
+
+
+processing: 'instance 46: consistent'
+12 Iterations
+  > 'instance 46: consistent' is CONSISTENT (0.051516 s)
+
+
+
+processing: 'instance 47: NOT consistent'
+517 Iterations
+  > 'instance 47: NOT consistent' is CONSISTENT (0.198469 s)
+!! wrong !!
+
+
+
+processing: 'instance 48: consistent'
+35 Iterations
+  > 'instance 48: consistent' is CONSISTENT (0.110636 s)
+
+
+
+processing: 'instance 49: NOT consistent'
+671 Iterations
+  > 'instance 49: NOT consistent' is INCONSISTENT (0.244347 s)
+
+
+
+processing: 'instance 50: NOT consistent'
+367 Iterations
+  > 'instance 50: NOT consistent' is INCONSISTENT (0.124361 s)
+
+
+
+processing: 'instance 51: NOT consistent'
+513 Iterations
+  > 'instance 51: NOT consistent' is INCONSISTENT (0.173682 s)
+
+
+
+processing: 'instance 52: NOT consistent'
+617 Iterations
+  > 'instance 52: NOT consistent' is INCONSISTENT (0.220451 s)
+
+
+
+processing: 'instance 53: NOT consistent'
+2426 Iterations
+  > 'instance 53: NOT consistent' is INCONSISTENT (0.856176 s)
+
+
+
+processing: 'instance 54: consistent'
+22 Iterations
+  > 'instance 54: consistent' is CONSISTENT (0.025776 s)
+
+
+
+processing: 'instance 55: NOT consistent'
+679 Iterations
+  > 'instance 55: NOT consistent' is INCONSISTENT (0.244037 s)
+
+
+
+processing: 'instance 56: consistent'
+18 Iterations
+  > 'instance 56: consistent' is CONSISTENT (0.053068 s)
+
+
+
+processing: 'instance 57: consistent'
+24 Iterations
+  > 'instance 57: consistent' is CONSISTENT (0.085331 s)
+
+
+
+processing: 'instance 58: NOT consistent'
+1235 Iterations
+  > 'instance 58: NOT consistent' is INCONSISTENT (0.365568 s)
+
+
+
+processing: 'instance 59: consistent'
+17 Iterations
+  > 'instance 59: consistent' is CONSISTENT (0.078840 s)
+
+
+
+processing: 'instance 60: NOT consistent'
+1743 Iterations
+  > 'instance 60: NOT consistent' is INCONSISTENT (0.520274 s)
+
+
+
+processing: 'instance 61: consistent'
+21 Iterations
+  > 'instance 61: consistent' is CONSISTENT (0.058105 s)
+
+
+
+processing: 'instance 62: consistent'
+24 Iterations
+  > 'instance 62: consistent' is CONSISTENT (0.086223 s)
+
+
+
+processing: 'instance 63: consistent'
+34 Iterations
+  > 'instance 63: consistent' is CONSISTENT (0.085875 s)
+
+
+
+processing: 'instance 64: consistent'
+11 Iterations
+  > 'instance 64: consistent' is CONSISTENT (0.014209 s)
+
+
+
+processing: 'instance 65: consistent'
+19 Iterations
+  > 'instance 65: consistent' is CONSISTENT (0.071063 s)
+
+
+
+processing: 'instance 66: NOT consistent'
+671 Iterations
+  > 'instance 66: NOT consistent' is INCONSISTENT (0.252666 s)
+
+
+
+processing: 'instance 67: NOT consistent'
+3124 Iterations
+  > 'instance 67: NOT consistent' is INCONSISTENT (1.010266 s)
+
+
+
+processing: 'instance 68: NOT consistent'
+5612 Iterations
+  > 'instance 68: NOT consistent' is INCONSISTENT (1.909264 s)
+
+
+
+processing: 'instance 69: NOT consistent'
+633 Iterations
+  > 'instance 69: NOT consistent' is INCONSISTENT (0.231110 s)
+
+
+
+processing: 'instance 70: consistent'
+16 Iterations
+  > 'instance 70: consistent' is CONSISTENT (0.063095 s)
+
+
+
+processing: 'instance 71: consistent'
+32 Iterations
+  > 'instance 71: consistent' is CONSISTENT (0.100970 s)
+
+
+
+processing: 'instance 72: consistent'
+1376 Iterations
+  > 'instance 72: consistent' is CONSISTENT (0.538783 s)
+
+
+
+processing: 'instance 73: NOT consistent'
+417 Iterations
+  > 'instance 73: NOT consistent' is INCONSISTENT (0.161756 s)
+
+
+
+processing: 'instance 74: consistent'
+27 Iterations
+  > 'instance 74: consistent' is CONSISTENT (0.031041 s)
+
+
+
+processing: 'instance 75: consistent'
+28 Iterations
+  > 'instance 75: consistent' is CONSISTENT (0.051008 s)
+
+
+
+processing: 'instance 76: NOT consistent'
+1714 Iterations
+  > 'instance 76: NOT consistent' is INCONSISTENT (0.534570 s)
+
+
+
+processing: 'instance 77: NOT consistent'
+3706 Iterations
+  > 'instance 77: NOT consistent' is INCONSISTENT (1.024496 s)
+
+
+
+processing: 'instance 78: consistent'
+12 Iterations
+  > 'instance 78: consistent' is CONSISTENT (0.047762 s)
+
+
+
+processing: 'instance 79: NOT consistent'
+1915 Iterations
+  > 'instance 79: NOT consistent' is INCONSISTENT (0.755056 s)
+
+
+
+processing: 'instance 80: consistent'
+14 Iterations
+  > 'instance 80: consistent' is CONSISTENT (0.056276 s)
+
+
+
+processing: 'instance 81: NOT consistent'
+13800 Iterations
+  > 'instance 81: NOT consistent' is INCONSISTENT (3.569062 s)
+
+
+
+processing: 'instance 82: NOT consistent'
+3152 Iterations
+  > 'instance 82: NOT consistent' is INCONSISTENT (0.958913 s)
+
+
+
+processing: 'instance 83: consistent'
+14 Iterations
+  > 'instance 83: consistent' is CONSISTENT (0.087157 s)
+
+
+
+processing: 'instance 84: NOT consistent'
+577 Iterations
+  > 'instance 84: NOT consistent' is INCONSISTENT (0.200028 s)
+
+
+
+processing: 'instance 85: consistent'
+23 Iterations
+  > 'instance 85: consistent' is CONSISTENT (0.019429 s)
+
+
+
+processing: 'instance 86: NOT consistent'
+679 Iterations
+  > 'instance 86: NOT consistent' is INCONSISTENT (0.216513 s)
+
+
+
+processing: 'instance 87: consistent'
+15 Iterations
+  > 'instance 87: consistent' is CONSISTENT (0.070029 s)
+
+
+
+processing: 'instance 88: NOT consistent'
+19640 Iterations
+  > 'instance 88: NOT consistent' is INCONSISTENT (4.745492 s)
+
+
+
+processing: 'instance 89: NOT consistent'
+463 Iterations
+  > 'instance 89: NOT consistent' is INCONSISTENT (0.159558 s)
+
+
+
+processing: 'instance 90: NOT consistent'
+713 Iterations
+  > 'instance 90: NOT consistent' is INCONSISTENT (0.282874 s)
+
+
+
+processing: 'instance 91: NOT consistent'
+649 Iterations
+  > 'instance 91: NOT consistent' is INCONSISTENT (0.214279 s)
+
+
+
+processing: 'instance 92: consistent'
+17 Iterations
+  > 'instance 92: consistent' is CONSISTENT (0.055855 s)
+
+
+
+processing: 'instance 93: NOT consistent'
+2004 Iterations
+  > 'instance 93: NOT consistent' is INCONSISTENT (0.690750 s)
+
+
+
+processing: 'instance 94: consistent'
+19 Iterations
+  > 'instance 94: consistent' is CONSISTENT (0.020681 s)
+
+
+
+processing: 'instance 95: NOT consistent'
+2157 Iterations
+  > 'instance 95: NOT consistent' is INCONSISTENT (0.822546 s)
+
+
+
+processing: 'instance 96: NOT consistent'
+2367 Iterations
+  > 'instance 96: NOT consistent' is INCONSISTENT (0.707813 s)
+
+
+
+processing: 'instance 97: NOT consistent'
+1242 Iterations
+  > 'instance 97: NOT consistent' is INCONSISTENT (0.390051 s)
+
+
+
+processing: 'instance 98: consistent'
+35 Iterations
+  > 'instance 98: consistent' is CONSISTENT (0.083831 s)
+
+
+
+processing: 'instance 99: NOT consistent'
+655 Iterations
+  > 'instance 99: NOT consistent' is INCONSISTENT (0.259796 s)
+
+
+
+processing: 'instance 100: consistent'
+27 Iterations
+  > 'instance 100: consistent' is CONSISTENT (0.055769 s)
+
+
+
+Overall time: 47.663732 s
+
+
