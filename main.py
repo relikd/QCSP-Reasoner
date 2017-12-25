@@ -2,6 +2,10 @@
 # coding: utf8
 from lib import Algebra, ReadFile, Helper, Queue
 import timeit
+from copy import deepcopy
+
+CONSISTENT = "CONSISTENT"
+INCONSISTENT = "INCONSISTENT"
 
 
 class Network(object):
@@ -49,12 +53,12 @@ class Network(object):
                     self.cs[i][k] = Cik_star
                     s = True
                 if Cik_star == 0:
-                    return "Inconsistent"  # early exit
-        return "Consistent"
+                    return INCONSISTENT  # early exit
+        return CONSISTENT
 
-    def aClosureV2(self, arcs=[]):
+    def aClosureV2(self, arcs=None):
         q = Queue.QQueue(self.cs)
-        if len(arcs) == 0:
+        if arcs is None:
             for (i, j) in Helper.doubleNested(self.nodeCount):
                 q.enqueue([i, j])
         else:
@@ -80,8 +84,35 @@ class Network(object):
                     self.cs[k][j] = Ckj_star
                     q.enqueueNew([k, j])
                 if Cik_star == 0 or Ckj_star == 0:
-                    return "Inconsistent"  # early exit
-        return "Consistent"
+                    return INCONSISTENT  # early exit
+        return CONSISTENT
+
+    def listOfMultiRelationConstraints(self):
+        lst = []
+        for (i, j) in Helper.doubleNested(self.nodeCount):
+            c = bin(self.cs[i][j]).count("1")
+            if c > 1 and c < self.algebra.baseCount:
+                lst.append([i, j])
+        return lst
+
+    def refinementSearchV15(self, E=None):
+        print ".",
+        C_star = deepcopy(self)
+        aClosed = C_star.aClosureV2(E)
+        if aClosed is INCONSISTENT:
+            return INCONSISTENT
+
+        refineList = C_star.listOfMultiRelationConstraints()
+        if len(refineList) == 0:  # all rel's have 1 base relation
+            return CONSISTENT
+
+        for (i, j) in refineList:
+            for baseRel in Helper.bits(C_star.cs[i][j]):
+                C_star.cs[i][j] = baseRel
+                if C_star.refinementSearchV15([[i, j]]) == CONSISTENT:
+                    return CONSISTENT
+
+        return INCONSISTENT
 
     def __str__(self):
         relCount = 0
@@ -104,22 +135,26 @@ print "\n"
 
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
-tf = ReadFile.TestFile("test cases/ia_test_instances_10_simple.txt")
+tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+overall = timeit.default_timer()
 for graph in tf.processNext():
     net = Network(alg, *graph[0])  # First row is always header
-    # if net.description != "test-inconsistent-3":
+    # if net.description != "instance 3: NOT consistent":
     #     continue
     for i in range(1, len(graph)):
         net.addConstraint(*graph[i])
 
-    # print "processing:", net
+    print "processing: '%s'" % net.description
     # net.enforceOneConsistency("=")
     net.enforceOneConsistency("EQ")
 
     pre = timeit.default_timer()
-    valid = net.aClosureV2()
-    print timeit.default_timer() - pre
+    # valid = net.aClosureV2()
+    valid = net.refinementSearchV15()
     # print "Resulting QCSP:", net
-    print "  >", net.description, "is:", valid
+    print "\n  > '%s' is %s (%f s)\n\n\n" % (
+        net.description, valid, timeit.default_timer() - pre)
     # print alg
     break
+
+print "Overall time: %f s\n\n" % (timeit.default_timer() - overall)

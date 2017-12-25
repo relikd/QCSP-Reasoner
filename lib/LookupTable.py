@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf8
+import Helper
 
 
 class Converse(object):
@@ -16,9 +17,8 @@ class Converse(object):
             return self.converses[a]
         except KeyError:
             result = 0
-            for x in range(self.baseCount):
-                if a & (1 << x):
-                    result |= self.converses[1 << x]
+            for baseRel in Helper.bits(a):
+                result |= self.converses[baseRel]
             self.setConverse(a, result)
             return result
 
@@ -44,10 +44,9 @@ class Composition(object):
             return self.compositions[a, b]
         except KeyError:
             result = 0
-            for xA in range(self.baseCount):
-                for xB in range(self.baseCount):
-                    if a & (1 << xA) and b & (1 << xB):
-                        result |= self.compositions[1 << xA, 1 << xB]
+            for baseRelA in Helper.bits(a):
+                for baseRelB in Helper.bits(b):
+                    result |= self.compositions[baseRelA, baseRelB]
             self.setComposition(a, b, result)
             return result
 
