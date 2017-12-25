@@ -23,11 +23,11 @@ class Converse(object):
             return result
 
     def checkIntegrity(self):
-        print "Checking Converse Integrity ..."
+        print("Checking Converse Integrity ...")
         for i in range(self.baseCount):
             if self.converses[1 << i] is None:  # Only base relations
-                print "Couldn't find converse for '{:0{}b}'"\
-                    .format(1 << i, self.baseCount)
+                print("Couldn't find converse for '{:0{}b}'"
+                      .format(1 << i, self.baseCount))
 
 
 class Composition(object):
@@ -51,12 +51,12 @@ class Composition(object):
             return result
 
     def checkIntegrity(self):
-        print "Checking Composition Integrity ..."
+        print("Checking Composition Integrity ...")
         n = self.baseCount
         for (x, y) in [(i / n, i % n) for i in range(n**2)]:
             if self.compositions[1 << x, 1 << y] is None:
-                print "Couldn't find composition for '{0:0{2}b} * {1:0{2}b}'"\
-                    .format(1 << x, 1 << y, self.baseCount)
+                print("Couldn't find composition for '{0:0{2}b} * {1:0{2}b}'"
+                      .format(1 << x, 1 << y, self.baseCount))
 
 
 class Names(object):
