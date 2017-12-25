@@ -14,9 +14,17 @@ class Network(object):
         self.algebra = algebra
         self.nodeCount = maxIndex + 1
         self.description = description
+        self.nodeConnectivity = [0] * self.nodeCount
         self.cs = [[self.algebra.Universal
                    for a in range(self.nodeCount)]
                    for b in range(self.nodeCount)]
+
+    def calculateNodeConnectivity(self):
+        for (i, j) in Helper.doubleNested(self.nodeCount):
+            if self.cs[i][j] != self.algebra.Universal:
+                c = bin(self.cs[i][j]).count("1")
+                self.nodeConnectivity[i] += c
+                self.nodeConnectivity[j] += c
 
     def enforceOneConsistency(self, symbol):
         bitmask = self.algebra.bitmaskFromList([symbol])
@@ -106,6 +114,12 @@ class Network(object):
         if len(refineList) == 0:  # all rel's have 1 base relation
             return CONSISTENT
 
+        # for rel in refineList:
+        #     conn = C_star.nodeConnectivity[rel[0]]\
+        #         + C_star.nodeConnectivity[rel[1]]
+        #     rel.insert(0, conn)
+        # refineList.sort(reverse=True)
+
         for (i, j) in refineList:
             for baseRel in Helper.bits(C_star.cs[i][j]):
                 C_star.cs[i][j] = baseRel
@@ -136,25 +150,28 @@ print "\n"
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
 tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+skip = 19
 overall = timeit.default_timer()
 for graph in tf.processNext():
     net = Network(alg, *graph[0])  # First row is always header
-    # if net.description != "instance 3: NOT consistent":
-    #     continue
+    if skip > 0:
+        skip -= 1
+        continue
     for i in range(1, len(graph)):
         net.addConstraint(*graph[i])
 
-    print "processing: '%s'" % net.description
+    # preprocessing
+    net.calculateNodeConnectivity()
     # net.enforceOneConsistency("=")
     net.enforceOneConsistency("EQ")
 
+    print "processing: '%s'" % net.description
     pre = timeit.default_timer()
     # valid = net.aClosureV2()
     valid = net.refinementSearchV15()
     # print "Resulting QCSP:", net
     print "\n  > '%s' is %s (%f s)\n\n\n" % (
         net.description, valid, timeit.default_timer() - pre)
-    # print alg
-    break
+    # break
 
 print "Overall time: %f s\n\n" % (timeit.default_timer() - overall)
