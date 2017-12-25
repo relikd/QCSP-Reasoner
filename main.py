@@ -53,12 +53,16 @@ class Search(object):
                 if Cik_star != Cik:
                     self.net.cs[i][k] = Cik_star
                     q.enqueueNew([i, k])
+                    self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
+                    q.enqueueNew([k, i])
                 Ckj = self.net.cs[k][j]
                 Cki = self.net.cs[k][i]
                 Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
                 if Ckj_star != Ckj:
                     self.net.cs[k][j] = Ckj_star
                     q.enqueueNew([k, j])
+                    self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
+                    q.enqueueNew([j, k])
                 if Cik_star == 0 or Ckj_star == 0:
                     return INCONSISTENT  # early exit
         return CONSISTENT
@@ -76,12 +80,14 @@ class Search(object):
 
         refineList = C_star.listOfMultiRelationConstraints()
         if len(refineList) == 0:  # all rel's have 1 base relation
-            return CONSISTENT
+            if Search(C_star).aClosureV2() == CONSISTENT:
+                # print("Resulting QCSP:\n%s" % C_star)
+                return CONSISTENT
         for rel in refineList:
             conn = C_star.nodeConnectivity[rel[0]]\
                 + C_star.nodeConnectivity[rel[1]]
             rel.insert(0, conn)
-        refineList.sort()  # reverse=True)
+        refineList.sort(reverse=True)
 
         # print refineList
         for (c, i, j) in refineList:
@@ -122,17 +128,16 @@ for graph in tf.processNext():
     net.enforceOneConsistency("EQ")
 
     print("processing: '%s'" % net.description)
+    refinementCounter = 0
     pre = timeit.default_timer()
     # valid = Search(net).aClosureV2()
-    refinementCounter = 0
     valid = Search(net).refinementV15()
-    # print("Resulting QCSP:\n%s" % net)
     print("%d Iterations" % refinementCounter)
     print("  > '%s' is %s (%f s)" % (
         net.description, valid, timeit.default_timer() - pre))
     if (net.description.split()[-2] == "NOT" and valid == CONSISTENT) or \
        (net.description.split()[-2] != "NOT" and valid == INCONSISTENT):
-        print "!! wrong !!"
+        print("!! wrong !!")
         # exit(0)
     print("\n\n")
     # break
