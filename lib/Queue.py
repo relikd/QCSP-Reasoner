@@ -21,7 +21,7 @@ class QQueue(object):
     def getPriority(self, element):
         constraints = self.cs[element[0]][element[1]]
         # TODO: implement dictionary lookup for priority
-        return constraints
+        return bin(constraints).count("1")
 
     def enqueue(self, element):
         prio = self.getPriority(element)

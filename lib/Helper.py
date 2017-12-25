@@ -30,3 +30,11 @@ def splitTripple(line):
     to array with format: ['A', 'B', ['C', 'D', 'E']] """
     arr = [x for x in re.split(' |\(|\)', line) if x is not ""]
     return [arr[0], arr[1], arr[2:]]
+
+
+def bits(n):
+    """ Iterate over all set bits """
+    while n:
+        b = n & (~n + 1)
+        yield b
+        n ^= b
