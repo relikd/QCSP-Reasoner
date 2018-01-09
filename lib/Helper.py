@@ -12,16 +12,16 @@ def powerset(seq):
             yield [seq[0]] + item
 
 
-def doubleNested(maxi):
-    for x in range(maxi):
-        for y in range(maxi):
+def doubleNested(maxi, start=0):
+    for x in range(start, maxi):
+        for y in range(start, maxi):
             yield (x, y)
 
 
-def tripleNested(maxi):
-    for x in range(maxi):
-        for y in range(maxi):
-            for z in range(maxi):
+def tripleNested(maxi, start=0):
+    for x in range(start, maxi):
+        for y in range(start, maxi):
+            for z in range(start, maxi):
                 yield (x, y, z)
 
 

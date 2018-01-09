@@ -4,7 +4,7 @@ import LookupTable
 
 
 class Algebra(object):
-    def __init__(self, _algebraFile):
+    def __init__(self, _algebraFile, _aTractableSubsetsFile=None):
         super(Algebra, self).__init__()
         self.BaseRelations = _algebraFile.readBaseRelations()
         self.baseCount = len(self.BaseRelations)
@@ -23,6 +23,14 @@ class Algebra(object):
             b = self.TName.getBitmask(cp[1])
             c = self.TName.getBitmask(cp[2])
             self.TComposition.setComposition(a, b, c)
+        # Process a-tractable subsets for improved refinement search
+        self.TTractable = LookupTable.ATractable(self.baseCount)
+        if _aTractableSubsetsFile is not None:
+            print("Calculating A-Tractable subclasses ...")
+            for ats in _aTractableSubsetsFile.readSubset():
+                s = self.TName.getBitmask(ats)
+                self.TTractable.setClosedSet(s, [s])  # in itself a subset
+            self.TTractable.calculateRemaining2Combinations()
 
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()
@@ -39,6 +47,9 @@ class Algebra(object):
 
     def compose(self, relA, relB):
         return self.TComposition.composition(relA, relB)
+
+    def aTractableSet(self, rel):
+        return self.TTractable.getClosedSet(rel)
 
     def __str__(self):
         txt = "Name Mapping:\n%s" % str(self.TName)

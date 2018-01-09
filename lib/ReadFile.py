@@ -81,3 +81,17 @@ class TestFile(object):
                 obj.append([int(A), int(B), rel])
                 if verbose:
                     print(A, B, rel)
+
+
+class ATractableSubsetsFile(object):
+    def __init__(self, path):
+        super(ATractableSubsetsFile, self).__init__()
+        f = open(path)
+        self.lines = f.readlines()
+        f.close()
+
+    def readSubset(self):
+        for i in range(0, len(self.lines)):
+            ln = self.lines[i].strip()
+            if ln[0] != "#":
+                yield ln.split()

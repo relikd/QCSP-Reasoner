@@ -48,6 +48,14 @@ class QCSP(object):
                 lst.append([i, j])
         return lst
 
+    def listOfNontractableConstraints(self):
+        lst = []
+        for (i, j) in Helper.doubleNested(self.nodeCount):
+            relMask = self.cs[i][j]
+            if len(self.algebra.aTractableSet(relMask)) > 1:
+                lst.append([i, j])
+        return lst
+
     def __str__(self):
         relCount = 0
         s = ""
