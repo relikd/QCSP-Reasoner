@@ -78,7 +78,8 @@ class Search(object):
         if aClosed is INCONSISTENT:
             return INCONSISTENT
 
-        refineList = C_star.listOfMultiRelationConstraints()
+        # refineList = C_star.listOfMultiRelationConstraints()
+        refineList = C_star.listOfNontractableConstraints()
         if len(refineList) == 0:  # all rel's have 1 base relation
             if Search(C_star).aClosureV2() == CONSISTENT:
                 # print("Resulting QCSP:\n%s" % C_star)
@@ -92,6 +93,7 @@ class Search(object):
         # print refineList
         for (c, i, j) in refineList:
             prevRel = C_star.cs[i][j]
+            # aTracSets = self.net.algebra.aTractableSet(prevRel)
             for baseRel in Helper.bits(prevRel):
                 C_star.cs[i][j] = baseRel
                 if Search(C_star).refinementV15([[i, j]]) == CONSISTENT:
@@ -104,7 +106,8 @@ class Search(object):
 
 # algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
 algFile = ReadFile.AlgebraFile("algebra/allen.txt")
-alg = Algebra.Algebra(algFile)
+aTractableFile = ReadFile.ATractableSubsetsFile("test cases/ia_ord_horn.txt")
+alg = Algebra.Algebra(algFile, aTractableFile)
 # print(alg)
 alg.checkIntegrity()
 print("\n")

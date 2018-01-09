@@ -92,3 +92,56 @@ class Names(object):
         for i in range(len(self.labels)):
             s += "{:0{}b}  {}\n".format(i, self.baseCount, self.labels[i])
         return s
+
+
+class ATractable(object):
+    def __init__(self, numberOfBaseRelations):
+        super(ATractable, self).__init__()
+        self.baseCount = numberOfBaseRelations
+        self.subsets = dict()
+        self.subsets[0] = [0]
+        self.defineCounter = 1
+        self.defineTreshhold = int(round((1 << self.baseCount) * 0.999))
+
+    def setClosedSet(self, s, subset):
+        try:
+            self.subsets[s]
+            print("ERROR: Key already exist. Should never be overwritten.")
+        except KeyError:
+            self.subsets[s] = subset
+            self.defineCounter += 1
+
+    def getClosedSet(self, s):
+        try:
+            return self.subsets[s]
+        except KeyError:
+            arr = self.fastNonOptimalSubset(s)
+            self.setClosedSet(s, arr)
+            # print("WARN: Key doesn't exist. Calculating on the fly.\n%s" % arr)
+            return arr
+
+    def fastNonOptimalSubset(self, s):
+        arr = []
+        prev = 0
+        for a in Helper.bits(s):
+            try:
+                self.subsets[prev | a]
+                prev |= a
+                continue
+            except KeyError:
+                arr += [prev]
+                prev = a  # reset
+        return arr + [prev]
+
+    def calculateRemaining2Combinations(self):
+        for (x, y) in Helper.doubleNested(1 << self.baseCount, 1):
+            try:
+                arr = self.subsets[x | y]
+                if len(arr) < 3:
+                    continue
+            except KeyError:
+                pass
+            self.subsets[x | y] = [x, y]
+            self.defineCounter += 1
+            if self.defineCounter >= self.defineTreshhold:
+                return
