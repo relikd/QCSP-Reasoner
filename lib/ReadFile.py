@@ -90,8 +90,14 @@ class ATractableSubsetsFile(object):
         self.lines = f.readlines()
         f.close()
 
-    def readSubset(self):
+    def readSubset(self, NamesTable):
         for i in range(0, len(self.lines)):
             ln = self.lines[i].strip()
             if ln[0] != "#":
-                yield [subset.strip().split() for subset in ln.split("|")]
+                index = 0
+                subsets = []
+                for subset in ln.split("|"):
+                    mask = NamesTable.getBitmask(subset.strip().split())
+                    index |= mask
+                    subsets += [mask]
+                yield (index, subsets)

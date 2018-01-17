@@ -26,12 +26,8 @@ class Algebra(object):
         # Process a-tractable subsets for improved refinement search
         self.TTractable = LookupTable.ATractable(self.baseCount)
         if _aTractableSubsetsFile is not None:
-            for ats in _aTractableSubsetsFile.readSubset():
-                subsets = [self.TName.getBitmask(s) for s in ats]
-                index = 0
-                for i in subsets:
-                    index |= i
-                self.TTractable.setClosedSet(index, subsets)
+            for (i, subsets) in _aTractableSubsetsFile.readSubset(self.TName):
+                self.TTractable.setClosedSet(i, subsets)
 
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()

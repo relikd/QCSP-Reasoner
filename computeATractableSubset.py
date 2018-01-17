@@ -11,11 +11,7 @@ aTractableFile = ReadFile.ATractableSubsetsFile("algebra/ia_ord_horn.txt")
 # Process a-tractable subsets for improved refinement search
 theTable = LookupTable.ATractable(round((1 << len(BaseRelations)) * 0.99))
 print("Calculating A-Tractable subclasses ...")
-for ats in aTractableFile.readSubset():
-    subsets = [TName.getBitmask(s) for s in ats]
-    index = 0
-    for i in subsets:
-        index |= i
+for (index, subsets) in aTractableFile.readSubset(TName):
     theTable.setClosedSet(index, subsets)
 
 print("%d" % len(theTable.subsets))

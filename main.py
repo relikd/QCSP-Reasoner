@@ -90,18 +90,13 @@ class Search(object):
             rel[0] = conn
         refineList.sort(reverse=True)
 
-        # print refineList
         for (c, i, j) in refineList:
             prevRel = C_star.cs[i][j]
-            # print "i Got:", self.net.algebra.nameForBitmask(prevRel)
             # for baseRel in self.net.algebra.aTractableSet(prevRel):
             for baseRel in Helper.bits(prevRel):
-                # print "split to", self.net.algebra.nameForBitmask(baseRel)
                 C_star.cs[i][j] = baseRel
                 if Search(C_star).refinementV15([[i, j]]) == CONSISTENT:
                     return CONSISTENT
-            # ASK: if correct
-            # print "reset"
             C_star.cs[i][j] = prevRel
         return INCONSISTENT
 
@@ -117,7 +112,7 @@ print("\n")
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
 # tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
-tf = ReadFile.TestFile("test cases/test_generated.txt")
+tf = ReadFile.TestFile("test cases/test_generated1.txt")
 skip = 4
 overall = timeit.default_timer()
 for graph in tf.processNext():
