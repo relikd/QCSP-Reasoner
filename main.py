@@ -87,26 +87,28 @@ class Search(object):
         for rel in refineList:
             conn = C_star.nodeConnectivity[rel[0]]\
                 + C_star.nodeConnectivity[rel[1]]
-            rel.insert(0, conn)
+            rel[0] = conn
         refineList.sort(reverse=True)
 
         # print refineList
         for (c, i, j) in refineList:
             prevRel = C_star.cs[i][j]
-            # aTracSets = self.net.algebra.aTractableSet(prevRel)
+            # print "i Got:", self.net.algebra.nameForBitmask(prevRel)
+            # for baseRel in self.net.algebra.aTractableSet(prevRel):
             for baseRel in Helper.bits(prevRel):
+                # print "split to", self.net.algebra.nameForBitmask(baseRel)
                 C_star.cs[i][j] = baseRel
                 if Search(C_star).refinementV15([[i, j]]) == CONSISTENT:
                     return CONSISTENT
             # ASK: if correct
-            # C_star.cs[i][j] = prevRel
-
+            # print "reset"
+            C_star.cs[i][j] = prevRel
         return INCONSISTENT
 
 
 # algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
 algFile = ReadFile.AlgebraFile("algebra/allen.txt")
-aTractableFile = ReadFile.ATractableSubsetsFile("test cases/ia_ord_horn.txt")
+aTractableFile = ReadFile.ATractableSubsetsFile("algebra/ia_ord_horn_all.txt")
 alg = Algebra.Algebra(algFile, aTractableFile)
 # print(alg)
 alg.checkIntegrity()
@@ -114,8 +116,9 @@ print("\n")
 
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
-tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
-skip = 0
+# tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+tf = ReadFile.TestFile("test cases/test_generated.txt")
+skip = 4
 overall = timeit.default_timer()
 for graph in tf.processNext():
     net = Network.QCSP(alg, *graph[0])  # First row is always header
