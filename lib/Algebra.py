@@ -26,11 +26,12 @@ class Algebra(object):
         # Process a-tractable subsets for improved refinement search
         self.TTractable = LookupTable.ATractable(self.baseCount)
         if _aTractableSubsetsFile is not None:
-            print("Calculating A-Tractable subclasses ...")
             for ats in _aTractableSubsetsFile.readSubset():
-                s = self.TName.getBitmask(ats)
-                self.TTractable.setClosedSet(s, [s])  # in itself a subset
-            self.TTractable.calculateRemaining2Combinations()
+                subsets = [self.TName.getBitmask(s) for s in ats]
+                index = 0
+                for i in subsets:
+                    index |= i
+                self.TTractable.setClosedSet(index, subsets)
 
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()

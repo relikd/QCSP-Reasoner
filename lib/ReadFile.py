@@ -94,4 +94,4 @@ class ATractableSubsetsFile(object):
         for i in range(0, len(self.lines)):
             ln = self.lines[i].strip()
             if ln[0] != "#":
-                yield ln.split()
+                yield [subset.strip().split() for subset in ln.split("|")]

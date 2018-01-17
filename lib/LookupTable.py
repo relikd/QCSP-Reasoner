@@ -69,11 +69,8 @@ class Names(object):
         for i in range(1, len(self.labels) - 1):  # base relations
             for x in range(self.baseCount):
                 if i & (1 << x):
-                    self.labels[i] += ",%s" % symbols[x]
+                    self.labels[i] += " %s" % symbols[x]
             self.labels[i] = self.labels[i][1:]
-
-    def setName(self, i, name):
-        self.labels[i] = name
 
     def getName(self, i):
         return self.labels[i]
@@ -95,13 +92,12 @@ class Names(object):
 
 
 class ATractable(object):
-    def __init__(self, numberOfBaseRelations):
+    def __init__(self, stopAfter):
         super(ATractable, self).__init__()
-        self.baseCount = numberOfBaseRelations
         self.subsets = dict()
         self.subsets[0] = [0]
         self.defineCounter = 1
-        self.defineTreshhold = int(round((1 << self.baseCount) * 0.999))
+        self.defineTreshhold = int(stopAfter)
 
     def setClosedSet(self, s, subset):
         try:
@@ -133,15 +129,26 @@ class ATractable(object):
                 prev = a  # reset
         return arr + [prev]
 
-    def calculateRemaining2Combinations(self):
-        for (x, y) in Helper.doubleNested(1 << self.baseCount, 1):
-            try:
-                arr = self.subsets[x | y]
-                if len(arr) < 3:
-                    continue
-            except KeyError:
-                pass
-            self.subsets[x | y] = [x, y]
-            self.defineCounter += 1
+    def calculateCombinations(self, maxSetSize=2):
+        print("%d combinations:" % maxSetSize)
+        a = int(maxSetSize / 2)
+        b = maxSetSize - a
+        while a >= 1:  # try all combinations eg. for 6: 3+3, 2+4, 1+5
+            firstSet = [x for x in self.subsets if len(self.subsets[x]) == a]
+            secondSet = [y for y in self.subsets if len(self.subsets[y]) == b]
+            a -= 1
+            b += 1
+            for x in firstSet:
+                for y in secondSet:
+                    try:
+                        self.subsets[x | y]
+                        continue  # skip already existing
+                    except KeyError:
+                        pass
+                    # construct new array with both array subsets
+                    self.subsets[x | y] = self.subsets[x] + self.subsets[y]
+                    self.defineCounter += 1
+            print("Defined combinations %d" % self.defineCounter)
             if self.defineCounter >= self.defineTreshhold:
                 return
+        self.calculateCombinations(maxSetSize + 1)  # recursive call

@@ -52,8 +52,9 @@ class QCSP(object):
         lst = []
         for (i, j) in Helper.doubleNested(self.nodeCount):
             relMask = self.cs[i][j]
-            if len(self.algebra.aTractableSet(relMask)) > 1:
-                lst.append([i, j])
+            theSet = self.algebra.aTractableSet(relMask)
+            if len(theSet) > 1:
+                lst.append([len(theSet), i, j])
         return lst
 
     def __str__(self):
