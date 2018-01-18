@@ -22,7 +22,11 @@ print("%d of %d\n" % (len(theTable.subsets), 2**13))
 def printUpdatedTractableSet():
     for key in theTable.subsets:
         txt = ""
+        tmpOrdered = []
         for subset in theTable.subsets[key]:
+            tmpOrdered += [(bin(subset).count("1"), subset)]
+        tmpOrdered.sort()
+        for (x, subset) in tmpOrdered:
             txt += "%s | " % TName.getName(subset)
         print txt[:-3]
 

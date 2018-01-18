@@ -1,0 +1,8191 @@
+EQ
+B
+B | EQ
+BI
+BI | EQ
+BI | B
+BI | B | EQ
+D
+EQ D
+D | B
+EQ D | B
+D | BI
+EQ D | BI
+D | BI | B
+EQ D | BI | B
+DI
+EQ DI
+DI | B
+EQ DI | B
+DI | BI
+EQ DI | BI
+DI | BI | B
+EQ DI | BI | B
+DI | D
+EQ DI | D
+DI | D | B
+EQ DI | D | B
+DI | D | BI
+EQ DI | D | BI
+DI | D | BI | B
+EQ DI | D | BI | B
+O
+EQ O
+B O
+EQ B O
+O | BI
+EQ O | BI
+B O | BI
+EQ B O | BI
+D O
+EQ D O
+B D O
+EQ B D O
+D O | BI
+EQ D O | BI
+B D O | BI
+EQ B D O | BI
+DI O
+EQ DI O
+B DI O
+EQ B DI O
+DI O | BI
+EQ DI O | BI
+B DI O | BI
+EQ B DI O | BI
+DI O | D
+EQ DI O | D
+B DI O | D
+EQ B DI O | D
+DI O | D | BI
+EQ DI O | D | BI
+B DI O | D | BI
+EQ B DI O | D | BI
+OI
+EQ OI
+OI | B
+EQ OI | B
+BI OI
+EQ BI OI
+BI OI | B
+EQ BI OI | B
+D OI
+EQ D OI
+D OI | B
+EQ D OI | B
+BI D OI
+EQ BI D OI
+BI D OI | B
+EQ BI D OI | B
+DI OI
+EQ DI OI
+DI OI | B
+EQ DI OI | B
+BI DI OI
+EQ BI DI OI
+BI DI OI | B
+EQ BI DI OI | B
+DI OI | D
+EQ DI OI | D
+DI OI | D | B
+EQ DI OI | D | B
+BI DI OI | D
+EQ BI DI OI | D
+BI DI OI | D | B
+EQ BI DI OI | D | B
+OI | O
+EQ OI | O
+B O | OI
+EQ OI | B O
+BI OI | O
+EQ BI OI | O
+BI OI | B O
+EQ BI OI | B O
+D OI | O
+EQ D OI | O
+D OI | B O
+EQ D OI | B O
+BI D OI | O
+EQ BI D OI | O
+BI D OI | B O
+EQ BI D OI | B O
+DI OI | O
+EQ DI OI | O
+DI OI | B O
+EQ DI OI | B O
+BI DI OI | O
+EQ BI DI OI | O
+BI DI OI | B O
+EQ BI DI OI | B O
+D DI O OI
+EQ D DI O OI
+B D DI O OI
+EQ B D DI O OI
+BI D DI O OI
+EQ BI D DI O OI
+B BI D DI O OI
+EQ B BI D DI O OI
+M
+M | EQ
+B M
+B M | EQ
+M | BI
+M | BI | EQ
+B M | BI
+B M | BI | EQ
+M | D
+EQ D | M
+B M | D
+B M | EQ D
+M | D | BI
+EQ D | M | BI
+B M | D | BI
+B M | EQ D | BI
+M | DI
+EQ DI | M
+B M | DI
+B M | EQ DI
+M | DI | BI
+EQ DI | M | BI
+B M | DI | BI
+B M | EQ DI | BI
+M | DI | D
+EQ DI | M | D
+B M | DI | D
+B M | EQ DI | D
+M | DI | D | BI
+EQ DI | M | D | BI
+B M | DI | D | BI
+B M | EQ DI | D | BI
+O M
+EQ O M
+B O M
+EQ B O M
+O M | BI
+EQ O M | BI
+B O M | BI
+EQ B O M | BI
+D O M
+EQ D O M
+B D O M
+EQ B D O M
+D O M | BI
+EQ D O M | BI
+B D O M | BI
+EQ B D O M | BI
+DI O M
+EQ DI O M
+B DI O M
+EQ B DI O M
+DI O M | BI
+EQ DI O M | BI
+B DI O M | BI
+EQ B DI O M | BI
+DI O M | D
+EQ DI O M | D
+B DI O M | D
+EQ B DI O M | D
+DI O M | D | BI
+EQ DI O M | D | BI
+B DI O M | D | BI
+EQ B DI O M | D | BI
+M | OI
+EQ OI | M
+B M | OI
+B M | EQ OI
+BI OI | M
+EQ BI OI | M
+B M | BI OI
+EQ BI OI | B M
+D OI | M
+EQ D OI | M
+B M | D OI
+EQ D OI | B M
+BI D OI | M
+EQ BI D OI | M
+BI D OI | B M
+EQ BI D OI | B M
+DI OI | M
+EQ DI OI | M
+B M | DI OI
+EQ DI OI | B M
+BI DI OI | M
+EQ BI DI OI | M
+BI DI OI | B M
+EQ BI DI OI | B M
+DI OI | M | D
+EQ DI OI | M | D
+B M | DI OI | D
+EQ DI OI | B M | D
+BI DI OI | M | D
+EQ BI DI OI | M | D
+BI DI OI | B M | D
+EQ BI DI OI | B M | D
+O M | OI
+EQ O M | OI
+B O M | OI
+EQ B O M | OI
+O M | BI OI
+EQ O M | BI OI
+B O M | BI OI
+EQ B O M | BI OI
+D O M | OI
+EQ D O M | OI
+B D O M | OI
+EQ B D O M | OI
+D O M | BI OI
+EQ D O M | BI OI
+B D O M | BI OI
+EQ B D O M | BI OI
+DI O M | OI
+EQ DI O M | OI
+B DI O M | OI
+EQ B DI O M | OI
+DI O M | BI OI
+EQ DI O M | BI OI
+B DI O M | BI OI
+EQ B DI O M | BI OI
+D DI O OI M
+EQ D DI O OI M
+B D DI O OI M
+EQ B D DI O OI M
+BI D DI O OI M
+EQ BI D DI O OI M
+B BI D DI O OI M
+EQ B BI D DI O OI M
+MI
+MI | EQ
+MI | B
+MI | B | EQ
+BI MI
+BI MI | EQ
+BI MI | B
+BI MI | B | EQ
+MI | D
+EQ D | MI
+MI | D | B
+EQ D | MI | B
+BI MI | D
+BI MI | EQ D
+BI MI | D | B
+BI MI | EQ D | B
+MI | DI
+EQ DI | MI
+MI | DI | B
+EQ DI | MI | B
+BI MI | DI
+BI MI | EQ DI
+BI MI | DI | B
+BI MI | EQ DI | B
+MI | DI | D
+EQ DI | MI | D
+MI | DI | D | B
+EQ DI | MI | D | B
+BI MI | DI | D
+BI MI | EQ DI | D
+BI MI | DI | D | B
+BI MI | EQ DI | D | B
+MI | O
+EQ O | MI
+B O | MI
+EQ B O | MI
+BI MI | O
+BI MI | EQ O
+BI MI | B O
+EQ B O | BI MI
+D O | MI
+EQ D O | MI
+B D O | MI
+EQ B D O | MI
+BI MI | D O
+EQ D O | BI MI
+B D O | BI MI
+EQ B D O | BI MI
+DI O | MI
+EQ DI O | MI
+B DI O | MI
+EQ B DI O | MI
+BI MI | DI O
+EQ DI O | BI MI
+B DI O | BI MI
+EQ B DI O | BI MI
+DI O | MI | D
+EQ DI O | MI | D
+B DI O | MI | D
+EQ B DI O | MI | D
+BI MI | DI O | D
+EQ DI O | BI MI | D
+B DI O | BI MI | D
+EQ B DI O | BI MI | D
+OI MI
+EQ OI MI
+OI MI | B
+EQ OI MI | B
+BI OI MI
+EQ BI OI MI
+BI OI MI | B
+EQ BI OI MI | B
+D OI MI
+EQ D OI MI
+D OI MI | B
+EQ D OI MI | B
+BI D OI MI
+EQ BI D OI MI
+BI D OI MI | B
+EQ BI D OI MI | B
+DI OI MI
+EQ DI OI MI
+DI OI MI | B
+EQ DI OI MI | B
+BI DI OI MI
+EQ BI DI OI MI
+BI DI OI MI | B
+EQ BI DI OI MI | B
+DI OI MI | D
+EQ DI OI MI | D
+DI OI MI | D | B
+EQ DI OI MI | D | B
+BI DI OI MI | D
+EQ BI DI OI MI | D
+BI DI OI MI | D | B
+EQ BI DI OI MI | D | B
+OI MI | O
+EQ OI MI | O
+OI MI | B O
+EQ OI MI | B O
+BI OI MI | O
+EQ BI OI MI | O
+BI OI MI | B O
+EQ BI OI MI | B O
+D OI MI | O
+EQ D OI MI | O
+D OI MI | B O
+EQ D OI MI | B O
+BI D OI MI | O
+EQ BI D OI MI | O
+BI D OI MI | B O
+EQ BI D OI MI | B O
+DI OI MI | O
+EQ DI OI MI | O
+DI OI MI | B O
+EQ DI OI MI | B O
+BI DI OI MI | O
+EQ BI DI OI MI | O
+BI DI OI MI | B O
+EQ BI DI OI MI | B O
+D DI O OI MI
+EQ D DI O OI MI
+B D DI O OI MI
+EQ B D DI O OI MI
+BI D DI O OI MI
+EQ BI D DI O OI MI
+B BI D DI O OI MI
+EQ B BI D DI O OI MI
+MI | M
+MI | M | EQ
+B M | MI
+B M | MI | EQ
+BI MI | M
+BI MI | M | EQ
+BI MI | B M
+BI MI | B M | EQ
+MI | M | D
+EQ D | MI | M
+B M | MI | D
+B M | EQ D | MI
+BI MI | M | D
+BI MI | EQ D | M
+BI MI | B M | D
+BI MI | B M | EQ D
+MI | M | DI
+EQ DI | MI | M
+B M | MI | DI
+B M | EQ DI | MI
+BI MI | M | DI
+BI MI | EQ DI | M
+BI MI | B M | DI
+BI MI | B M | EQ DI
+MI | M | DI | D
+EQ DI | MI | M | D
+B M | MI | DI | D
+B M | EQ DI | MI | D
+BI MI | M | DI | D
+BI MI | EQ DI | M | D
+BI MI | B M | DI | D
+BI MI | B M | EQ DI | D
+O M | MI
+EQ O M | MI
+B O M | MI
+EQ B O M | MI
+BI MI | O M
+EQ O M | BI MI
+B O M | BI MI
+EQ B O M | BI MI
+D O M | MI
+EQ D O M | MI
+B D O M | MI
+EQ B D O M | MI
+D O M | BI MI
+EQ D O M | BI MI
+B D O M | BI MI
+EQ B D O M | BI MI
+DI O M | MI
+EQ DI O M | MI
+B DI O M | MI
+EQ B DI O M | MI
+DI O M | BI MI
+EQ DI O M | BI MI
+B DI O M | BI MI
+EQ B DI O M | BI MI
+DI O M | MI | D
+EQ DI O M | MI | D
+B DI O M | MI | D
+EQ B DI O M | MI | D
+DI O M | BI MI | D
+EQ DI O M | BI MI | D
+B DI O M | BI MI | D
+EQ B DI O M | BI MI | D
+OI MI | M
+EQ OI MI | M
+OI MI | B M
+EQ OI MI | B M
+BI OI MI | M
+EQ BI OI MI | M
+BI OI MI | B M
+EQ BI OI MI | B M
+D OI MI | M
+EQ D OI MI | M
+D OI MI | B M
+EQ D OI MI | B M
+BI D OI MI | M
+EQ BI D OI MI | M
+BI D OI MI | B M
+EQ BI D OI MI | B M
+DI OI MI | M
+EQ DI OI MI | M
+DI OI MI | B M
+EQ DI OI MI | B M
+BI DI OI MI | M
+EQ BI DI OI MI | M
+BI DI OI MI | B M
+EQ BI DI OI MI | B M
+DI OI MI | M | D
+EQ DI OI MI | M | D
+DI OI MI | B M | D
+EQ DI OI MI | B M | D
+BI DI OI MI | M | D
+EQ BI DI OI MI | M | D
+BI DI OI MI | B M | D
+EQ BI DI OI MI | B M | D
+OI MI | O M
+EQ OI MI | O M
+B O M | OI MI
+EQ OI MI | B O M
+BI OI MI | O M
+EQ BI OI MI | O M
+BI OI MI | B O M
+EQ BI OI MI | B O M
+D OI MI | O M
+EQ D OI MI | O M
+D OI MI | B O M
+EQ D OI MI | B O M
+BI D OI MI | O M
+EQ BI D OI MI | O M
+BI D OI MI | B O M
+EQ BI D OI MI | B O M
+DI OI MI | O M
+EQ DI OI MI | O M
+DI OI MI | B O M
+EQ DI OI MI | B O M
+BI DI OI MI | O M
+EQ BI DI OI MI | O M
+BI DI OI MI | B O M
+EQ BI DI OI MI | B O M
+D DI O OI M MI
+EQ D DI O OI M MI
+B D DI O OI M MI
+EQ B D DI O OI M MI
+BI D DI O OI M MI
+EQ BI D DI O OI M MI
+B BI D DI O OI M MI
+EQ B BI D DI O OI M MI
+S
+EQ S
+S | B
+EQ S | B
+S | BI
+EQ S | BI
+S | BI | B
+EQ S | BI | B
+D S
+EQ D S
+D S | B
+EQ D S | B
+D S | BI
+EQ D S | BI
+D S | BI | B
+EQ D S | BI | B
+S | DI
+EQ S | DI
+S | DI | B
+EQ S | DI | B
+S | DI | BI
+EQ S | DI | BI
+S | DI | BI | B
+EQ S | DI | BI | B
+D S | DI
+EQ D S | DI
+D S | DI | B
+EQ D S | DI | B
+D S | DI | BI
+EQ D S | DI | BI
+D S | DI | BI | B
+EQ D S | DI | BI | B
+O S
+EQ O S
+B O S
+EQ B O S
+O S | BI
+EQ O S | BI
+B O S | BI
+EQ B O S | BI
+D O S
+EQ D O S
+B D O S
+EQ B D O S
+D O S | BI
+EQ D O S | BI
+B D O S | BI
+EQ B D O S | BI
+DI O S
+EQ DI O S
+B DI O S
+EQ B DI O S
+DI O S | BI
+EQ DI O S | BI
+B DI O S | BI
+EQ B DI O S | BI
+DI O S | D
+EQ DI O S | D
+B DI O S | D
+EQ B DI O S | D
+DI O S | D | BI
+EQ DI O S | D | BI
+B DI O S | D | BI
+EQ B DI O S | D | BI
+S | OI
+EQ S | OI
+S | OI | B
+EQ S | OI | B
+BI OI | S
+EQ S | BI OI
+BI OI | S | B
+EQ S | BI OI | B
+D OI S
+EQ D OI S
+D OI S | B
+EQ D OI S | B
+BI D OI S
+EQ BI D OI S
+BI D OI S | B
+EQ BI D OI S | B
+DI OI | S
+EQ S | DI OI
+DI OI | S | B
+EQ S | DI OI | B
+BI DI OI | S
+BI DI OI | EQ S
+BI DI OI | S | B
+BI DI OI | EQ S | B
+D OI S | DI
+EQ D OI S | DI
+D OI S | DI | B
+EQ D OI S | DI | B
+BI D OI S | DI
+EQ BI D OI S | DI
+BI D OI S | DI | B
+EQ BI D OI S | DI | B
+O S | OI
+EQ O S | OI
+B O S | OI
+EQ B O S | OI
+O S | BI OI
+EQ O S | BI OI
+B O S | BI OI
+EQ B O S | BI OI
+D OI S | O
+EQ D OI S | O
+D OI S | B O
+EQ D OI S | B O
+BI D OI S | O
+EQ BI D OI S | O
+BI D OI S | B O
+EQ BI D OI S | B O
+DI O S | OI
+EQ DI O S | OI
+B DI O S | OI
+EQ B DI O S | OI
+DI O S | BI OI
+EQ DI O S | BI OI
+B DI O S | BI OI
+EQ B DI O S | BI OI
+D DI O OI S
+EQ D DI O OI S
+B D DI O OI S
+EQ B D DI O OI S
+BI D DI O OI S
+EQ BI D DI O OI S
+B BI D DI O OI S
+EQ B BI D DI O OI S
+S | M
+EQ S | M
+B M | S
+EQ S | B M
+S | M | BI
+EQ S | M | BI
+B M | S | BI
+EQ S | B M | BI
+D S | M
+EQ D S | M
+D S | B M
+EQ D S | B M
+D S | M | BI
+EQ D S | M | BI
+D S | B M | BI
+EQ D S | B M | BI
+S | M | DI
+EQ S | M | DI
+B M | S | DI
+EQ S | B M | DI
+S | M | DI | BI
+EQ S | M | DI | BI
+B M | S | DI | BI
+EQ S | B M | DI | BI
+D S | M | DI
+EQ D S | M | DI
+D S | B M | DI
+EQ D S | B M | DI
+D S | M | DI | BI
+EQ D S | M | DI | BI
+D S | B M | DI | BI
+EQ D S | B M | DI | BI
+O M S
+EQ O M S
+B O M S
+EQ B O M S
+O M S | BI
+EQ O M S | BI
+B O M S | BI
+EQ B O M S | BI
+D O M S
+EQ D O M S
+B D O M S
+EQ B D O M S
+D O M S | BI
+EQ D O M S | BI
+B D O M S | BI
+EQ B D O M S | BI
+DI O M S
+EQ DI O M S
+B DI O M S
+EQ B DI O M S
+DI O M S | BI
+EQ DI O M S | BI
+B DI O M S | BI
+EQ B DI O M S | BI
+DI O M S | D
+EQ DI O M S | D
+B DI O M S | D
+EQ B DI O M S | D
+DI O M S | D | BI
+EQ DI O M S | D | BI
+B DI O M S | D | BI
+EQ B DI O M S | D | BI
+S | M | OI
+EQ S | M | OI
+B M | S | OI
+EQ S | B M | OI
+BI OI | S | M
+EQ S | BI OI | M
+B M | BI OI | S
+EQ S | B M | BI OI
+D OI S | M
+EQ D OI S | M
+D OI S | B M
+EQ D OI S | B M
+BI D OI S | M
+EQ BI D OI S | M
+BI D OI S | B M
+EQ BI D OI S | B M
+DI OI | S | M
+EQ S | DI OI | M
+B M | DI OI | S
+EQ S | B M | DI OI
+BI DI OI | S | M
+BI DI OI | EQ S | M
+BI DI OI | B M | S
+BI DI OI | EQ S | B M
+D OI S | M | DI
+EQ D OI S | M | DI
+D OI S | B M | DI
+EQ D OI S | B M | DI
+BI D OI S | M | DI
+EQ BI D OI S | M | DI
+BI D OI S | B M | DI
+EQ BI D OI S | B M | DI
+O M S | OI
+EQ O M S | OI
+B O M S | OI
+EQ B O M S | OI
+O M S | BI OI
+EQ O M S | BI OI
+B O M S | BI OI
+EQ B O M S | BI OI
+D O M S | OI
+EQ D O M S | OI
+B D O M S | OI
+EQ B D O M S | OI
+D O M S | BI OI
+EQ D O M S | BI OI
+B D O M S | BI OI
+EQ B D O M S | BI OI
+DI O M S | OI
+EQ DI O M S | OI
+B DI O M S | OI
+EQ B DI O M S | OI
+DI O M S | BI OI
+EQ DI O M S | BI OI
+B DI O M S | BI OI
+EQ B DI O M S | BI OI
+D DI O OI M S
+EQ D DI O OI M S
+B D DI O OI M S
+EQ B D DI O OI M S
+BI D DI O OI M S
+EQ BI D DI O OI M S
+B BI D DI O OI M S
+EQ B BI D DI O OI M S
+S | MI
+EQ S | MI
+S | MI | B
+EQ S | MI | B
+BI MI | S
+EQ S | BI MI
+BI MI | S | B
+EQ S | BI MI | B
+D S | MI
+EQ D S | MI
+D S | MI | B
+EQ D S | MI | B
+D S | BI MI
+EQ D S | BI MI
+D S | BI MI | B
+EQ D S | BI MI | B
+S | MI | DI
+EQ S | MI | DI
+S | MI | DI | B
+EQ S | MI | DI | B
+BI MI | S | DI
+EQ S | BI MI | DI
+BI MI | S | DI | B
+EQ S | BI MI | DI | B
+D S | MI | DI
+EQ D S | MI | DI
+D S | MI | DI | B
+EQ D S | MI | DI | B
+D S | BI MI | DI
+EQ D S | BI MI | DI
+D S | BI MI | DI | B
+EQ D S | BI MI | DI | B
+O S | MI
+EQ O S | MI
+B O S | MI
+EQ B O S | MI
+O S | BI MI
+EQ O S | BI MI
+B O S | BI MI
+EQ B O S | BI MI
+D O S | MI
+EQ D O S | MI
+B D O S | MI
+EQ B D O S | MI
+D O S | BI MI
+EQ D O S | BI MI
+B D O S | BI MI
+EQ B D O S | BI MI
+DI O S | MI
+EQ DI O S | MI
+B DI O S | MI
+EQ B DI O S | MI
+DI O S | BI MI
+EQ DI O S | BI MI
+B DI O S | BI MI
+EQ B DI O S | BI MI
+DI O S | MI | D
+EQ DI O S | MI | D
+B DI O S | MI | D
+EQ B DI O S | MI | D
+DI O S | BI MI | D
+EQ DI O S | BI MI | D
+B DI O S | BI MI | D
+EQ B DI O S | BI MI | D
+OI MI | S
+EQ S | OI MI
+OI MI | S | B
+EQ S | OI MI | B
+BI OI MI | S
+BI OI MI | EQ S
+BI OI MI | S | B
+BI OI MI | EQ S | B
+D OI MI S
+EQ D OI MI S
+D OI MI S | B
+EQ D OI MI S | B
+BI D OI MI S
+EQ BI D OI MI S
+BI D OI MI S | B
+EQ BI D OI MI S | B
+DI OI MI | S
+EQ DI OI MI | S
+DI OI MI | S | B
+EQ DI OI MI | S | B
+BI DI OI MI | S
+EQ BI DI OI MI | S
+BI DI OI MI | S | B
+EQ BI DI OI MI | S | B
+D OI MI S | DI
+EQ D OI MI S | DI
+D OI MI S | DI | B
+EQ D OI MI S | DI | B
+BI D OI MI S | DI
+EQ BI DI OI MI | D S
+BI D OI MI S | DI | B
+EQ BI DI OI MI | D S | B
+O S | OI MI
+EQ O S | OI MI
+B O S | OI MI
+EQ B O S | OI MI
+BI OI MI | O S
+EQ O S | BI OI MI
+B O S | BI OI MI
+EQ B O S | BI OI MI
+D OI MI S | O
+EQ D OI MI S | O
+D OI MI S | B O
+EQ D OI MI S | B O
+BI D OI MI S | O
+EQ BI D OI MI S | O
+BI D OI MI S | B O
+EQ BI D OI MI S | B O
+DI O S | OI MI
+EQ DI O S | OI MI
+B DI O S | OI MI
+EQ B DI O S | OI MI
+DI O S | BI OI MI
+EQ BI DI OI MI | O S
+B DI O S | BI OI MI
+EQ BI DI OI MI | B O S
+D DI O OI MI S
+EQ D DI O OI MI S
+B D DI O OI MI S
+EQ B D DI O OI MI S
+BI D DI O OI MI S
+EQ BI D DI O OI MI S
+B BI D DI O OI MI S
+EQ B BI D DI O OI MI S
+S | MI | M
+EQ S | MI | M
+B M | S | MI
+EQ S | B M | MI
+BI MI | S | M
+EQ S | BI MI | M
+BI MI | B M | S
+EQ S | BI MI | B M
+D S | MI | M
+EQ D S | MI | M
+D S | B M | MI
+EQ D S | B M | MI
+D S | BI MI | M
+EQ D S | BI MI | M
+D S | BI MI | B M
+EQ D S | BI MI | B M
+S | MI | M | DI
+EQ S | MI | M | DI
+B M | S | MI | DI
+EQ S | B M | MI | DI
+BI MI | S | M | DI
+EQ S | BI MI | M | DI
+BI MI | B M | S | DI
+EQ S | BI MI | B M | DI
+D S | MI | M | DI
+EQ D S | MI | M | DI
+D S | B M | MI | DI
+EQ D S | B M | MI | DI
+D S | BI MI | M | DI
+EQ D S | BI MI | M | DI
+D S | BI MI | B M | DI
+EQ D S | BI MI | B M | DI
+O M S | MI
+EQ O M S | MI
+B O M S | MI
+EQ B O M S | MI
+O M S | BI MI
+EQ O M S | BI MI
+B O M S | BI MI
+EQ B O M S | BI MI
+D O M S | MI
+EQ D O M S | MI
+B D O M S | MI
+EQ B D O M S | MI
+D O M S | BI MI
+EQ D O M S | BI MI
+B D O M S | BI MI
+EQ B D O M S | BI MI
+DI O M S | MI
+EQ DI O M S | MI
+B DI O M S | MI
+EQ B DI O M S | MI
+DI O M S | BI MI
+EQ DI O M S | BI MI
+B DI O M S | BI MI
+EQ B DI O M S | BI MI
+DI O M S | MI | D
+EQ DI O M S | MI | D
+B DI O M S | MI | D
+EQ B DI O M S | MI | D
+DI O M S | BI MI | D
+EQ DI O M S | BI MI | D
+B DI O M S | BI MI | D
+EQ B DI O M S | BI MI | D
+OI MI | S | M
+EQ S | OI MI | M
+OI MI | B M | S
+EQ S | OI MI | B M
+BI OI MI | S | M
+BI OI MI | EQ S | M
+BI OI MI | B M | S
+BI OI MI | EQ S | B M
+D OI MI S | M
+EQ D OI MI S | M
+D OI MI S | B M
+EQ D OI MI S | B M
+BI D OI MI S | M
+EQ BI D OI MI S | M
+BI D OI MI S | B M
+EQ BI D OI MI S | B M
+DI OI MI | S | M
+EQ DI OI MI | S | M
+DI OI MI | B M | S
+EQ DI OI MI | B M | S
+BI DI OI MI | S | M
+EQ BI DI OI MI | S | M
+BI DI OI MI | B M | S
+EQ BI DI OI MI | B M | S
+D OI MI S | M | DI
+EQ D OI MI S | M | DI
+D OI MI S | B M | DI
+EQ D OI MI S | B M | DI
+BI D OI MI S | M | DI
+EQ BI D OI MI S | M | DI
+BI D OI MI S | B M | DI
+EQ BI D OI MI S | B M | DI
+O M S | OI MI
+EQ O M S | OI MI
+B O M S | OI MI
+EQ B O M S | OI MI
+O M S | BI OI MI
+EQ O M S | BI OI MI
+B O M S | BI OI MI
+EQ B O M S | BI OI MI
+D OI MI S | O M
+EQ D OI MI S | O M
+D OI MI S | B O M
+EQ D OI MI S | B O M
+BI D OI MI S | O M
+EQ BI D OI MI S | O M
+BI D OI MI S | B O M
+EQ BI D OI MI S | B O M
+DI O M S | OI MI
+EQ DI O M S | OI MI
+B DI O M S | OI MI
+EQ B DI O M S | OI MI
+DI O M S | BI OI MI
+EQ BI DI OI MI | O M S
+B DI O M S | BI OI MI
+EQ BI DI OI MI | B O M S
+D DI O OI M MI S
+EQ D DI O OI M MI S
+B D DI O OI M MI S
+EQ B D DI O OI M MI S
+BI D DI O OI M MI S
+EQ BI D DI O OI M MI S
+B BI D DI O OI M MI S
+EQ B BI D DI O OI M MI S
+SI
+EQ SI
+SI | B
+EQ SI | B
+SI | BI
+EQ SI | BI
+SI | BI | B
+EQ SI | BI | B
+SI | D
+EQ SI | D
+SI | D | B
+EQ SI | D | B
+SI | D | BI
+EQ SI | D | BI
+SI | D | BI | B
+EQ SI | D | BI | B
+DI SI
+EQ DI SI
+DI SI | B
+EQ DI SI | B
+DI SI | BI
+EQ DI SI | BI
+DI SI | BI | B
+EQ DI SI | BI | B
+DI SI | D
+EQ DI SI | D
+DI SI | D | B
+EQ DI SI | D | B
+DI SI | D | BI
+EQ DI SI | D | BI
+DI SI | D | BI | B
+EQ DI SI | D | BI | B
+SI | O
+EQ SI | O
+B O | SI
+EQ SI | B O
+SI | O | BI
+EQ SI | O | BI
+B O | SI | BI
+EQ SI | B O | BI
+D O | SI
+EQ SI | D O
+B D O | SI
+B D O | EQ SI
+D O | SI | BI
+EQ SI | D O | BI
+B D O | SI | BI
+B D O | EQ SI | BI
+DI O SI
+EQ DI O SI
+B DI O SI
+EQ B DI O SI
+DI O SI | BI
+EQ DI O SI | BI
+B DI O SI | BI
+EQ B DI O SI | BI
+DI O SI | D
+EQ DI O SI | D
+B DI O SI | D
+EQ B DI O SI | D
+DI O SI | D | BI
+EQ DI O SI | D | BI
+B DI O SI | D | BI
+EQ B DI O SI | D | BI
+OI SI
+EQ OI SI
+OI SI | B
+EQ OI SI | B
+BI OI SI
+EQ BI OI SI
+BI OI SI | B
+EQ BI OI SI | B
+D OI SI
+EQ D OI SI
+D OI SI | B
+EQ D OI SI | B
+BI D OI SI
+EQ BI D OI SI
+BI D OI SI | B
+EQ BI D OI SI | B
+DI OI SI
+EQ DI OI SI
+DI OI SI | B
+EQ DI OI SI | B
+BI DI OI SI
+EQ BI DI OI SI
+BI DI OI SI | B
+EQ BI DI OI SI | B
+DI OI SI | D
+EQ DI OI SI | D
+DI OI SI | D | B
+EQ DI OI SI | D | B
+BI DI OI SI | D
+EQ BI DI OI SI | D
+BI DI OI SI | D | B
+EQ BI DI OI SI | D | B
+OI SI | O
+EQ OI SI | O
+OI SI | B O
+EQ OI SI | B O
+BI OI SI | O
+EQ BI OI SI | O
+BI OI SI | B O
+EQ BI OI SI | B O
+D OI SI | O
+EQ D OI SI | O
+D OI SI | B O
+EQ D OI SI | B O
+BI D OI SI | O
+EQ BI D OI SI | O
+BI D OI SI | B O
+EQ BI D OI SI | B O
+DI OI SI | O
+EQ DI OI SI | O
+DI OI SI | B O
+EQ DI OI SI | B O
+BI DI OI SI | O
+EQ BI DI OI SI | O
+BI DI OI SI | B O
+EQ BI DI OI SI | B O
+D DI O OI SI
+EQ D DI O OI SI
+B D DI O OI SI
+EQ B D DI O OI SI
+BI D DI O OI SI
+EQ BI D DI O OI SI
+B BI D DI O OI SI
+EQ B BI D DI O OI SI
+SI | M
+EQ SI | M
+B M | SI
+EQ SI | B M
+SI | M | BI
+EQ SI | M | BI
+B M | SI | BI
+EQ SI | B M | BI
+SI | M | D
+EQ SI | M | D
+B M | SI | D
+EQ SI | B M | D
+SI | M | D | BI
+EQ SI | M | D | BI
+B M | SI | D | BI
+EQ SI | B M | D | BI
+DI SI | M
+EQ DI SI | M
+DI SI | B M
+EQ DI SI | B M
+DI SI | M | BI
+EQ DI SI | M | BI
+DI SI | B M | BI
+EQ DI SI | B M | BI
+DI SI | M | D
+EQ DI SI | M | D
+DI SI | B M | D
+EQ DI SI | B M | D
+DI SI | M | D | BI
+EQ DI SI | M | D | BI
+DI SI | B M | D | BI
+EQ DI SI | B M | D | BI
+O M | SI
+EQ SI | O M
+B O M | SI
+B O M | EQ SI
+O M | SI | BI
+EQ SI | O M | BI
+B O M | SI | BI
+B O M | EQ SI | BI
+D O M | SI
+D O M | EQ SI
+B D O M | SI
+B D O M | EQ SI
+D O M | SI | BI
+D O M | EQ SI | BI
+B D O M | SI | BI
+B D O M | EQ SI | BI
+DI O M SI
+EQ DI O M SI
+B DI O M SI
+EQ B DI O M SI
+DI O M SI | BI
+EQ DI O M SI | BI
+B DI O M SI | BI
+EQ B DI O M SI | BI
+DI O M SI | D
+EQ DI O M SI | D
+B DI O M SI | D
+EQ B DI O M SI | D
+DI O M SI | D | BI
+EQ DI O M SI | D | BI
+B DI O M SI | D | BI
+EQ B DI O M SI | D | BI
+OI SI | M
+EQ OI SI | M
+OI SI | B M
+EQ OI SI | B M
+BI OI SI | M
+EQ BI OI SI | M
+BI OI SI | B M
+EQ BI OI SI | B M
+D OI SI | M
+EQ D OI SI | M
+D OI SI | B M
+EQ D OI SI | B M
+BI D OI SI | M
+EQ BI D OI SI | M
+BI D OI SI | B M
+EQ BI D OI SI | B M
+DI OI SI | M
+EQ DI OI SI | M
+DI OI SI | B M
+EQ DI OI SI | B M
+BI DI OI SI | M
+EQ BI DI OI SI | M
+BI DI OI SI | B M
+EQ BI DI OI SI | B M
+DI OI SI | M | D
+EQ DI OI SI | M | D
+DI OI SI | B M | D
+EQ DI OI SI | B M | D
+BI DI OI SI | M | D
+EQ BI DI OI SI | M | D
+BI DI OI SI | B M | D
+EQ BI DI OI SI | B M | D
+OI SI | O M
+EQ OI SI | O M
+B O M | OI SI
+EQ OI SI | B O M
+BI OI SI | O M
+EQ BI OI SI | O M
+BI OI SI | B O M
+EQ BI OI SI | B O M
+D OI SI | O M
+EQ D OI SI | O M
+D OI SI | B O M
+EQ D OI SI | B O M
+BI D OI SI | O M
+EQ BI D OI SI | O M
+BI D OI SI | B O M
+EQ BI D OI SI | B O M
+DI O M SI | OI
+EQ DI O M SI | OI
+B DI O M SI | OI
+EQ B DI O M SI | OI
+DI O M SI | BI OI
+EQ DI O M SI | BI OI
+B DI O M SI | BI OI
+EQ B DI O M SI | BI OI
+D DI O OI M SI
+EQ D DI O OI M SI
+B D DI O OI M SI
+EQ B D DI O OI M SI
+BI D DI O OI M SI
+EQ BI D DI O OI M SI
+B BI D DI O OI M SI
+EQ B BI D DI O OI M SI
+SI | MI
+EQ SI | MI
+SI | MI | B
+EQ SI | MI | B
+BI MI | SI
+EQ SI | BI MI
+BI MI | SI | B
+EQ SI | BI MI | B
+SI | MI | D
+EQ SI | MI | D
+SI | MI | D | B
+EQ SI | MI | D | B
+BI MI | SI | D
+EQ SI | BI MI | D
+BI MI | SI | D | B
+EQ SI | BI MI | D | B
+DI SI | MI
+EQ DI SI | MI
+DI SI | MI | B
+EQ DI SI | MI | B
+DI SI | BI MI
+EQ DI SI | BI MI
+DI SI | BI MI | B
+EQ DI SI | BI MI | B
+DI SI | MI | D
+EQ DI SI | MI | D
+DI SI | MI | D | B
+EQ DI SI | MI | D | B
+DI SI | BI MI | D
+EQ DI SI | BI MI | D
+DI SI | BI MI | D | B
+EQ DI SI | BI MI | D | B
+SI | MI | O
+EQ SI | MI | O
+B O | SI | MI
+EQ SI | B O | MI
+BI MI | SI | O
+EQ SI | BI MI | O
+BI MI | B O | SI
+EQ SI | BI MI | B O
+D O | SI | MI
+EQ SI | D O | MI
+B D O | SI | MI
+B D O | EQ SI | MI
+BI MI | D O | SI
+EQ SI | BI MI | D O
+B D O | BI MI | SI
+B D O | EQ SI | BI MI
+DI O SI | MI
+EQ DI O SI | MI
+B DI O SI | MI
+EQ B DI O SI | MI
+DI O SI | BI MI
+EQ DI O SI | BI MI
+B DI O SI | BI MI
+EQ B DI O SI | BI MI
+DI O SI | MI | D
+EQ DI O SI | MI | D
+B DI O SI | MI | D
+EQ B DI O SI | MI | D
+DI O SI | BI MI | D
+EQ DI O SI | BI MI | D
+B DI O SI | BI MI | D
+EQ B DI O SI | BI MI | D
+OI MI SI
+EQ OI MI SI
+OI MI SI | B
+EQ OI MI SI | B
+BI OI MI SI
+EQ BI OI MI SI
+BI OI MI SI | B
+EQ BI OI MI SI | B
+D OI MI SI
+EQ D OI MI SI
+D OI MI SI | B
+EQ D OI MI SI | B
+BI D OI MI SI
+EQ BI D OI MI SI
+BI D OI MI SI | B
+EQ BI D OI MI SI | B
+DI OI MI SI
+EQ DI OI MI SI
+DI OI MI SI | B
+EQ DI OI MI SI | B
+BI DI OI MI SI
+EQ BI DI OI MI SI
+BI DI OI MI SI | B
+EQ BI DI OI MI SI | B
+DI OI MI SI | D
+EQ DI OI MI SI | D
+DI OI MI SI | D | B
+EQ DI OI MI SI | D | B
+BI DI OI MI SI | D
+EQ BI DI OI MI | D OI SI
+BI DI OI MI SI | D | B
+EQ BI DI OI MI | D OI SI | B
+OI MI SI | O
+EQ OI MI SI | O
+OI MI SI | B O
+EQ OI MI SI | B O
+BI OI MI SI | O
+EQ BI OI MI SI | O
+BI OI MI SI | B O
+EQ BI OI MI SI | B O
+D OI MI SI | O
+EQ D OI MI SI | O
+D OI MI SI | B O
+EQ D OI MI SI | B O
+BI D OI MI SI | O
+EQ BI D OI MI SI | O
+BI D OI MI SI | B O
+EQ BI D OI MI SI | B O
+DI OI MI SI | O
+EQ DI OI MI SI | O
+DI OI MI SI | B O
+EQ DI OI MI SI | B O
+BI DI OI MI SI | O
+EQ BI DI OI MI | DI O SI
+BI DI OI MI SI | B O
+EQ BI DI OI MI | B DI O SI
+D DI O OI MI SI
+EQ D DI O OI MI SI
+B D DI O OI MI SI
+EQ B D DI O OI MI SI
+BI D DI O OI MI SI
+EQ BI D DI O OI MI SI
+B BI D DI O OI MI SI
+EQ B BI D DI O OI MI SI
+SI | MI | M
+EQ SI | MI | M
+B M | SI | MI
+EQ SI | B M | MI
+BI MI | SI | M
+EQ SI | BI MI | M
+BI MI | B M | SI
+EQ SI | BI MI | B M
+SI | MI | M | D
+EQ SI | MI | M | D
+B M | SI | MI | D
+EQ SI | B M | MI | D
+BI MI | SI | M | D
+EQ SI | BI MI | M | D
+BI MI | B M | SI | D
+EQ SI | BI MI | B M | D
+DI SI | MI | M
+EQ DI SI | MI | M
+DI SI | B M | MI
+EQ DI SI | B M | MI
+DI SI | BI MI | M
+EQ DI SI | BI MI | M
+DI SI | BI MI | B M
+EQ DI SI | BI MI | B M
+DI SI | MI | M | D
+EQ DI SI | MI | M | D
+DI SI | B M | MI | D
+EQ DI SI | B M | MI | D
+DI SI | BI MI | M | D
+EQ DI SI | BI MI | M | D
+DI SI | BI MI | B M | D
+EQ DI SI | BI MI | B M | D
+O M | SI | MI
+EQ SI | O M | MI
+B O M | SI | MI
+B O M | EQ SI | MI
+BI MI | O M | SI
+EQ SI | BI MI | O M
+B O M | BI MI | SI
+B O M | EQ SI | BI MI
+D O M | SI | MI
+D O M | EQ SI | MI
+B D O M | SI | MI
+B D O M | EQ SI | MI
+D O M | BI MI | SI
+D O M | EQ SI | BI MI
+B D O M | BI MI | SI
+B D O M | EQ SI | BI MI
+DI O M SI | MI
+EQ DI O M SI | MI
+B DI O M SI | MI
+EQ B DI O M SI | MI
+DI O M SI | BI MI
+EQ DI O M SI | BI MI
+B DI O M SI | BI MI
+EQ B DI O M SI | BI MI
+DI O M SI | MI | D
+EQ DI O M SI | MI | D
+B DI O M SI | MI | D
+EQ B DI O M SI | MI | D
+DI O M SI | BI MI | D
+EQ DI O M SI | BI MI | D
+B DI O M SI | BI MI | D
+EQ B DI O M SI | BI MI | D
+OI MI SI | M
+EQ OI MI SI | M
+OI MI SI | B M
+EQ OI MI SI | B M
+BI OI MI SI | M
+EQ BI OI MI SI | M
+BI OI MI SI | B M
+EQ BI OI MI SI | B M
+D OI MI SI | M
+EQ D OI MI SI | M
+D OI MI SI | B M
+EQ D OI MI SI | B M
+BI D OI MI SI | M
+EQ BI D OI MI SI | M
+BI D OI MI SI | B M
+EQ BI D OI MI SI | B M
+DI OI MI SI | M
+EQ DI OI MI SI | M
+DI OI MI SI | B M
+EQ DI OI MI SI | B M
+BI DI OI MI SI | M
+EQ BI DI OI MI SI | M
+BI DI OI MI SI | B M
+EQ BI DI OI MI SI | B M
+DI OI MI SI | M | D
+EQ DI OI MI SI | M | D
+DI OI MI SI | B M | D
+EQ DI OI MI SI | B M | D
+BI DI OI MI SI | M | D
+EQ BI DI OI MI SI | M | D
+BI DI OI MI SI | B M | D
+EQ BI DI OI MI SI | B M | D
+OI MI SI | O M
+EQ OI MI SI | O M
+OI MI SI | B O M
+EQ OI MI SI | B O M
+BI OI MI SI | O M
+EQ BI OI MI SI | O M
+BI OI MI SI | B O M
+EQ BI OI MI SI | B O M
+D OI MI SI | O M
+EQ D OI MI SI | O M
+D OI MI SI | B O M
+EQ D OI MI SI | B O M
+BI D OI MI SI | O M
+EQ BI D OI MI SI | O M
+BI D OI MI SI | B O M
+EQ BI D OI MI SI | B O M
+DI OI MI SI | O M
+EQ DI OI MI SI | O M
+DI OI MI SI | B O M
+EQ DI OI MI SI | B O M
+BI DI OI MI SI | O M
+EQ BI DI OI MI | DI O M SI
+BI DI OI MI SI | B O M
+B DI O M SI | EQ BI DI OI MI
+D DI O OI M MI SI
+EQ D DI O OI M MI SI
+B D DI O OI M MI SI
+EQ B D DI O OI M MI SI
+BI D DI O OI M MI SI
+EQ BI D DI O OI M MI SI
+B BI D DI O OI M MI SI
+EQ B BI D DI O OI M MI SI
+S SI
+EQ S SI
+S SI | B
+EQ S SI | B
+S SI | BI
+EQ S SI | BI
+S SI | BI | B
+EQ S SI | BI | B
+S SI | D
+EQ S SI | D
+S SI | D | B
+EQ S SI | D | B
+S SI | D | BI
+EQ S SI | D | BI
+S SI | D | BI | B
+EQ S SI | D | BI | B
+S SI | DI
+EQ S SI | DI
+S SI | DI | B
+EQ S SI | DI | B
+S SI | DI | BI
+EQ S SI | DI | BI
+S SI | DI | BI | B
+EQ S SI | DI | BI | B
+DI SI | D S
+EQ DI SI | D S
+DI SI | D S | B
+EQ DI SI | D S | B
+DI SI | D S | BI
+EQ DI SI | D S | BI
+DI SI | D S | BI | B
+EQ DI SI | D S | BI | B
+S SI | O
+EQ S SI | O
+S SI | B O
+EQ S SI | B O
+S SI | O | BI
+EQ S SI | O | BI
+S SI | B O | BI
+EQ S SI | B O | BI
+S SI | D O
+EQ S SI | D O
+B D O | S SI
+EQ S SI | B D O
+S SI | D O | BI
+EQ S SI | D O | BI
+B D O | S SI | BI
+EQ S SI | B D O | BI
+DI O S SI
+EQ DI O S SI
+B DI O S SI
+EQ B DI O S SI
+DI O S SI | BI
+EQ DI O S SI | BI
+B DI O S SI | BI
+EQ B DI O S SI | BI
+DI O S SI | D
+EQ DI O S SI | D
+B DI O S SI | D
+EQ B DI O S SI | D
+DI O S SI | D | BI
+EQ DI O S SI | D | BI
+B DI O S SI | D | BI
+EQ B DI O S SI | D | BI
+S SI | OI
+EQ S SI | OI
+S SI | OI | B
+EQ S SI | OI | B
+S SI | BI OI
+EQ S SI | BI OI
+S SI | BI OI | B
+EQ S SI | BI OI | B
+D OI S SI
+EQ D OI S SI
+D OI S SI | B
+EQ D OI S SI | B
+BI D OI S SI
+EQ BI D OI S SI
+BI D OI S SI | B
+EQ BI D OI S SI | B
+S SI | DI OI
+EQ S SI | DI OI
+S SI | DI OI | B
+EQ S SI | DI OI | B
+BI DI OI | S SI
+EQ S SI | BI DI OI
+BI DI OI | S SI | B
+EQ S SI | BI DI OI | B
+D OI S SI | DI
+EQ D OI S SI | DI
+D OI S SI | DI | B
+EQ D OI S SI | DI | B
+BI D OI S SI | DI
+EQ BI D OI S SI | DI
+BI D OI S SI | DI | B
+EQ BI D OI S SI | DI | B
+OI SI | O S
+EQ OI SI | O S
+B O S | OI SI
+EQ OI SI | B O S
+BI OI SI | O S
+EQ BI OI SI | O S
+BI OI SI | B O S
+EQ BI OI SI | B O S
+D OI S SI | O
+EQ D OI S SI | O
+D OI S SI | B O
+EQ D OI S SI | B O
+BI D OI S SI | O
+EQ BI D OI S SI | O
+BI D OI S SI | B O
+EQ BI D OI S SI | B O
+DI O S SI | OI
+EQ DI O S SI | OI
+B DI O S SI | OI
+EQ B DI O S SI | OI
+DI O S SI | BI OI
+EQ DI O S SI | BI OI
+B DI O S SI | BI OI
+EQ B DI O S SI | BI OI
+D DI O OI S SI
+EQ D DI O OI S SI
+B D DI O OI S SI
+EQ B D DI O OI S SI
+BI D DI O OI S SI
+EQ BI D DI O OI S SI
+B BI D DI O OI S SI
+EQ B BI D DI O OI S SI
+S SI | M
+EQ S SI | M
+S SI | B M
+EQ S SI | B M
+S SI | M | BI
+EQ S SI | M | BI
+S SI | B M | BI
+EQ S SI | B M | BI
+S SI | M | D
+EQ S SI | M | D
+S SI | B M | D
+EQ S SI | B M | D
+S SI | M | D | BI
+EQ S SI | M | D | BI
+S SI | B M | D | BI
+EQ S SI | B M | D | BI
+S SI | M | DI
+EQ S SI | M | DI
+S SI | B M | DI
+EQ S SI | B M | DI
+S SI | M | DI | BI
+EQ S SI | M | DI | BI
+S SI | B M | DI | BI
+EQ S SI | B M | DI | BI
+DI SI | D S | M
+EQ DI SI | D S | M
+DI SI | D S | B M
+EQ DI SI | D S | B M
+DI SI | D S | M | BI
+EQ DI SI | D S | M | BI
+DI SI | D S | B M | BI
+EQ DI SI | D S | B M | BI
+S SI | O M
+EQ S SI | O M
+B O M | S SI
+EQ S SI | B O M
+S SI | O M | BI
+EQ S SI | O M | BI
+B O M | S SI | BI
+EQ S SI | B O M | BI
+D O M | S SI
+EQ S SI | D O M
+B D O M | S SI
+B D O M | EQ S SI
+D O M | S SI | BI
+EQ S SI | D O M | BI
+B D O M | S SI | BI
+B D O M | EQ S SI | BI
+DI O M S SI
+EQ DI O M S SI
+B DI O M S SI
+EQ B DI O M S SI
+DI O M S SI | BI
+EQ DI O M S SI | BI
+B DI O M S SI | BI
+EQ B DI O M S SI | BI
+DI O M S SI | D
+EQ DI O M S SI | D
+B DI O M S SI | D
+EQ B DI O M S SI | D
+DI O M S SI | D | BI
+EQ DI O M S SI | D | BI
+B DI O M S SI | D | BI
+EQ B DI O M S SI | D | BI
+S SI | M | OI
+EQ S SI | M | OI
+S SI | B M | OI
+EQ S SI | B M | OI
+S SI | BI OI | M
+EQ S SI | BI OI | M
+S SI | B M | BI OI
+EQ S SI | B M | BI OI
+D OI S SI | M
+EQ D OI S SI | M
+D OI S SI | B M
+EQ D OI S SI | B M
+BI D OI S SI | M
+EQ BI D OI S SI | M
+BI D OI S SI | B M
+EQ BI D OI S SI | B M
+S SI | DI OI | M
+EQ S SI | DI OI | M
+S SI | B M | DI OI
+EQ S SI | B M | DI OI
+BI DI OI | S SI | M
+EQ S SI | BI DI OI | M
+BI DI OI | S SI | B M
+EQ S SI | BI DI OI | B M
+D OI S SI | M | DI
+EQ D OI S SI | M | DI
+D OI S SI | B M | DI
+EQ D OI S SI | B M | DI
+BI D OI S SI | M | DI
+EQ BI D OI S SI | M | DI
+BI D OI S SI | B M | DI
+EQ BI D OI S SI | B M | DI
+O M S | OI SI
+EQ OI SI | O M S
+B O M S | OI SI
+B O M S | EQ OI SI
+BI OI SI | O M S
+EQ BI OI SI | O M S
+B O M S | BI OI SI
+EQ BI OI SI | B O M S
+D OI S SI | O M
+EQ D OI S SI | O M
+D OI S SI | B O M
+EQ D OI S SI | B O M
+BI D OI S SI | O M
+EQ BI D OI S SI | O M
+BI D OI S SI | B O M
+EQ BI D OI S SI | B O M
+DI O M S SI | OI
+EQ DI O M S SI | OI
+B DI O M S SI | OI
+EQ B DI O M S SI | OI
+DI O M S SI | BI OI
+EQ DI O M S SI | BI OI
+B DI O M S SI | BI OI
+EQ B DI O M S SI | BI OI
+D DI O OI M S SI
+EQ D DI O OI M S SI
+B D DI O OI M S SI
+EQ B D DI O OI M S SI
+BI D DI O OI M S SI
+EQ BI D DI O OI M S SI
+B BI D DI O OI M S SI
+EQ B BI D DI O OI M S SI
+S SI | MI
+EQ S SI | MI
+S SI | MI | B
+EQ S SI | MI | B
+S SI | BI MI
+EQ S SI | BI MI
+S SI | BI MI | B
+EQ S SI | BI MI | B
+S SI | MI | D
+EQ S SI | MI | D
+S SI | MI | D | B
+EQ S SI | MI | D | B
+S SI | BI MI | D
+EQ S SI | BI MI | D
+S SI | BI MI | D | B
+EQ S SI | BI MI | D | B
+S SI | MI | DI
+EQ S SI | MI | DI
+S SI | MI | DI | B
+EQ S SI | MI | DI | B
+S SI | BI MI | DI
+EQ S SI | BI MI | DI
+S SI | BI MI | DI | B
+EQ S SI | BI MI | DI | B
+DI SI | D S | MI
+EQ DI SI | D S | MI
+DI SI | D S | MI | B
+EQ DI SI | D S | MI | B
+DI SI | D S | BI MI
+EQ DI SI | D S | BI MI
+DI SI | D S | BI MI | B
+EQ DI SI | D S | BI MI | B
+S SI | MI | O
+EQ S SI | MI | O
+S SI | B O | MI
+EQ S SI | B O | MI
+S SI | BI MI | O
+EQ S SI | BI MI | O
+S SI | BI MI | B O
+EQ S SI | BI MI | B O
+S SI | D O | MI
+EQ S SI | D O | MI
+B D O | S SI | MI
+EQ S SI | B D O | MI
+S SI | BI MI | D O
+EQ S SI | BI MI | D O
+B D O | S SI | BI MI
+EQ S SI | B D O | BI MI
+DI O S SI | MI
+EQ DI O S SI | MI
+B DI O S SI | MI
+EQ B DI O S SI | MI
+DI O S SI | BI MI
+EQ DI O S SI | BI MI
+B DI O S SI | BI MI
+EQ B DI O S SI | BI MI
+DI O S SI | MI | D
+EQ DI O S SI | MI | D
+B DI O S SI | MI | D
+EQ B DI O S SI | MI | D
+DI O S SI | BI MI | D
+EQ DI O S SI | BI MI | D
+B DI O S SI | BI MI | D
+EQ B DI O S SI | BI MI | D
+S SI | OI MI
+EQ S SI | OI MI
+S SI | OI MI | B
+EQ S SI | OI MI | B
+BI OI MI | S SI
+EQ S SI | BI OI MI
+BI OI MI | S SI | B
+EQ S SI | BI OI MI | B
+D OI MI S SI
+EQ D OI MI S SI
+D OI MI S SI | B
+EQ D OI MI S SI | B
+BI D OI MI S SI
+EQ BI D OI MI S SI
+BI D OI MI S SI | B
+EQ BI D OI MI S SI | B
+DI OI MI SI | S
+EQ DI OI MI SI | S
+DI OI MI SI | S | B
+EQ DI OI MI SI | S | B
+BI DI OI MI SI | S
+EQ BI DI OI MI | S SI
+BI DI OI MI SI | S | B
+EQ BI DI OI MI | S SI | B
+D OI MI S SI | DI
+EQ D OI MI S SI | DI
+D OI MI S SI | DI | B
+EQ D OI MI S SI | DI | B
+BI D OI MI S SI | DI
+EQ BI DI OI MI | D OI S SI
+BI D OI MI S SI | DI | B
+EQ BI DI OI MI | D OI S SI | B
+OI MI SI | O S
+EQ OI MI SI | O S
+OI MI SI | B O S
+EQ OI MI SI | B O S
+BI OI MI SI | O S
+EQ BI OI MI SI | O S
+BI OI MI SI | B O S
+EQ BI OI MI SI | B O S
+D OI MI S SI | O
+EQ D OI MI S SI | O
+D OI MI S SI | B O
+EQ D OI MI S SI | B O
+BI D OI MI S SI | O
+EQ BI D OI MI S SI | O
+BI D OI MI S SI | B O
+EQ BI D OI MI S SI | B O
+DI O S SI | OI MI
+EQ DI O S SI | OI MI
+B DI O S SI | OI MI
+EQ B DI O S SI | OI MI
+DI O S SI | BI OI MI
+EQ BI DI OI MI | DI O S SI
+B DI O S SI | BI OI MI
+B DI O S SI | EQ BI DI OI MI
+D DI O OI MI S SI
+EQ D DI O OI MI S SI
+B D DI O OI MI S SI
+EQ B D DI O OI MI S SI
+BI D DI O OI MI S SI
+EQ BI D DI O OI MI S SI
+B BI D DI O OI MI S SI
+EQ B BI D DI O OI MI S SI
+S SI | MI | M
+EQ S SI | MI | M
+S SI | B M | MI
+EQ S SI | B M | MI
+S SI | BI MI | M
+EQ S SI | BI MI | M
+S SI | BI MI | B M
+EQ S SI | BI MI | B M
+S SI | MI | M | D
+EQ S SI | MI | M | D
+S SI | B M | MI | D
+EQ S SI | B M | MI | D
+S SI | BI MI | M | D
+EQ S SI | BI MI | M | D
+S SI | BI MI | B M | D
+EQ S SI | BI MI | B M | D
+S SI | MI | M | DI
+EQ S SI | MI | M | DI
+S SI | B M | MI | DI
+EQ S SI | B M | MI | DI
+S SI | BI MI | M | DI
+EQ S SI | BI MI | M | DI
+S SI | BI MI | B M | DI
+EQ S SI | BI MI | B M | DI
+DI SI | D S | MI | M
+EQ DI SI | D S | MI | M
+DI SI | D S | B M | MI
+EQ DI SI | D S | B M | MI
+DI SI | D S | BI MI | M
+EQ DI SI | D S | BI MI | M
+DI SI | D S | BI MI | B M
+EQ DI SI | D S | BI MI | B M
+S SI | O M | MI
+EQ S SI | O M | MI
+B O M | S SI | MI
+EQ S SI | B O M | MI
+S SI | BI MI | O M
+EQ S SI | BI MI | O M
+B O M | S SI | BI MI
+EQ S SI | B O M | BI MI
+D O M | S SI | MI
+EQ S SI | D O M | MI
+B D O M | S SI | MI
+B D O M | EQ S SI | MI
+D O M | S SI | BI MI
+EQ S SI | D O M | BI MI
+B D O M | S SI | BI MI
+B D O M | EQ S SI | BI MI
+DI O M S SI | MI
+EQ DI O M S SI | MI
+B DI O M S SI | MI
+EQ B DI O M S SI | MI
+DI O M S SI | BI MI
+EQ DI O M S SI | BI MI
+B DI O M S SI | BI MI
+EQ B DI O M S SI | BI MI
+DI O M S SI | MI | D
+EQ DI O M S SI | MI | D
+B DI O M S SI | MI | D
+EQ B DI O M S SI | MI | D
+DI O M S SI | BI MI | D
+EQ DI O M S SI | BI MI | D
+B DI O M S SI | BI MI | D
+EQ B DI O M S SI | BI MI | D
+S SI | OI MI | M
+EQ S SI | OI MI | M
+S SI | OI MI | B M
+EQ S SI | OI MI | B M
+BI OI MI | S SI | M
+EQ S SI | BI OI MI | M
+BI OI MI | S SI | B M
+EQ S SI | BI OI MI | B M
+D OI MI S SI | M
+EQ D OI MI S SI | M
+D OI MI S SI | B M
+EQ D OI MI S SI | B M
+BI D OI MI S SI | M
+EQ BI D OI MI S SI | M
+BI D OI MI S SI | B M
+EQ BI D OI MI S SI | B M
+DI OI MI SI | S | M
+EQ DI OI MI SI | S | M
+DI OI MI SI | B M | S
+EQ DI OI MI SI | B M | S
+BI DI OI MI SI | S | M
+EQ BI DI OI MI | S SI | M
+BI DI OI MI SI | B M | S
+EQ BI DI OI MI | S SI | B M
+D OI MI S SI | M | DI
+EQ D OI MI S SI | M | DI
+D OI MI S SI | B M | DI
+EQ D OI MI S SI | B M | DI
+BI D OI MI S SI | M | DI
+EQ BI D OI MI S SI | M | DI
+BI D OI MI S SI | B M | DI
+EQ BI D OI MI S SI | B M | DI
+OI MI SI | O M S
+EQ OI MI SI | O M S
+B O M S | OI MI SI
+EQ OI MI SI | B O M S
+BI OI MI SI | O M S
+EQ BI OI MI SI | O M S
+BI OI MI SI | B O M S
+EQ BI OI MI SI | B O M S
+D OI MI S SI | O M
+EQ D OI MI S SI | O M
+D OI MI S SI | B O M
+EQ D OI MI S SI | B O M
+BI D OI MI S SI | O M
+EQ BI D OI MI S SI | O M
+BI D OI MI S SI | B O M
+EQ BI D OI MI S SI | B O M
+DI O M S SI | OI MI
+EQ DI O M S SI | OI MI
+B DI O M S SI | OI MI
+EQ B DI O M S SI | OI MI
+DI O M S SI | BI OI MI
+DI O M S SI | EQ BI DI OI MI
+B DI O M S SI | BI OI MI
+B DI O M S SI | EQ BI DI OI MI
+D DI O OI M MI S SI
+EQ D DI O OI M MI S SI
+B D DI O OI M MI S SI
+EQ B D DI O OI M MI S SI
+BI D DI O OI M MI S SI
+EQ BI D DI O OI M MI S SI
+B BI D DI O OI M MI S SI
+EQ B BI D DI O OI M MI S SI
+F
+EQ F
+F | B
+EQ F | B
+F | BI
+EQ F | BI
+F | BI | B
+EQ F | BI | B
+D F
+EQ D F
+D F | B
+EQ D F | B
+D F | BI
+EQ D F | BI
+D F | BI | B
+EQ D F | BI | B
+F | DI
+EQ F | DI
+F | DI | B
+EQ F | DI | B
+F | DI | BI
+EQ F | DI | BI
+F | DI | BI | B
+EQ F | DI | BI | B
+D F | DI
+EQ D F | DI
+D F | DI | B
+EQ D F | DI | B
+D F | DI | BI
+EQ D F | DI | BI
+D F | DI | BI | B
+EQ D F | DI | BI | B
+F | O
+EQ F | O
+B O | F
+EQ F | B O
+F | O | BI
+EQ F | O | BI
+B O | F | BI
+EQ F | B O | BI
+D O F
+EQ D O F
+B D O F
+EQ B D O F
+D O F | BI
+EQ D O F | BI
+B D O F | BI
+EQ B D O F | BI
+DI O | F
+EQ F | DI O
+B DI O | F
+B DI O | EQ F
+DI O | F | BI
+EQ F | DI O | BI
+B DI O | F | BI
+B DI O | EQ F | BI
+D O F | DI
+EQ D O F | DI
+B D O F | DI
+EQ B D O F | DI
+D O F | DI | BI
+EQ D O F | DI | BI
+B D O F | DI | BI
+EQ B D O F | DI | BI
+OI F
+EQ OI F
+OI F | B
+EQ OI F | B
+BI OI F
+EQ BI OI F
+BI OI F | B
+EQ BI OI F | B
+D OI F
+EQ D OI F
+D OI F | B
+EQ D OI F | B
+BI D OI F
+EQ BI D OI F
+BI D OI F | B
+EQ BI D OI F | B
+DI OI F
+EQ DI OI F
+DI OI F | B
+EQ DI OI F | B
+BI DI OI F
+EQ BI DI OI F
+BI DI OI F | B
+EQ BI DI OI F | B
+DI OI F | D
+EQ DI OI F | D
+DI OI F | D | B
+EQ DI OI F | D | B
+BI DI OI F | D
+EQ BI DI OI F | D
+BI DI OI F | D | B
+EQ BI DI OI F | D | B
+OI F | O
+EQ OI F | O
+OI F | B O
+EQ OI F | B O
+BI OI F | O
+EQ BI OI F | O
+BI OI F | B O
+EQ BI OI F | B O
+D OI F | O
+EQ D OI F | O
+D OI F | B O
+EQ D OI F | B O
+BI D OI F | O
+EQ BI D OI F | O
+BI D OI F | B O
+EQ BI D OI F | B O
+DI OI F | O
+EQ DI OI F | O
+DI OI F | B O
+EQ DI OI F | B O
+BI DI OI F | O
+EQ BI DI OI F | O
+BI DI OI F | B O
+EQ BI DI OI F | B O
+D DI O OI F
+EQ D DI O OI F
+B D DI O OI F
+EQ B D DI O OI F
+BI D DI O OI F
+EQ BI D DI O OI F
+B BI D DI O OI F
+EQ B BI D DI O OI F
+F | M
+EQ F | M
+B M | F
+EQ F | B M
+F | M | BI
+EQ F | M | BI
+B M | F | BI
+EQ F | B M | BI
+D F | M
+EQ D F | M
+D F | B M
+EQ D F | B M
+D F | M | BI
+EQ D F | M | BI
+D F | B M | BI
+EQ D F | B M | BI
+F | M | DI
+EQ F | M | DI
+B M | F | DI
+EQ F | B M | DI
+F | M | DI | BI
+EQ F | M | DI | BI
+B M | F | DI | BI
+EQ F | B M | DI | BI
+D F | M | DI
+EQ D F | M | DI
+D F | B M | DI
+EQ D F | B M | DI
+D F | M | DI | BI
+EQ D F | M | DI | BI
+D F | B M | DI | BI
+EQ D F | B M | DI | BI
+O M | F
+EQ F | O M
+B O M | F
+B O M | EQ F
+O M | F | BI
+EQ F | O M | BI
+B O M | F | BI
+B O M | EQ F | BI
+D O M F
+EQ D O M F
+B D O M F
+EQ B D O M F
+D O M F | BI
+EQ D O M F | BI
+B D O M F | BI
+EQ B D O M F | BI
+DI O M | F
+DI O M | EQ F
+B DI O M | F
+B DI O M | EQ F
+DI O M | F | BI
+DI O M | EQ F | BI
+B DI O M | F | BI
+B DI O M | EQ F | BI
+D O M F | DI
+EQ D O M F | DI
+B D O M F | DI
+EQ B D O M F | DI
+D O M F | DI | BI
+EQ D O M F | DI | BI
+B D O M F | DI | BI
+EQ B D O M F | DI | BI
+OI F | M
+EQ OI F | M
+OI F | B M
+EQ OI F | B M
+BI OI F | M
+EQ BI OI F | M
+BI OI F | B M
+EQ BI OI F | B M
+D OI F | M
+EQ D OI F | M
+D OI F | B M
+EQ D OI F | B M
+BI D OI F | M
+EQ BI D OI F | M
+BI D OI F | B M
+EQ BI D OI F | B M
+DI OI F | M
+EQ DI OI F | M
+DI OI F | B M
+EQ DI OI F | B M
+BI DI OI F | M
+EQ BI DI OI F | M
+BI DI OI F | B M
+EQ BI DI OI F | B M
+DI OI F | M | D
+EQ DI OI F | M | D
+DI OI F | B M | D
+EQ DI OI F | B M | D
+BI DI OI F | M | D
+EQ BI DI OI F | M | D
+BI DI OI F | B M | D
+EQ BI DI OI F | B M | D
+OI F | O M
+EQ OI F | O M
+B O M | OI F
+EQ OI F | B O M
+BI OI F | O M
+EQ BI OI F | O M
+BI OI F | B O M
+EQ BI OI F | B O M
+D O M F | OI
+EQ D O M F | OI
+B D O M F | OI
+EQ B D O M F | OI
+D O M F | BI OI
+EQ D O M F | BI OI
+B D O M F | BI OI
+EQ B D O M F | BI OI
+DI OI F | O M
+EQ DI OI F | O M
+DI OI F | B O M
+EQ DI OI F | B O M
+BI DI OI F | O M
+EQ BI DI OI F | O M
+BI DI OI F | B O M
+EQ BI DI OI F | B O M
+D DI O OI M F
+EQ D DI O OI M F
+B D DI O OI M F
+EQ B D DI O OI M F
+BI D DI O OI M F
+EQ BI D DI O OI M F
+B BI D DI O OI M F
+EQ B BI D DI O OI M F
+F | MI
+EQ F | MI
+F | MI | B
+EQ F | MI | B
+BI MI | F
+EQ F | BI MI
+BI MI | F | B
+EQ F | BI MI | B
+D F | MI
+EQ D F | MI
+D F | MI | B
+EQ D F | MI | B
+D F | BI MI
+EQ D F | BI MI
+D F | BI MI | B
+EQ D F | BI MI | B
+F | MI | DI
+EQ F | MI | DI
+F | MI | DI | B
+EQ F | MI | DI | B
+BI MI | F | DI
+EQ F | BI MI | DI
+BI MI | F | DI | B
+EQ F | BI MI | DI | B
+D F | MI | DI
+EQ D F | MI | DI
+D F | MI | DI | B
+EQ D F | MI | DI | B
+D F | BI MI | DI
+EQ D F | BI MI | DI
+D F | BI MI | DI | B
+EQ D F | BI MI | DI | B
+F | MI | O
+EQ F | MI | O
+B O | F | MI
+EQ F | B O | MI
+BI MI | F | O
+EQ F | BI MI | O
+BI MI | B O | F
+EQ F | BI MI | B O
+D O F | MI
+EQ D O F | MI
+B D O F | MI
+EQ B D O F | MI
+D O F | BI MI
+EQ D O F | BI MI
+B D O F | BI MI
+EQ B D O F | BI MI
+DI O | F | MI
+EQ F | DI O | MI
+B DI O | F | MI
+B DI O | EQ F | MI
+BI MI | DI O | F
+EQ F | BI MI | DI O
+B DI O | BI MI | F
+B DI O | EQ F | BI MI
+D O F | MI | DI
+EQ D O F | MI | DI
+B D O F | MI | DI
+EQ B D O F | MI | DI
+D O F | BI MI | DI
+EQ D O F | BI MI | DI
+B D O F | BI MI | DI
+EQ B D O F | BI MI | DI
+OI MI F
+EQ OI MI F
+OI MI F | B
+EQ OI MI F | B
+BI OI MI F
+EQ BI OI MI F
+BI OI MI F | B
+EQ BI OI MI F | B
+D OI MI F
+EQ D OI MI F
+D OI MI F | B
+EQ D OI MI F | B
+BI D OI MI F
+EQ BI D OI MI F
+BI D OI MI F | B
+EQ BI D OI MI F | B
+DI OI MI F
+EQ DI OI MI F
+DI OI MI F | B
+EQ DI OI MI F | B
+BI DI OI MI F
+EQ BI DI OI MI F
+BI DI OI MI F | B
+EQ BI DI OI MI F | B
+DI OI MI F | D
+EQ DI OI MI F | D
+DI OI MI F | D | B
+EQ DI OI MI F | D | B
+BI DI OI MI F | D
+EQ BI DI OI MI | EQ D F
+BI DI OI MI F | D | B
+EQ BI DI OI MI | EQ D F | B
+OI MI F | O
+EQ OI MI F | O
+OI MI F | B O
+EQ OI MI F | B O
+BI OI MI F | O
+EQ BI OI MI F | O
+BI OI MI F | B O
+EQ BI OI MI F | B O
+D OI MI F | O
+EQ D OI MI F | O
+D OI MI F | B O
+EQ D OI MI F | B O
+BI D OI MI F | O
+EQ BI D OI MI F | O
+BI D OI MI F | B O
+EQ BI D OI MI F | B O
+DI OI MI F | O
+EQ DI OI MI F | O
+DI OI MI F | B O
+EQ DI OI MI F | B O
+BI DI OI MI F | O
+EQ BI DI OI MI F | O
+BI DI OI MI F | B O
+EQ BI DI OI MI F | B O
+D DI O OI MI F
+EQ D DI O OI MI F
+B D DI O OI MI F
+EQ B D DI O OI MI F
+BI D DI O OI MI F
+EQ BI D DI O OI MI F
+B BI D DI O OI MI F
+EQ B BI D DI O OI MI F
+F | MI | M
+EQ F | MI | M
+B M | F | MI
+EQ F | B M | MI
+BI MI | F | M
+EQ F | BI MI | M
+BI MI | B M | F
+EQ F | BI MI | B M
+D F | MI | M
+EQ D F | MI | M
+D F | B M | MI
+EQ D F | B M | MI
+D F | BI MI | M
+EQ D F | BI MI | M
+D F | BI MI | B M
+EQ D F | BI MI | B M
+F | MI | M | DI
+EQ F | MI | M | DI
+B M | F | MI | DI
+EQ F | B M | MI | DI
+BI MI | F | M | DI
+EQ F | BI MI | M | DI
+BI MI | B M | F | DI
+EQ F | BI MI | B M | DI
+D F | MI | M | DI
+EQ D F | MI | M | DI
+D F | B M | MI | DI
+EQ D F | B M | MI | DI
+D F | BI MI | M | DI
+EQ D F | BI MI | M | DI
+D F | BI MI | B M | DI
+EQ D F | BI MI | B M | DI
+O M | F | MI
+EQ F | O M | MI
+B O M | F | MI
+B O M | EQ F | MI
+BI MI | O M | F
+EQ F | BI MI | O M
+B O M | BI MI | F
+B O M | EQ F | BI MI
+D O M F | MI
+EQ D O M F | MI
+B D O M F | MI
+EQ B D O M F | MI
+D O M F | BI MI
+EQ D O M F | BI MI
+B D O M F | BI MI
+EQ B D O M F | BI MI
+DI O M | F | MI
+DI O M | EQ F | MI
+B DI O M | F | MI
+B DI O M | EQ F | MI
+DI O M | BI MI | F
+DI O M | EQ F | BI MI
+B DI O M | BI MI | F
+B DI O M | EQ F | BI MI
+D O M F | MI | DI
+EQ D O M F | MI | DI
+B D O M F | MI | DI
+EQ B D O M F | MI | DI
+D O M F | BI MI | DI
+EQ D O M F | BI MI | DI
+B D O M F | BI MI | DI
+EQ B D O M F | BI MI | DI
+OI MI F | M
+EQ OI MI F | M
+OI MI F | B M
+EQ OI MI F | B M
+BI OI MI F | M
+EQ BI OI MI F | M
+BI OI MI F | B M
+EQ BI OI MI F | B M
+D OI MI F | M
+EQ D OI MI F | M
+D OI MI F | B M
+EQ D OI MI F | B M
+BI D OI MI F | M
+EQ BI D OI MI F | M
+BI D OI MI F | B M
+EQ BI D OI MI F | B M
+DI OI MI F | M
+EQ DI OI MI F | M
+DI OI MI F | B M
+EQ DI OI MI F | B M
+BI DI OI MI F | M
+EQ BI DI OI MI F | M
+BI DI OI MI F | B M
+EQ BI DI OI MI F | B M
+DI OI MI F | M | D
+EQ DI OI MI F | M | D
+DI OI MI F | B M | D
+EQ DI OI MI F | B M | D
+BI DI OI MI F | M | D
+EQ BI DI OI MI F | M | D
+BI DI OI MI F | B M | D
+EQ BI DI OI MI F | B M | D
+OI MI F | O M
+EQ OI MI F | O M
+OI MI F | B O M
+EQ OI MI F | B O M
+BI OI MI F | O M
+EQ BI OI MI F | O M
+BI OI MI F | B O M
+EQ BI OI MI F | B O M
+D OI MI F | O M
+EQ D OI MI F | O M
+D OI MI F | B O M
+EQ D OI MI F | B O M
+BI D OI MI F | O M
+EQ BI D OI MI F | O M
+BI D OI MI F | B O M
+EQ BI D OI MI F | B O M
+DI OI MI F | O M
+EQ DI OI MI F | O M
+DI OI MI F | B O M
+EQ DI OI MI F | B O M
+BI DI OI MI F | O M
+EQ BI DI OI MI F | O M
+BI DI OI MI F | B O M
+EQ BI DI OI MI F | B O M
+D DI O OI M MI F
+EQ D DI O OI M MI F
+B D DI O OI M MI F
+EQ B D DI O OI M MI F
+BI D DI O OI M MI F
+EQ BI D DI O OI M MI F
+B BI D DI O OI M MI F
+EQ B BI D DI O OI M MI F
+F | S
+EQ F | S
+F | S | B
+EQ F | S | B
+F | S | BI
+EQ F | S | BI
+F | S | BI | B
+EQ F | S | BI | B
+D S F
+EQ D S F
+D S F | B
+EQ D S F | B
+D S F | BI
+EQ D S F | BI
+D S F | BI | B
+EQ D S F | BI | B
+F | S | DI
+EQ F | S | DI
+F | S | DI | B
+EQ F | S | DI | B
+F | S | DI | BI
+EQ F | S | DI | BI
+F | S | DI | BI | B
+EQ F | S | DI | BI | B
+D S F | DI
+EQ D S F | DI
+D S F | DI | B
+EQ D S F | DI | B
+D S F | DI | BI
+EQ D S F | DI | BI
+D S F | DI | BI | B
+EQ D S F | DI | BI | B
+O S | F
+EQ F | O S
+B O S | F
+B O S | EQ F
+O S | F | BI
+EQ F | O S | BI
+B O S | F | BI
+B O S | EQ F | BI
+D O S F
+EQ D O S F
+B D O S F
+EQ B D O S F
+D O S F | BI
+EQ D O S F | BI
+B D O S F | BI
+EQ B D O S F | BI
+DI O S | F
+DI O S | EQ F
+B DI O S | F
+B DI O S | EQ F
+DI O S | F | BI
+DI O S | EQ F | BI
+B DI O S | F | BI
+B DI O S | EQ F | BI
+D O S F | DI
+EQ D O S F | DI
+B D O S F | DI
+EQ B D O S F | DI
+D O S F | DI | BI
+EQ D O S F | DI | BI
+B D O S F | DI | BI
+EQ B D O S F | DI | BI
+OI F | S
+OI F | EQ S
+OI F | S | B
+OI F | EQ S | B
+BI OI F | S
+BI OI F | EQ S
+BI OI F | S | B
+BI OI F | EQ S | B
+D OI S F
+EQ D OI S F
+D OI S F | B
+EQ D OI S F | B
+BI D OI S F
+EQ BI D OI S F
+BI D OI S F | B
+EQ BI D OI S F | B
+DI OI F | S
+DI OI F | EQ S
+DI OI F | S | B
+DI OI F | EQ S | B
+BI DI OI F | S
+EQ BI DI OI F | S
+BI DI OI F | S | B
+EQ BI DI OI F | S | B
+D OI S F | DI
+EQ D OI S F | DI
+D OI S F | DI | B
+EQ D OI S F | DI | B
+BI D OI S F | DI
+EQ BI D OI S F | DI
+BI D OI S F | DI | B
+EQ BI D OI S F | DI | B
+OI F | O S
+EQ O S | OI F
+B O S | OI F
+EQ B O S | OI F
+BI OI F | O S
+BI OI F | EQ O S
+BI OI F | B O S
+EQ B O S | BI OI F
+D OI S F | O
+EQ D OI S F | O
+D OI S F | B O
+EQ D OI S F | B O
+BI D OI S F | O
+EQ BI D OI S F | O
+BI D OI S F | B O
+EQ BI D OI S F | B O
+DI O S | OI F
+EQ DI O S | OI F
+B DI O S | OI F
+EQ B DI O S | OI F
+BI OI F | DI O S
+EQ BI DI OI F | O S
+B DI O S | BI OI F
+EQ BI DI OI F | B O S
+D DI O OI S F
+EQ D DI O OI S F
+B D DI O OI S F
+EQ B D DI O OI S F
+BI D DI O OI S F
+EQ BI D DI O OI S F
+B BI D DI O OI S F
+EQ B BI D DI O OI S F
+F | S | M
+EQ F | S | M
+B M | F | S
+EQ F | B M | S
+F | S | M | BI
+EQ F | S | M | BI
+B M | F | S | BI
+EQ F | B M | S | BI
+D S F | M
+EQ D S F | M
+D S F | B M
+EQ D S F | B M
+D S F | M | BI
+EQ D S F | M | BI
+D S F | B M | BI
+EQ D S F | B M | BI
+F | S | M | DI
+EQ F | S | M | DI
+B M | F | S | DI
+EQ F | B M | S | DI
+F | S | M | DI | BI
+EQ F | S | M | DI | BI
+B M | F | S | DI | BI
+EQ F | B M | S | DI | BI
+D S F | M | DI
+EQ D S F | M | DI
+D S F | B M | DI
+EQ D S F | B M | DI
+D S F | M | DI | BI
+EQ D S F | M | DI | BI
+D S F | B M | DI | BI
+EQ D S F | B M | DI | BI
+O M S | F
+O M S | EQ F
+B O M S | F
+B O M S | EQ F
+O M S | F | BI
+O M S | EQ F | BI
+B O M S | F | BI
+B O M S | EQ F | BI
+D O M S F
+EQ D O M S F
+B D O M S F
+EQ B D O M S F
+D O M S F | BI
+EQ D O M S F | BI
+B D O M S F | BI
+EQ B D O M S F | BI
+DI O M S | F
+DI O M S | EQ F
+B DI O M S | F
+B DI O M S | EQ F
+DI O M S | F | BI
+DI O M S | EQ F | BI
+B DI O M S | F | BI
+B DI O M S | EQ F | BI
+D O M S F | DI
+EQ D O M S F | DI
+B D O M S F | DI
+EQ B D O M S F | DI
+D O M S F | DI | BI
+EQ D O M S F | DI | BI
+B D O M S F | DI | BI
+EQ B D O M S F | DI | BI
+OI F | S | M
+OI F | EQ S | M
+OI F | B M | S
+OI F | EQ S | B M
+BI OI F | S | M
+BI OI F | EQ S | M
+BI OI F | B M | S
+BI OI F | EQ S | B M
+D OI S F | M
+EQ D OI S F | M
+D OI S F | B M
+EQ D OI S F | B M
+BI D OI S F | M
+EQ BI D OI S F | M
+BI D OI S F | B M
+EQ BI D OI S F | B M
+DI OI F | S | M
+DI OI F | EQ S | M
+DI OI F | B M | S
+DI OI F | EQ S | B M
+BI DI OI F | S | M
+EQ BI DI OI F | S | M
+BI DI OI F | B M | S
+EQ BI DI OI F | B M | S
+D OI S F | M | DI
+EQ D OI S F | M | DI
+D OI S F | B M | DI
+EQ D OI S F | B M | DI
+BI D OI S F | M | DI
+EQ BI D OI S F | M | DI
+BI D OI S F | B M | DI
+EQ BI D OI S F | B M | DI
+O M S | OI F
+EQ O M S | OI F
+B O M S | OI F
+EQ B O M S | OI F
+BI OI F | O M S
+EQ O M S | BI OI F
+B O M S | BI OI F
+EQ B O M S | BI OI F
+D O M S F | OI
+EQ D O M S F | OI
+B D O M S F | OI
+EQ B D O M S F | OI
+D O M S F | BI OI
+EQ D O M S F | BI OI
+B D O M S F | BI OI
+EQ B D O M S F | BI OI
+DI O M S | OI F
+EQ DI O M S | OI F
+B DI O M S | OI F
+EQ B DI O M S | OI F
+DI O M S | BI OI F
+EQ BI DI OI F | O M S
+B DI O M S | BI OI F
+EQ BI DI OI F | B O M S
+D DI O OI M S F
+EQ D DI O OI M S F
+B D DI O OI M S F
+EQ B D DI O OI M S F
+BI D DI O OI M S F
+EQ BI D DI O OI M S F
+B BI D DI O OI M S F
+EQ B BI D DI O OI M S F
+F | S | MI
+EQ F | S | MI
+F | S | MI | B
+EQ F | S | MI | B
+BI MI | F | S
+EQ F | BI MI | S
+BI MI | F | S | B
+EQ F | BI MI | S | B
+D S F | MI
+EQ D S F | MI
+D S F | MI | B
+EQ D S F | MI | B
+D S F | BI MI
+EQ D S F | BI MI
+D S F | BI MI | B
+EQ D S F | BI MI | B
+F | S | MI | DI
+EQ F | S | MI | DI
+F | S | MI | DI | B
+EQ F | S | MI | DI | B
+BI MI | F | S | DI
+EQ F | BI MI | S | DI
+BI MI | F | S | DI | B
+EQ F | BI MI | S | DI | B
+D S F | MI | DI
+EQ D S F | MI | DI
+D S F | MI | DI | B
+EQ D S F | MI | DI | B
+D S F | BI MI | DI
+EQ D S F | BI MI | DI
+D S F | BI MI | DI | B
+EQ D S F | BI MI | DI | B
+O S | F | MI
+EQ F | O S | MI
+B O S | F | MI
+B O S | EQ F | MI
+O S | BI MI | F
+EQ F | O S | BI MI
+B O S | BI MI | F
+B O S | EQ F | BI MI
+D O S F | MI
+EQ D O S F | MI
+B D O S F | MI
+EQ B D O S F | MI
+D O S F | BI MI
+EQ D O S F | BI MI
+B D O S F | BI MI
+EQ B D O S F | BI MI
+DI O S | F | MI
+DI O S | EQ F | MI
+B DI O S | F | MI
+B DI O S | EQ F | MI
+DI O S | BI MI | F
+DI O S | EQ F | BI MI
+B DI O S | BI MI | F
+B DI O S | EQ F | BI MI
+D O S F | MI | DI
+EQ D O S F | MI | DI
+B D O S F | MI | DI
+EQ B D O S F | MI | DI
+D O S F | BI MI | DI
+EQ D O S F | BI MI | DI
+B D O S F | BI MI | DI
+EQ B D O S F | BI MI | DI
+OI MI F | S
+EQ OI MI F | S
+OI MI F | S | B
+EQ OI MI F | S | B
+BI OI MI F | S
+EQ BI OI MI F | S
+BI OI MI F | S | B
+EQ BI OI MI F | S | B
+D OI MI S F
+EQ D OI MI S F
+D OI MI S F | B
+EQ D OI MI S F | B
+BI D OI MI S F
+EQ BI D OI MI S F
+BI D OI MI S F | B
+EQ BI D OI MI S F | B
+DI OI MI F | S
+DI OI MI F | EQ S
+DI OI MI F | S | B
+DI OI MI F | EQ S | B
+BI DI OI MI F | S
+BI DI OI MI F | EQ S
+BI DI OI MI F | S | B
+BI DI OI MI F | EQ S | B
+D OI MI S F | DI
+EQ D OI MI S F | DI
+D OI MI S F | DI | B
+EQ D OI MI S F | DI | B
+BI D OI MI S F | DI
+D OI MI S F | EQ BI DI OI MI
+BI D OI MI S F | DI | B
+D OI MI S F | EQ BI DI OI MI | B
+OI MI F | O S
+EQ OI MI F | O S
+OI MI F | B O S
+EQ OI MI F | B O S
+BI OI MI F | O S
+EQ BI OI MI F | O S
+BI OI MI F | B O S
+EQ BI OI MI F | B O S
+D OI MI S F | O
+EQ D OI MI S F | O
+D OI MI S F | B O
+EQ D OI MI S F | B O
+BI D OI MI S F | O
+EQ BI D OI MI S F | O
+BI D OI MI S F | B O
+EQ BI D OI MI S F | B O
+DI OI MI F | O S
+DI OI MI F | EQ O S
+DI OI MI F | B O S
+DI OI MI F | EQ B O S
+BI DI OI MI F | O S
+EQ BI OI MI F | DI O S
+BI DI OI MI F | B O S
+EQ BI OI MI F | B DI O S
+D DI O OI MI S F
+EQ D DI O OI MI S F
+B D DI O OI MI S F
+EQ B D DI O OI MI S F
+BI D DI O OI MI S F
+EQ BI D DI O OI MI S F
+B BI D DI O OI MI S F
+EQ B BI D DI O OI MI S F
+F | S | MI | M
+EQ F | S | MI | M
+B M | F | S | MI
+EQ F | B M | S | MI
+BI MI | F | S | M
+EQ F | BI MI | S | M
+BI MI | B M | F | S
+EQ F | BI MI | B M | S
+D S F | MI | M
+EQ D S F | MI | M
+D S F | B M | MI
+EQ D S F | B M | MI
+D S F | BI MI | M
+EQ D S F | BI MI | M
+D S F | BI MI | B M
+EQ D S F | BI MI | B M
+F | S | MI | M | DI
+EQ F | S | MI | M | DI
+B M | F | S | MI | DI
+EQ F | B M | S | MI | DI
+BI MI | F | S | M | DI
+EQ F | BI MI | S | M | DI
+BI MI | B M | F | S | DI
+EQ F | BI MI | B M | S | DI
+D S F | MI | M | DI
+EQ D S F | MI | M | DI
+D S F | B M | MI | DI
+EQ D S F | B M | MI | DI
+D S F | BI MI | M | DI
+EQ D S F | BI MI | M | DI
+D S F | BI MI | B M | DI
+EQ D S F | BI MI | B M | DI
+O M S | F | MI
+O M S | EQ F | MI
+B O M S | F | MI
+B O M S | EQ F | MI
+O M S | BI MI | F
+O M S | EQ F | BI MI
+B O M S | BI MI | F
+B O M S | EQ F | BI MI
+D O M S F | MI
+EQ D O M S F | MI
+B D O M S F | MI
+EQ B D O M S F | MI
+D O M S F | BI MI
+EQ D O M S F | BI MI
+B D O M S F | BI MI
+EQ B D O M S F | BI MI
+DI O M S | F | MI
+DI O M S | EQ F | MI
+B DI O M S | F | MI
+B DI O M S | EQ F | MI
+DI O M S | BI MI | F
+DI O M S | EQ F | BI MI
+B DI O M S | BI MI | F
+B DI O M S | EQ F | BI MI
+D O M S F | MI | DI
+EQ D O M S F | MI | DI
+B D O M S F | MI | DI
+EQ B D O M S F | MI | DI
+D O M S F | BI MI | DI
+EQ D O M S F | BI MI | DI
+B D O M S F | BI MI | DI
+EQ B D O M S F | BI MI | DI
+OI MI F | S | M
+EQ OI MI F | S | M
+OI MI F | B M | S
+EQ OI MI F | B M | S
+BI OI MI F | S | M
+EQ BI OI MI F | S | M
+BI OI MI F | B M | S
+EQ BI OI MI F | B M | S
+D OI MI S F | M
+EQ D OI MI S F | M
+D OI MI S F | B M
+EQ D OI MI S F | B M
+BI D OI MI S F | M
+EQ BI D OI MI S F | M
+BI D OI MI S F | B M
+EQ BI D OI MI S F | B M
+DI OI MI F | S | M
+DI OI MI F | EQ S | M
+DI OI MI F | B M | S
+DI OI MI F | EQ S | B M
+BI DI OI MI F | S | M
+BI DI OI MI F | EQ S | M
+BI DI OI MI F | B M | S
+BI DI OI MI F | EQ S | B M
+D OI MI S F | M | DI
+EQ D OI MI S F | M | DI
+D OI MI S F | B M | DI
+EQ D OI MI S F | B M | DI
+BI D OI MI S F | M | DI
+EQ BI D OI MI S F | M | DI
+BI D OI MI S F | B M | DI
+EQ BI D OI MI S F | B M | DI
+OI MI F | O M S
+EQ OI MI F | O M S
+B O M S | OI MI F
+EQ OI MI F | B O M S
+BI OI MI F | O M S
+EQ BI OI MI F | O M S
+BI OI MI F | B O M S
+EQ BI OI MI F | B O M S
+D OI MI S F | O M
+EQ D OI MI S F | O M
+B D O M S F | OI MI
+EQ B D O M S F | OI MI
+BI D OI MI S F | O M
+EQ BI D OI MI S F | O M
+B D O M S F | BI OI MI
+EQ B D O M S F | BI OI MI
+DI OI MI F | O M S
+DI OI MI F | EQ O M S
+DI OI MI F | B O M S
+EQ B DI O M S | DI OI MI F
+BI DI OI MI F | O M S
+EQ BI OI MI F | DI O M S
+BI DI OI MI F | B O M S
+EQ BI OI MI F | B DI O M S
+D DI O OI M MI S F
+EQ D DI O OI M MI S F
+B D DI O OI M MI S F
+EQ B D DI O OI M MI S F
+BI D DI O OI M MI S F
+EQ BI D DI O OI M MI S F
+B BI D DI O OI M MI S F
+EQ B BI D DI O OI M MI S F
+F | SI
+EQ F | SI
+F | SI | B
+EQ F | SI | B
+F | SI | BI
+EQ F | SI | BI
+F | SI | BI | B
+EQ F | SI | BI | B
+D F | SI
+EQ D F | SI
+D F | SI | B
+EQ D F | SI | B
+D F | SI | BI
+EQ D F | SI | BI
+D F | SI | BI | B
+EQ D F | SI | BI | B
+DI SI | F
+EQ F | DI SI
+DI SI | F | B
+EQ F | DI SI | B
+DI SI | F | BI
+EQ F | DI SI | BI
+DI SI | F | BI | B
+EQ F | DI SI | BI | B
+D F | DI SI
+EQ D F | DI SI
+D F | DI SI | B
+EQ D F | DI SI | B
+D F | DI SI | BI
+EQ D F | DI SI | BI
+D F | DI SI | BI | B
+EQ D F | DI SI | BI | B
+F | SI | O
+EQ F | SI | O
+B O | F | SI
+EQ F | B O | SI
+F | SI | O | BI
+EQ F | SI | O | BI
+B O | F | SI | BI
+EQ F | B O | SI | BI
+D O F | SI
+D O F | EQ SI
+B D O F | SI
+EQ B D O F | SI
+D O F | SI | BI
+D O F | EQ SI | BI
+B D O F | SI | BI
+EQ B D O F | SI | BI
+DI O SI | F
+DI O SI | EQ F
+B DI O SI | F
+B DI O SI | EQ F
+DI O SI | F | BI
+DI O SI | EQ F | BI
+B DI O SI | F | BI
+B DI O SI | EQ F | BI
+D O F | DI SI
+EQ D F | DI O SI
+B DI O SI | D O F
+B DI O SI | EQ D F
+D O F | DI SI | BI
+EQ D F | DI O SI | BI
+B DI O SI | D O F | BI
+B DI O SI | EQ D F | BI
+OI SI F
+EQ OI SI F
+OI SI F | B
+EQ OI SI F | B
+BI OI SI F
+EQ BI OI SI F
+BI OI SI F | B
+EQ BI OI SI F | B
+D OI SI F
+EQ D OI SI F
+D OI SI F | B
+EQ D OI SI F | B
+BI D OI SI F
+EQ BI D OI SI F
+BI D OI SI F | B
+EQ BI D OI SI F | B
+DI OI SI F
+EQ DI OI SI F
+DI OI SI F | B
+EQ DI OI SI F | B
+BI DI OI SI F
+EQ BI DI OI SI F
+BI DI OI SI F | B
+EQ BI DI OI SI F | B
+DI OI SI F | D
+EQ DI OI SI F | D
+DI OI SI F | D | B
+EQ DI OI SI F | D | B
+BI DI OI SI F | D
+EQ BI DI OI SI F | D
+BI DI OI SI F | D | B
+EQ BI DI OI SI F | D | B
+OI SI F | O
+EQ OI SI F | O
+OI SI F | B O
+EQ OI SI F | B O
+BI OI SI F | O
+EQ BI OI SI F | O
+BI OI SI F | B O
+EQ BI OI SI F | B O
+D OI SI F | O
+EQ D OI SI F | O
+D OI SI F | B O
+EQ D OI SI F | B O
+BI D OI SI F | O
+EQ BI D OI SI F | O
+BI D OI SI F | B O
+EQ BI D OI SI F | B O
+DI OI SI F | O
+EQ DI OI SI F | O
+DI OI SI F | B O
+EQ DI OI SI F | B O
+BI DI OI SI F | O
+EQ BI DI OI SI F | O
+BI DI OI SI F | B O
+EQ BI DI OI SI F | B O
+D DI O OI SI F
+EQ D DI O OI SI F
+B D DI O OI SI F
+EQ B D DI O OI SI F
+BI D DI O OI SI F
+EQ BI D DI O OI SI F
+B BI D DI O OI SI F
+EQ B BI D DI O OI SI F
+F | SI | M
+EQ F | SI | M
+B M | F | SI
+EQ F | B M | SI
+F | SI | M | BI
+EQ F | SI | M | BI
+B M | F | SI | BI
+EQ F | B M | SI | BI
+D F | SI | M
+EQ D F | SI | M
+D F | B M | SI
+EQ D F | B M | SI
+D F | SI | M | BI
+EQ D F | SI | M | BI
+D F | B M | SI | BI
+EQ D F | B M | SI | BI
+DI SI | F | M
+EQ F | DI SI | M
+DI SI | B M | F
+EQ F | DI SI | B M
+DI SI | F | M | BI
+EQ F | DI SI | M | BI
+DI SI | B M | F | BI
+EQ F | DI SI | B M | BI
+D F | DI SI | M
+EQ D F | DI SI | M
+D F | DI SI | B M
+EQ D F | DI SI | B M
+D F | DI SI | M | BI
+EQ D F | DI SI | M | BI
+D F | DI SI | B M | BI
+EQ D F | DI SI | B M | BI
+O M | F | SI
+EQ F | O M | SI
+B O M | F | SI
+B O M | EQ F | SI
+O M | F | SI | BI
+EQ F | O M | SI | BI
+B O M | F | SI | BI
+B O M | EQ F | SI | BI
+D O M F | SI
+EQ D O M F | SI
+B D O M F | SI
+B D O M F | EQ SI
+D O M F | SI | BI
+EQ D O M F | SI | BI
+B D O M F | SI | BI
+B D O M F | EQ SI | BI
+DI O M SI | F
+DI O M SI | EQ F
+B DI O M SI | F
+B DI O M SI | EQ F
+DI O M SI | F | BI
+DI O M SI | EQ F | BI
+B DI O M SI | F | BI
+B DI O M SI | EQ F | BI
+DI O M SI | D O F
+DI O M SI | EQ D F
+B DI O M SI | D O F
+B DI O M SI | EQ D F
+DI O M SI | D O F | BI
+DI O M SI | EQ D F | BI
+B DI O M SI | D O F | BI
+B DI O M SI | EQ D F | BI
+OI SI F | M
+EQ OI SI F | M
+OI SI F | B M
+EQ OI SI F | B M
+BI OI SI F | M
+EQ BI OI SI F | M
+BI OI SI F | B M
+EQ BI OI SI F | B M
+D OI SI F | M
+EQ D OI SI F | M
+D OI SI F | B M
+EQ D OI SI F | B M
+BI D OI SI F | M
+EQ BI D OI SI F | M
+BI D OI SI F | B M
+EQ BI D OI SI F | B M
+DI OI SI F | M
+EQ DI OI SI F | M
+DI OI SI F | B M
+EQ DI OI SI F | B M
+BI DI OI SI F | M
+EQ BI DI OI SI F | M
+BI DI OI SI F | B M
+EQ BI DI OI SI F | B M
+DI OI SI F | M | D
+EQ DI OI SI F | M | D
+DI OI SI F | B M | D
+EQ DI OI SI F | B M | D
+BI DI OI SI F | M | D
+EQ BI DI OI SI F | M | D
+BI DI OI SI F | B M | D
+EQ BI DI OI SI F | B M | D
+OI SI F | O M
+EQ OI SI F | O M
+OI SI F | B O M
+EQ OI SI F | B O M
+BI OI SI F | O M
+BI OI SI F | EQ O M
+BI OI SI F | B O M
+BI OI SI F | EQ B O M
+D OI SI F | O M
+EQ D OI SI F | O M
+D OI SI F | B O M
+EQ D OI SI F | B O M
+BI OI SI F | D O M
+EQ D O M F | BI OI SI F
+BI OI SI F | B D O M
+EQ B D O M | BI OI SI F
+DI OI SI F | O M
+EQ DI OI SI F | O M
+DI OI SI F | B O M
+EQ DI OI SI F | B O M
+BI OI SI F | DI O M
+EQ BI DI OI F | DI O M SI
+BI OI SI F | B DI O M
+EQ BI DI OI F | B DI O M SI
+D DI O OI M SI F
+EQ D DI O OI M SI F
+B D DI O OI M SI F
+EQ B D DI O OI M SI F
+BI D DI O OI M SI F
+EQ BI D DI O OI M SI F
+B BI D DI O OI M SI F
+EQ B BI D DI O OI M SI F
+F | SI | MI
+EQ F | SI | MI
+F | SI | MI | B
+EQ F | SI | MI | B
+BI MI | F | SI
+EQ F | BI MI | SI
+BI MI | F | SI | B
+EQ F | BI MI | SI | B
+D F | SI | MI
+EQ D F | SI | MI
+D F | SI | MI | B
+EQ D F | SI | MI | B
+D F | BI MI | SI
+EQ D F | BI MI | SI
+D F | BI MI | SI | B
+EQ D F | BI MI | SI | B
+DI SI | F | MI
+EQ F | DI SI | MI
+DI SI | F | MI | B
+EQ F | DI SI | MI | B
+DI SI | BI MI | F
+EQ F | DI SI | BI MI
+DI SI | BI MI | F | B
+EQ F | DI SI | BI MI | B
+D F | DI SI | MI
+EQ D F | DI SI | MI
+D F | DI SI | MI | B
+EQ D F | DI SI | MI | B
+D F | DI SI | BI MI
+EQ D F | DI SI | BI MI
+D F | DI SI | BI MI | B
+EQ D F | DI SI | BI MI | B
+F | SI | MI | O
+EQ F | SI | MI | O
+B O | F | SI | MI
+EQ F | B O | SI | MI
+BI MI | F | SI | O
+EQ F | BI MI | SI | O
+BI MI | B O | F | SI
+EQ F | BI MI | B O | SI
+D O F | SI | MI
+D O F | EQ SI | MI
+B D O F | SI | MI
+EQ B D O F | SI | MI
+D O F | BI MI | SI
+D O F | EQ SI | BI MI
+B D O F | BI MI | SI
+EQ B D O F | BI MI | SI
+DI O SI | F | MI
+DI O SI | EQ F | MI
+B DI O SI | F | MI
+B DI O SI | EQ F | MI
+DI O SI | BI MI | F
+DI O SI | EQ F | BI MI
+B DI O SI | BI MI | F
+B DI O SI | EQ F | BI MI
+D O F | DI SI | MI
+EQ D F | DI O SI | MI
+B DI O SI | D O F | MI
+B DI O SI | EQ D F | MI
+D O F | DI SI | BI MI
+EQ D F | DI O SI | BI MI
+B DI O SI | D O F | BI MI
+B DI O SI | EQ D F | BI MI
+OI MI SI F
+EQ OI MI SI F
+OI MI SI F | B
+EQ OI MI SI F | B
+BI OI MI SI F
+EQ BI OI MI SI F
+BI OI MI SI F | B
+EQ BI OI MI SI F | B
+D OI MI SI F
+EQ D OI MI SI F
+D OI MI SI F | B
+EQ D OI MI SI F | B
+BI D OI MI SI F
+EQ BI D OI MI SI F
+BI D OI MI SI F | B
+EQ BI D OI MI SI F | B
+DI OI MI SI F
+EQ DI OI MI SI F
+DI OI MI SI F | B
+EQ DI OI MI SI F | B
+BI DI OI MI SI F
+EQ BI DI OI MI SI F
+BI DI OI MI SI F | B
+EQ BI DI OI MI SI F | B
+DI OI MI SI F | D
+EQ DI OI MI SI F | D
+DI OI MI SI F | D | B
+EQ DI OI MI SI F | D | B
+BI DI OI MI SI F | D
+EQ BI DI OI MI | D OI SI F
+BI DI OI MI SI F | D | B
+EQ BI DI OI MI | D OI SI F | B
+OI MI SI F | O
+EQ OI MI SI F | O
+OI MI SI F | B O
+EQ OI MI SI F | B O
+BI OI MI SI F | O
+EQ BI OI MI SI F | O
+BI OI MI SI F | B O
+EQ BI OI MI SI F | B O
+D OI MI SI F | O
+EQ D OI MI SI F | O
+D OI MI SI F | B O
+EQ D OI MI SI F | B O
+BI D OI MI SI F | O
+EQ BI D OI MI SI F | O
+BI D OI MI SI F | B O
+EQ BI D OI MI SI F | B O
+DI OI MI SI F | O
+EQ DI OI MI SI F | O
+DI OI MI SI F | B O
+EQ DI OI MI SI F | B O
+BI DI OI MI SI F | O
+EQ BI DI OI MI SI F | O
+BI DI OI MI SI F | B O
+EQ BI DI OI MI SI F | B O
+D DI O OI MI SI F
+EQ D DI O OI MI SI F
+B D DI O OI MI SI F
+EQ B D DI O OI MI SI F
+BI D DI O OI MI SI F
+EQ BI D DI O OI MI SI F
+B BI D DI O OI MI SI F
+EQ B BI D DI O OI MI SI F
+F | SI | MI | M
+EQ F | SI | MI | M
+B M | F | SI | MI
+EQ F | B M | SI | MI
+BI MI | F | SI | M
+EQ F | BI MI | SI | M
+BI MI | B M | F | SI
+EQ F | BI MI | B M | SI
+D F | SI | MI | M
+EQ D F | SI | MI | M
+D F | B M | SI | MI
+EQ D F | B M | SI | MI
+D F | BI MI | SI | M
+EQ D F | BI MI | SI | M
+D F | BI MI | B M | SI
+EQ D F | BI MI | B M | SI
+DI SI | F | MI | M
+EQ F | DI SI | MI | M
+DI SI | B M | F | MI
+EQ F | DI SI | B M | MI
+DI SI | BI MI | F | M
+EQ F | DI SI | BI MI | M
+DI SI | BI MI | B M | F
+EQ F | DI SI | BI MI | B M
+D F | DI SI | MI | M
+EQ D F | DI SI | MI | M
+D F | DI SI | B M | MI
+EQ D F | DI SI | B M | MI
+D F | DI SI | BI MI | M
+EQ D F | DI SI | BI MI | M
+D F | DI SI | BI MI | B M
+EQ D F | DI SI | BI MI | B M
+O M | F | SI | MI
+EQ F | O M | SI | MI
+B O M | F | SI | MI
+B O M | EQ F | SI | MI
+BI MI | O M | F | SI
+EQ F | BI MI | O M | SI
+B O M | BI MI | F | SI
+B O M | EQ F | BI MI | SI
+D O M F | SI | MI
+EQ D O M F | SI | MI
+B D O M F | SI | MI
+B D O M F | EQ SI | MI
+D O M F | BI MI | SI
+EQ D O M F | BI MI | SI
+B D O M F | BI MI | SI
+B D O M F | EQ SI | BI MI
+DI O M SI | F | MI
+DI O M SI | EQ F | MI
+B DI O M SI | F | MI
+B DI O M SI | EQ F | MI
+DI O M SI | BI MI | F
+DI O M SI | EQ F | BI MI
+B DI O M SI | BI MI | F
+B DI O M SI | EQ F | BI MI
+DI O M SI | D O F | MI
+DI O M SI | EQ D F | MI
+B DI O M SI | D O F | MI
+B DI O M SI | EQ D F | MI
+DI O M SI | D O F | BI MI
+DI O M SI | EQ D F | BI MI
+B DI O M SI | D O F | BI MI
+B DI O M SI | EQ D F | BI MI
+OI MI SI F | M
+EQ OI MI SI F | M
+OI MI SI F | B M
+EQ OI MI SI F | B M
+BI OI MI SI F | M
+EQ BI OI MI SI F | M
+BI OI MI SI F | B M
+EQ BI OI MI SI F | B M
+D OI MI SI F | M
+EQ D OI MI SI F | M
+D OI MI SI F | B M
+EQ D OI MI SI F | B M
+BI D OI MI SI F | M
+EQ BI D OI MI SI F | M
+BI D OI MI SI F | B M
+EQ BI D OI MI SI F | B M
+DI OI MI SI F | M
+EQ DI OI MI SI F | M
+DI OI MI SI F | B M
+EQ DI OI MI SI F | B M
+BI DI OI MI SI F | M
+EQ BI DI OI MI SI F | M
+BI DI OI MI SI F | B M
+EQ BI DI OI MI SI F | B M
+DI OI MI SI F | M | D
+EQ DI OI MI SI F | M | D
+DI OI MI SI F | B M | D
+EQ DI OI MI SI F | B M | D
+BI DI OI MI SI F | M | D
+EQ BI DI OI MI SI F | M | D
+BI DI OI MI SI F | B M | D
+EQ BI DI OI MI SI F | B M | D
+OI MI SI F | O M
+EQ OI MI SI F | O M
+OI MI SI F | B O M
+EQ OI MI SI F | B O M
+BI OI MI SI F | O M
+EQ BI OI MI SI F | O M
+BI OI MI SI F | B O M
+EQ BI OI MI SI F | B O M
+D OI MI SI F | O M
+EQ D OI MI SI F | O M
+D OI MI SI F | B O M
+EQ D OI MI SI F | B O M
+BI D OI MI SI F | O M
+EQ BI D OI MI SI F | O M
+BI D OI MI SI F | B O M
+EQ BI D OI MI SI F | B O M
+DI OI MI SI F | O M
+EQ DI OI MI SI F | O M
+DI OI MI SI F | B O M
+EQ DI OI MI SI F | B O M
+BI DI OI MI SI F | O M
+EQ BI DI OI MI SI F | O M
+BI DI OI MI SI F | B O M
+EQ BI DI OI MI SI F | B O M
+D DI O OI M MI SI F
+EQ D DI O OI M MI SI F
+B D DI O OI M MI SI F
+EQ B D DI O OI M MI SI F
+BI D DI O OI M MI SI F
+EQ BI D DI O OI M MI SI F
+B BI D DI O OI M MI SI F
+EQ B BI D DI O OI M MI SI F
+S SI | F
+EQ F | S SI
+S SI | F | B
+EQ F | S SI | B
+S SI | F | BI
+EQ F | S SI | BI
+S SI | F | BI | B
+EQ F | S SI | BI | B
+D F | S SI
+EQ D F | S SI
+D F | S SI | B
+EQ D F | S SI | B
+D F | S SI | BI
+EQ D F | S SI | BI
+D F | S SI | BI | B
+EQ D F | S SI | BI | B
+S SI | F | DI
+EQ F | S SI | DI
+S SI | F | DI | B
+EQ F | S SI | DI | B
+S SI | F | DI | BI
+EQ F | S SI | DI | BI
+S SI | F | DI | BI | B
+EQ F | S SI | DI | BI | B
+D S F | DI SI
+EQ D S F | DI SI
+D S F | DI SI | B
+EQ D S F | DI SI | B
+D S F | DI SI | BI
+EQ D S F | DI SI | BI
+D S F | DI SI | BI | B
+EQ D S F | DI SI | BI | B
+S SI | F | O
+EQ F | S SI | O
+S SI | B O | F
+EQ F | S SI | B O
+S SI | F | O | BI
+EQ F | S SI | O | BI
+S SI | B O | F | BI
+EQ F | S SI | B O | BI
+D O F | S SI
+D O F | EQ S SI
+B D O S F | SI
+EQ B D O F | S SI
+D O F | S SI | BI
+D O F | EQ S SI | BI
+B D O S F | SI | BI
+EQ B D O F | S SI | BI
+DI O S SI | F
+DI O S SI | EQ F
+B DI O S SI | F
+B DI O S SI | EQ F
+DI O S SI | F | BI
+DI O S SI | EQ F | BI
+B DI O S SI | F | BI
+B DI O S SI | EQ F | BI
+DI O S SI | D O F
+DI O S SI | EQ D F
+B DI O S SI | D O F
+B DI O S SI | EQ D F
+DI O S SI | D O F | BI
+DI O S SI | EQ D F | BI
+B DI O S SI | D O F | BI
+B DI O S SI | EQ D F | BI
+OI F | S SI
+EQ S SI | OI F
+OI F | S SI | B
+EQ S SI | OI F | B
+BI OI SI F | S
+BI OI SI F | EQ S
+BI OI SI F | S | B
+BI OI SI F | EQ S | B
+D OI S SI F
+EQ D OI S SI F
+D OI S SI F | B
+EQ D OI S SI F | B
+BI D OI S SI F
+EQ BI D OI S SI F
+BI D OI S SI F | B
+EQ BI D OI S SI F | B
+DI OI SI F | S
+DI OI SI F | EQ S
+DI OI SI F | S | B
+DI OI SI F | EQ S | B
+BI DI OI SI F | S
+EQ BI DI OI F | S SI
+BI DI OI SI F | S | B
+EQ BI DI OI F | S SI | B
+D OI S SI F | DI
+EQ D OI S SI F | DI
+D OI S SI F | DI | B
+EQ D OI S SI F | DI | B
+BI D OI S SI F | DI
+EQ BI D OI S SI F | DI
+BI D OI S SI F | DI | B
+EQ BI D OI S SI F | DI | B
+OI SI F | O S
+EQ OI SI F | O S
+OI SI F | B O S
+EQ OI SI F | B O S
+BI OI SI F | O S
+BI OI SI F | EQ O S
+BI OI SI F | B O S
+BI OI SI F | EQ B O S
+D OI S SI F | O
+EQ D OI S SI F | O
+D OI S SI F | B O
+EQ D OI S SI F | B O
+BI D OI S SI F | O
+EQ BI D OI S SI F | O
+BI D OI S SI F | B O
+EQ BI D OI S SI F | B O
+DI O S SI | OI F
+EQ DI O S SI | OI F
+B DI O S SI | OI F
+EQ B DI O S SI | OI F
+BI OI SI F | DI O S
+EQ BI DI OI F | DI O S SI
+BI OI SI F | B DI O S
+EQ BI DI OI F | B DI O S SI
+D DI O OI S SI F
+EQ D DI O OI S SI F
+B D DI O OI S SI F
+EQ B D DI O OI S SI F
+BI D DI O OI S SI F
+EQ BI D DI O OI S SI F
+B BI D DI O OI S SI F
+EQ B BI D DI O OI S SI F
+S SI | F | M
+EQ F | S SI | M
+S SI | B M | F
+EQ F | S SI | B M
+S SI | F | M | BI
+EQ F | S SI | M | BI
+S SI | B M | F | BI
+EQ F | S SI | B M | BI
+D F | S SI | M
+EQ D F | S SI | M
+D F | S SI | B M
+EQ D F | S SI | B M
+D F | S SI | M | BI
+EQ D F | S SI | M | BI
+D F | S SI | B M | BI
+EQ D F | S SI | B M | BI
+S SI | F | M | DI
+EQ F | S SI | M | DI
+S SI | B M | F | DI
+EQ F | S SI | B M | DI
+S SI | F | M | DI | BI
+EQ F | S SI | M | DI | BI
+S SI | B M | F | DI | BI
+EQ F | S SI | B M | DI | BI
+D S F | DI SI | M
+EQ D S F | DI SI | M
+D S F | DI SI | B M
+EQ D S F | DI SI | B M
+D S F | DI SI | M | BI
+EQ D S F | DI SI | M | BI
+D S F | DI SI | B M | BI
+EQ D S F | DI SI | B M | BI
+S SI | O M | F
+EQ F | S SI | O M
+B O M | S SI | F
+B O M | EQ F | S SI
+S SI | O M | F | BI
+EQ F | S SI | O M | BI
+B O M | S SI | F | BI
+B O M | EQ F | S SI | BI
+D O M F | S SI
+EQ D O M F | S SI
+B D O M S F | SI
+EQ B D O M S F | SI
+D O M F | S SI | BI
+EQ D O M F | S SI | BI
+B D O M S F | SI | BI
+EQ B D O M S F | SI | BI
+DI O M S SI | F
+DI O M S SI | EQ F
+B DI O M S SI | F
+B DI O M S SI | EQ F
+DI O M S SI | F | BI
+DI O M S SI | EQ F | BI
+B DI O M S SI | F | BI
+B DI O M S SI | EQ F | BI
+DI O M S SI | D O F
+DI O M S SI | EQ D F
+B D O M S F | DI SI
+EQ B D O M S F | DI SI
+DI O M S SI | D O F | BI
+DI O M S SI | EQ D F | BI
+B D O M S F | DI SI | BI
+EQ B D O M S F | DI SI | BI
+OI F | S SI | M
+EQ S SI | OI F | M
+OI F | S SI | B M
+EQ S SI | OI F | B M
+BI OI SI F | S | M
+BI OI SI F | EQ S | M
+BI OI SI F | B M | S
+BI OI SI F | EQ S | B M
+D OI S SI F | M
+EQ D OI S SI F | M
+D OI S SI F | B M
+EQ D OI S SI F | B M
+BI D OI S SI F | M
+EQ BI D OI S SI F | M
+BI D OI S SI F | B M
+EQ BI D OI S SI F | B M
+DI OI SI F | S | M
+DI OI SI F | EQ S | M
+DI OI SI F | B M | S
+DI OI SI F | EQ S | B M
+BI DI OI SI F | S | M
+EQ BI DI OI F | S SI | M
+BI DI OI SI F | B M | S
+EQ BI DI OI F | S SI | B M
+D OI S SI F | M | DI
+EQ D OI S SI F | M | DI
+D OI S SI F | B M | DI
+EQ D OI S SI F | B M | DI
+BI D OI S SI F | M | DI
+EQ BI D OI S SI F | M | DI
+BI D OI S SI F | B M | DI
+EQ BI D OI S SI F | B M | DI
+OI SI F | O M S
+EQ OI SI F | O M S
+B O M S | OI SI F
+EQ OI SI F | B O M S
+BI OI SI F | O M S
+BI OI SI F | EQ O M S
+BI OI SI F | B O M S
+EQ B O M S | BI OI SI F
+D OI S SI F | O M
+EQ D OI S SI F | O M
+B D O M S F | D OI SI F
+EQ B D O M S F | D OI SI F
+BI OI SI F | D O M S
+EQ D O M S | BI OI SI F
+B D O M S F | BI OI SI F
+EQ B D O M S F | BI OI SI F
+DI O M S SI | OI F
+EQ DI O M S SI | OI F
+B DI O M S SI | OI F
+EQ B DI O M S SI | OI F
+BI OI SI F | DI O M S
+EQ BI DI OI F | DI O M S SI
+B DI O M S | BI OI SI F
+B DI O M S SI | EQ BI DI OI F
+D DI O OI M S SI F
+EQ D DI O OI M S SI F
+B D DI O OI M S SI F
+EQ B D DI O OI M S SI F
+BI D DI O OI M S SI F
+EQ BI D DI O OI M S SI F
+B BI D DI O OI M S SI F
+EQ B BI D DI O OI M S SI F
+S SI | F | MI
+EQ F | S SI | MI
+S SI | F | MI | B
+EQ F | S SI | MI | B
+S SI | BI MI | F
+EQ F | S SI | BI MI
+S SI | BI MI | F | B
+EQ F | S SI | BI MI | B
+D F | S SI | MI
+EQ D F | S SI | MI
+D F | S SI | MI | B
+EQ D F | S SI | MI | B
+D F | S SI | BI MI
+EQ D F | S SI | BI MI
+D F | S SI | BI MI | B
+EQ D F | S SI | BI MI | B
+S SI | F | MI | DI
+EQ F | S SI | MI | DI
+S SI | F | MI | DI | B
+EQ F | S SI | MI | DI | B
+S SI | BI MI | F | DI
+EQ F | S SI | BI MI | DI
+S SI | BI MI | F | DI | B
+EQ F | S SI | BI MI | DI | B
+D S F | DI SI | MI
+EQ D S F | DI SI | MI
+D S F | DI SI | MI | B
+EQ D S F | DI SI | MI | B
+D S F | DI SI | BI MI
+EQ D S F | DI SI | BI MI
+D S F | DI SI | BI MI | B
+EQ D S F | DI SI | BI MI | B
+S SI | F | MI | O
+EQ F | S SI | MI | O
+S SI | B O | F | MI
+EQ F | S SI | B O | MI
+S SI | BI MI | F | O
+EQ F | S SI | BI MI | O
+S SI | BI MI | B O | F
+EQ F | S SI | BI MI | B O
+D O F | S SI | MI
+D O F | EQ S SI | MI
+B D O S F | SI | MI
+EQ B D O F | S SI | MI
+D O F | S SI | BI MI
+D O F | EQ S SI | BI MI
+B D O S F | BI MI | SI
+EQ B D O F | S SI | BI MI
+DI O S SI | F | MI
+DI O S SI | EQ F | MI
+B DI O S SI | F | MI
+B DI O S SI | EQ F | MI
+DI O S SI | BI MI | F
+DI O S SI | EQ F | BI MI
+B DI O S SI | BI MI | F
+B DI O S SI | EQ F | BI MI
+DI O S SI | D O F | MI
+DI O S SI | EQ D F | MI
+B DI O S SI | D O F | MI
+B DI O S SI | EQ D F | MI
+DI O S SI | D O F | BI MI
+DI O S SI | EQ D F | BI MI
+B DI O S SI | D O F | BI MI
+B DI O S SI | EQ D F | BI MI
+OI MI SI F | S
+EQ OI MI SI F | S
+OI MI SI F | S | B
+EQ OI MI SI F | S | B
+BI OI MI SI F | S
+EQ BI OI MI F | S SI
+BI OI MI SI F | S | B
+EQ BI OI MI F | S SI | B
+D OI MI S SI F
+EQ D OI MI S SI F
+D OI MI S SI F | B
+EQ D OI MI S SI F | B
+BI D OI MI S SI F
+EQ BI D OI MI S SI F
+BI D OI MI S SI F | B
+EQ BI D OI MI S SI F | B
+DI OI MI F | S SI
+DI OI MI F | EQ S SI
+DI OI MI F | S SI | B
+DI OI MI F | EQ S SI | B
+BI DI OI MI F | S SI
+EQ BI DI OI MI SI F | S
+BI DI OI MI F | S SI | B
+EQ BI DI OI MI SI F | S | B
+D OI MI S SI F | DI
+EQ D OI MI S SI F | DI
+D OI MI S SI F | DI | B
+EQ D OI MI S SI F | DI | B
+BI D OI MI S SI F | DI
+EQ BI D OI S SI F | EQ BI DI OI MI
+BI D OI MI S SI F | DI | B
+EQ BI D OI S SI F | EQ BI DI OI MI | B
+OI MI SI F | O S
+EQ OI MI SI F | O S
+OI MI SI F | B O S
+EQ OI MI SI F | B O S
+BI OI MI SI F | O S
+EQ BI OI MI SI F | O S
+BI OI MI SI F | B O S
+EQ BI OI MI SI F | B O S
+D OI MI S SI F | O
+EQ D OI MI S SI F | O
+D OI MI S SI F | B O
+EQ D OI MI S SI F | B O
+BI D OI MI S SI F | O
+EQ BI D OI MI S SI F | O
+BI D OI MI S SI F | B O
+EQ BI D OI MI S SI F | B O
+DI OI MI F | DI O S SI
+EQ DI O S SI | DI OI MI F
+B DI O S SI | DI OI MI F
+EQ B DI O S SI | DI OI MI F
+BI DI OI MI F | DI O S SI
+EQ BI DI OI MI SI F | O S
+BI DI OI MI F | B DI O S SI
+EQ BI DI OI MI SI F | B O S
+D DI O OI MI S SI F
+EQ D DI O OI MI S SI F
+B D DI O OI MI S SI F
+EQ B D DI O OI MI S SI F
+BI D DI O OI MI S SI F
+EQ BI D DI O OI MI S SI F
+B BI D DI O OI MI S SI F
+EQ B BI D DI O OI MI S SI F
+S SI | F | MI | M
+EQ F | S SI | MI | M
+S SI | B M | F | MI
+EQ F | S SI | B M | MI
+S SI | BI MI | F | M
+EQ F | S SI | BI MI | M
+S SI | BI MI | B M | F
+EQ F | S SI | BI MI | B M
+D F | S SI | MI | M
+EQ D F | S SI | MI | M
+D F | S SI | B M | MI
+EQ D F | S SI | B M | MI
+D F | S SI | BI MI | M
+EQ D F | S SI | BI MI | M
+D F | S SI | BI MI | B M
+EQ D F | S SI | BI MI | B M
+S SI | F | MI | M | DI
+EQ F | S SI | MI | M | DI
+S SI | B M | F | MI | DI
+EQ F | S SI | B M | MI | DI
+S SI | BI MI | F | M | DI
+EQ F | S SI | BI MI | M | DI
+S SI | BI MI | B M | F | DI
+EQ F | S SI | BI MI | B M | DI
+D S F | DI SI | MI | M
+EQ D S F | DI SI | MI | M
+D S F | DI SI | B M | MI
+EQ D S F | DI SI | B M | MI
+D S F | DI SI | BI MI | M
+EQ D S F | DI SI | BI MI | M
+D S F | DI SI | BI MI | B M
+EQ D S F | DI SI | BI MI | B M
+S SI | O M | F | MI
+EQ F | S SI | O M | MI
+B O M | S SI | F | MI
+B O M | EQ F | S SI | MI
+S SI | BI MI | O M | F
+EQ F | S SI | BI MI | O M
+B O M | S SI | BI MI | F
+B O M | EQ F | S SI | BI MI
+D O M F | S SI | MI
+EQ D O M F | S SI | MI
+B D O M S F | SI | MI
+EQ B D O M S F | SI | MI
+D O M F | S SI | BI MI
+EQ D O M F | S SI | BI MI
+B D O M S F | BI MI | SI
+EQ B D O M S F | BI MI | SI
+DI O M S SI | F | MI
+DI O M S SI | EQ F | MI
+B DI O M S SI | F | MI
+B DI O M S SI | EQ F | MI
+DI O M S SI | BI MI | F
+DI O M S SI | EQ F | BI MI
+B DI O M S SI | BI MI | F
+B DI O M S SI | EQ F | BI MI
+DI O M S SI | D O F | MI
+DI O M S SI | EQ D F | MI
+B D O M S F | DI SI | MI
+EQ B D O M S F | DI SI | MI
+DI O M S SI | D O F | BI MI
+DI O M S SI | EQ D F | BI MI
+B D O M S F | DI SI | BI MI
+EQ B D O M S F | DI SI | BI MI
+OI MI SI F | S | M
+EQ OI MI SI F | S | M
+OI MI SI F | B M | S
+EQ OI MI SI F | B M | S
+BI OI MI SI F | S | M
+EQ BI OI MI F | S SI | M
+BI OI MI SI F | B M | S
+EQ BI OI MI F | S SI | B M
+D OI MI S SI F | M
+EQ D OI MI S SI F | M
+D OI MI S SI F | B M
+EQ D OI MI S SI F | B M
+BI D OI MI S SI F | M
+EQ BI D OI MI S SI F | M
+BI D OI MI S SI F | B M
+EQ BI D OI MI S SI F | B M
+DI OI MI F | S SI | M
+DI OI MI F | EQ S SI | M
+DI OI MI F | S SI | B M
+DI OI MI F | EQ S SI | B M
+BI DI OI MI F | S SI | M
+EQ BI DI OI MI SI F | S | M
+BI DI OI MI F | S SI | B M
+EQ BI DI OI MI SI F | B M | S
+D OI MI S SI F | M | DI
+EQ D OI MI S SI F | M | DI
+D OI MI S SI F | B M | DI
+EQ D OI MI S SI F | B M | DI
+BI D OI MI S SI F | M | DI
+EQ BI D OI MI S SI F | M | DI
+BI D OI MI S SI F | B M | DI
+EQ BI D OI MI S SI F | B M | DI
+OI MI SI F | O M S
+EQ OI MI SI F | O M S
+OI MI SI F | B O M S
+EQ OI MI SI F | B O M S
+BI OI MI SI F | O M S
+EQ BI OI MI SI F | O M S
+BI OI MI SI F | B O M S
+EQ BI OI MI SI F | B O M S
+D OI MI S SI F | O M
+EQ D OI MI S SI F | O M
+D OI MI S SI F | B D O M S F
+EQ B D O M S F | EQ D OI MI SI F
+BI D OI MI S SI F | O M
+EQ BI D OI MI S SI F | O M
+BI D OI MI S SI F | B D O M S F
+BI D OI MI S SI F | EQ B D O M S F
+DI O M S SI | DI OI MI F
+EQ DI O M S SI | DI OI MI F
+B DI O M S SI | DI OI MI F
+EQ B DI O M S SI | DI OI MI F
+BI DI OI MI F | DI O M S SI
+EQ BI DI OI MI SI F | O M S
+B DI O M S SI | BI DI OI MI F
+EQ BI DI OI MI SI F | B O M S
+D DI O OI M MI S SI F
+EQ D DI O OI M MI S SI F
+B D DI O OI M MI S SI F
+EQ B D DI O OI M MI S SI F
+BI D DI O OI M MI S SI F
+EQ BI D DI O OI M MI S SI F
+B BI D DI O OI M MI S SI F
+EQ B BI D DI O OI M MI S SI F
+FI
+EQ FI
+FI | B
+EQ FI | B
+FI | BI
+EQ FI | BI
+FI | BI | B
+EQ FI | BI | B
+FI | D
+EQ FI | D
+FI | D | B
+EQ FI | D | B
+FI | D | BI
+EQ FI | D | BI
+FI | D | BI | B
+EQ FI | D | BI | B
+DI FI
+EQ DI FI
+DI FI | B
+EQ DI FI | B
+DI FI | BI
+EQ DI FI | BI
+DI FI | BI | B
+EQ DI FI | BI | B
+DI FI | D
+EQ DI FI | D
+DI FI | D | B
+EQ DI FI | D | B
+DI FI | D | BI
+EQ DI FI | D | BI
+DI FI | D | BI | B
+EQ DI FI | D | BI | B
+O FI
+EQ O FI
+B O FI
+EQ B O FI
+O FI | BI
+EQ O FI | BI
+B O FI | BI
+EQ B O FI | BI
+D O FI
+EQ D O FI
+B D O FI
+EQ B D O FI
+D O FI | BI
+EQ D O FI | BI
+B D O FI | BI
+EQ B D O FI | BI
+DI O FI
+EQ DI O FI
+B DI O FI
+EQ B DI O FI
+DI O FI | BI
+EQ DI O FI | BI
+B DI O FI | BI
+EQ B DI O FI | BI
+DI O FI | D
+EQ DI O FI | D
+B DI O FI | D
+EQ B DI O FI | D
+DI O FI | D | BI
+EQ DI O FI | D | BI
+B DI O FI | D | BI
+EQ B DI O FI | D | BI
+FI | OI
+EQ FI | OI
+FI | OI | B
+EQ FI | OI | B
+BI OI | FI
+EQ FI | BI OI
+BI OI | FI | B
+EQ FI | BI OI | B
+D OI | FI
+EQ FI | D OI
+D OI | FI | B
+EQ FI | D OI | B
+BI D OI | FI
+BI D OI | EQ FI
+BI D OI | FI | B
+BI D OI | EQ FI | B
+DI OI FI
+EQ DI OI FI
+DI OI FI | B
+EQ DI OI FI | B
+BI DI OI FI
+EQ BI DI OI FI
+BI DI OI FI | B
+EQ BI DI OI FI | B
+DI OI FI | D
+EQ DI OI FI | D
+DI OI FI | D | B
+EQ DI OI FI | D | B
+BI DI OI FI | D
+EQ BI DI OI FI | D
+BI DI OI FI | D | B
+EQ BI DI OI FI | D | B
+O FI | OI
+EQ O FI | OI
+B O FI | OI
+EQ B O FI | OI
+O FI | BI OI
+EQ O FI | BI OI
+B O FI | BI OI
+EQ B O FI | BI OI
+D O FI | OI
+EQ D O FI | OI
+B D O FI | OI
+EQ B D O FI | OI
+D O FI | BI OI
+EQ D O FI | BI OI
+B D O FI | BI OI
+EQ B D O FI | BI OI
+DI OI FI | O
+EQ DI OI FI | O
+DI OI FI | B O
+EQ DI OI FI | B O
+BI DI OI FI | O
+EQ BI DI OI FI | O
+BI DI OI FI | B O
+EQ BI DI OI FI | B O
+D DI O OI FI
+EQ D DI O OI FI
+B D DI O OI FI
+EQ B D DI O OI FI
+BI D DI O OI FI
+EQ BI D DI O OI FI
+B BI D DI O OI FI
+EQ B BI D DI O OI FI
+FI | M
+EQ FI | M
+B M | FI
+EQ FI | B M
+FI | M | BI
+EQ FI | M | BI
+B M | FI | BI
+EQ FI | B M | BI
+FI | M | D
+EQ FI | M | D
+B M | FI | D
+EQ FI | B M | D
+FI | M | D | BI
+EQ FI | M | D | BI
+B M | FI | D | BI
+EQ FI | B M | D | BI
+DI FI | M
+EQ DI FI | M
+DI FI | B M
+EQ DI FI | B M
+DI FI | M | BI
+EQ DI FI | M | BI
+DI FI | B M | BI
+EQ DI FI | B M | BI
+DI FI | M | D
+EQ DI FI | M | D
+DI FI | B M | D
+EQ DI FI | B M | D
+DI FI | M | D | BI
+EQ DI FI | M | D | BI
+DI FI | B M | D | BI
+EQ DI FI | B M | D | BI
+O M FI
+EQ O M FI
+B O M FI
+EQ B O M FI
+O M FI | BI
+EQ O M FI | BI
+B O M FI | BI
+EQ B O M FI | BI
+D O M FI
+EQ D O M FI
+B D O M FI
+EQ B D O M FI
+D O M FI | BI
+EQ D O M FI | BI
+B D O M FI | BI
+EQ B D O M FI | BI
+DI O M FI
+EQ DI O M FI
+B DI O M FI
+EQ B DI O M FI
+DI O M FI | BI
+EQ DI O M FI | BI
+B DI O M FI | BI
+EQ B DI O M FI | BI
+DI O M FI | D
+EQ DI O M FI | D
+B DI O M FI | D
+EQ B DI O M FI | D
+DI O M FI | D | BI
+EQ DI O M FI | D | BI
+B DI O M FI | D | BI
+EQ B DI O M FI | D | BI
+FI | M | OI
+EQ FI | M | OI
+B M | FI | OI
+EQ FI | B M | OI
+BI OI | FI | M
+EQ FI | BI OI | M
+B M | BI OI | FI
+EQ FI | B M | BI OI
+D OI | FI | M
+EQ FI | D OI | M
+B M | D OI | FI
+EQ FI | B M | D OI
+BI D OI | FI | M
+BI D OI | EQ FI | M
+BI D OI | B M | FI
+BI D OI | EQ FI | B M
+DI OI FI | M
+EQ DI OI FI | M
+DI OI FI | B M
+EQ DI OI FI | B M
+BI DI OI FI | M
+EQ BI DI OI FI | M
+BI DI OI FI | B M
+EQ BI DI OI FI | B M
+DI OI FI | M | D
+EQ DI OI FI | M | D
+DI OI FI | B M | D
+EQ DI OI FI | B M | D
+BI DI OI FI | M | D
+EQ BI DI OI FI | M | D
+BI DI OI FI | B M | D
+EQ BI DI OI FI | B M | D
+O M FI | OI
+EQ O M FI | OI
+B O M FI | OI
+EQ B O M FI | OI
+O M FI | BI OI
+EQ O M FI | BI OI
+B O M FI | BI OI
+EQ B O M FI | BI OI
+D O M FI | OI
+EQ D O M FI | OI
+B D O M FI | OI
+EQ B D O M FI | OI
+D O M FI | BI OI
+EQ D O M FI | BI OI
+B D O M FI | BI OI
+EQ B D O M FI | BI OI
+DI O M FI | OI
+EQ DI O M FI | OI
+B DI O M FI | OI
+EQ B DI O M FI | OI
+DI O M FI | BI OI
+EQ BI DI OI FI | O M
+B DI O M FI | BI OI
+EQ BI DI OI FI | B O M
+D DI O OI M FI
+EQ D DI O OI M FI
+B D DI O OI M FI
+EQ B D DI O OI M FI
+BI D DI O OI M FI
+EQ BI D DI O OI M FI
+B BI D DI O OI M FI
+EQ B BI D DI O OI M FI
+FI | MI
+EQ FI | MI
+FI | MI | B
+EQ FI | MI | B
+BI MI | FI
+EQ FI | BI MI
+BI MI | FI | B
+EQ FI | BI MI | B
+FI | MI | D
+EQ FI | MI | D
+FI | MI | D | B
+EQ FI | MI | D | B
+BI MI | FI | D
+EQ FI | BI MI | D
+BI MI | FI | D | B
+EQ FI | BI MI | D | B
+DI FI | MI
+EQ DI FI | MI
+DI FI | MI | B
+EQ DI FI | MI | B
+DI FI | BI MI
+EQ DI FI | BI MI
+DI FI | BI MI | B
+EQ DI FI | BI MI | B
+DI FI | MI | D
+EQ DI FI | MI | D
+DI FI | MI | D | B
+EQ DI FI | MI | D | B
+DI FI | BI MI | D
+EQ DI FI | BI MI | D
+DI FI | BI MI | D | B
+EQ DI FI | BI MI | D | B
+O FI | MI
+EQ O FI | MI
+B O FI | MI
+EQ B O FI | MI
+O FI | BI MI
+EQ O FI | BI MI
+B O FI | BI MI
+EQ B O FI | BI MI
+D O FI | MI
+EQ D O FI | MI
+B D O FI | MI
+EQ B D O FI | MI
+D O FI | BI MI
+EQ D O FI | BI MI
+B D O FI | BI MI
+EQ B D O FI | BI MI
+DI O FI | MI
+EQ DI O FI | MI
+B DI O FI | MI
+EQ B DI O FI | MI
+DI O FI | BI MI
+EQ DI O FI | BI MI
+B DI O FI | BI MI
+EQ B DI O FI | BI MI
+DI O FI | MI | D
+EQ DI O FI | MI | D
+B DI O FI | MI | D
+EQ B DI O FI | MI | D
+DI O FI | BI MI | D
+EQ DI O FI | BI MI | D
+B DI O FI | BI MI | D
+EQ B DI O FI | BI MI | D
+OI MI | FI
+EQ OI MI | FI
+OI MI | FI | B
+EQ OI MI | FI | B
+BI OI MI | FI
+EQ BI OI MI | FI
+BI OI MI | FI | B
+EQ BI OI MI | FI | B
+D OI MI | FI
+EQ D OI MI | FI
+D OI MI | FI | B
+EQ D OI MI | FI | B
+BI D OI MI | FI
+EQ BI D OI MI | FI
+BI D OI MI | FI | B
+EQ BI D OI MI | FI | B
+DI OI MI FI
+EQ DI OI MI FI
+DI OI MI FI | B
+EQ DI OI MI FI | B
+BI DI OI MI FI
+EQ BI DI OI MI FI
+BI DI OI MI FI | B
+EQ BI DI OI MI FI | B
+DI OI MI FI | D
+EQ DI OI MI FI | D
+DI OI MI FI | D | B
+EQ DI OI MI FI | D | B
+BI DI OI MI FI | D
+EQ BI DI OI MI FI | D
+BI DI OI MI FI | D | B
+EQ BI DI OI MI FI | D | B
+O FI | OI MI
+EQ OI MI | O FI
+B O FI | OI MI
+EQ B O FI | OI MI
+BI OI MI | O FI
+EQ BI OI MI | O FI
+B O FI | BI OI MI
+EQ B O FI | BI OI MI
+D OI MI | O FI
+EQ D OI MI | O FI
+B D O FI | OI MI
+EQ B O FI | D OI MI
+BI D OI MI | O FI
+EQ BI D OI MI | O FI
+B D O FI | BI OI MI
+EQ BI D OI MI | EQ B O FI
+DI OI MI FI | O
+EQ DI OI MI FI | O
+DI OI MI FI | B O
+EQ DI OI MI FI | B O
+BI DI OI MI FI | O
+EQ BI DI OI MI | O FI
+BI DI OI MI FI | B O
+EQ BI DI OI MI | EQ B O FI
+D DI O OI MI FI
+EQ D DI O OI MI FI
+B D DI O OI MI FI
+EQ B D DI O OI MI FI
+BI D DI O OI MI FI
+EQ BI D DI O OI MI FI
+B BI D DI O OI MI FI
+EQ B BI D DI O OI MI FI
+FI | MI | M
+EQ FI | MI | M
+B M | FI | MI
+EQ FI | B M | MI
+BI MI | FI | M
+EQ FI | BI MI | M
+BI MI | B M | FI
+EQ FI | BI MI | B M
+FI | MI | M | D
+EQ FI | MI | M | D
+B M | FI | MI | D
+EQ FI | B M | MI | D
+BI MI | FI | M | D
+EQ FI | BI MI | M | D
+BI MI | B M | FI | D
+EQ FI | BI MI | B M | D
+DI FI | MI | M
+EQ DI FI | MI | M
+DI FI | B M | MI
+EQ DI FI | B M | MI
+DI FI | BI MI | M
+EQ DI FI | BI MI | M
+DI FI | BI MI | B M
+EQ DI FI | BI MI | B M
+DI FI | MI | M | D
+EQ DI FI | MI | M | D
+DI FI | B M | MI | D
+EQ DI FI | B M | MI | D
+DI FI | BI MI | M | D
+EQ DI FI | BI MI | M | D
+DI FI | BI MI | B M | D
+EQ DI FI | BI MI | B M | D
+O M FI | MI
+EQ O M FI | MI
+B O M FI | MI
+EQ B O M FI | MI
+O M FI | BI MI
+EQ O M FI | BI MI
+B O M FI | BI MI
+EQ B O M FI | BI MI
+D O M FI | MI
+EQ D O M FI | MI
+B D O M FI | MI
+EQ B D O M FI | MI
+D O M FI | BI MI
+EQ D O M FI | BI MI
+B D O M FI | BI MI
+EQ B D O M FI | BI MI
+DI O M FI | MI
+EQ DI O M FI | MI
+B DI O M FI | MI
+EQ B DI O M FI | MI
+DI O M FI | BI MI
+EQ DI O M FI | BI MI
+B DI O M FI | BI MI
+EQ B DI O M FI | BI MI
+DI O M FI | MI | D
+EQ DI O M FI | MI | D
+B DI O M FI | MI | D
+EQ B DI O M FI | MI | D
+DI O M FI | BI MI | D
+EQ DI O M FI | BI MI | D
+B DI O M FI | BI MI | D
+EQ B DI O M FI | BI MI | D
+OI MI | FI | M
+EQ OI MI | FI | M
+OI MI | B M | FI
+EQ OI MI | B M | FI
+BI OI MI | FI | M
+EQ BI OI MI | FI | M
+BI OI MI | B M | FI
+EQ BI OI MI | B M | FI
+D OI MI | FI | M
+EQ D OI MI | FI | M
+D OI MI | B M | FI
+EQ D OI MI | B M | FI
+BI D OI MI | FI | M
+EQ BI D OI MI | FI | M
+BI D OI MI | B M | FI
+EQ BI D OI MI | B M | FI
+DI OI MI FI | M
+EQ DI OI MI FI | M
+DI OI MI FI | B M
+EQ DI OI MI FI | B M
+BI DI OI MI FI | M
+EQ BI DI OI MI FI | M
+BI DI OI MI FI | B M
+EQ BI DI OI MI FI | B M
+DI OI MI FI | M | D
+EQ DI OI MI FI | M | D
+DI OI MI FI | B M | D
+EQ DI OI MI FI | B M | D
+BI DI OI MI FI | M | D
+EQ BI DI OI MI FI | M | D
+BI DI OI MI FI | B M | D
+EQ BI DI OI MI FI | B M | D
+O M FI | OI MI
+EQ O M FI | OI MI
+B O M FI | OI MI
+EQ B O M FI | OI MI
+O M FI | BI OI MI
+EQ O M FI | BI OI MI
+B O M FI | BI OI MI
+EQ B O M FI | BI OI MI
+D O M FI | OI MI
+EQ D O M FI | OI MI
+B D O M FI | OI MI
+EQ B D O M FI | OI MI
+D O M FI | BI OI MI
+EQ D O M FI | BI OI MI
+B D O M FI | BI OI MI
+EQ B D O M FI | BI OI MI
+DI OI MI FI | O M
+EQ DI OI MI FI | O M
+DI OI MI FI | B O M
+EQ DI OI MI FI | B O M
+BI DI OI MI FI | O M
+EQ BI DI OI MI | O M FI
+BI DI OI MI FI | B O M
+EQ BI DI OI MI | B O M FI
+D DI O OI M MI FI
+EQ D DI O OI M MI FI
+B D DI O OI M MI FI
+EQ B D DI O OI M MI FI
+BI D DI O OI M MI FI
+EQ BI D DI O OI M MI FI
+B BI D DI O OI M MI FI
+EQ B BI D DI O OI M MI FI
+FI | S
+EQ S | FI
+FI | S | B
+EQ S | FI | B
+FI | S | BI
+EQ S | FI | BI
+FI | S | BI | B
+EQ S | FI | BI | B
+D S | FI
+EQ D S | FI
+D S | FI | B
+EQ D S | FI | B
+D S | FI | BI
+EQ D S | FI | BI
+D S | FI | BI | B
+EQ D S | FI | BI | B
+DI FI | S
+EQ DI FI | S
+DI FI | S | B
+EQ DI FI | S | B
+DI FI | S | BI
+EQ DI FI | S | BI
+DI FI | S | BI | B
+EQ DI FI | S | BI | B
+DI FI | D S
+EQ DI FI | D S
+DI FI | D S | B
+EQ DI FI | D S | B
+DI FI | D S | BI
+EQ DI FI | D S | BI
+DI FI | D S | BI | B
+EQ DI FI | D S | BI | B
+O S FI
+EQ O S FI
+B O S FI
+EQ B O S FI
+O S FI | BI
+EQ O S FI | BI
+B O S FI | BI
+EQ B O S FI | BI
+D O S FI
+EQ D O S FI
+B D O S FI
+EQ B D O S FI
+D O S FI | BI
+EQ D O S FI | BI
+B D O S FI | BI
+EQ B D O S FI | BI
+DI O S FI
+EQ DI O S FI
+B DI O S FI
+EQ B DI O S FI
+DI O S FI | BI
+EQ DI O S FI | BI
+B DI O S FI | BI
+EQ B DI O S FI | BI
+DI O S FI | D
+EQ DI O S FI | D
+B DI O S FI | D
+EQ B DI O S FI | D
+DI O S FI | D | BI
+EQ DI O S FI | D | BI
+B DI O S FI | D | BI
+EQ B DI O S FI | D | BI
+FI | S | OI
+EQ S | FI | OI
+FI | S | OI | B
+EQ S | FI | OI | B
+BI OI | FI | S
+EQ S | BI OI | FI
+BI OI | FI | S | B
+EQ S | BI OI | FI | B
+D OI S | FI
+EQ D OI S | FI
+D OI S | FI | B
+EQ D OI S | FI | B
+BI D OI S | FI
+EQ BI D OI S | FI
+BI D OI S | FI | B
+EQ BI D OI S | FI | B
+DI OI FI | S
+DI OI FI | EQ S
+DI OI FI | S | B
+DI OI FI | EQ S | B
+BI DI OI FI | S
+EQ BI DI OI FI | S
+BI DI OI FI | S | B
+EQ BI DI OI FI | S | B
+DI OI FI | D S
+DI OI FI | EQ D S
+DI OI FI | D S | B
+DI OI FI | EQ D S | B
+BI D OI S | DI OI FI
+EQ BI DI OI FI | D S
+BI D OI S | DI OI FI | B
+EQ BI DI OI FI | D S | B
+O S FI | OI
+EQ O S FI | OI
+B O S FI | OI
+EQ B O S FI | OI
+O S FI | BI OI
+EQ O S FI | BI OI
+B O S FI | BI OI
+EQ B O S FI | BI OI
+D O S FI | OI
+EQ D O S FI | OI
+B D O S FI | OI
+EQ B D O S FI | OI
+D O S FI | BI OI
+EQ D O S FI | BI OI
+B D O S FI | BI OI
+EQ B D O S FI | BI OI
+DI O S FI | OI
+EQ DI O S FI | OI
+B DI O S FI | OI
+EQ B DI O S FI | OI
+DI O S FI | BI OI
+EQ BI DI OI FI | O S
+B DI O S FI | BI OI
+EQ BI DI OI FI | B O S
+D DI O OI S FI
+EQ D DI O OI S FI
+B D DI O OI S FI
+EQ B D DI O OI S FI
+BI D DI O OI S FI
+EQ BI D DI O OI S FI
+B BI D DI O OI S FI
+EQ B BI D DI O OI S FI
+FI | S | M
+EQ S | FI | M
+B M | FI | S
+EQ S | B M | FI
+FI | S | M | BI
+EQ S | FI | M | BI
+B M | FI | S | BI
+EQ S | B M | FI | BI
+D S | FI | M
+EQ D S | FI | M
+D S | B M | FI
+EQ D S | B M | FI
+D S | FI | M | BI
+EQ D S | FI | M | BI
+D S | B M | FI | BI
+EQ D S | B M | FI | BI
+DI FI | S | M
+EQ DI FI | S | M
+DI FI | B M | S
+EQ DI FI | B M | S
+DI FI | S | M | BI
+EQ DI FI | S | M | BI
+DI FI | B M | S | BI
+EQ DI FI | B M | S | BI
+DI FI | D S | M
+EQ DI FI | D S | M
+DI FI | D S | B M
+EQ DI FI | D S | B M
+DI FI | D S | M | BI
+EQ DI FI | D S | M | BI
+DI FI | D S | B M | BI
+EQ DI FI | D S | B M | BI
+O M S FI
+EQ O M S FI
+B O M S FI
+EQ B O M S FI
+O M S FI | BI
+EQ O M S FI | BI
+B O M S FI | BI
+EQ B O M S FI | BI
+D O M S FI
+EQ D O M S FI
+B D O M S FI
+EQ B D O M S FI
+D O M S FI | BI
+EQ D O M S FI | BI
+B D O M S FI | BI
+EQ B D O M S FI | BI
+DI O M S FI
+EQ DI O M S FI
+B DI O M S FI
+EQ B DI O M S FI
+DI O M S FI | BI
+EQ DI O M S FI | BI
+B DI O M S FI | BI
+EQ B DI O M S FI | BI
+DI O M S FI | D
+EQ DI O M S FI | D
+B DI O M S FI | D
+EQ B DI O M S FI | D
+DI O M S FI | D | BI
+EQ DI O M S FI | D | BI
+B DI O M S FI | D | BI
+EQ B DI O M S FI | D | BI
+FI | S | M | OI
+EQ S | FI | M | OI
+B M | FI | S | OI
+EQ S | B M | FI | OI
+BI OI | FI | S | M
+EQ S | BI OI | FI | M
+B M | BI OI | FI | S
+EQ S | B M | BI OI | FI
+D OI S | FI | M
+EQ D OI S | FI | M
+D OI S | B M | FI
+EQ D OI S | B M | FI
+BI D OI S | FI | M
+EQ BI D OI S | FI | M
+BI D OI S | B M | FI
+EQ BI D OI S | B M | FI
+DI OI FI | S | M
+DI OI FI | EQ S | M
+DI OI FI | B M | S
+DI OI FI | EQ S | B M
+BI DI OI FI | S | M
+EQ BI DI OI FI | S | M
+BI DI OI FI | B M | S
+EQ BI DI OI FI | B M | S
+DI OI FI | D S | M
+DI OI FI | EQ D S | M
+DI OI FI | D S | B M
+DI OI FI | EQ D S | B M
+BI D OI S | DI OI FI | M
+EQ BI DI OI FI | D S | M
+BI D OI S | DI OI FI | B M
+EQ BI DI OI FI | D S | B M
+O M S FI | OI
+EQ O M S FI | OI
+B O M S FI | OI
+EQ B O M S FI | OI
+O M S FI | BI OI
+EQ O M S FI | BI OI
+B O M S FI | BI OI
+EQ B O M S FI | BI OI
+D O M S FI | OI
+EQ D O M S FI | OI
+B D O M S FI | OI
+EQ B D O M S FI | OI
+D O M S FI | BI OI
+EQ D O M S FI | BI OI
+B D O M S FI | BI OI
+EQ B D O M S FI | BI OI
+DI O M S FI | OI
+EQ DI O M S FI | OI
+B DI O M S FI | OI
+B DI O M S FI | EQ OI
+DI O M S FI | BI OI
+EQ DI O M S FI | EQ BI DI OI FI
+B DI O M S FI | BI OI
+B DI O M S FI | EQ BI DI OI FI
+D DI O OI M S FI
+EQ D DI O OI M S FI
+B D DI O OI M S FI
+EQ B D DI O OI M S FI
+BI D DI O OI M S FI
+EQ BI D DI O OI M S FI
+B BI D DI O OI M S FI
+EQ B BI D DI O OI M S FI
+FI | S | MI
+EQ S | FI | MI
+FI | S | MI | B
+EQ S | FI | MI | B
+BI MI | FI | S
+EQ S | BI MI | FI
+BI MI | FI | S | B
+EQ S | BI MI | FI | B
+D S | FI | MI
+EQ D S | FI | MI
+D S | FI | MI | B
+EQ D S | FI | MI | B
+D S | BI MI | FI
+EQ D S | BI MI | FI
+D S | BI MI | FI | B
+EQ D S | BI MI | FI | B
+DI FI | S | MI
+EQ DI FI | S | MI
+DI FI | S | MI | B
+EQ DI FI | S | MI | B
+DI FI | BI MI | S
+EQ DI FI | BI MI | S
+DI FI | BI MI | S | B
+EQ DI FI | BI MI | S | B
+DI FI | D S | MI
+EQ DI FI | D S | MI
+DI FI | D S | MI | B
+EQ DI FI | D S | MI | B
+DI FI | D S | BI MI
+EQ DI FI | D S | BI MI
+DI FI | D S | BI MI | B
+EQ DI FI | D S | BI MI | B
+O S FI | MI
+EQ O S FI | MI
+B O S FI | MI
+EQ B O S FI | MI
+O S FI | BI MI
+EQ O S FI | BI MI
+B O S FI | BI MI
+EQ B O S FI | BI MI
+D O S FI | MI
+EQ D O S FI | MI
+B D O S FI | MI
+EQ B D O S FI | MI
+D O S FI | BI MI
+EQ D O S FI | BI MI
+B D O S FI | BI MI
+EQ B D O S FI | BI MI
+DI O S FI | MI
+EQ DI O S FI | MI
+B DI O S FI | MI
+EQ B DI O S FI | MI
+DI O S FI | BI MI
+EQ DI O S FI | BI MI
+B DI O S FI | BI MI
+EQ B DI O S FI | BI MI
+DI O S FI | MI | D
+EQ DI O S FI | MI | D
+B DI O S FI | MI | D
+EQ B DI O S FI | MI | D
+DI O S FI | BI MI | D
+EQ DI O S FI | BI MI | D
+B DI O S FI | BI MI | D
+EQ B DI O S FI | BI MI | D
+OI MI | FI | S
+EQ S | OI MI | FI
+OI MI | FI | S | B
+EQ S | OI MI | FI | B
+BI OI MI | FI | S
+BI OI MI | EQ S | FI
+BI OI MI | FI | S | B
+BI OI MI | EQ S | FI | B
+D OI MI S | FI
+EQ D OI MI S | FI
+D OI MI S | FI | B
+EQ D OI MI S | FI | B
+BI D OI MI S | FI
+EQ BI D OI MI S | FI
+BI D OI MI S | FI | B
+EQ BI D OI MI S | FI | B
+DI OI MI FI | S
+EQ DI OI MI FI | S
+DI OI MI FI | S | B
+EQ DI OI MI FI | S | B
+BI DI OI MI FI | S
+BI DI OI MI FI | EQ S
+BI DI OI MI FI | S | B
+BI DI OI MI FI | EQ S | B
+D OI MI S | DI OI FI
+EQ DI OI MI FI | D S
+D OI MI S | DI OI FI | B
+EQ DI OI MI FI | D S | B
+BI DI OI MI FI | D S
+EQ DI OI MI FI | BI D OI S
+BI DI OI MI FI | D S | B
+EQ DI OI MI FI | BI D OI S | B
+O S FI | OI MI
+EQ O S FI | OI MI
+B O S FI | OI MI
+EQ B O S FI | OI MI
+O S FI | BI OI MI
+EQ O S FI | BI OI MI
+B O S FI | BI OI MI
+EQ B O S FI | BI OI MI
+D OI MI S | O FI
+EQ D OI MI S | O FI
+B D O S FI | OI MI
+EQ B O FI | D OI MI S
+BI D OI MI S | O FI
+EQ BI D OI MI S | O FI
+B D O S FI | BI OI MI
+BI D OI MI S | EQ B O FI
+DI O S FI | OI MI
+EQ DI OI MI FI | O S
+B DI O S FI | OI MI
+EQ DI OI MI FI | B O S
+BI DI OI MI FI | O S
+EQ BI DI OI MI | O S FI
+BI DI OI MI FI | B O S
+EQ B DI O S FI | EQ BI DI OI MI
+D DI O OI MI S FI
+EQ D DI O OI MI S FI
+B D DI O OI MI S FI
+EQ B D DI O OI MI S FI
+BI D DI O OI MI S FI
+EQ BI D DI O OI MI S FI
+B BI D DI O OI MI S FI
+EQ B BI D DI O OI MI S FI
+FI | S | MI | M
+EQ S | FI | MI | M
+B M | FI | S | MI
+EQ S | B M | FI | MI
+BI MI | FI | S | M
+EQ S | BI MI | FI | M
+BI MI | B M | FI | S
+EQ S | BI MI | B M | FI
+D S | FI | MI | M
+EQ D S | FI | MI | M
+D S | B M | FI | MI
+EQ D S | B M | FI | MI
+D S | BI MI | FI | M
+EQ D S | BI MI | FI | M
+D S | BI MI | B M | FI
+EQ D S | BI MI | B M | FI
+DI FI | S | MI | M
+EQ DI FI | S | MI | M
+DI FI | B M | S | MI
+EQ DI FI | B M | S | MI
+DI FI | BI MI | S | M
+EQ DI FI | BI MI | S | M
+DI FI | BI MI | B M | S
+EQ DI FI | BI MI | B M | S
+DI FI | D S | MI | M
+EQ DI FI | D S | MI | M
+DI FI | D S | B M | MI
+EQ DI FI | D S | B M | MI
+DI FI | D S | BI MI | M
+EQ DI FI | D S | BI MI | M
+DI FI | D S | BI MI | B M
+EQ DI FI | D S | BI MI | B M
+O M S FI | MI
+EQ O M S FI | MI
+B O M S FI | MI
+EQ B O M S FI | MI
+O M S FI | BI MI
+EQ O M S FI | BI MI
+B O M S FI | BI MI
+EQ B O M S FI | BI MI
+D O M S FI | MI
+EQ D O M S FI | MI
+B D O M S FI | MI
+EQ B D O M S FI | MI
+D O M S FI | BI MI
+EQ D O M S FI | BI MI
+B D O M S FI | BI MI
+EQ B D O M S FI | BI MI
+DI O M S FI | MI
+EQ DI O M S FI | MI
+B DI O M S FI | MI
+EQ B DI O M S FI | MI
+DI O M S FI | BI MI
+EQ DI O M S FI | BI MI
+B DI O M S FI | BI MI
+EQ B DI O M S FI | BI MI
+DI O M S FI | MI | D
+EQ DI O M S FI | MI | D
+B DI O M S FI | MI | D
+EQ B DI O M S FI | MI | D
+DI O M S FI | BI MI | D
+EQ DI O M S FI | BI MI | D
+B DI O M S FI | BI MI | D
+EQ B DI O M S FI | BI MI | D
+OI MI | FI | S | M
+EQ S | OI MI | FI | M
+OI MI | B M | FI | S
+EQ S | OI MI | B M | FI
+BI OI MI | FI | S | M
+BI OI MI | EQ S | FI | M
+BI OI MI | B M | FI | S
+BI OI MI | EQ S | B M | FI
+D OI MI S | FI | M
+EQ D OI MI S | FI | M
+D OI MI S | B M | FI
+EQ D OI MI S | B M | FI
+BI D OI MI S | FI | M
+EQ BI D OI MI S | FI | M
+BI D OI MI S | B M | FI
+EQ BI D OI MI S | B M | FI
+DI OI MI FI | S | M
+EQ DI OI MI FI | S | M
+DI OI MI FI | B M | S
+EQ DI OI MI FI | B M | S
+BI DI OI MI FI | S | M
+BI DI OI MI FI | EQ S | M
+BI DI OI MI FI | B M | S
+BI DI OI MI FI | EQ S | B M
+D OI MI S | DI OI FI | M
+EQ DI OI MI FI | D S | M
+D OI MI S | DI OI FI | B M
+EQ DI OI MI FI | D S | B M
+BI DI OI MI FI | D S | M
+EQ DI OI MI FI | BI D OI S | M
+BI DI OI MI FI | D S | B M
+EQ DI OI MI FI | BI D OI S | B M
+O M S FI | OI MI
+EQ O M S FI | OI MI
+B O M S FI | OI MI
+EQ B O M S FI | OI MI
+O M S FI | BI OI MI
+EQ O M S FI | BI OI MI
+B O M S FI | BI OI MI
+EQ B O M S FI | BI OI MI
+D O M S FI | OI MI
+D O M S FI | EQ OI MI
+B D O M S FI | OI MI
+B D O M S FI | EQ OI MI
+D O M S FI | BI OI MI
+D O M S FI | EQ BI D OI MI
+B D O M S FI | BI OI MI
+B D O M S FI | EQ BI D OI MI
+DI O M S FI | OI MI
+EQ DI O M S FI | EQ DI OI MI FI
+B DI O M S FI | OI MI
+B DI O M S FI | EQ DI OI MI FI
+DI O M S FI | BI DI OI MI FI
+EQ DI O M S FI | EQ BI DI OI MI
+B DI O M S FI | BI DI OI MI FI
+B DI O M S FI | EQ BI DI OI MI
+D DI O OI M MI S FI
+EQ D DI O OI M MI S FI
+B D DI O OI M MI S FI
+EQ B D DI O OI M MI S FI
+BI D DI O OI M MI S FI
+EQ BI D DI O OI M MI S FI
+B BI D DI O OI M MI S FI
+EQ B BI D DI O OI M MI S FI
+FI | SI
+EQ SI | FI
+FI | SI | B
+EQ SI | FI | B
+FI | SI | BI
+EQ SI | FI | BI
+FI | SI | BI | B
+EQ SI | FI | BI | B
+FI | SI | D
+EQ SI | FI | D
+FI | SI | D | B
+EQ SI | FI | D | B
+FI | SI | D | BI
+EQ SI | FI | D | BI
+FI | SI | D | BI | B
+EQ SI | FI | D | BI | B
+DI SI FI
+EQ DI SI FI
+DI SI FI | B
+EQ DI SI FI | B
+DI SI FI | BI
+EQ DI SI FI | BI
+DI SI FI | BI | B
+EQ DI SI FI | BI | B
+DI SI FI | D
+EQ DI SI FI | D
+DI SI FI | D | B
+EQ DI SI FI | D | B
+DI SI FI | D | BI
+EQ DI SI FI | D | BI
+DI SI FI | D | BI | B
+EQ DI SI FI | D | BI | B
+O FI | SI
+O FI | EQ SI
+B O FI | SI
+EQ B O FI | SI
+O FI | SI | BI
+O FI | EQ SI | BI
+B O FI | SI | BI
+EQ B O FI | SI | BI
+D O FI | SI
+D O FI | EQ SI
+B D O FI | SI
+EQ B D O FI | SI
+D O FI | SI | BI
+D O FI | EQ SI | BI
+B D O FI | SI | BI
+EQ B D O FI | SI | BI
+DI O SI FI
+EQ DI O SI FI
+B DI O SI FI
+EQ B DI O SI FI
+DI O SI FI | BI
+EQ DI O SI FI | BI
+B DI O SI FI | BI
+EQ B DI O SI FI | BI
+DI O SI FI | D
+EQ DI O SI FI | D
+B DI O SI FI | D
+EQ B DI O SI FI | D
+DI O SI FI | D | BI
+EQ DI O SI FI | D | BI
+B DI O SI FI | D | BI
+EQ B DI O SI FI | D | BI
+OI SI | FI
+EQ OI SI | FI
+OI SI | FI | B
+EQ OI SI | FI | B
+BI OI SI | FI
+EQ BI OI SI | FI
+BI OI SI | FI | B
+EQ BI OI SI | FI | B
+D OI SI | FI
+EQ D OI SI | FI
+D OI SI | FI | B
+EQ D OI SI | FI | B
+BI D OI SI | FI
+EQ BI D OI SI | FI
+BI D OI SI | FI | B
+EQ BI D OI SI | FI | B
+DI OI SI FI
+EQ DI OI SI FI
+DI OI SI FI | B
+EQ DI OI SI FI | B
+BI DI OI SI FI
+EQ BI DI OI SI FI
+BI DI OI SI FI | B
+EQ BI DI OI SI FI | B
+DI OI SI FI | D
+EQ DI OI SI FI | D
+DI OI SI FI | D | B
+EQ DI OI SI FI | D | B
+BI DI OI SI FI | D
+EQ BI DI OI SI FI | D
+BI DI OI SI FI | D | B
+EQ BI DI OI SI FI | D | B
+O FI | OI SI
+EQ OI SI | O FI
+B O FI | OI SI
+EQ B O FI | OI SI
+BI OI SI | O FI
+EQ BI OI SI | O FI
+B O FI | BI OI SI
+EQ B O FI | BI OI SI
+D OI SI | O FI
+EQ D OI SI | O FI
+B D O FI | OI SI
+EQ B O FI | D OI SI
+BI D OI SI | O FI
+EQ BI D OI SI | O FI
+B D O FI | BI OI SI
+EQ B O FI | BI D OI SI
+DI OI SI FI | O
+EQ DI OI SI FI | O
+DI OI SI FI | B O
+EQ DI OI SI FI | B O
+BI DI OI SI FI | O
+EQ BI DI OI SI FI | O
+BI DI OI SI FI | B O
+EQ BI DI OI SI FI | B O
+D DI O OI SI FI
+EQ D DI O OI SI FI
+B D DI O OI SI FI
+EQ B D DI O OI SI FI
+BI D DI O OI SI FI
+EQ BI D DI O OI SI FI
+B BI D DI O OI SI FI
+EQ B BI D DI O OI SI FI
+FI | SI | M
+EQ SI | FI | M
+B M | FI | SI
+EQ SI | B M | FI
+FI | SI | M | BI
+EQ SI | FI | M | BI
+B M | FI | SI | BI
+EQ SI | B M | FI | BI
+FI | SI | M | D
+EQ SI | FI | M | D
+B M | FI | SI | D
+EQ SI | B M | FI | D
+FI | SI | M | D | BI
+EQ SI | FI | M | D | BI
+B M | FI | SI | D | BI
+EQ SI | B M | FI | D | BI
+DI SI FI | M
+EQ DI SI FI | M
+DI SI FI | B M
+EQ DI SI FI | B M
+DI SI FI | M | BI
+EQ DI SI FI | M | BI
+DI SI FI | B M | BI
+EQ DI SI FI | B M | BI
+DI SI FI | M | D
+EQ DI SI FI | M | D
+DI SI FI | B M | D
+EQ DI SI FI | B M | D
+DI SI FI | M | D | BI
+EQ DI SI FI | M | D | BI
+DI SI FI | B M | D | BI
+EQ DI SI FI | B M | D | BI
+O M FI | SI
+O M FI | EQ SI
+B O M FI | SI
+B O M FI | EQ SI
+O M FI | SI | BI
+O M FI | EQ SI | BI
+B O M FI | SI | BI
+B O M FI | EQ SI | BI
+D O M FI | SI
+EQ D O M FI | SI
+B D O M FI | SI
+EQ B D O M FI | SI
+D O M FI | SI | BI
+EQ D O M FI | SI | BI
+B D O M FI | SI | BI
+EQ B D O M FI | SI | BI
+DI O M SI FI
+EQ DI O M SI FI
+B DI O M SI FI
+EQ B DI O M SI FI
+DI O M SI FI | BI
+EQ DI O M SI FI | BI
+B DI O M SI FI | BI
+EQ B DI O M SI FI | BI
+DI O M SI FI | D
+EQ DI O M SI FI | D
+B DI O M SI FI | D
+EQ B DI O M SI FI | D
+DI O M SI FI | D | BI
+EQ DI O M SI FI | D | BI
+B DI O M SI FI | D | BI
+EQ B DI O M SI FI | D | BI
+OI SI | FI | M
+EQ OI SI | FI | M
+OI SI | B M | FI
+EQ OI SI | B M | FI
+BI OI SI | FI | M
+EQ BI OI SI | FI | M
+BI OI SI | B M | FI
+EQ BI OI SI | B M | FI
+D OI SI | FI | M
+EQ D OI SI | FI | M
+D OI SI | B M | FI
+EQ D OI SI | B M | FI
+BI D OI SI | FI | M
+EQ BI D OI SI | FI | M
+BI D OI SI | B M | FI
+EQ BI D OI SI | B M | FI
+DI OI SI FI | M
+EQ DI OI SI FI | M
+DI OI SI FI | B M
+EQ DI OI SI FI | B M
+BI DI OI SI FI | M
+EQ BI DI OI SI FI | M
+BI DI OI SI FI | B M
+EQ BI DI OI SI FI | B M
+DI OI SI FI | M | D
+EQ DI OI SI FI | M | D
+DI OI SI FI | B M | D
+EQ DI OI SI FI | B M | D
+BI DI OI SI FI | M | D
+EQ BI DI OI SI FI | M | D
+BI DI OI SI FI | B M | D
+EQ BI DI OI SI FI | B M | D
+O M FI | OI SI
+O M FI | EQ OI SI
+B O M FI | OI SI
+B O M FI | EQ OI SI
+O M FI | BI OI SI
+EQ BI OI SI | O M FI
+B O M FI | BI OI SI
+B O M FI | EQ BI OI SI
+O M FI | D OI SI
+EQ D OI SI | O M FI
+B O M FI | D OI SI
+B O M FI | EQ D OI SI
+BI D OI SI | O M FI
+EQ BI D OI SI | O M FI
+B O M FI | BI D OI SI
+EQ BI D OI SI | B O M FI
+DI O M SI FI | OI
+EQ DI O M SI FI | OI
+B DI O M SI FI | OI
+EQ B DI O M SI FI | OI
+DI O M SI FI | BI OI
+EQ BI DI OI FI | DI O M SI
+B DI O M SI FI | BI OI
+EQ BI DI OI FI | B DI O M SI
+D DI O OI M SI FI
+EQ D DI O OI M SI FI
+B D DI O OI M SI FI
+EQ B D DI O OI M SI FI
+BI D DI O OI M SI FI
+EQ BI D DI O OI M SI FI
+B BI D DI O OI M SI FI
+EQ B BI D DI O OI M SI FI
+FI | SI | MI
+EQ SI | FI | MI
+FI | SI | MI | B
+EQ SI | FI | MI | B
+BI MI | FI | SI
+EQ SI | BI MI | FI
+BI MI | FI | SI | B
+EQ SI | BI MI | FI | B
+FI | SI | MI | D
+EQ SI | FI | MI | D
+FI | SI | MI | D | B
+EQ SI | FI | MI | D | B
+BI MI | FI | SI | D
+EQ SI | BI MI | FI | D
+BI MI | FI | SI | D | B
+EQ SI | BI MI | FI | D | B
+DI SI FI | MI
+EQ DI SI FI | MI
+DI SI FI | MI | B
+EQ DI SI FI | MI | B
+DI SI FI | BI MI
+EQ DI SI FI | BI MI
+DI SI FI | BI MI | B
+EQ DI SI FI | BI MI | B
+DI SI FI | MI | D
+EQ DI SI FI | MI | D
+DI SI FI | MI | D | B
+EQ DI SI FI | MI | D | B
+DI SI FI | BI MI | D
+EQ DI SI FI | BI MI | D
+DI SI FI | BI MI | D | B
+EQ DI SI FI | BI MI | D | B
+O FI | SI | MI
+O FI | EQ SI | MI
+B O FI | SI | MI
+EQ B O FI | SI | MI
+O FI | BI MI | SI
+O FI | EQ SI | BI MI
+B O FI | BI MI | SI
+EQ B O FI | BI MI | SI
+D O FI | SI | MI
+D O FI | EQ SI | MI
+B D O FI | SI | MI
+EQ B D O FI | SI | MI
+D O FI | BI MI | SI
+D O FI | EQ SI | BI MI
+B D O FI | BI MI | SI
+EQ B D O FI | BI MI | SI
+DI O SI FI | MI
+EQ DI O SI FI | MI
+B DI O SI FI | MI
+EQ B DI O SI FI | MI
+DI O SI FI | BI MI
+EQ DI O SI FI | BI MI
+B DI O SI FI | BI MI
+EQ B DI O SI FI | BI MI
+DI O SI FI | MI | D
+EQ DI O SI FI | MI | D
+B DI O SI FI | MI | D
+EQ B DI O SI FI | MI | D
+DI O SI FI | BI MI | D
+EQ DI O SI FI | BI MI | D
+B DI O SI FI | BI MI | D
+EQ B DI O SI FI | BI MI | D
+OI MI SI | FI
+EQ OI MI SI | FI
+OI MI SI | FI | B
+EQ OI MI SI | FI | B
+BI OI MI SI | FI
+EQ BI OI MI SI | FI
+BI OI MI SI | FI | B
+EQ BI OI MI SI | FI | B
+D OI MI SI | FI
+EQ D OI MI SI | FI
+D OI MI SI | FI | B
+EQ D OI MI SI | FI | B
+BI D OI MI SI | FI
+EQ BI D OI MI SI | FI
+BI D OI MI SI | FI | B
+EQ BI D OI MI SI | FI | B
+DI OI MI SI FI
+EQ DI OI MI SI FI
+DI OI MI SI FI | B
+EQ DI OI MI SI FI | B
+BI DI OI MI SI FI
+EQ BI DI OI MI SI FI
+BI DI OI MI SI FI | B
+EQ BI DI OI MI SI FI | B
+DI OI MI SI FI | D
+EQ DI OI MI SI FI | D
+DI OI MI SI FI | D | B
+EQ DI OI MI SI FI | D | B
+BI DI OI MI SI FI | D
+EQ BI DI OI MI SI FI | D
+BI DI OI MI SI FI | D | B
+EQ BI DI OI MI SI FI | D | B
+OI MI SI | O FI
+EQ OI MI SI | O FI
+B O FI | OI MI SI
+EQ B O FI | OI MI SI
+BI OI MI SI | O FI
+EQ BI OI MI SI | O FI
+BI OI MI SI | B O FI
+EQ B O FI | BI OI MI SI
+D OI MI SI | O FI
+EQ D OI MI SI | O FI
+D OI MI SI | B O FI
+EQ B O FI | D OI MI SI
+BI D OI MI SI | O FI
+EQ BI D OI MI SI | O FI
+BI D OI MI SI | B O FI
+BI D OI MI SI | EQ B O FI
+DI OI MI SI FI | O
+EQ DI OI MI FI | DI O SI
+DI OI MI SI FI | B O
+EQ DI OI MI FI | B DI O SI
+BI DI OI MI SI FI | O
+EQ BI DI OI MI | DI O SI FI
+BI DI OI MI SI FI | B O
+B DI O SI FI | EQ BI DI OI MI
+D DI O OI MI SI FI
+EQ D DI O OI MI SI FI
+B D DI O OI MI SI FI
+EQ B D DI O OI MI SI FI
+BI D DI O OI MI SI FI
+EQ BI D DI O OI MI SI FI
+B BI D DI O OI MI SI FI
+EQ B BI D DI O OI MI SI FI
+FI | SI | MI | M
+EQ SI | FI | MI | M
+B M | FI | SI | MI
+EQ SI | B M | FI | MI
+BI MI | FI | SI | M
+EQ SI | BI MI | FI | M
+BI MI | B M | FI | SI
+EQ SI | BI MI | B M | FI
+FI | SI | MI | M | D
+EQ SI | FI | MI | M | D
+B M | FI | SI | MI | D
+EQ SI | B M | FI | MI | D
+BI MI | FI | SI | M | D
+EQ SI | BI MI | FI | M | D
+BI MI | B M | FI | SI | D
+EQ SI | BI MI | B M | FI | D
+DI SI FI | MI | M
+EQ DI SI FI | MI | M
+DI SI FI | B M | MI
+EQ DI SI FI | B M | MI
+DI SI FI | BI MI | M
+EQ DI SI FI | BI MI | M
+DI SI FI | BI MI | B M
+EQ DI SI FI | BI MI | B M
+DI SI FI | MI | M | D
+EQ DI SI FI | MI | M | D
+DI SI FI | B M | MI | D
+EQ DI SI FI | B M | MI | D
+DI SI FI | BI MI | M | D
+EQ DI SI FI | BI MI | M | D
+DI SI FI | BI MI | B M | D
+EQ DI SI FI | BI MI | B M | D
+O M FI | SI | MI
+O M FI | EQ SI | MI
+B O M FI | SI | MI
+B O M FI | EQ SI | MI
+O M FI | BI MI | SI
+O M FI | EQ SI | BI MI
+B O M FI | BI MI | SI
+B O M FI | EQ SI | BI MI
+D O M FI | SI | MI
+EQ D O M FI | SI | MI
+B D O M FI | SI | MI
+EQ B D O M FI | SI | MI
+D O M FI | BI MI | SI
+EQ D O M FI | BI MI | SI
+B D O M FI | BI MI | SI
+EQ B D O M FI | BI MI | SI
+DI O M SI FI | MI
+EQ DI O M SI FI | MI
+B DI O M SI FI | MI
+EQ B DI O M SI FI | MI
+DI O M SI FI | BI MI
+EQ DI O M SI FI | BI MI
+B DI O M SI FI | BI MI
+EQ B DI O M SI FI | BI MI
+DI O M SI FI | MI | D
+EQ DI O M SI FI | MI | D
+B DI O M SI FI | MI | D
+EQ B DI O M SI FI | MI | D
+DI O M SI FI | BI MI | D
+EQ DI O M SI FI | BI MI | D
+B DI O M SI FI | BI MI | D
+EQ B DI O M SI FI | BI MI | D
+OI MI SI | FI | M
+EQ OI MI SI | FI | M
+OI MI SI | B M | FI
+EQ OI MI SI | B M | FI
+BI OI MI SI | FI | M
+EQ BI OI MI SI | FI | M
+BI OI MI SI | B M | FI
+EQ BI OI MI SI | B M | FI
+D OI MI SI | FI | M
+EQ D OI MI SI | FI | M
+D OI MI SI | B M | FI
+EQ D OI MI SI | B M | FI
+BI D OI MI SI | FI | M
+EQ BI D OI MI SI | FI | M
+BI D OI MI SI | B M | FI
+EQ BI D OI MI SI | B M | FI
+DI OI MI SI FI | M
+EQ DI OI MI SI FI | M
+DI OI MI SI FI | B M
+EQ DI OI MI SI FI | B M
+BI DI OI MI SI FI | M
+EQ BI DI OI MI SI FI | M
+BI DI OI MI SI FI | B M
+EQ BI DI OI MI SI FI | B M
+DI OI MI SI FI | M | D
+EQ DI OI MI SI FI | M | D
+DI OI MI SI FI | B M | D
+EQ DI OI MI SI FI | B M | D
+BI DI OI MI SI FI | M | D
+EQ BI DI OI MI SI FI | M | D
+BI DI OI MI SI FI | B M | D
+EQ BI DI OI MI SI FI | B M | D
+O M FI | OI MI SI
+EQ OI MI SI | O M FI
+B O M FI | OI MI SI
+B O M FI | EQ OI MI SI
+BI OI MI SI | O M FI
+EQ BI OI MI SI | O M FI
+B O M FI | BI OI MI SI
+EQ BI OI MI SI | B O M FI
+D OI MI SI | O M FI
+EQ D OI MI SI | O M FI
+B O M FI | D OI MI SI
+EQ D OI MI SI | B O M FI
+BI D OI MI SI | O M FI
+EQ BI D OI MI SI | O M FI
+BI D OI MI SI | B O M FI
+EQ BI D OI MI SI | B O M FI
+DI OI MI SI FI | O M
+EQ DI OI MI FI | DI O M SI
+DI OI MI SI FI | B O M
+EQ DI OI MI FI | B DI O M SI
+BI DI OI MI FI | DI O M SI
+DI O M SI FI | EQ BI DI OI MI
+BI DI OI MI FI | B DI O M SI
+B DI O M SI FI | EQ BI DI OI MI
+D DI O OI M MI SI FI
+EQ D DI O OI M MI SI FI
+B D DI O OI M MI SI FI
+EQ B D DI O OI M MI SI FI
+BI D DI O OI M MI SI FI
+EQ BI D DI O OI M MI SI FI
+B BI D DI O OI M MI SI FI
+EQ B BI D DI O OI M MI SI FI
+S SI | FI
+EQ S SI | FI
+S SI | FI | B
+EQ S SI | FI | B
+S SI | FI | BI
+EQ S SI | FI | BI
+S SI | FI | BI | B
+EQ S SI | FI | BI | B
+S SI | FI | D
+EQ S SI | FI | D
+S SI | FI | D | B
+EQ S SI | FI | D | B
+S SI | FI | D | BI
+EQ S SI | FI | D | BI
+S SI | FI | D | BI | B
+EQ S SI | FI | D | BI | B
+DI SI FI | S
+EQ DI SI FI | S
+DI SI FI | S | B
+EQ DI SI FI | S | B
+DI SI FI | S | BI
+EQ DI SI FI | S | BI
+DI SI FI | S | BI | B
+EQ DI SI FI | S | BI | B
+DI SI FI | D S
+EQ DI SI FI | D S
+DI SI FI | D S | B
+EQ DI SI FI | D S | B
+DI SI FI | D S | BI
+EQ DI SI FI | D S | BI
+DI SI FI | D S | BI | B
+EQ DI SI FI | D S | BI | B
+O FI | S SI
+EQ S SI | O FI
+B O S FI | SI
+EQ B O FI | S SI
+O FI | S SI | BI
+EQ S SI | O FI | BI
+B O S FI | SI | BI
+EQ B O FI | S SI | BI
+D O S FI | SI
+D O S FI | EQ SI
+B D O S FI | SI
+B D O S FI | EQ SI
+D O S FI | SI | BI
+D O S FI | EQ SI | BI
+B D O S FI | SI | BI
+B D O S FI | EQ SI | BI
+DI O S SI FI
+EQ DI O S SI FI
+B DI O S SI FI
+EQ B DI O S SI FI
+DI O S SI FI | BI
+EQ DI O S SI FI | BI
+B DI O S SI FI | BI
+EQ B DI O S SI FI | BI
+DI O S SI FI | D
+EQ DI O S SI FI | D
+B DI O S SI FI | D
+EQ B DI O S SI FI | D
+DI O S SI FI | D | BI
+EQ DI O S SI FI | D | BI
+B DI O S SI FI | D | BI
+EQ B DI O S SI FI | D | BI
+S SI | FI | OI
+EQ S SI | FI | OI
+S SI | FI | OI | B
+EQ S SI | FI | OI | B
+S SI | BI OI | FI
+EQ S SI | BI OI | FI
+S SI | BI OI | FI | B
+EQ S SI | BI OI | FI | B
+D OI S SI | FI
+EQ D OI S SI | FI
+D OI S SI | FI | B
+EQ D OI S SI | FI | B
+BI D OI S SI | FI
+EQ BI D OI S SI | FI
+BI D OI S SI | FI | B
+EQ BI D OI S SI | FI | B
+DI OI FI | S SI
+DI OI FI | EQ S SI
+DI OI FI | S SI | B
+DI OI FI | EQ S SI | B
+BI DI OI SI FI | S
+EQ BI DI OI FI | S SI
+BI DI OI SI FI | S | B
+EQ BI DI OI FI | S SI | B
+D OI S SI | DI OI FI
+EQ D OI S SI | DI OI FI
+D OI S SI | DI OI FI | B
+EQ D OI S SI | DI OI FI | B
+BI D OI S SI | DI OI FI
+EQ BI DI OI FI | D OI S SI
+BI D OI S SI | DI OI FI | B
+EQ BI DI OI FI | D OI S SI | B
+O S FI | OI SI
+EQ O S FI | OI SI
+B O S FI | OI SI
+EQ B O S FI | OI SI
+O S FI | BI OI SI
+EQ O S FI | BI OI SI
+B O S FI | BI OI SI
+EQ B O S FI | BI OI SI
+D OI S SI | O FI
+EQ D OI S SI | O FI
+B D O S FI | OI SI
+EQ B O FI | D OI S SI
+BI D OI S SI | O FI
+EQ BI D OI S SI | O FI
+B D O S FI | BI OI SI
+BI D OI S SI | EQ B O FI
+DI O S SI FI | OI
+EQ DI O S SI FI | OI
+B DI O S SI FI | OI
+EQ B DI O S SI FI | OI
+DI O S SI FI | BI OI
+DI O S SI FI | EQ BI DI OI FI
+B DI O S SI FI | BI OI
+B DI O S SI FI | EQ BI DI OI FI
+D DI O OI S SI FI
+EQ D DI O OI S SI FI
+B D DI O OI S SI FI
+EQ B D DI O OI S SI FI
+BI D DI O OI S SI FI
+EQ BI D DI O OI S SI FI
+B BI D DI O OI S SI FI
+EQ B BI D DI O OI S SI FI
+S SI | FI | M
+EQ S SI | FI | M
+S SI | B M | FI
+EQ S SI | B M | FI
+S SI | FI | M | BI
+EQ S SI | FI | M | BI
+S SI | B M | FI | BI
+EQ S SI | B M | FI | BI
+S SI | FI | M | D
+EQ S SI | FI | M | D
+S SI | B M | FI | D
+EQ S SI | B M | FI | D
+S SI | FI | M | D | BI
+EQ S SI | FI | M | D | BI
+S SI | B M | FI | D | BI
+EQ S SI | B M | FI | D | BI
+DI SI FI | S | M
+EQ DI SI FI | S | M
+DI SI FI | B M | S
+EQ DI SI FI | B M | S
+DI SI FI | S | M | BI
+EQ DI SI FI | S | M | BI
+DI SI FI | B M | S | BI
+EQ DI SI FI | B M | S | BI
+DI SI FI | D S | M
+EQ DI SI FI | D S | M
+DI SI FI | D S | B M
+EQ DI SI FI | D S | B M
+DI SI FI | D S | M | BI
+EQ DI SI FI | D S | M | BI
+DI SI FI | D S | B M | BI
+EQ DI SI FI | D S | B M | BI
+O M FI | S SI
+O M FI | EQ S SI
+B O M FI | S SI
+B O M FI | EQ S SI
+O M FI | S SI | BI
+O M FI | EQ S SI | BI
+B O M FI | S SI | BI
+B O M FI | EQ S SI | BI
+D O M S FI | SI
+D O M S FI | EQ SI
+B D O M S FI | SI
+B D O M S FI | EQ SI
+D O M S FI | SI | BI
+D O M S FI | EQ SI | BI
+B D O M S FI | SI | BI
+B D O M S FI | EQ SI | BI
+DI O M S SI FI
+EQ DI O M S SI FI
+B DI O M S SI FI
+EQ B DI O M S SI FI
+DI O M S SI FI | BI
+EQ DI O M S SI FI | BI
+B DI O M S SI FI | BI
+EQ B DI O M S SI FI | BI
+DI O M S SI FI | D
+EQ DI O M S SI FI | D
+B DI O M S SI FI | D
+EQ B DI O M S SI FI | D
+DI O M S SI FI | D | BI
+EQ DI O M S SI FI | D | BI
+B DI O M S SI FI | D | BI
+EQ B DI O M S SI FI | D | BI
+S SI | FI | M | OI
+EQ S SI | FI | M | OI
+S SI | B M | FI | OI
+EQ S SI | B M | FI | OI
+S SI | BI OI | FI | M
+EQ S SI | BI OI | FI | M
+S SI | B M | BI OI | FI
+EQ S SI | B M | BI OI | FI
+D OI S SI | FI | M
+EQ D OI S SI | FI | M
+D OI S SI | B M | FI
+EQ D OI S SI | B M | FI
+BI D OI S SI | FI | M
+EQ BI D OI S SI | FI | M
+BI D OI S SI | B M | FI
+EQ BI D OI S SI | B M | FI
+DI OI FI | S SI | M
+DI OI FI | EQ S SI | M
+DI OI FI | S SI | B M
+DI OI FI | EQ S SI | B M
+BI DI OI SI FI | S | M
+EQ BI DI OI FI | S SI | M
+BI DI OI SI FI | B M | S
+EQ BI DI OI FI | S SI | B M
+D OI S SI | DI OI FI | M
+EQ D OI S SI | DI OI FI | M
+D OI S SI | DI OI FI | B M
+EQ D OI S SI | DI OI FI | B M
+BI D OI S SI | DI OI FI | M
+EQ BI DI OI FI | D OI S SI | M
+BI D OI S SI | DI OI FI | B M
+EQ BI DI OI FI | D OI S SI | B M
+O M S FI | OI SI
+EQ O M S FI | OI SI
+B O M S FI | OI SI
+EQ B O M S FI | OI SI
+O M S FI | BI OI SI
+EQ O M S FI | BI OI SI
+B O M S FI | BI OI SI
+EQ B O M S FI | BI OI SI
+D O M S FI | OI SI
+D O M S FI | EQ OI SI
+B D O M S FI | OI SI
+B D O M S FI | EQ OI SI
+D O M S FI | BI OI SI
+D O M S FI | EQ BI OI SI
+B D O M S FI | BI OI SI
+B D O M S FI | EQ BI OI SI
+DI O M S SI FI | OI
+EQ DI O M S FI | EQ DI OI SI FI
+B DI O M S FI | DI OI SI FI
+B DI O M S FI | EQ DI OI SI FI
+DI O M S SI FI | BI OI
+EQ DI O M S FI | BI DI OI SI FI
+B DI O M S FI | BI DI OI SI FI
+EQ BI DI OI SI FI | B DI O M S FI
+D DI O OI M S SI FI
+EQ D DI O OI M S SI FI
+B D DI O OI M S SI FI
+EQ B D DI O OI M S SI FI
+BI D DI O OI M S SI FI
+EQ BI D DI O OI M S SI FI
+B BI D DI O OI M S SI FI
+EQ B BI D DI O OI M S SI FI
+S SI | FI | MI
+EQ S SI | FI | MI
+S SI | FI | MI | B
+EQ S SI | FI | MI | B
+S SI | BI MI | FI
+EQ S SI | BI MI | FI
+S SI | BI MI | FI | B
+EQ S SI | BI MI | FI | B
+S SI | FI | MI | D
+EQ S SI | FI | MI | D
+S SI | FI | MI | D | B
+EQ S SI | FI | MI | D | B
+S SI | BI MI | FI | D
+EQ S SI | BI MI | FI | D
+S SI | BI MI | FI | D | B
+EQ S SI | BI MI | FI | D | B
+DI SI FI | S | MI
+EQ DI SI FI | S | MI
+DI SI FI | S | MI | B
+EQ DI SI FI | S | MI | B
+DI SI FI | BI MI | S
+EQ DI SI FI | BI MI | S
+DI SI FI | BI MI | S | B
+EQ DI SI FI | BI MI | S | B
+DI SI FI | D S | MI
+EQ DI SI FI | D S | MI
+DI SI FI | D S | MI | B
+EQ DI SI FI | D S | MI | B
+DI SI FI | D S | BI MI
+EQ DI SI FI | D S | BI MI
+DI SI FI | D S | BI MI | B
+EQ DI SI FI | D S | BI MI | B
+O FI | S SI | MI
+EQ S SI | O FI | MI
+B O S FI | SI | MI
+EQ B O FI | S SI | MI
+O FI | S SI | BI MI
+EQ S SI | O FI | BI MI
+B O S FI | BI MI | SI
+EQ B O FI | S SI | BI MI
+D O S FI | SI | MI
+D O S FI | EQ SI | MI
+B D O S FI | SI | MI
+B D O S FI | EQ SI | MI
+D O S FI | BI MI | SI
+D O S FI | EQ SI | BI MI
+B D O S FI | BI MI | SI
+B D O S FI | EQ SI | BI MI
+DI O S SI FI | MI
+EQ DI O S SI FI | MI
+B DI O S SI FI | MI
+EQ B DI O S SI FI | MI
+DI O S SI FI | BI MI
+EQ DI O S SI FI | BI MI
+B DI O S SI FI | BI MI
+EQ B DI O S SI FI | BI MI
+DI O S SI FI | MI | D
+EQ DI O S SI FI | MI | D
+B DI O S SI FI | MI | D
+EQ B DI O S SI FI | MI | D
+DI O S SI FI | BI MI | D
+EQ DI O S SI FI | BI MI | D
+B DI O S SI FI | BI MI | D
+EQ B DI O S SI FI | BI MI | D
+S SI | OI MI | FI
+EQ S SI | OI MI | FI
+S SI | OI MI | FI | B
+EQ S SI | OI MI | FI | B
+BI OI MI | S SI | FI
+EQ S SI | BI OI MI | FI
+BI OI MI | S SI | FI | B
+EQ S SI | BI OI MI | FI | B
+D OI MI S SI | FI
+EQ D OI MI S SI | FI
+D OI MI S SI | FI | B
+EQ D OI MI S SI | FI | B
+BI D OI MI S SI | FI
+EQ BI D OI MI S SI | FI
+BI D OI MI S SI | FI | B
+EQ BI D OI MI S SI | FI | B
+DI OI MI SI FI | S
+EQ DI OI MI FI | S SI
+DI OI MI SI FI | S | B
+EQ DI OI MI FI | S SI | B
+BI DI OI MI FI | S SI
+BI DI OI MI FI | EQ S SI
+BI DI OI MI FI | S SI | B
+BI DI OI MI FI | EQ S SI | B
+DI OI MI SI FI | D S
+EQ DI OI MI FI | D OI S SI
+DI OI MI SI FI | D S | B
+EQ DI OI MI FI | D OI S SI | B
+BI DI OI MI FI | D OI S SI
+EQ DI OI MI FI | BI D OI S SI
+BI DI OI MI FI | D OI S SI | B
+EQ DI OI MI FI | BI D OI S SI | B
+O S FI | OI MI SI
+EQ OI MI SI | O S FI
+B O S FI | OI MI SI
+B O S FI | EQ OI MI SI
+BI OI MI SI | O S FI
+EQ BI OI MI SI | O S FI
+B O S FI | BI OI MI SI
+EQ BI OI MI SI | B O S FI
+D OI MI S SI | O FI
+EQ D OI MI S SI | O FI
+B D O S FI | OI MI SI
+D OI MI S SI | EQ B O FI
+BI D OI MI S SI | O FI
+EQ BI D OI MI S SI | O FI
+B D O S FI | BI OI MI SI
+BI D OI MI S SI | EQ B O FI
+DI O S SI FI | OI MI
+DI O S SI FI | EQ DI OI MI FI
+B DI O S SI FI | OI MI
+B DI O S SI FI | EQ DI OI MI FI
+DI O S SI FI | BI DI OI MI FI
+DI O S SI FI | EQ BI DI OI MI
+B DI O S SI FI | BI DI OI MI FI
+B DI O S SI FI | EQ BI DI OI MI
+D DI O OI MI S SI FI
+EQ D DI O OI MI S SI FI
+B D DI O OI MI S SI FI
+EQ B D DI O OI MI S SI FI
+BI D DI O OI MI S SI FI
+EQ BI D DI O OI MI S SI FI
+B BI D DI O OI MI S SI FI
+EQ B BI D DI O OI MI S SI FI
+S SI | FI | MI | M
+EQ S SI | FI | MI | M
+S SI | B M | FI | MI
+EQ S SI | B M | FI | MI
+S SI | BI MI | FI | M
+EQ S SI | BI MI | FI | M
+S SI | BI MI | B M | FI
+EQ S SI | BI MI | B M | FI
+S SI | FI | MI | M | D
+EQ S SI | FI | MI | M | D
+S SI | B M | FI | MI | D
+EQ S SI | B M | FI | MI | D
+S SI | BI MI | FI | M | D
+EQ S SI | BI MI | FI | M | D
+S SI | BI MI | B M | FI | D
+EQ S SI | BI MI | B M | FI | D
+DI SI FI | S | MI | M
+EQ DI SI FI | S | MI | M
+DI SI FI | B M | S | MI
+EQ DI SI FI | B M | S | MI
+DI SI FI | BI MI | S | M
+EQ DI SI FI | BI MI | S | M
+DI SI FI | BI MI | B M | S
+EQ DI SI FI | BI MI | B M | S
+DI SI FI | D S | MI | M
+EQ DI SI FI | D S | MI | M
+DI SI FI | D S | B M | MI
+EQ DI SI FI | D S | B M | MI
+DI SI FI | D S | BI MI | M
+EQ DI SI FI | D S | BI MI | M
+DI SI FI | D S | BI MI | B M
+EQ DI SI FI | D S | BI MI | B M
+O M FI | S SI | MI
+O M FI | EQ S SI | MI
+B O M FI | S SI | MI
+B O M FI | EQ S SI | MI
+O M FI | S SI | BI MI
+O M FI | EQ S SI | BI MI
+B O M FI | S SI | BI MI
+B O M FI | EQ S SI | BI MI
+D O M S FI | SI | MI
+D O M S FI | EQ SI | MI
+B D O M S FI | SI | MI
+B D O M S FI | EQ SI | MI
+D O M S FI | BI MI | SI
+D O M S FI | EQ SI | BI MI
+B D O M S FI | BI MI | SI
+B D O M S FI | EQ SI | BI MI
+DI O M S SI FI | MI
+EQ DI O M S SI FI | MI
+B DI O M S SI FI | MI
+EQ B DI O M S SI FI | MI
+DI O M S SI FI | BI MI
+EQ DI O M S SI FI | BI MI
+B DI O M S SI FI | BI MI
+EQ B DI O M S SI FI | BI MI
+DI O M S SI FI | MI | D
+EQ DI O M S SI FI | MI | D
+B DI O M S SI FI | MI | D
+EQ B DI O M S SI FI | MI | D
+DI O M S SI FI | BI MI | D
+EQ DI O M S SI FI | BI MI | D
+B DI O M S SI FI | BI MI | D
+EQ B DI O M S SI FI | BI MI | D
+S SI | OI MI | FI | M
+EQ S SI | OI MI | FI | M
+S SI | OI MI | B M | FI
+EQ S SI | OI MI | B M | FI
+BI OI MI | S SI | FI | M
+EQ S SI | BI OI MI | FI | M
+BI OI MI | S SI | B M | FI
+EQ S SI | BI OI MI | B M | FI
+D OI MI S SI | FI | M
+EQ D OI MI S SI | FI | M
+D OI MI S SI | B M | FI
+EQ D OI MI S SI | B M | FI
+BI D OI MI S SI | FI | M
+EQ BI D OI MI S SI | FI | M
+BI D OI MI S SI | B M | FI
+EQ BI D OI MI S SI | B M | FI
+DI OI MI SI FI | S | M
+EQ DI OI MI FI | S SI | M
+DI OI MI SI FI | B M | S
+EQ DI OI MI FI | S SI | B M
+BI DI OI MI FI | S SI | M
+BI DI OI MI FI | EQ S SI | M
+BI DI OI MI FI | S SI | B M
+BI DI OI MI FI | EQ S SI | B M
+DI OI MI SI FI | D S | M
+EQ DI OI MI FI | D OI S SI | M
+DI OI MI SI FI | D S | B M
+EQ DI OI MI FI | D OI S SI | B M
+BI DI OI MI FI | D OI S SI | M
+EQ DI OI MI FI | BI D OI S SI | M
+BI DI OI MI FI | D OI S SI | B M
+EQ DI OI MI FI | BI D OI S SI | B M
+O M S FI | OI MI SI
+EQ O M S FI | OI MI SI
+B O M S FI | OI MI SI
+EQ B O M S FI | OI MI SI
+O M S FI | BI OI MI SI
+EQ O M S FI | BI OI MI SI
+B O M S FI | BI OI MI SI
+EQ B O M S FI | BI OI MI SI
+D O M S FI | OI MI SI
+D O M S FI | EQ OI MI SI
+B D O M S FI | OI MI SI
+B D O M S FI | EQ OI MI SI
+D O M S FI | BI OI MI SI
+D O M S FI | EQ BI OI MI SI
+B D O M S FI | BI OI MI SI
+B D O M S FI | EQ BI OI MI SI
+DI OI MI SI FI | DI O M S FI
+DI O M S SI FI | EQ DI OI MI FI
+B DI O M S FI | DI OI MI SI FI
+B DI O M S SI FI | EQ DI OI MI FI
+DI O M S SI FI | BI DI OI MI FI
+DI O M S SI FI | EQ BI DI OI MI
+BI DI OI MI SI FI | B DI O M S FI
+B DI O M S SI FI | EQ BI DI OI MI
+D DI O OI M MI S SI FI
+EQ D DI O OI M MI S SI FI
+B D DI O OI M MI S SI FI
+EQ B D DI O OI M MI S SI FI
+BI D DI O OI M MI S SI FI
+EQ BI D DI O OI M MI S SI FI
+B BI D DI O OI M MI S SI FI
+EQ B BI D DI O OI M MI S SI FI
+F FI
+EQ F FI
+F FI | B
+EQ F FI | B
+F FI | BI
+EQ F FI | BI
+F FI | BI | B
+EQ F FI | BI | B
+F FI | D
+EQ F FI | D
+F FI | D | B
+EQ F FI | D | B
+F FI | D | BI
+EQ F FI | D | BI
+F FI | D | BI | B
+EQ F FI | D | BI | B
+F FI | DI
+DI FI | EQ F
+F FI | DI | B
+DI FI | EQ F | B
+F FI | DI | BI
+DI FI | EQ F | BI
+F FI | DI | BI | B
+DI FI | EQ F | BI | B
+DI FI | D F
+EQ D F | DI FI
+DI FI | D F | B
+EQ D F | DI FI | B
+DI FI | D F | BI
+EQ D F | DI FI | BI
+DI FI | D F | BI | B
+EQ D F | DI FI | BI | B
+F FI | O
+O FI | EQ F
+F FI | B O
+EQ B O FI | EQ F
+F FI | O | BI
+O FI | EQ F | BI
+F FI | B O | BI
+EQ B O FI | EQ F | BI
+D O F FI
+EQ D O F FI
+B D O F FI
+EQ B D O F FI
+D O F FI | BI
+EQ D O F FI | BI
+B D O F FI | BI
+EQ B D O F FI | BI
+F FI | DI O
+DI O FI | EQ F
+B DI O | F FI
+B DI O FI | EQ F
+F FI | DI O | BI
+DI O FI | EQ F | BI
+B DI O | F FI | BI
+B DI O FI | EQ F | BI
+D O F FI | DI
+EQ D O F FI | DI
+B D O F FI | DI
+EQ B D O F FI | DI
+D O F FI | DI | BI
+EQ D O F FI | DI | BI
+B D O F FI | DI | BI
+EQ B D O F FI | DI | BI
+F FI | OI
+EQ F FI | OI
+F FI | OI | B
+EQ F FI | OI | B
+F FI | BI OI
+EQ F FI | BI OI
+F FI | BI OI | B
+EQ F FI | BI OI | B
+F FI | D OI
+EQ F FI | D OI
+F FI | D OI | B
+EQ F FI | D OI | B
+BI D OI | F FI
+EQ F FI | BI D OI
+BI D OI | F FI | B
+EQ F FI | BI D OI | B
+DI OI F FI
+EQ DI OI F FI
+DI OI F FI | B
+EQ DI OI F FI | B
+BI DI OI F FI
+EQ BI DI OI F FI
+BI DI OI F FI | B
+EQ BI DI OI F FI | B
+DI OI F FI | D
+EQ DI OI F FI | D
+DI OI F FI | D | B
+EQ DI OI F FI | D | B
+BI DI OI F FI | D
+EQ BI DI OI F FI | D
+BI DI OI F FI | D | B
+EQ BI DI OI F FI | D | B
+O FI | OI F
+EQ OI F | O FI
+B O FI | OI F
+EQ B O FI | OI F
+BI OI F | O FI
+EQ BI OI F | O FI
+B O FI | BI OI F
+EQ B O FI | BI OI F
+D O F FI | OI
+EQ D O F FI | OI
+B D O F FI | OI
+EQ B D O F FI | OI
+D O F FI | BI OI
+EQ D O F FI | BI OI
+B D O F FI | BI OI
+EQ B D O F FI | BI OI
+DI OI F FI | O
+EQ DI OI F FI | O
+DI OI F FI | B O
+EQ DI OI F FI | B O
+BI DI OI F FI | O
+EQ BI DI OI F FI | O
+BI DI OI F FI | B O
+EQ BI DI OI F FI | B O
+D DI O OI F FI
+EQ D DI O OI F FI
+B D DI O OI F FI
+EQ B D DI O OI F FI
+BI D DI O OI F FI
+EQ BI D DI O OI F FI
+B BI D DI O OI F FI
+EQ B BI D DI O OI F FI
+F FI | M
+EQ F FI | M
+F FI | B M
+EQ F FI | B M
+F FI | M | BI
+EQ F FI | M | BI
+F FI | B M | BI
+EQ F FI | B M | BI
+F FI | M | D
+EQ F FI | M | D
+F FI | B M | D
+EQ F FI | B M | D
+F FI | M | D | BI
+EQ F FI | M | D | BI
+F FI | B M | D | BI
+EQ F FI | B M | D | BI
+F FI | M | DI
+EQ F FI | M | DI
+F FI | B M | DI
+EQ F FI | B M | DI
+F FI | M | DI | BI
+EQ F FI | M | DI | BI
+F FI | B M | DI | BI
+EQ F FI | B M | DI | BI
+DI FI | D F | M
+EQ D F | DI FI | M
+DI FI | D F | B M
+EQ D F | DI FI | B M
+DI FI | D F | M | BI
+EQ D F | DI FI | M | BI
+DI FI | D F | B M | BI
+EQ D F | DI FI | B M | BI
+O M FI | F
+O M FI | EQ F
+B O M FI | F
+B O M FI | EQ F
+O M FI | F | BI
+O M FI | EQ F | BI
+B O M FI | F | BI
+B O M FI | EQ F | BI
+D O M F FI
+EQ D O M F FI
+B D O M F FI
+EQ B D O M F FI
+D O M F FI | BI
+EQ D O M F FI | BI
+B D O M F FI | BI
+EQ B D O M F FI | BI
+DI O M FI | F
+DI O M FI | EQ F
+B DI O M FI | F
+B DI O M FI | EQ F
+DI O M FI | F | BI
+DI O M FI | EQ F | BI
+B DI O M FI | F | BI
+B DI O M FI | EQ F | BI
+D O M F FI | DI
+EQ D O M F FI | DI
+B D O M F FI | DI
+EQ B D O M F FI | DI
+D O M F FI | DI | BI
+EQ D O M F FI | DI | BI
+B D O M F FI | DI | BI
+EQ B D O M F FI | DI | BI
+F FI | M | OI
+EQ F FI | M | OI
+F FI | B M | OI
+EQ F FI | B M | OI
+F FI | BI OI | M
+EQ F FI | BI OI | M
+F FI | B M | BI OI
+EQ F FI | B M | BI OI
+F FI | D OI | M
+EQ F FI | D OI | M
+F FI | B M | D OI
+EQ F FI | B M | D OI
+BI D OI | F FI | M
+EQ F FI | BI D OI | M
+BI D OI | F FI | B M
+EQ F FI | BI D OI | B M
+DI OI F FI | M
+EQ DI OI F FI | M
+DI OI F FI | B M
+EQ DI OI F FI | B M
+BI DI OI F FI | M
+EQ BI DI OI F FI | M
+BI DI OI F FI | B M
+EQ BI DI OI F FI | B M
+DI OI F FI | M | D
+EQ DI OI F FI | M | D
+DI OI F FI | B M | D
+EQ DI OI F FI | B M | D
+BI DI OI F FI | M | D
+EQ BI DI OI F FI | M | D
+BI DI OI F FI | B M | D
+EQ BI DI OI F FI | B M | D
+O M FI | OI F
+EQ O M FI | OI F
+B O M FI | OI F
+EQ B O M FI | OI F
+O M FI | BI OI F
+EQ O M FI | BI OI F
+B O M FI | BI OI F
+EQ B O M FI | BI OI F
+D O M F FI | OI
+EQ D O M F FI | OI
+B D O M F FI | OI
+EQ B D O M F FI | OI
+D O M F FI | BI OI
+EQ D O M F FI | BI OI
+B D O M F FI | BI OI
+EQ B D O M F FI | BI OI
+DI OI F FI | O M
+EQ DI OI F FI | O M
+DI OI F FI | B O M
+EQ DI OI F FI | B O M
+BI DI OI F FI | O M
+EQ BI DI OI F | O M FI
+BI DI OI F FI | B O M
+EQ BI DI OI F | B O M FI
+D DI O OI M F FI
+EQ D DI O OI M F FI
+B D DI O OI M F FI
+EQ B D DI O OI M F FI
+BI D DI O OI M F FI
+EQ BI D DI O OI M F FI
+B BI D DI O OI M F FI
+EQ B BI D DI O OI M F FI
+F FI | MI
+EQ F FI | MI
+F FI | MI | B
+EQ F FI | MI | B
+F FI | BI MI
+EQ F FI | BI MI
+F FI | BI MI | B
+EQ F FI | BI MI | B
+F FI | MI | D
+EQ F FI | MI | D
+F FI | MI | D | B
+EQ F FI | MI | D | B
+F FI | BI MI | D
+EQ F FI | BI MI | D
+F FI | BI MI | D | B
+EQ F FI | BI MI | D | B
+F FI | MI | DI
+EQ F FI | MI | DI
+F FI | MI | DI | B
+EQ F FI | MI | DI | B
+F FI | BI MI | DI
+EQ F FI | BI MI | DI
+F FI | BI MI | DI | B
+EQ F FI | BI MI | DI | B
+DI FI | D F | MI
+EQ D F | DI FI | MI
+DI FI | D F | MI | B
+EQ D F | DI FI | MI | B
+DI FI | D F | BI MI
+EQ D F | DI FI | BI MI
+DI FI | D F | BI MI | B
+EQ D F | DI FI | BI MI | B
+F FI | MI | O
+EQ F FI | MI | O
+F FI | B O | MI
+EQ F FI | B O | MI
+F FI | BI MI | O
+EQ F FI | BI MI | O
+F FI | BI MI | B O
+EQ F FI | BI MI | B O
+D O F FI | MI
+EQ D O F FI | MI
+B D O F FI | MI
+EQ B D O F FI | MI
+D O F FI | BI MI
+EQ D O F FI | BI MI
+B D O F FI | BI MI
+EQ B D O F FI | BI MI
+F FI | DI O | MI
+EQ F FI | DI O | MI
+B DI O | F FI | MI
+EQ F FI | B DI O | MI
+F FI | BI MI | DI O
+EQ F FI | BI MI | DI O
+B DI O | F FI | BI MI
+EQ F FI | B DI O | BI MI
+D O F FI | MI | DI
+EQ D O F FI | MI | DI
+B D O F FI | MI | DI
+EQ B D O F FI | MI | DI
+D O F FI | BI MI | DI
+EQ D O F FI | BI MI | DI
+B D O F FI | BI MI | DI
+EQ B D O F FI | BI MI | DI
+OI MI F | FI
+EQ OI MI F | FI
+OI MI F | FI | B
+EQ OI MI F | FI | B
+BI OI MI F | FI
+EQ BI OI MI F | FI
+BI OI MI F | FI | B
+EQ BI OI MI F | FI | B
+D OI MI F | FI
+EQ D OI MI F | FI
+D OI MI F | FI | B
+EQ D OI MI F | FI | B
+BI D OI MI F | FI
+EQ BI D OI MI F | FI
+BI D OI MI F | FI | B
+EQ BI D OI MI F | FI | B
+DI OI MI F FI
+EQ DI OI MI F FI
+DI OI MI F FI | B
+EQ DI OI MI F FI | B
+BI DI OI MI F FI
+EQ BI DI OI MI F FI
+BI DI OI MI F FI | B
+EQ BI DI OI MI F FI | B
+DI OI MI F FI | D
+EQ DI OI MI F FI | D
+DI OI MI F FI | D | B
+EQ DI OI MI F FI | D | B
+BI DI OI MI F FI | D
+EQ BI DI OI MI F FI | D
+BI DI OI MI F FI | D | B
+EQ BI DI OI MI F FI | D | B
+OI MI F | O FI
+EQ OI MI F | O FI
+B O FI | OI MI F
+EQ B O FI | OI MI F
+BI OI MI F | O FI
+EQ BI OI MI F | O FI
+BI OI MI F | B O FI
+EQ BI OI MI F | EQ B O FI
+D OI MI F | O FI
+EQ D OI MI F | O FI
+B D O F FI | OI MI
+EQ B O FI | D OI MI F
+BI D OI MI F | O FI
+EQ BI D OI MI F | O FI
+B D O F FI | BI OI MI
+BI D OI MI F | EQ B O FI
+DI OI MI F FI | O
+EQ DI OI MI F FI | O
+DI OI MI F FI | B O
+EQ DI OI MI F FI | B O
+BI DI OI MI F FI | O
+EQ BI DI OI MI F FI | O
+BI DI OI MI F FI | B O
+EQ BI DI OI MI F FI | B O
+D DI O OI MI F FI
+EQ D DI O OI MI F FI
+B D DI O OI MI F FI
+EQ B D DI O OI MI F FI
+BI D DI O OI MI F FI
+EQ BI D DI O OI MI F FI
+B BI D DI O OI MI F FI
+EQ B BI D DI O OI MI F FI
+F FI | MI | M
+EQ F FI | MI | M
+F FI | B M | MI
+EQ F FI | B M | MI
+F FI | BI MI | M
+EQ F FI | BI MI | M
+F FI | BI MI | B M
+EQ F FI | BI MI | B M
+F FI | MI | M | D
+EQ F FI | MI | M | D
+F FI | B M | MI | D
+EQ F FI | B M | MI | D
+F FI | BI MI | M | D
+EQ F FI | BI MI | M | D
+F FI | BI MI | B M | D
+EQ F FI | BI MI | B M | D
+F FI | MI | M | DI
+EQ F FI | MI | M | DI
+F FI | B M | MI | DI
+EQ F FI | B M | MI | DI
+F FI | BI MI | M | DI
+EQ F FI | BI MI | M | DI
+F FI | BI MI | B M | DI
+EQ F FI | BI MI | B M | DI
+DI FI | D F | MI | M
+EQ D F | DI FI | MI | M
+DI FI | D F | B M | MI
+EQ D F | DI FI | B M | MI
+DI FI | D F | BI MI | M
+EQ D F | DI FI | BI MI | M
+DI FI | D F | BI MI | B M
+EQ D F | DI FI | BI MI | B M
+F FI | O M | MI
+EQ F FI | O M | MI
+B O M | F FI | MI
+EQ F FI | B O M | MI
+F FI | BI MI | O M
+EQ F FI | BI MI | O M
+B O M | F FI | BI MI
+EQ F FI | B O M | BI MI
+D O M F FI | MI
+EQ D O M F FI | MI
+B D O M F FI | MI
+EQ B D O M F FI | MI
+D O M F FI | BI MI
+EQ D O M F FI | BI MI
+B D O M F FI | BI MI
+EQ B D O M F FI | BI MI
+DI O M | F FI | MI
+EQ F FI | DI O M | MI
+B DI O M | F FI | MI
+B DI O M | EQ F FI | MI
+DI O M | F FI | BI MI
+EQ F FI | DI O M | BI MI
+B DI O M | F FI | BI MI
+B DI O M | EQ F FI | BI MI
+D O M F FI | MI | DI
+EQ D O M F FI | MI | DI
+B D O M F FI | MI | DI
+EQ B D O M F FI | MI | DI
+D O M F FI | BI MI | DI
+EQ D O M F FI | BI MI | DI
+B D O M F FI | BI MI | DI
+EQ B D O M F FI | BI MI | DI
+OI MI F | FI | M
+EQ OI MI F | FI | M
+OI MI F | B M | FI
+EQ OI MI F | B M | FI
+BI OI MI F | FI | M
+EQ BI OI MI F | FI | M
+BI OI MI F | B M | FI
+EQ BI OI MI F | B M | FI
+D OI MI F | FI | M
+EQ D OI MI F | FI | M
+D OI MI F | B M | FI
+EQ D OI MI F | B M | FI
+BI D OI MI F | FI | M
+EQ BI D OI MI F | FI | M
+BI D OI MI F | B M | FI
+EQ BI D OI MI F | B M | FI
+DI OI MI F FI | M
+EQ DI OI MI F FI | M
+DI OI MI F FI | B M
+EQ DI OI MI F FI | B M
+BI DI OI MI F FI | M
+EQ BI DI OI MI F FI | M
+BI DI OI MI F FI | B M
+EQ BI DI OI MI F FI | B M
+DI OI MI F FI | M | D
+EQ DI OI MI F FI | M | D
+DI OI MI F FI | B M | D
+EQ DI OI MI F FI | B M | D
+BI DI OI MI F FI | M | D
+EQ BI DI OI MI F FI | M | D
+BI DI OI MI F FI | B M | D
+EQ BI DI OI MI F FI | B M | D
+O M FI | OI MI F
+EQ OI MI F | O M FI
+B O M FI | OI MI F
+B O M FI | EQ OI MI F
+BI OI MI F | O M FI
+EQ BI OI MI F | O M FI
+B O M FI | BI OI MI F
+EQ BI OI MI F | B O M FI
+D O M F FI | OI MI
+EQ D O M F FI | OI MI
+B D O M F FI | OI MI
+EQ B D O M F FI | OI MI
+D O M F FI | BI OI MI
+EQ D O M F FI | BI OI MI
+B D O M F FI | BI OI MI
+EQ B D O M F FI | BI OI MI
+DI OI MI F FI | O M
+DI OI MI F FI | EQ O M
+DI OI MI F FI | B O M
+DI OI MI F FI | EQ B O M
+BI DI OI MI F FI | O M
+EQ BI DI OI MI F FI | O M
+BI DI OI MI F FI | B O M
+EQ BI DI OI MI F FI | B O M
+D DI O OI M MI F FI
+EQ D DI O OI M MI F FI
+B D DI O OI M MI F FI
+EQ B D DI O OI M MI F FI
+BI D DI O OI M MI F FI
+EQ BI D DI O OI M MI F FI
+B BI D DI O OI M MI F FI
+EQ B BI D DI O OI M MI F FI
+F FI | S
+F FI | EQ S
+F FI | S | B
+F FI | EQ S | B
+F FI | S | BI
+F FI | EQ S | BI
+F FI | S | BI | B
+F FI | EQ S | BI | B
+D S F | FI
+EQ D S F | FI
+D S F | FI | B
+EQ D S F | FI | B
+D S F | FI | BI
+EQ D S F | FI | BI
+D S F | FI | BI | B
+EQ D S F | FI | BI | B
+F FI | S | DI
+F FI | EQ S | DI
+F FI | S | DI | B
+F FI | EQ S | DI | B
+F FI | S | DI | BI
+F FI | EQ S | DI | BI
+F FI | S | DI | BI | B
+F FI | EQ S | DI | BI | B
+D S F | DI FI
+EQ D S F | DI FI
+D S F | DI FI | B
+EQ D S F | DI FI | B
+D S F | DI FI | BI
+EQ D S F | DI FI | BI
+D S F | DI FI | BI | B
+EQ D S F | DI FI | BI | B
+O S FI | F
+O S FI | EQ F
+B O S FI | F
+B O S FI | EQ F
+O S FI | F | BI
+O S FI | EQ F | BI
+B O S FI | F | BI
+B O S FI | EQ F | BI
+D O S F FI
+EQ D O S F FI
+B D O S F FI
+EQ B D O S F FI
+D O S F FI | BI
+EQ D O S F FI | BI
+B D O S F FI | BI
+EQ B D O S F FI | BI
+DI O S FI | F
+DI O S FI | EQ F
+B DI O S FI | F
+EQ B DI O S FI | EQ F
+DI O S FI | F | BI
+DI O S FI | EQ F | BI
+B DI O S FI | F | BI
+EQ B DI O S FI | EQ F | BI
+D O S F FI | DI
+EQ D O S F FI | DI
+B D O S F FI | DI
+EQ B D O S F FI | DI
+D O S F FI | DI | BI
+EQ D O S F FI | DI | BI
+B D O S F FI | DI | BI
+EQ B D O S F FI | DI | BI
+F FI | S | OI
+F FI | EQ S | OI
+F FI | S | OI | B
+F FI | EQ S | OI | B
+F FI | BI OI | S
+F FI | EQ S | BI OI
+F FI | BI OI | S | B
+F FI | EQ S | BI OI | B
+D OI S F | FI
+EQ D OI S F | FI
+D OI S F | FI | B
+EQ D OI S F | FI | B
+BI D OI S F | FI
+EQ BI D OI S F | FI
+BI D OI S F | FI | B
+EQ BI D OI S F | FI | B
+DI OI F FI | S
+EQ DI OI F FI | S
+DI OI F FI | S | B
+EQ DI OI F FI | S | B
+BI DI OI F FI | S
+BI DI OI F FI | EQ S
+BI DI OI F FI | S | B
+BI DI OI F FI | EQ S | B
+DI OI FI | D S F
+EQ D S F | DI OI FI
+DI OI FI | D S F | B
+EQ D S F | DI OI FI | B
+BI DI OI F FI | D S
+EQ BI DI OI FI | D S F
+BI DI OI F FI | D S | B
+EQ BI DI OI FI | D S F | B
+O S FI | OI F
+EQ O S FI | OI F
+B O S FI | OI F
+EQ B O S FI | OI F
+O S FI | BI OI F
+EQ O S FI | BI OI F
+B O S FI | BI OI F
+EQ B O S FI | BI OI F
+D O S F FI | OI
+EQ D O S F FI | OI
+B D O S F FI | OI
+EQ B D O S F FI | OI
+D O S F FI | BI OI
+EQ D O S F FI | BI OI
+B D O S F FI | BI OI
+EQ B D O S F FI | BI OI
+DI O S FI | OI F
+EQ DI O S FI | OI F
+B DI O S FI | OI F
+EQ B DI O S FI | OI F
+BI DI OI F FI | O S
+EQ BI DI OI F | O S FI
+BI DI OI F FI | B O S
+EQ B DI O S FI | EQ BI DI OI F
+D DI O OI S F FI
+EQ D DI O OI S F FI
+B D DI O OI S F FI
+EQ B D DI O OI S F FI
+BI D DI O OI S F FI
+EQ BI D DI O OI S F FI
+B BI D DI O OI S F FI
+EQ B BI D DI O OI S F FI
+F FI | S | M
+F FI | EQ S | M
+F FI | B M | S
+F FI | EQ S | B M
+F FI | S | M | BI
+F FI | EQ S | M | BI
+F FI | B M | S | BI
+F FI | EQ S | B M | BI
+D S F | FI | M
+EQ D S F | FI | M
+D S F | B M | FI
+EQ D S F | B M | FI
+D S F | FI | M | BI
+EQ D S F | FI | M | BI
+D S F | B M | FI | BI
+EQ D S F | B M | FI | BI
+F FI | S | M | DI
+F FI | EQ S | M | DI
+F FI | B M | S | DI
+F FI | EQ S | B M | DI
+F FI | S | M | DI | BI
+F FI | EQ S | M | DI | BI
+F FI | B M | S | DI | BI
+F FI | EQ S | B M | DI | BI
+D S F | DI FI | M
+EQ D S F | DI FI | M
+D S F | DI FI | B M
+EQ D S F | DI FI | B M
+D S F | DI FI | M | BI
+EQ D S F | DI FI | M | BI
+D S F | DI FI | B M | BI
+EQ D S F | DI FI | B M | BI
+O M S FI | F
+O M S FI | EQ F
+B O M S FI | F
+EQ B O M S FI | EQ F
+O M S FI | F | BI
+O M S FI | EQ F | BI
+B O M S FI | F | BI
+EQ B O M S FI | EQ F | BI
+D O M S F FI
+EQ D O M S F FI
+B D O M S F FI
+EQ B D O M S F FI
+D O M S F FI | BI
+EQ D O M S F FI | BI
+B D O M S F FI | BI
+EQ B D O M S F FI | BI
+DI O M S FI | F
+EQ DI O M S FI | EQ F
+B DI O M S FI | F
+B DI O M S FI | EQ F
+DI O M S FI | F | BI
+EQ DI O M S FI | EQ F | BI
+B DI O M S FI | F | BI
+B DI O M S FI | EQ F | BI
+D O M S F FI | DI
+EQ D O M S F FI | DI
+B D O M S F FI | DI
+EQ B D O M S F | EQ DI O M S FI
+D O M S F FI | DI | BI
+EQ D O M S F FI | DI | BI
+B D O M S F FI | DI | BI
+EQ B D O M S F | EQ DI O M S FI | BI
+F FI | S | M | OI
+F FI | EQ S | M | OI
+F FI | B M | S | OI
+F FI | EQ S | B M | OI
+F FI | BI OI | S | M
+F FI | EQ S | BI OI | M
+F FI | B M | BI OI | S
+F FI | EQ S | B M | BI OI
+D OI S F | FI | M
+EQ D OI S F | FI | M
+D OI S F | B M | FI
+EQ D OI S F | B M | FI
+BI D OI S F | FI | M
+EQ BI D OI S F | FI | M
+BI D OI S F | B M | FI
+EQ BI D OI S F | B M | FI
+DI OI F FI | S | M
+EQ DI OI F FI | S | M
+DI OI F FI | B M | S
+EQ DI OI F FI | B M | S
+BI DI OI F FI | S | M
+BI DI OI F FI | EQ S | M
+BI DI OI F FI | B M | S
+BI DI OI F FI | EQ S | B M
+DI OI FI | D S F | M
+EQ D S F | DI OI FI | M
+DI OI FI | D S F | B M
+EQ D S F | DI OI FI | B M
+BI DI OI F FI | D S | M
+EQ BI DI OI FI | D S F | M
+BI DI OI F FI | D S | B M
+EQ BI DI OI FI | D S F | B M
+O M S FI | OI F
+EQ O M S FI | OI F
+B O M S FI | OI F
+EQ B O M S FI | OI F
+O M S FI | BI OI F
+EQ O M S FI | BI OI F
+B O M S FI | BI OI F
+EQ B O M S FI | BI OI F
+D O M S F FI | OI
+EQ D O M S F FI | OI
+B D O M S F FI | OI
+EQ B D O M S F FI | OI
+D O M S F FI | BI OI
+EQ D O M S F FI | BI OI
+B D O M S F FI | BI OI
+EQ B D O M S F FI | BI OI
+DI O M S FI | OI F
+EQ DI O M S FI | OI F
+B DI O M S FI | OI F
+B DI O M S FI | EQ OI F
+BI DI OI F FI | DI O M S FI
+EQ DI O M S FI | EQ BI DI OI F
+B DI O M S FI | BI DI OI F FI
+B DI O M S FI | EQ BI DI OI F
+D DI O OI M S F FI
+EQ D DI O OI M S F FI
+B D DI O OI M S F FI
+EQ B D DI O OI M S F FI
+BI D DI O OI M S F FI
+EQ BI D DI O OI M S F FI
+B BI D DI O OI M S F FI
+EQ B BI D DI O OI M S F FI
+F FI | S | MI
+F FI | EQ S | MI
+F FI | S | MI | B
+F FI | EQ S | MI | B
+F FI | BI MI | S
+F FI | EQ S | BI MI
+F FI | BI MI | S | B
+F FI | EQ S | BI MI | B
+D S F | FI | MI
+EQ D S F | FI | MI
+D S F | FI | MI | B
+EQ D S F | FI | MI | B
+D S F | BI MI | FI
+EQ D S F | BI MI | FI
+D S F | BI MI | FI | B
+EQ D S F | BI MI | FI | B
+F FI | S | MI | DI
+F FI | EQ S | MI | DI
+F FI | S | MI | DI | B
+F FI | EQ S | MI | DI | B
+F FI | BI MI | S | DI
+F FI | EQ S | BI MI | DI
+F FI | BI MI | S | DI | B
+F FI | EQ S | BI MI | DI | B
+D S F | DI FI | MI
+EQ D S F | DI FI | MI
+D S F | DI FI | MI | B
+EQ D S F | DI FI | MI | B
+D S F | DI FI | BI MI
+EQ D S F | DI FI | BI MI
+D S F | DI FI | BI MI | B
+EQ D S F | DI FI | BI MI | B
+O S FI | F | MI
+O S FI | EQ F | MI
+B O S FI | F | MI
+B O S FI | EQ F | MI
+O S FI | BI MI | F
+O S FI | EQ F | BI MI
+B O S FI | BI MI | F
+B O S FI | EQ F | BI MI
+D O S F FI | MI
+EQ D O S F FI | MI
+B D O S F FI | MI
+EQ B D O S F FI | MI
+D O S F FI | BI MI
+EQ D O S F FI | BI MI
+B D O S F FI | BI MI
+EQ B D O S F FI | BI MI
+DI O S FI | F | MI
+DI O S FI | EQ F | MI
+B DI O S FI | F | MI
+EQ B DI O S FI | EQ F | MI
+DI O S FI | BI MI | F
+DI O S FI | EQ F | BI MI
+B DI O S FI | BI MI | F
+EQ B DI O S FI | EQ F | BI MI
+D O S F FI | MI | DI
+EQ D O S F FI | MI | DI
+B D O S F FI | MI | DI
+EQ B D O S F FI | MI | DI
+D O S F FI | BI MI | DI
+EQ D O S F FI | BI MI | DI
+B D O S F FI | BI MI | DI
+EQ B D O S F FI | BI MI | DI
+F FI | OI MI | S
+F FI | EQ S | OI MI
+F FI | OI MI | S | B
+F FI | EQ S | OI MI | B
+BI OI MI | F FI | S
+BI OI MI | F FI | EQ S
+BI OI MI | F FI | S | B
+BI OI MI | F FI | EQ S | B
+D OI MI S F | FI
+EQ D OI MI S F | FI
+D OI MI S F | FI | B
+EQ D OI MI S F | FI | B
+BI D OI MI S F | FI
+EQ BI D OI MI S F | FI
+BI D OI MI S F | FI | B
+EQ BI D OI MI S F | FI | B
+DI OI MI F FI | S
+DI OI MI F FI | EQ S
+DI OI MI F FI | S | B
+DI OI MI F FI | EQ S | B
+BI DI OI MI F FI | S
+EQ BI DI OI MI F FI | S
+BI DI OI MI F FI | S | B
+EQ BI DI OI MI F FI | S | B
+DI OI MI F FI | D S
+EQ DI OI MI FI | D OI MI S F
+DI OI MI F FI | D S | B
+EQ DI OI MI FI | D OI MI S F | B
+DI OI MI F FI | BI D OI S
+BI D OI MI S F | EQ DI OI MI FI
+DI OI MI F FI | BI D OI S | B
+BI D OI MI S F | EQ DI OI MI FI | B
+O S FI | OI MI F
+EQ OI MI F | O S FI
+B O S FI | OI MI F
+B O S FI | EQ OI MI F
+BI OI MI F | O S FI
+EQ BI OI MI F | O S FI
+B O S FI | BI OI MI F
+EQ BI OI MI F | B O S FI
+D OI MI S F | O FI
+EQ D OI MI S F | O FI
+B D O S F FI | OI MI
+D OI MI S F | EQ B O FI
+BI D OI MI S F | O FI
+EQ BI D OI MI S F | O FI
+B D O S F FI | BI OI MI
+BI D OI MI S F | EQ B O FI
+DI OI MI F FI | O S
+DI OI MI F FI | EQ O S
+DI OI MI F FI | B O S
+DI OI MI F FI | EQ B O S
+BI DI OI MI F | O S FI
+EQ BI OI MI F | DI O S FI
+BI DI OI MI F | B O S FI
+EQ B DI O S FI | EQ BI OI MI F
+D DI O OI MI S F FI
+EQ D DI O OI MI S F FI
+B D DI O OI MI S F FI
+EQ B D DI O OI MI S F FI
+BI D DI O OI MI S F FI
+EQ BI D DI O OI MI S F FI
+B BI D DI O OI MI S F FI
+EQ B BI D DI O OI MI S F FI
+F FI | S | MI | M
+F FI | EQ S | MI | M
+F FI | B M | S | MI
+F FI | EQ S | B M | MI
+F FI | BI MI | S | M
+F FI | EQ S | BI MI | M
+F FI | BI MI | B M | S
+F FI | EQ S | BI MI | B M
+D S F | FI | MI | M
+EQ D S F | FI | MI | M
+D S F | B M | FI | MI
+EQ D S F | B M | FI | MI
+D S F | BI MI | FI | M
+EQ D S F | BI MI | FI | M
+D S F | BI MI | B M | FI
+EQ D S F | BI MI | B M | FI
+F FI | S | MI | M | DI
+F FI | EQ S | MI | M | DI
+F FI | B M | S | MI | DI
+F FI | EQ S | B M | MI | DI
+F FI | BI MI | S | M | DI
+F FI | EQ S | BI MI | M | DI
+F FI | BI MI | B M | S | DI
+F FI | EQ S | BI MI | B M | DI
+D S F | DI FI | MI | M
+EQ D S F | DI FI | MI | M
+D S F | DI FI | B M | MI
+EQ D S F | DI FI | B M | MI
+D S F | DI FI | BI MI | M
+EQ D S F | DI FI | BI MI | M
+D S F | DI FI | BI MI | B M
+EQ D S F | DI FI | BI MI | B M
+O M S FI | F | MI
+O M S FI | EQ F | MI
+B O M S FI | F | MI
+EQ B O M S FI | EQ F | MI
+O M S FI | BI MI | F
+O M S FI | EQ F | BI MI
+B O M S FI | BI MI | F
+EQ B O M S FI | EQ F | BI MI
+D O M S F FI | MI
+EQ D O M S F FI | MI
+B D O M S F FI | MI
+EQ B D O M S F FI | MI
+D O M S F FI | BI MI
+EQ D O M S F FI | BI MI
+B D O M S F FI | BI MI
+EQ B D O M S F FI | BI MI
+DI O M S FI | F | MI
+EQ DI O M S FI | EQ F | MI
+B DI O M S FI | F | MI
+B DI O M S FI | EQ F | MI
+DI O M S FI | BI MI | F
+EQ DI O M S FI | EQ F | BI MI
+B DI O M S FI | BI MI | F
+B DI O M S FI | EQ F | BI MI
+D O M S F FI | MI | DI
+EQ D O M S F FI | MI | DI
+B D O M S F FI | MI | DI
+EQ B D O M S F FI | MI | DI
+D O M S F FI | BI MI | DI
+EQ D O M S F FI | BI MI | DI
+B D O M S F FI | BI MI | DI
+EQ B D O M S F FI | BI MI | DI
+F FI | OI MI | S | M
+F FI | EQ S | OI MI | M
+F FI | OI MI | B M | S
+F FI | EQ S | OI MI | B M
+BI OI MI | F FI | S | M
+BI OI MI | F FI | EQ S | M
+BI OI MI | F FI | B M | S
+BI OI MI | F FI | EQ S | B M
+D OI MI S F | FI | M
+EQ D OI MI S F | FI | M
+D OI MI S F | B M | FI
+EQ D OI MI S F | B M | FI
+BI D OI MI S F | FI | M
+EQ BI D OI MI S F | FI | M
+BI D OI MI S F | B M | FI
+EQ BI D OI MI S F | B M | FI
+DI OI MI F FI | S | M
+DI OI MI F FI | EQ S | M
+DI OI MI F FI | B M | S
+DI OI MI F FI | EQ S | B M
+BI DI OI MI F FI | S | M
+EQ BI DI OI MI F FI | S | M
+BI DI OI MI F FI | B M | S
+EQ BI DI OI MI F FI | B M | S
+DI OI MI F FI | D S | M
+EQ DI OI MI FI | D OI MI S F | M
+DI OI MI F FI | D S | B M
+EQ DI OI MI FI | D OI MI S F | B M
+DI OI MI F FI | BI D OI S | M
+BI D OI MI S F | EQ DI OI MI FI | M
+DI OI MI F FI | BI D OI S | B M
+BI D OI MI S F | EQ DI OI MI FI | B M
+O M S FI | OI MI F
+EQ O M S FI | OI MI F
+B O M S FI | OI MI F
+EQ B O M S FI | OI MI F
+O M S FI | BI OI MI F
+EQ BI OI MI F | O M S FI
+B O M S FI | BI OI MI F
+EQ B O M S FI | EQ BI OI MI F
+D O M S FI | D OI MI S F
+EQ D OI MI S F | D O M S FI
+B D O M S FI | D OI MI S F
+B D O M S FI | EQ D OI MI S F
+D O M S FI | BI D OI MI F
+D O M S FI | EQ BI OI MI F
+B D O M S FI | BI D OI MI F
+B D O M S FI | EQ BI OI MI F
+DI OI MI F FI | DI O M S FI
+EQ DI O M S FI | DI OI MI F FI
+B DI O M S FI | DI OI MI F FI
+EQ B DI O M S FI | DI OI MI F FI
+DI O M S FI | BI DI OI MI F
+EQ DI O M S FI | EQ BI OI MI F
+B DI O M S FI | BI DI OI MI F
+B DI O M S FI | EQ BI OI MI F
+D DI O OI M MI S F FI
+EQ D DI O OI M MI S F FI
+B D DI O OI M MI S F FI
+EQ B D DI O OI M MI S F FI
+BI D DI O OI M MI S F FI
+EQ BI D DI O OI M MI S F FI
+B BI D DI O OI M MI S F FI
+EQ B BI D DI O OI M MI S F FI
+F FI | SI
+F FI | EQ SI
+F FI | SI | B
+F FI | EQ SI | B
+F FI | SI | BI
+F FI | EQ SI | BI
+F FI | SI | BI | B
+F FI | EQ SI | BI | B
+F FI | SI | D
+F FI | EQ SI | D
+F FI | SI | D | B
+F FI | EQ SI | D | B
+F FI | SI | D | BI
+F FI | EQ SI | D | BI
+F FI | SI | D | BI | B
+F FI | EQ SI | D | BI | B
+DI SI FI | F
+DI SI FI | EQ F
+DI SI FI | F | B
+DI SI FI | EQ F | B
+DI SI FI | F | BI
+DI SI FI | EQ F | BI
+DI SI FI | F | BI | B
+DI SI FI | EQ F | BI | B
+DI SI FI | D F
+DI SI FI | EQ D F
+DI SI FI | D F | B
+DI SI FI | EQ D F | B
+DI SI FI | D F | BI
+DI SI FI | EQ D F | BI
+DI SI FI | D F | BI | B
+DI SI FI | EQ D F | BI | B
+F FI | SI | O
+F FI | EQ SI | O
+F FI | B O | SI
+F FI | EQ SI | B O
+F FI | SI | O | BI
+F FI | EQ SI | O | BI
+F FI | B O | SI | BI
+F FI | EQ SI | B O | BI
+D O F FI | SI
+EQ D O F FI | SI
+B D O F FI | SI
+EQ B D O F FI | SI
+D O F FI | SI | BI
+EQ D O F FI | SI | BI
+B D O F FI | SI | BI
+EQ B D O F FI | SI | BI
+DI O SI FI | F
+DI O SI FI | EQ F
+B DI O SI FI | F
+B DI O SI FI | EQ F
+DI O SI FI | F | BI
+DI O SI FI | EQ F | BI
+B DI O SI FI | F | BI
+B DI O SI FI | EQ F | BI
+DI SI FI | D O F
+DI O SI FI | EQ D F
+B DI O SI FI | D O F
+B DI O SI FI | EQ D F
+DI SI FI | D O F | BI
+DI O SI FI | EQ D F | BI
+B DI O SI FI | D O F | BI
+B DI O SI FI | EQ D F | BI
+OI SI F | FI
+EQ OI SI F | FI
+OI SI F | FI | B
+EQ OI SI F | FI | B
+BI OI SI F | FI
+BI OI SI F | EQ FI
+BI OI SI F | FI | B
+BI OI SI F | EQ FI | B
+D OI SI F | FI
+EQ D OI SI F | FI
+D OI SI F | FI | B
+EQ D OI SI F | FI | B
+BI D OI SI F | FI
+EQ BI D OI SI F | FI
+BI D OI SI F | FI | B
+EQ BI D OI SI F | FI | B
+DI OI SI F FI
+EQ DI OI SI F FI
+DI OI SI F FI | B
+EQ DI OI SI F FI | B
+BI DI OI SI F FI
+EQ BI DI OI SI F FI
+BI DI OI SI F FI | B
+EQ BI DI OI SI F FI | B
+DI OI SI F FI | D
+EQ DI OI SI F FI | D
+DI OI SI F FI | D | B
+EQ DI OI SI F FI | D | B
+BI DI OI SI F FI | D
+EQ BI DI OI SI F FI | D
+BI DI OI SI F FI | D | B
+EQ BI DI OI SI F FI | D | B
+OI SI F | O FI
+EQ OI SI F | O FI
+B O FI | OI SI F
+EQ B O FI | EQ OI SI F
+BI OI SI F | O FI
+BI OI SI F | EQ O FI
+BI OI SI F | B O FI
+EQ B O FI | BI OI SI F
+D OI SI F | O FI
+EQ D OI SI F | O FI
+D OI SI F | B O FI
+EQ B O FI | D OI SI F
+BI OI SI F | D O FI
+EQ D O FI | BI OI SI F
+B D O FI | BI OI SI F
+EQ B D O F FI | BI OI SI F
+DI OI SI F FI | O
+EQ DI OI SI F FI | O
+DI OI SI F FI | B O
+EQ DI OI SI F FI | B O
+BI DI OI SI F FI | O
+EQ BI DI OI SI F FI | O
+BI DI OI SI F FI | B O
+EQ BI DI OI SI F FI | B O
+D DI O OI SI F FI
+EQ D DI O OI SI F FI
+B D DI O OI SI F FI
+EQ B D DI O OI SI F FI
+BI D DI O OI SI F FI
+EQ BI D DI O OI SI F FI
+B BI D DI O OI SI F FI
+EQ B BI D DI O OI SI F FI
+F FI | SI | M
+F FI | EQ SI | M
+F FI | B M | SI
+F FI | EQ SI | B M
+F FI | SI | M | BI
+F FI | EQ SI | M | BI
+F FI | B M | SI | BI
+F FI | EQ SI | B M | BI
+F FI | SI | M | D
+F FI | EQ SI | M | D
+F FI | B M | SI | D
+F FI | EQ SI | B M | D
+F FI | SI | M | D | BI
+F FI | EQ SI | M | D | BI
+F FI | B M | SI | D | BI
+F FI | EQ SI | B M | D | BI
+DI SI FI | F | M
+DI SI FI | EQ F | M
+DI SI FI | B M | F
+DI SI FI | EQ F | B M
+DI SI FI | F | M | BI
+DI SI FI | EQ F | M | BI
+DI SI FI | B M | F | BI
+DI SI FI | EQ F | B M | BI
+DI SI FI | D F | M
+DI SI FI | EQ D F | M
+DI SI FI | D F | B M
+DI SI FI | EQ D F | B M
+DI SI FI | D F | M | BI
+DI SI FI | EQ D F | M | BI
+DI SI FI | D F | B M | BI
+DI SI FI | EQ D F | B M | BI
+F FI | O M | SI
+F FI | EQ SI | O M
+B O M | F FI | SI
+B O M | F FI | EQ SI
+F FI | O M | SI | BI
+F FI | EQ SI | O M | BI
+B O M | F FI | SI | BI
+B O M | F FI | EQ SI | BI
+D O M F FI | SI
+EQ D O M F FI | SI
+B D O M F FI | SI
+EQ B D O M F FI | SI
+D O M F FI | SI | BI
+EQ D O M F FI | SI | BI
+B D O M F FI | SI | BI
+EQ B D O M F FI | SI | BI
+DI O M SI FI | F
+DI O M SI FI | EQ F
+B DI O M SI FI | F
+B DI O M SI FI | EQ F
+DI O M SI FI | F | BI
+DI O M SI FI | EQ F | BI
+B DI O M SI FI | F | BI
+B DI O M SI FI | EQ F | BI
+DI O M SI FI | D O F
+DI O M SI FI | EQ D F
+B DI O M SI FI | D O F
+B DI O M SI FI | EQ D F
+DI O M SI FI | D O F | BI
+DI O M SI FI | EQ D F | BI
+B DI O M SI FI | D O F | BI
+B DI O M SI FI | EQ D F | BI
+OI SI F | FI | M
+EQ OI SI F | FI | M
+OI SI F | B M | FI
+EQ OI SI F | B M | FI
+BI OI SI F | FI | M
+BI OI SI F | EQ FI | M
+BI OI SI F | B M | FI
+BI OI SI F | EQ FI | B M
+D OI SI F | FI | M
+EQ D OI SI F | FI | M
+D OI SI F | B M | FI
+EQ D OI SI F | B M | FI
+BI D OI SI F | FI | M
+EQ BI D OI SI F | FI | M
+BI D OI SI F | B M | FI
+EQ BI D OI SI F | B M | FI
+DI OI SI F FI | M
+EQ DI OI SI F FI | M
+DI OI SI F FI | B M
+EQ DI OI SI F FI | B M
+BI DI OI SI F FI | M
+EQ BI DI OI SI F FI | M
+BI DI OI SI F FI | B M
+EQ BI DI OI SI F FI | B M
+DI OI SI F FI | M | D
+EQ DI OI SI F FI | M | D
+DI OI SI F FI | B M | D
+EQ DI OI SI F FI | B M | D
+BI DI OI SI F FI | M | D
+EQ BI DI OI SI F FI | M | D
+BI DI OI SI F FI | B M | D
+EQ BI DI OI SI F FI | B M | D
+O M FI | OI SI F
+EQ OI SI F | O M FI
+B O M FI | OI SI F
+B O M FI | EQ OI SI F
+BI OI SI F | O M FI
+EQ O M FI | BI OI SI F
+B O M FI | BI OI SI F
+EQ B O M FI | BI OI SI F
+D OI SI F | O M FI
+EQ O M FI | D OI SI F
+B O M FI | D OI SI F
+EQ B O M FI | D OI SI F
+D O M FI | BI OI SI F
+EQ D O M FI | BI OI SI F
+B D O M FI | BI OI SI F
+EQ B D O M FI | BI OI SI F
+DI OI SI F FI | O M
+EQ DI OI SI F FI | O M
+DI OI SI F FI | B O M
+EQ DI OI SI F FI | B O M
+DI O M FI | BI OI SI F
+DI O M SI FI | EQ BI DI OI F
+B DI O M FI | BI OI SI F
+B DI O M SI FI | EQ BI DI OI F
+D DI O OI M SI F FI
+EQ D DI O OI M SI F FI
+B D DI O OI M SI F FI
+EQ B D DI O OI M SI F FI
+BI D DI O OI M SI F FI
+EQ BI D DI O OI M SI F FI
+B BI D DI O OI M SI F FI
+EQ B BI D DI O OI M SI F FI
+F FI | SI | MI
+F FI | EQ SI | MI
+F FI | SI | MI | B
+F FI | EQ SI | MI | B
+F FI | BI MI | SI
+F FI | EQ SI | BI MI
+F FI | BI MI | SI | B
+F FI | EQ SI | BI MI | B
+F FI | SI | MI | D
+F FI | EQ SI | MI | D
+F FI | SI | MI | D | B
+F FI | EQ SI | MI | D | B
+F FI | BI MI | SI | D
+F FI | EQ SI | BI MI | D
+F FI | BI MI | SI | D | B
+F FI | EQ SI | BI MI | D | B
+DI SI FI | F | MI
+DI SI FI | EQ F | MI
+DI SI FI | F | MI | B
+DI SI FI | EQ F | MI | B
+DI SI FI | BI MI | F
+DI SI FI | EQ F | BI MI
+DI SI FI | BI MI | F | B
+DI SI FI | EQ F | BI MI | B
+DI SI FI | D F | MI
+DI SI FI | EQ D F | MI
+DI SI FI | D F | MI | B
+DI SI FI | EQ D F | MI | B
+DI SI FI | D F | BI MI
+DI SI FI | EQ D F | BI MI
+DI SI FI | D F | BI MI | B
+DI SI FI | EQ D F | BI MI | B
+F FI | SI | MI | O
+F FI | EQ SI | MI | O
+F FI | B O | SI | MI
+F FI | EQ SI | B O | MI
+F FI | BI MI | SI | O
+F FI | EQ SI | BI MI | O
+F FI | BI MI | B O | SI
+F FI | EQ SI | BI MI | B O
+D O F FI | SI | MI
+EQ D O F FI | SI | MI
+B D O F FI | SI | MI
+EQ B D O F FI | SI | MI
+D O F FI | BI MI | SI
+EQ D O F FI | BI MI | SI
+B D O F FI | BI MI | SI
+EQ B D O F FI | BI MI | SI
+DI O SI FI | F | MI
+DI O SI FI | EQ F | MI
+B DI O SI FI | F | MI
+B DI O SI FI | EQ F | MI
+DI O SI FI | BI MI | F
+DI O SI FI | EQ F | BI MI
+B DI O SI FI | BI MI | F
+B DI O SI FI | EQ F | BI MI
+DI SI FI | D O F | MI
+DI O SI FI | EQ D F | MI
+B DI O SI FI | D O F | MI
+B DI O SI FI | EQ D F | MI
+DI SI FI | D O F | BI MI
+DI O SI FI | EQ D F | BI MI
+B DI O SI FI | D O F | BI MI
+B DI O SI FI | EQ D F | BI MI
+OI MI SI F | FI
+EQ OI MI SI F | FI
+OI MI SI F | FI | B
+EQ OI MI SI F | FI | B
+BI OI MI SI F | FI
+EQ BI OI MI SI F | FI
+BI OI MI SI F | FI | B
+EQ BI OI MI SI F | FI | B
+D OI MI SI F | FI
+EQ D OI MI SI F | FI
+D OI MI SI F | FI | B
+EQ D OI MI SI F | FI | B
+BI D OI MI SI F | FI
+EQ BI D OI MI SI F | FI
+BI D OI MI SI F | FI | B
+EQ BI D OI MI SI F | FI | B
+DI OI MI SI F FI
+EQ DI OI MI SI F FI
+DI OI MI SI F FI | B
+EQ DI OI MI SI F FI | B
+BI DI OI MI SI F FI
+EQ BI DI OI MI SI F FI
+BI DI OI MI SI F FI | B
+EQ BI DI OI MI SI F FI | B
+DI OI MI SI F FI | D
+EQ DI OI MI SI F FI | D
+DI OI MI SI F FI | D | B
+EQ DI OI MI SI F FI | D | B
+BI DI OI MI SI F FI | D
+EQ BI DI OI MI SI F FI | D
+BI DI OI MI SI F FI | D | B
+EQ BI DI OI MI SI F FI | D | B
+OI MI SI F | O FI
+EQ OI MI SI F | O FI
+OI MI SI F | B O FI
+EQ B O FI | OI MI SI F
+BI OI MI SI F | O FI
+EQ BI OI MI SI F | O FI
+BI OI MI SI F | B O FI
+BI OI MI SI F | EQ B O FI
+D OI MI SI F | O FI
+EQ D OI MI SI F | O FI
+D OI MI SI F | B O FI
+EQ D OI MI SI F | EQ B O FI
+BI D OI MI SI F | O FI
+EQ BI D OI MI SI F | O FI
+BI D OI MI SI F | B O FI
+BI D OI MI SI F | EQ B O FI
+DI OI MI SI F FI | O
+EQ DI OI MI SI F FI | O
+DI OI MI SI F FI | B O
+EQ DI OI MI SI F FI | B O
+BI DI OI MI SI F FI | O
+EQ BI DI OI MI SI F FI | O
+BI DI OI MI SI F FI | B O
+EQ BI DI OI MI SI F FI | B O
+D DI O OI MI SI F FI
+EQ D DI O OI MI SI F FI
+B D DI O OI MI SI F FI
+EQ B D DI O OI MI SI F FI
+BI D DI O OI MI SI F FI
+EQ BI D DI O OI MI SI F FI
+B BI D DI O OI MI SI F FI
+EQ B BI D DI O OI MI SI F FI
+F FI | SI | MI | M
+F FI | EQ SI | MI | M
+F FI | B M | SI | MI
+F FI | EQ SI | B M | MI
+F FI | BI MI | SI | M
+F FI | EQ SI | BI MI | M
+F FI | BI MI | B M | SI
+F FI | EQ SI | BI MI | B M
+F FI | SI | MI | M | D
+F FI | EQ SI | MI | M | D
+F FI | B M | SI | MI | D
+F FI | EQ SI | B M | MI | D
+F FI | BI MI | SI | M | D
+F FI | EQ SI | BI MI | M | D
+F FI | BI MI | B M | SI | D
+F FI | EQ SI | BI MI | B M | D
+DI SI FI | F | MI | M
+DI SI FI | EQ F | MI | M
+DI SI FI | B M | F | MI
+DI SI FI | EQ F | B M | MI
+DI SI FI | BI MI | F | M
+DI SI FI | EQ F | BI MI | M
+DI SI FI | BI MI | B M | F
+DI SI FI | EQ F | BI MI | B M
+DI SI FI | D F | MI | M
+DI SI FI | EQ D F | MI | M
+DI SI FI | D F | B M | MI
+DI SI FI | EQ D F | B M | MI
+DI SI FI | D F | BI MI | M
+DI SI FI | EQ D F | BI MI | M
+DI SI FI | D F | BI MI | B M
+DI SI FI | EQ D F | BI MI | B M
+F FI | O M | SI | MI
+F FI | EQ SI | O M | MI
+B O M | F FI | SI | MI
+B O M | F FI | EQ SI | MI
+F FI | BI MI | O M | SI
+F FI | EQ SI | BI MI | O M
+B O M | F FI | BI MI | SI
+B O M | F FI | EQ SI | BI MI
+D O M F FI | SI | MI
+EQ D O M F FI | SI | MI
+B D O M F FI | SI | MI
+EQ B D O M F FI | SI | MI
+D O M F FI | BI MI | SI
+EQ D O M F FI | BI MI | SI
+B D O M F FI | BI MI | SI
+EQ B D O M F FI | BI MI | SI
+DI O M SI FI | F | MI
+DI O M SI FI | EQ F | MI
+B DI O M SI FI | F | MI
+B DI O M SI FI | EQ F | MI
+DI O M SI FI | BI MI | F
+DI O M SI FI | EQ F | BI MI
+B DI O M SI FI | BI MI | F
+B DI O M SI FI | EQ F | BI MI
+DI O M SI FI | D O F | MI
+DI O M SI FI | EQ D F | MI
+B DI O M SI FI | D O F | MI
+B DI O M SI FI | EQ D F | MI
+DI O M SI FI | D O F | BI MI
+DI O M SI FI | EQ D F | BI MI
+B DI O M SI FI | D O F | BI MI
+B DI O M SI FI | EQ D F | BI MI
+OI MI SI F | FI | M
+EQ OI MI SI F | FI | M
+OI MI SI F | B M | FI
+EQ OI MI SI F | B M | FI
+BI OI MI SI F | FI | M
+EQ BI OI MI SI F | FI | M
+BI OI MI SI F | B M | FI
+EQ BI OI MI SI F | B M | FI
+D OI MI SI F | FI | M
+EQ D OI MI SI F | FI | M
+D OI MI SI F | B M | FI
+EQ D OI MI SI F | B M | FI
+BI D OI MI SI F | FI | M
+EQ BI D OI MI SI F | FI | M
+BI D OI MI SI F | B M | FI
+EQ BI D OI MI SI F | B M | FI
+DI OI MI SI F FI | M
+EQ DI OI MI SI F FI | M
+DI OI MI SI F FI | B M
+EQ DI OI MI SI F FI | B M
+BI DI OI MI SI F FI | M
+EQ BI DI OI MI SI F FI | M
+BI DI OI MI SI F FI | B M
+EQ BI DI OI MI SI F FI | B M
+DI OI MI SI F FI | M | D
+EQ DI OI MI SI F FI | M | D
+DI OI MI SI F FI | B M | D
+EQ DI OI MI SI F FI | B M | D
+BI DI OI MI SI F FI | M | D
+EQ BI DI OI MI SI F FI | M | D
+BI DI OI MI SI F FI | B M | D
+EQ BI DI OI MI SI F FI | B M | D
+OI MI SI F | O M FI
+EQ OI MI SI F | O M FI
+B O M FI | OI MI SI F
+EQ OI MI SI F | B O M FI
+BI OI MI SI F | O M FI
+EQ BI OI MI SI F | O M FI
+BI OI MI SI F | B O M FI
+EQ BI OI MI SI F | B O M FI
+D OI MI SI F | O M FI
+EQ D OI MI SI F | O M FI
+D OI MI SI F | B O M FI
+EQ D OI MI SI F | B O M FI
+BI D OI MI SI F | O M FI
+EQ BI D OI MI SI F | O M FI
+BI D OI MI SI F | B O M FI
+EQ BI D OI MI SI F | B O M FI
+DI OI MI F FI | DI O M SI
+DI OI MI F FI | EQ DI O M SI
+DI OI MI F FI | B DI O M SI
+EQ B DI O M SI | DI OI MI F FI
+BI DI OI MI SI F FI | O M
+EQ BI DI OI MI SI F | O M FI
+BI DI OI MI SI F FI | B O M
+EQ BI DI OI MI SI F | B O M FI
+D DI O OI M MI SI F FI
+EQ D DI O OI M MI SI F FI
+B D DI O OI M MI SI F FI
+EQ B D DI O OI M MI SI F FI
+BI D DI O OI M MI SI F FI
+EQ BI D DI O OI M MI SI F FI
+B BI D DI O OI M MI SI F FI
+EQ B BI D DI O OI M MI SI F FI
+F FI | S SI
+EQ S SI | F FI
+F FI | S SI | B
+EQ S SI | F FI | B
+F FI | S SI | BI
+EQ S SI | F FI | BI
+F FI | S SI | BI | B
+EQ S SI | F FI | BI | B
+F FI | S SI | D
+EQ S SI | F FI | D
+F FI | S SI | D | B
+EQ S SI | F FI | D | B
+F FI | S SI | D | BI
+EQ S SI | F FI | D | BI
+F FI | S SI | D | BI | B
+EQ S SI | F FI | D | BI | B
+F FI | S SI | DI
+EQ S SI | F FI | DI
+F FI | S SI | DI | B
+EQ S SI | F FI | DI | B
+F FI | S SI | DI | BI
+EQ S SI | F FI | DI | BI
+F FI | S SI | DI | BI | B
+EQ S SI | F FI | DI | BI | B
+DI SI FI | D S F
+EQ D S F | DI SI FI
+DI SI FI | D S F | B
+EQ D S F | DI SI FI | B
+DI SI FI | D S F | BI
+EQ D S F | DI SI FI | BI
+DI SI FI | D S F | BI | B
+EQ D S F | DI SI FI | BI | B
+F FI | S SI | O
+EQ S SI | F FI | O
+F FI | S SI | B O
+EQ S SI | F FI | B O
+F FI | S SI | O | BI
+EQ S SI | F FI | O | BI
+F FI | S SI | B O | BI
+EQ S SI | F FI | B O | BI
+D O S F FI | SI
+EQ D O S F FI | SI
+B D O S F FI | SI
+B D O S F FI | EQ SI
+D O S F FI | SI | BI
+EQ D O S F FI | SI | BI
+B D O S F FI | SI | BI
+B D O S F FI | EQ SI | BI
+DI O S SI FI | F
+DI O S SI FI | EQ F
+B DI O S SI FI | F
+B DI O S SI FI | EQ F
+DI O S SI FI | F | BI
+DI O S SI FI | EQ F | BI
+B DI O S SI FI | F | BI
+B DI O S SI FI | EQ F | BI
+DI O S SI FI | D O F
+DI O S SI FI | EQ D F
+B DI O S SI FI | D O F
+B DI O S SI FI | EQ D F
+DI O S SI FI | D O F | BI
+DI O S SI FI | EQ D F | BI
+B DI O S SI FI | D O F | BI
+B DI O S SI FI | EQ D F | BI
+F FI | S SI | OI
+EQ S SI | F FI | OI
+F FI | S SI | OI | B
+EQ S SI | F FI | OI | B
+F FI | S SI | BI OI
+EQ S SI | F FI | BI OI
+F FI | S SI | BI OI | B
+EQ S SI | F FI | BI OI | B
+D OI S SI F | FI
+EQ D OI S SI F | FI
+D OI S SI F | FI | B
+EQ D OI S SI F | FI | B
+BI D OI S SI F | FI
+EQ BI D OI S SI F | FI
+BI D OI S SI F | FI | B
+EQ BI D OI S SI F | FI | B
+DI OI SI F FI | S
+EQ DI OI SI F FI | S
+DI OI SI F FI | S | B
+EQ DI OI SI F FI | S | B
+BI DI OI F FI | S SI
+BI DI OI F FI | EQ S SI
+BI DI OI F FI | S SI | B
+BI DI OI F FI | EQ S SI | B
+D OI S SI F | DI OI FI
+EQ D OI S SI F | DI OI FI
+D OI S SI F | DI OI FI | B
+EQ D OI S SI F | DI OI FI | B
+BI DI OI F FI | D OI S SI F
+EQ BI D OI S SI F | EQ BI DI OI FI
+BI DI OI F FI | D OI S SI F | B
+EQ BI D OI S SI F | EQ BI DI OI FI | B
+O S FI | OI SI F
+EQ OI SI F | O S FI
+B O S FI | OI SI F
+B O S FI | EQ OI SI F
+BI OI SI F | O S FI
+EQ O S FI | BI OI SI F
+B O S FI | BI OI SI F
+EQ B O S FI | BI OI SI F
+D OI S SI F | O FI
+EQ D OI S SI F | O FI
+B D O S FI | D OI SI F
+D OI S SI F | EQ B O FI
+D O S FI | BI OI SI F
+EQ D O S FI | BI OI SI F
+B D O S FI | BI OI SI F
+EQ B D O S FI | BI OI SI F
+DI O S SI FI | OI F
+EQ DI O S SI FI | OI F
+B DI O S SI FI | OI F
+EQ B DI O S SI FI | OI F
+DI O S SI FI | BI OI SI F
+DI O S SI FI | EQ BI DI OI F
+B DI O S SI FI | BI OI SI F
+B DI O S SI FI | EQ BI DI OI F
+D DI O OI S SI F FI
+EQ D DI O OI S SI F FI
+B D DI O OI S SI F FI
+EQ B D DI O OI S SI F FI
+BI D DI O OI S SI F FI
+EQ BI D DI O OI S SI F FI
+B BI D DI O OI S SI F FI
+EQ B BI D DI O OI S SI F FI
+F FI | S SI | M
+EQ S SI | F FI | M
+F FI | S SI | B M
+EQ S SI | F FI | B M
+F FI | S SI | M | BI
+EQ S SI | F FI | M | BI
+F FI | S SI | B M | BI
+EQ S SI | F FI | B M | BI
+F FI | S SI | M | D
+EQ S SI | F FI | M | D
+F FI | S SI | B M | D
+EQ S SI | F FI | B M | D
+F FI | S SI | M | D | BI
+EQ S SI | F FI | M | D | BI
+F FI | S SI | B M | D | BI
+EQ S SI | F FI | B M | D | BI
+F FI | S SI | M | DI
+EQ S SI | F FI | M | DI
+F FI | S SI | B M | DI
+EQ S SI | F FI | B M | DI
+F FI | S SI | M | DI | BI
+EQ S SI | F FI | M | DI | BI
+F FI | S SI | B M | DI | BI
+EQ S SI | F FI | B M | DI | BI
+DI SI FI | D S F | M
+EQ D S F | DI SI FI | M
+DI SI FI | D S F | B M
+EQ D S F | DI SI FI | B M
+DI SI FI | D S F | M | BI
+EQ D S F | DI SI FI | M | BI
+DI SI FI | D S F | B M | BI
+EQ D S F | DI SI FI | B M | BI
+F FI | S SI | O M
+EQ S SI | F FI | O M
+B O M | F FI | S SI
+EQ S SI | B O M | F FI
+F FI | S SI | O M | BI
+EQ S SI | F FI | O M | BI
+B O M | F FI | S SI | BI
+EQ S SI | B O M | F FI | BI
+D O M S F FI | SI
+D O M S F FI | EQ SI
+B D O M S F FI | SI
+B D O M S F FI | EQ SI
+D O M S F FI | SI | BI
+D O M S F FI | EQ SI | BI
+B D O M S F FI | SI | BI
+B D O M S F FI | EQ SI | BI
+DI O M S SI FI | F
+DI O M S SI FI | EQ F
+B DI O M S SI FI | F
+B DI O M S SI FI | EQ F
+DI O M S SI FI | F | BI
+DI O M S SI FI | EQ F | BI
+B DI O M S SI FI | F | BI
+B DI O M S SI FI | EQ F | BI
+D O M S F FI | DI O M S SI FI
+DI O M S SI FI | EQ D F
+DI O M S SI FI | B D O M S F
+EQ B D O M S F | DI O M S SI FI
+D O M S F FI | DI O M S SI FI | BI
+DI O M S SI FI | EQ D F | BI
+DI O M S SI FI | B D O M S F | BI
+EQ B D O M S F | DI O M S SI FI | BI
+F FI | S SI | M | OI
+EQ S SI | F FI | M | OI
+F FI | S SI | B M | OI
+EQ S SI | F FI | B M | OI
+F FI | S SI | BI OI | M
+EQ S SI | F FI | BI OI | M
+F FI | S SI | B M | BI OI
+EQ S SI | F FI | B M | BI OI
+D OI S SI F | FI | M
+EQ D OI S SI F | FI | M
+D OI S SI F | B M | FI
+EQ D OI S SI F | B M | FI
+BI D OI S SI F | FI | M
+EQ BI D OI S SI F | FI | M
+BI D OI S SI F | B M | FI
+EQ BI D OI S SI F | B M | FI
+DI OI SI F FI | S | M
+EQ DI OI SI F FI | S | M
+DI OI SI F FI | B M | S
+EQ DI OI SI F FI | B M | S
+BI DI OI F FI | S SI | M
+BI DI OI F FI | EQ S SI | M
+BI DI OI F FI | S SI | B M
+BI DI OI F FI | EQ S SI | B M
+D OI S SI F | DI OI FI | M
+EQ D OI S SI F | DI OI FI | M
+D OI S SI F | DI OI FI | B M
+EQ D OI S SI F | DI OI FI | B M
+BI DI OI F FI | D OI S SI F | M
+EQ BI D OI S SI F | EQ BI DI OI FI | M
+BI DI OI F FI | D OI S SI F | B M
+EQ BI D OI S SI F | EQ BI DI OI FI | B M
+O M S FI | OI SI F
+O M S FI | EQ OI SI F
+B O M S FI | OI SI F
+EQ B O M S FI | EQ OI SI F
+O M S FI | BI OI SI F
+EQ O M S FI | BI OI SI F
+B O M S FI | BI OI SI F
+EQ B O M S FI | BI OI SI F
+D O M S FI | D OI SI F
+D O M S FI | EQ D OI SI F
+B D O M S FI | D OI SI F
+B D O M S FI | EQ D OI SI F
+D O M S FI | BI OI SI F
+EQ BI D OI S SI F | D O M S FI
+B D O M S FI | BI OI SI F
+EQ B D O M S FI | BI OI SI F
+DI O M S FI | DI OI SI F
+EQ DI O M S FI | DI OI SI F
+B DI O M S FI | DI OI SI F
+B DI O M S FI | EQ DI OI SI F
+DI O M S FI | BI OI SI F
+EQ DI O M S FI | BI OI SI F
+B DI O M S FI | BI OI SI F
+B DI O M S FI | EQ BI DI OI SI F
+D DI O OI M S SI F FI
+EQ D DI O OI M S SI F FI
+B D DI O OI M S SI F FI
+EQ B D DI O OI M S SI F FI
+BI D DI O OI M S SI F FI
+EQ BI D DI O OI M S SI F FI
+B BI D DI O OI M S SI F FI
+EQ B BI D DI O OI M S SI F FI
+F FI | S SI | MI
+EQ S SI | F FI | MI
+F FI | S SI | MI | B
+EQ S SI | F FI | MI | B
+F FI | S SI | BI MI
+EQ S SI | F FI | BI MI
+F FI | S SI | BI MI | B
+EQ S SI | F FI | BI MI | B
+F FI | S SI | MI | D
+EQ S SI | F FI | MI | D
+F FI | S SI | MI | D | B
+EQ S SI | F FI | MI | D | B
+F FI | S SI | BI MI | D
+EQ S SI | F FI | BI MI | D
+F FI | S SI | BI MI | D | B
+EQ S SI | F FI | BI MI | D | B
+F FI | S SI | MI | DI
+EQ S SI | F FI | MI | DI
+F FI | S SI | MI | DI | B
+EQ S SI | F FI | MI | DI | B
+F FI | S SI | BI MI | DI
+EQ S SI | F FI | BI MI | DI
+F FI | S SI | BI MI | DI | B
+EQ S SI | F FI | BI MI | DI | B
+DI SI FI | D S F | MI
+EQ D S F | DI SI FI | MI
+DI SI FI | D S F | MI | B
+EQ D S F | DI SI FI | MI | B
+DI SI FI | D S F | BI MI
+EQ D S F | DI SI FI | BI MI
+DI SI FI | D S F | BI MI | B
+EQ D S F | DI SI FI | BI MI | B
+F FI | S SI | MI | O
+EQ S SI | F FI | MI | O
+F FI | S SI | B O | MI
+EQ S SI | F FI | B O | MI
+F FI | S SI | BI MI | O
+EQ S SI | F FI | BI MI | O
+F FI | S SI | BI MI | B O
+EQ S SI | F FI | BI MI | B O
+D O S F FI | SI | MI
+EQ D O S F FI | SI | MI
+B D O S F FI | SI | MI
+B D O S F FI | EQ SI | MI
+D O S F FI | BI MI | SI
+EQ D O S F FI | BI MI | SI
+B D O S F FI | BI MI | SI
+B D O S F FI | EQ SI | BI MI
+DI O S SI FI | F | MI
+DI O S SI FI | EQ F | MI
+B DI O S SI FI | F | MI
+B DI O S SI FI | EQ F | MI
+DI O S SI FI | BI MI | F
+DI O S SI FI | EQ F | BI MI
+B DI O S SI FI | BI MI | F
+B DI O S SI FI | EQ F | BI MI
+DI O S SI FI | D O F | MI
+DI O S SI FI | EQ D F | MI
+B DI O S SI FI | D O F | MI
+B DI O S SI FI | EQ D F | MI
+DI O S SI FI | D O F | BI MI
+DI O S SI FI | EQ D F | BI MI
+B DI O S SI FI | D O F | BI MI
+B DI O S SI FI | EQ D F | BI MI
+F FI | S SI | OI MI
+EQ S SI | F FI | OI MI
+F FI | S SI | OI MI | B
+EQ S SI | F FI | OI MI | B
+BI OI MI | F FI | S SI
+EQ S SI | BI OI MI | F FI
+BI OI MI | F FI | S SI | B
+EQ S SI | BI OI MI | F FI | B
+D OI MI S SI F | FI
+EQ D OI MI S SI F | FI
+D OI MI S SI F | FI | B
+EQ D OI MI S SI F | FI | B
+BI D OI MI S SI F | FI
+EQ BI D OI MI S SI F | FI
+BI D OI MI S SI F | FI | B
+EQ BI D OI MI S SI F | FI | B
+DI OI MI F FI | S SI
+DI OI MI F FI | EQ S SI
+DI OI MI F FI | S SI | B
+DI OI MI F FI | EQ S SI | B
+BI DI OI MI SI F FI | S
+BI DI OI MI SI F FI | EQ S
+BI DI OI MI SI F FI | S | B
+BI DI OI MI SI F FI | EQ S | B
+D OI MI S SI F | DI OI MI F FI
+D OI MI S SI F | EQ DI OI MI FI
+D OI MI S SI F | DI OI MI F FI | B
+D OI MI S SI F | EQ DI OI MI FI | B
+BI D OI MI S SI F | DI OI MI F FI
+EQ BI D OI S SI F | EQ DI OI MI FI
+BI D OI MI S SI F | DI OI MI F FI | B
+EQ BI D OI S SI F | EQ DI OI MI FI | B
+OI MI SI F | O S FI
+EQ OI MI SI F | O S FI
+B O S FI | OI MI SI F
+EQ OI MI SI F | B O S FI
+BI OI MI SI F | O S FI
+EQ BI OI MI SI F | O S FI
+BI OI MI SI F | B O S FI
+EQ BI OI MI SI F | B O S FI
+D OI MI S SI F | O FI
+EQ D OI MI S SI F | O FI
+D OI MI S SI F | B D O S FI
+D OI MI S SI F | EQ B O FI
+BI D OI MI S SI F | O FI
+EQ BI D OI MI S SI F | O FI
+BI D OI MI S SI F | B D O S FI
+BI D OI MI S SI F | EQ B O FI
+DI OI MI F FI | DI O S SI FI
+EQ DI O S SI FI | DI OI MI F FI
+B DI O S SI FI | DI OI MI F FI
+EQ B DI O S SI FI | DI OI MI F FI
+BI DI OI MI SI F FI | O S
+EQ BI DI OI MI SI F | DI O S SI FI
+BI DI OI MI SI F FI | B O S
+EQ BI DI OI MI SI F | EQ B DI O S FI
+D DI O OI MI S SI F FI
+EQ D DI O OI MI S SI F FI
+B D DI O OI MI S SI F FI
+EQ B D DI O OI MI S SI F FI
+BI D DI O OI MI S SI F FI
+EQ BI D DI O OI MI S SI F FI
+B BI D DI O OI MI S SI F FI
+EQ B BI D DI O OI MI S SI F FI
+F FI | S SI | MI | M
+EQ S SI | F FI | MI | M
+F FI | S SI | B M | MI
+EQ S SI | F FI | B M | MI
+F FI | S SI | BI MI | M
+EQ S SI | F FI | BI MI | M
+F FI | S SI | BI MI | B M
+EQ S SI | F FI | BI MI | B M
+F FI | S SI | MI | M | D
+EQ S SI | F FI | MI | M | D
+F FI | S SI | B M | MI | D
+EQ S SI | F FI | B M | MI | D
+F FI | S SI | BI MI | M | D
+EQ S SI | F FI | BI MI | M | D
+F FI | S SI | BI MI | B M | D
+EQ S SI | F FI | BI MI | B M | D
+F FI | S SI | MI | M | DI
+EQ S SI | F FI | MI | M | DI
+F FI | S SI | B M | MI | DI
+EQ S SI | F FI | B M | MI | DI
+F FI | S SI | BI MI | M | DI
+EQ S SI | F FI | BI MI | M | DI
+F FI | S SI | BI MI | B M | DI
+EQ S SI | F FI | BI MI | B M | DI
+DI SI FI | D S F | MI | M
+EQ D S F | DI SI FI | MI | M
+DI SI FI | D S F | B M | MI
+EQ D S F | DI SI FI | B M | MI
+DI SI FI | D S F | BI MI | M
+EQ D S F | DI SI FI | BI MI | M
+DI SI FI | D S F | BI MI | B M
+EQ D S F | DI SI FI | BI MI | B M
+F FI | S SI | O M | MI
+EQ S SI | F FI | O M | MI
+B O M | F FI | S SI | MI
+EQ S SI | B O M | F FI | MI
+F FI | S SI | BI MI | O M
+EQ S SI | F FI | BI MI | O M
+B O M | F FI | S SI | BI MI
+EQ S SI | B O M | F FI | BI MI
+D O M S F FI | SI | MI
+D O M S F FI | EQ SI | MI
+B D O M S F FI | SI | MI
+B D O M S F FI | EQ SI | MI
+D O M S F FI | BI MI | SI
+D O M S F FI | EQ SI | BI MI
+B D O M S F FI | BI MI | SI
+B D O M S F FI | EQ SI | BI MI
+DI O M S SI FI | F | MI
+DI O M S SI FI | EQ F | MI
+B DI O M S SI FI | F | MI
+B DI O M S SI FI | EQ F | MI
+DI O M S SI FI | BI MI | F
+DI O M S SI FI | EQ F | BI MI
+B DI O M S SI FI | BI MI | F
+B DI O M S SI FI | EQ F | BI MI
+D O M S F FI | DI O M S SI FI | MI
+DI O M S SI FI | EQ D F | MI
+DI O M S SI FI | B D O M S F | MI
+EQ B D O M S F | DI O M S SI FI | MI
+D O M S F FI | DI O M S SI FI | BI MI
+DI O M S SI FI | EQ D F | BI MI
+DI O M S SI FI | B D O M S F | BI MI
+EQ B D O M S F | DI O M S SI FI | BI MI
+F FI | S SI | OI MI | M
+EQ S SI | F FI | OI MI | M
+F FI | S SI | OI MI | B M
+EQ S SI | F FI | OI MI | B M
+BI OI MI | F FI | S SI | M
+EQ S SI | BI OI MI | F FI | M
+BI OI MI | F FI | S SI | B M
+EQ S SI | BI OI MI | F FI | B M
+D OI MI S SI F | FI | M
+EQ D OI MI S SI F | FI | M
+D OI MI S SI F | B M | FI
+EQ D OI MI S SI F | B M | FI
+BI D OI MI S SI F | FI | M
+EQ BI D OI MI S SI F | FI | M
+BI D OI MI S SI F | B M | FI
+EQ BI D OI MI S SI F | B M | FI
+DI OI MI F FI | S SI | M
+DI OI MI F FI | EQ S SI | M
+DI OI MI F FI | S SI | B M
+DI OI MI F FI | EQ S SI | B M
+BI DI OI MI SI F FI | S | M
+BI DI OI MI SI F FI | EQ S | M
+BI DI OI MI SI F FI | B M | S
+BI DI OI MI SI F FI | EQ S | B M
+D OI MI S SI F | DI OI MI F FI | M
+D OI MI S SI F | EQ DI OI MI FI | M
+D OI MI S SI F | DI OI MI F FI | B M
+D OI MI S SI F | EQ DI OI MI FI | B M
+BI D OI MI S SI F | DI OI MI F FI | M
+EQ BI D OI S SI F | EQ DI OI MI FI | M
+BI D OI MI S SI F | DI OI MI F FI | B M
+EQ BI D OI S SI F | EQ DI OI MI FI | B M
+O M S FI | OI MI SI F
+EQ O M S FI | OI MI SI F
+B O M S FI | OI MI SI F
+EQ B O M S FI | OI MI SI F
+BI OI MI SI F | O M S FI
+EQ O M S FI | BI OI MI SI F
+B O M S FI | BI OI MI SI F
+EQ B O M S FI | BI OI MI SI F
+D OI MI S SI F | D O M S FI
+EQ D OI MI SI F | D O M S FI
+B D O M S FI | D OI MI S SI F
+B D O M S FI | EQ D OI MI SI F
+BI D OI MI S SI F | D O M S FI
+EQ BI D OI MI S SI F | D O M S FI
+BI D OI MI S SI F | B D O M S FI
+EQ BI D OI MI S SI F | B D O M S FI
+DI O M S SI FI | DI OI MI F FI
+EQ DI O M S SI | DI OI MI F FI
+B DI O M S SI FI | DI OI MI F FI
+EQ B DI O M S SI FI | DI OI MI F FI
+BI DI OI MI SI F FI | DI O M S FI
+EQ BI DI OI MI SI F | EQ DI O M S FI
+BI DI OI MI SI F FI | B DI O M S FI
+EQ BI DI OI MI SI F | B DI O M S FI
+D DI O OI M MI S SI F FI
+EQ D DI O OI M MI S SI F FI
+B D DI O OI M MI S SI F FI
+EQ B D DI O OI M MI S SI F FI
+BI D DI O OI M MI S SI F FI
+EQ BI D DI O OI M MI S SI F FI
+B BI D DI O OI M MI S SI F FI
+B BI D DI O OI M MI S SI F FI | EQ
