@@ -7,12 +7,23 @@ import copy
 CONSISTENT = "CONSISTENT"
 INCONSISTENT = "INCONSISTENT"
 refinementCounter = 0
+backjumpLevel = 0
 
 
 class Search(object):
     def __init__(self, network):
         super(Search, self).__init__()
         self.net = network
+        self.stack = [["lol", 0]]
+        self.lastModified = [[[0]
+                             for a in range(self.net.nodeCount)]
+                             for b in range(self.net.nodeCount)]
+        # self.listOfNontractableConstraints = []
+        # for (i, j) in Helper.doubleNested(self.net.nodeCount):
+        #     relMask = self.net.cs[i][j]
+        #     theSet = self.net.algebra.aTractableSet(relMask)
+        #     if len(theSet) > 1:
+        #         self.listOfNontractableConstraints.append([len(theSet), i, j])
 
     def aClosureV1(self):
         s = True
@@ -100,6 +111,101 @@ class Search(object):
             C_star.cs[i][j] = prevRel
         return INCONSISTENT
 
+    def aClosureV3(self, arcs=None):
+        global backjumpLevel
+        q = Queue.QQueue(self.net.cs)
+        if arcs is None:
+            for (i, j) in Helper.doubleNested(self.net.nodeCount):
+                q.enqueue([i, j])
+        else:
+            for arc in arcs:
+                q.enqueue(arc)
+
+        while not q.isEmpty():
+            (i, j) = q.dequeue()
+            for k in range(self.net.nodeCount):
+                if k == i or k == j:
+                    continue
+                Cij = self.net.cs[i][j]
+                Cjk = self.net.cs[j][k]
+                Cik = self.net.cs[i][k]
+                Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
+                if Cik_star != Cik:
+                    self.stack.append([i, k, self.net.cs[i][k]])
+                    self.stack.append([k, i, self.net.cs[k][i]])
+                    self.net.cs[i][k] = Cik_star
+                    q.enqueueNew([i, k])
+                    self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
+                    q.enqueueNew([k, i])
+                Ckj = self.net.cs[k][j]
+                Cki = self.net.cs[k][i]
+                Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
+                if Ckj_star != Ckj:
+                    self.stack.append([k, j, self.net.cs[k][j]])
+                    self.stack.append([j, k, self.net.cs[j][k]])
+                    self.net.cs[k][j] = Ckj_star
+                    q.enqueueNew([k, j])
+                    self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
+                    q.enqueueNew([j, k])
+                if Cik_star == 0 or Ckj_star == 0:
+                    backjumpLevel = max(
+                        self.lastModified[k][i][0], self.lastModified[k][j][0],
+                        self.lastModified[i][k][0], self.lastModified[j][k][0],
+                        self.lastModified[i][j][0], self.lastModified[j][i][0])
+                    return INCONSISTENT  # early exit
+        return CONSISTENT
+
+    def refinementV2(self, E=None):
+        global refinementCounter, backjumpLevel
+        refinementCounter += 1
+        currentLevel = refinementCounter
+        # print ".",
+
+        aClosed = self.aClosureV3(E)
+        if aClosed is INCONSISTENT:
+            return INCONSISTENT
+
+        refineList = self.net.listOfNontractableConstraints()
+        if len(refineList) == 0:  # all rel's have 1 base relation
+            if self.aClosureV3() == CONSISTENT:
+                # print("Resulting QCSP:\n%s" % self.net)
+                return CONSISTENT
+        # for rel in refineList:
+        #     conn = self.net.nodeConnectivity[rel[0]]\
+        #         + self.net.nodeConnectivity[rel[1]]
+        #     rel[0] = conn
+        refineList.sort(reverse=True)
+
+        # print refineList
+        for (c, i, j) in refineList:
+            prevRel = self.net.cs[i][j]
+            for baseRel in self.net.algebra.aTractableSet(prevRel):
+            # for baseRel in Helper.bits(prevRel):
+                self.stack.append(["lol", currentLevel])
+                self.stack.append([i, j, self.net.cs[i][j]])
+                if self.lastModified[i][j][0] < currentLevel:
+                    self.lastModified[i][j].insert(0, currentLevel)
+
+                self.net.cs[i][j] = baseRel
+                if self.refinementV2([[i, j]]) == CONSISTENT:
+                    return CONSISTENT
+
+                if currentLevel > backjumpLevel and backjumpLevel > 0:
+                    return INCONSISTENT
+
+                while len(self.stack) > 0:  # restore previous state
+                    itm = self.stack.pop()
+                    if itm[0] == "lol":
+                        if backjumpLevel == 0 or itm[1] == backjumpLevel:
+                            break
+                        continue
+                    self.net.cs[itm[0]][itm[1]] = itm[2]
+                    if backjumpLevel > 0:
+                        modifyArr = self.lastModified[itm[0]][itm[1]]
+                        while modifyArr[0] > backjumpLevel:
+                            del(modifyArr[0])
+        return INCONSISTENT
+
 
 # algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
 algFile = ReadFile.AlgebraFile("algebra/allen.txt")
@@ -111,9 +217,9 @@ print("\n")
 
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
-# tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
-tf = ReadFile.TestFile("test cases/test_generated1.txt")
-skip = 4
+tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+# tf = ReadFile.TestFile("test cases/test_generated1.txt")
+skip = 0
 overall = timeit.default_timer()
 for graph in tf.processNext():
     net = Network.QCSP(alg, *graph[0])  # First row is always header
@@ -132,14 +238,14 @@ for graph in tf.processNext():
     refinementCounter = 0
     pre = timeit.default_timer()
     # valid = Search(net).aClosureV2()
-    valid = Search(net).refinementV15()
+    valid = Search(net).refinementV2()
     print("%d Iterations" % refinementCounter)
     print("  > '%s' is %s (%f s)" % (
         net.description, valid, timeit.default_timer() - pre))
     if (net.description.split()[-2] == "NOT" and valid == CONSISTENT) or \
        (net.description.split()[-2] != "NOT" and valid == INCONSISTENT):
         print("!! wrong !!")
-        # exit(0)
+        exit(0)
     print("\n\n")
     # break
 
