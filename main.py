@@ -129,30 +129,30 @@ class Search(object):
                 Cij = self.net.cs[i][j]
                 Cjk = self.net.cs[j][k]
                 Cik = self.net.cs[i][k]
-                Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
-                if Cik_star != Cik:
-                    self.stack.append([i, k, self.net.cs[i][k]])
-                    self.stack.append([k, i, self.net.cs[k][i]])
-                    self.net.cs[i][k] = Cik_star
-                    q.enqueueNew([i, k])
-                    self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
-                    q.enqueueNew([k, i])
                 Ckj = self.net.cs[k][j]
                 Cki = self.net.cs[k][i]
+                Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
                 Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
-                if Ckj_star != Ckj:
-                    self.stack.append([k, j, self.net.cs[k][j]])
-                    self.stack.append([j, k, self.net.cs[j][k]])
-                    self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew([k, j])
-                    self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
-                    q.enqueueNew([j, k])
                 if Cik_star == 0 or Ckj_star == 0:
                     backjumpLevel = max(
                         self.lastModified[k][i][0], self.lastModified[k][j][0],
                         self.lastModified[i][k][0], self.lastModified[j][k][0],
                         self.lastModified[i][j][0], self.lastModified[j][i][0])
                     return INCONSISTENT  # early exit
+                if Cik_star != Cik:
+                    self.stack.append([i, k, Cik])
+                    # self.stack.append([k, i, Cki])
+                    self.net.cs[i][k] = Cik_star
+                    q.enqueueNew([i, k])
+                    # self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
+                    # q.enqueueNew([k, i])
+                if Ckj_star != Ckj:
+                    self.stack.append([k, j, Ckj])
+                    # self.stack.append([j, k, Cjk])
+                    self.net.cs[k][j] = Ckj_star
+                    q.enqueueNew([k, j])
+                    # self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
+                    # q.enqueueNew([j, k])
         return CONSISTENT
 
     def refinementV2(self, E=None):
@@ -170,6 +170,7 @@ class Search(object):
             if self.aClosureV3() == CONSISTENT:
                 # print("Resulting QCSP:\n%s" % self.net)
                 return CONSISTENT
+        # self.net.calculateNodeConnectivity()
         # for rel in refineList:
         #     conn = self.net.nodeConnectivity[rel[0]]\
         #         + self.net.nodeConnectivity[rel[1]]
@@ -179,8 +180,8 @@ class Search(object):
         # print refineList
         for (c, i, j) in refineList:
             prevRel = self.net.cs[i][j]
-            for baseRel in self.net.algebra.aTractableSet(prevRel):
             # for baseRel in Helper.bits(prevRel):
+            for baseRel in self.net.algebra.aTractableSet(prevRel):
                 self.stack.append(["lol", currentLevel])
                 self.stack.append([i, j, self.net.cs[i][j]])
                 if self.lastModified[i][j][0] < currentLevel:
@@ -230,7 +231,6 @@ for graph in tf.processNext():
         net.addConstraint(*graph[i])
 
     # preprocessing
-    net.calculateNodeConnectivity()
     # net.enforceOneConsistency("=")
     net.enforceOneConsistency("EQ")
 
