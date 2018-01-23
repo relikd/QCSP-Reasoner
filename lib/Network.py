@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf8
 import Helper
+import Algebra
 
 
 class QCSP(object):
@@ -46,10 +47,19 @@ class QCSP(object):
             c = len(self.algebra.aTractableSet(self.cs[i][j]))
             if c > 1:
                 conn = c
-                # for p in range(self.nodeCount):
-                #     u = len(self.algebra.aTractableSet(self.cs[i][p]))
-                #     v = len(self.algebra.aTractableSet(self.cs[j][p]))
-                #     conn = conn + u + v
+                for p in range(self.nodeCount):
+                    u = Helper.countBits[self.cs[p][i]]
+                    v = Helper.countBits[self.cs[j][p]]
+                    w = Helper.countBits[self.cs[i][p]]
+                    x = Helper.countBits[self.cs[p][j]]
+                    if u > 1 and u < Algebra.baseCount:
+                        conn += 1
+                    if v > 1 and v < Algebra.baseCount:
+                        conn += 1
+                    if w > 1 and w < Algebra.baseCount:
+                        conn += 1
+                    if x > 1 and x < Algebra.baseCount:
+                        conn += 1
                 lst.append([conn, i, j])
         lst.sort(reverse=True)
         return lst
