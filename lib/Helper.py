@@ -15,14 +15,14 @@ def powerset(seq):
 def doubleNested(maxi, start=0):
     for x in range(start, maxi):
         for y in range(start, maxi):
-            yield (x, y)
+            yield x, y
 
 
 def tripleNested(maxi, start=0):
     for x in range(start, maxi):
         for y in range(start, maxi):
             for z in range(start, maxi):
-                yield (x, y, z)
+                yield x, y, z
 
 
 def splitTripple(line):
@@ -38,3 +38,13 @@ def bits(n):
         b = n & (~n + 1)
         yield b
         n ^= b
+
+
+def countBits(n):
+    # return bin(n).count("1")
+    ones = 0
+    while n:
+        b = n & (~n + 1)
+        ones += 1
+        n ^= b
+    return ones

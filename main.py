@@ -18,18 +18,12 @@ class Search(object):
         self.lastModified = [[[0]
                              for a in range(self.net.nodeCount)]
                              for b in range(self.net.nodeCount)]
-        # self.listOfNontractableConstraints = []
-        # for (i, j) in Helper.doubleNested(self.net.nodeCount):
-        #     relMask = self.net.cs[i][j]
-        #     theSet = self.net.algebra.aTractableSet(relMask)
-        #     if len(theSet) > 1:
-        #         self.listOfNontractableConstraints.append([len(theSet), i, j])
 
     def aClosureV1(self):
         s = True
         while s:
             s = False
-            for (i, j, k) in Helper.tripleNested(self.net.nodeCount):
+            for i, j, k in Helper.tripleNested(self.net.nodeCount):
                 Cij = self.net.cs[i][j]
                 Cjk = self.net.cs[j][k]
                 Cik = self.net.cs[i][k]
@@ -46,14 +40,14 @@ class Search(object):
     def aClosureV2(self, arcs=None):
         q = Queue.QQueue(self.net.cs)
         if arcs is None:
-            for (i, j) in Helper.doubleNested(self.net.nodeCount):
-                q.enqueue([i, j])
+            for i, j in Helper.doubleNested(self.net.nodeCount):
+                q.enqueue(i, j)
         else:
             for arc in arcs:
-                q.enqueue(arc)
+                q.enqueue(arc[0], arc[1])
 
         while not q.isEmpty():
-            (i, j) = q.dequeue()
+            i, j = q.dequeue()
             for k in range(self.net.nodeCount):
                 if k == i or k == j:
                     continue
@@ -63,17 +57,17 @@ class Search(object):
                 Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
                 if Cik_star != Cik:
                     self.net.cs[i][k] = Cik_star
-                    q.enqueueNew([i, k])
+                    q.enqueueNew(i, k)
                     self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
-                    q.enqueueNew([k, i])
+                    q.enqueueNew(k, i)
                 Ckj = self.net.cs[k][j]
                 Cki = self.net.cs[k][i]
                 Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
                 if Ckj_star != Ckj:
                     self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew([k, j])
+                    q.enqueueNew(k, j)
                     self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
-                    q.enqueueNew([j, k])
+                    q.enqueueNew(j, k)
                 if Cik_star == 0 or Ckj_star == 0:
                     return INCONSISTENT  # early exit
         return CONSISTENT
@@ -89,19 +83,13 @@ class Search(object):
         if aClosed is INCONSISTENT:
             return INCONSISTENT
 
-        # refineList = C_star.listOfMultiRelationConstraints()
         refineList = C_star.listOfNontractableConstraints()
         if len(refineList) == 0:  # all rel's have 1 base relation
             if Search(C_star).aClosureV2() == CONSISTENT:
                 # print("Resulting QCSP:\n%s" % C_star)
                 return CONSISTENT
-        for rel in refineList:
-            conn = C_star.nodeConnectivity[rel[0]]\
-                + C_star.nodeConnectivity[rel[1]]
-            rel[0] = conn
-        refineList.sort(reverse=True)
 
-        for (c, i, j) in refineList:
+        for c, i, j in refineList:
             prevRel = C_star.cs[i][j]
             # for baseRel in self.net.algebra.aTractableSet(prevRel):
             for baseRel in Helper.bits(prevRel):
@@ -115,14 +103,14 @@ class Search(object):
         global backjumpLevel
         q = Queue.QQueue(self.net.cs)
         if arcs is None:
-            for (i, j) in Helper.doubleNested(self.net.nodeCount):
-                q.enqueue([i, j])
+            for i, j in Helper.doubleNested(self.net.nodeCount):
+                q.enqueue(i, j)
         else:
             for arc in arcs:
-                q.enqueue(arc)
+                q.enqueue(arc[0], arc[1])
 
         while not q.isEmpty():
-            (i, j) = q.dequeue()
+            i, j = q.dequeue()
             for k in range(self.net.nodeCount):
                 if k == i or k == j:
                     continue
@@ -143,16 +131,16 @@ class Search(object):
                     self.stack.append([i, k, Cik])
                     # self.stack.append([k, i, Cki])
                     self.net.cs[i][k] = Cik_star
-                    q.enqueueNew([i, k])
+                    q.enqueueNew(i, k)
                     # self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
-                    # q.enqueueNew([k, i])
+                    # q.enqueueNew(k, i)
                 if Ckj_star != Ckj:
                     self.stack.append([k, j, Ckj])
                     # self.stack.append([j, k, Cjk])
                     self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew([k, j])
+                    q.enqueueNew(k, j)
                     # self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
-                    # q.enqueueNew([j, k])
+                    # q.enqueueNew(j, k)
         return CONSISTENT
 
     def refinementV2(self, E=None):
@@ -167,18 +155,9 @@ class Search(object):
 
         refineList = self.net.listOfNontractableConstraints()
         if len(refineList) == 0:  # all rel's have 1 base relation
-            if self.aClosureV3() == CONSISTENT:
-                # print("Resulting QCSP:\n%s" % self.net)
-                return CONSISTENT
-        # self.net.calculateNodeConnectivity()
-        # for rel in refineList:
-        #     conn = self.net.nodeConnectivity[rel[0]]\
-        #         + self.net.nodeConnectivity[rel[1]]
-        #     rel[0] = conn
-        refineList.sort(reverse=True)
+            return CONSISTENT
 
-        # print refineList
-        for (c, i, j) in refineList:
+        for c, i, j in refineList:
             prevRel = self.net.cs[i][j]
             # for baseRel in Helper.bits(prevRel):
             for baseRel in self.net.algebra.aTractableSet(prevRel):
@@ -233,6 +212,7 @@ for graph in tf.processNext():
     # preprocessing
     # net.enforceOneConsistency("=")
     net.enforceOneConsistency("EQ")
+    net.initNontractableRelations()
 
     print("processing: '%s'" % net.description)
     refinementCounter = 0
