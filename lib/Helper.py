@@ -2,6 +2,8 @@
 # coding: utf8
 import re
 
+countBits = [bin(x).count("1") for x in range(1 << 13)]
+
 
 def powerset(seq):
     if len(seq) <= 0:
@@ -38,13 +40,3 @@ def bits(n):
         b = n & (~n + 1)
         yield b
         n ^= b
-
-
-def countBits(n):
-    # return bin(n).count("1")
-    ones = 0
-    while n:
-        b = n & (~n + 1)
-        ones += 1
-        n ^= b
-    return ones

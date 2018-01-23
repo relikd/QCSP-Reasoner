@@ -38,13 +38,13 @@ class Search(object):
         return CONSISTENT
 
     def aClosureV2(self, arcs=None):
-        q = Queue.QQueue(self.net.cs)
+        q = Queue.QQueue()
         if arcs is None:
             for i, j in Helper.doubleNested(self.net.nodeCount):
-                q.enqueue(i, j)
+                q.enqueue(i, j, self.net.cs[i][j])
         else:
             for arc in arcs:
-                q.enqueue(arc[0], arc[1])
+                q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
 
         while not q.isEmpty():
             i, j = q.dequeue()
@@ -57,17 +57,17 @@ class Search(object):
                 Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
                 if Cik_star != Cik:
                     self.net.cs[i][k] = Cik_star
-                    q.enqueueNew(i, k)
+                    q.enqueueNew(i, k, Cik_star)
                     self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
-                    q.enqueueNew(k, i)
+                    q.enqueueNew(k, i, self.net.cs[k][i])
                 Ckj = self.net.cs[k][j]
                 Cki = self.net.cs[k][i]
                 Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
                 if Ckj_star != Ckj:
                     self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew(k, j)
+                    q.enqueueNew(k, j, Ckj_star)
                     self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
-                    q.enqueueNew(j, k)
+                    q.enqueueNew(j, k, self.net.cs[j][k])
                 if Cik_star == 0 or Ckj_star == 0:
                     return INCONSISTENT  # early exit
         return CONSISTENT
@@ -101,13 +101,13 @@ class Search(object):
 
     def aClosureV3(self, arcs=None):
         global backjumpLevel
-        q = Queue.QQueue(self.net.cs)
+        q = Queue.QQueue()
         if arcs is None:
             for i, j in Helper.doubleNested(self.net.nodeCount):
-                q.enqueue(i, j)
+                q.enqueue(i, j, self.net.cs[i][j])
         else:
             for arc in arcs:
-                q.enqueue(arc[0], arc[1])
+                q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
 
         while not q.isEmpty():
             i, j = q.dequeue()
@@ -131,14 +131,14 @@ class Search(object):
                     self.stack.append([i, k, Cik])
                     # self.stack.append([k, i, Cki])
                     self.net.cs[i][k] = Cik_star
-                    q.enqueueNew(i, k)
+                    q.enqueueNew(i, k, Cik_star)
                     # self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
                     # q.enqueueNew(k, i)
                 if Ckj_star != Ckj:
                     self.stack.append([k, j, Ckj])
                     # self.stack.append([j, k, Cjk])
                     self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew(k, j)
+                    q.enqueueNew(k, j, Ckj_star)
                     # self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
                     # q.enqueueNew(j, k)
         return CONSISTENT

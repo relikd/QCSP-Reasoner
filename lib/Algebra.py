@@ -2,29 +2,32 @@
 # coding: utf8
 import LookupTable
 
+baseCount = 0
+
 
 class Algebra(object):
     def __init__(self, _algebraFile, _aTractableSubsetsFile=None):
         super(Algebra, self).__init__()
         self.BaseRelations = _algebraFile.readBaseRelations()
-        self.baseCount = len(self.BaseRelations)
+        global baseCount
+        baseCount = len(self.BaseRelations)
         self.TName = LookupTable.Names(self.BaseRelations)
         self.Universal = len(self.TName.labels) - 1
         # Process converses
-        self.TConverse = LookupTable.Converse(self.baseCount)
+        self.TConverse = LookupTable.Converse(baseCount)
         for cv in _algebraFile.readConverse():
             a = self.TName.getBitmask(cv[0])
             b = self.TName.getBitmask(cv[1])
             self.TConverse.setConverse(a, b)
         # Process compositions
-        self.TComposition = LookupTable.Composition(self.baseCount)
+        self.TComposition = LookupTable.Composition(baseCount)
         for cp in _algebraFile.readComposition():  # format: B1 B2 [B1 B2 B3]
             a = self.TName.getBitmask(cp[0])
             b = self.TName.getBitmask(cp[1])
             c = self.TName.getBitmask(cp[2])
             self.TComposition.setComposition(a, b, c)
         # Process a-tractable subsets for improved refinement search
-        self.TTractable = LookupTable.ATractable(self.baseCount)
+        self.TTractable = LookupTable.ATractable(baseCount)
         if _aTractableSubsetsFile is not None:
             for i, subsets in _aTractableSubsetsFile.readSubset(self.TName):
                 self.TTractable.setClosedSet(i, subsets)
