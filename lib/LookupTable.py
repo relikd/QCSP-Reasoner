@@ -37,24 +37,28 @@ class Composition(object):
         self.compositions = dict()
 
     def setComposition(self, a, b, compositionMask):
-        self.compositions[a, b] = compositionMask
+        index = (a << self.baseCount) + b
+        self.compositions[index] = compositionMask
 
     def composition(self, a, b):
         try:
-            return self.compositions[a, b]
+            index = (a << self.baseCount) + b
+            return self.compositions[index]
         except KeyError:
             result = 0
             for baseRelA in Helper.bits(a):
                 for baseRelB in Helper.bits(b):
-                    result |= self.compositions[baseRelA, baseRelB]
+                    index = (baseRelA << self.baseCount) + baseRelB
+                    result |= self.compositions[index]
             self.setComposition(a, b, result)
             return result
 
     def checkIntegrity(self):
         print("Checking Composition Integrity ...")
         n = self.baseCount
-        for (x, y) in [(i / n, i % n) for i in range(n**2)]:
-            if self.compositions[1 << x, 1 << y] is None:
+        for x, y in [(i / n, i % n) for i in range(n**2)]:
+            index = ((1 << x) << self.baseCount) + (1 << y)
+            if self.compositions[index] is None:
                 print("Couldn't find composition for '{0:0{2}b} * {1:0{2}b}'"
                       .format(1 << x, 1 << y, self.baseCount))
 

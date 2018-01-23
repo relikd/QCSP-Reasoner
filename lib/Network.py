@@ -9,10 +9,10 @@ class QCSP(object):
         self.algebra = algebra
         self.nodeCount = maxIndex + 1
         self.description = description
-        self.nodeConnectivity = [0] * self.nodeCount
         self.cs = [[self.algebra.Universal
                    for a in range(self.nodeCount)]
                    for b in range(self.nodeCount)]
+        self.multiSubsetRelations = []
 
     def addConstraint(self, A, B, constraint):
         if A >= self.nodeCount or B >= self.nodeCount:
@@ -28,39 +28,36 @@ class QCSP(object):
             print(" %d->%d  %s  '%s'" % (A, B, constraint, self.description))
             self.cs[A][B] = 0
 
-    def calculateNodeConnectivity(self):
-        for (i, j) in Helper.doubleNested(self.nodeCount):
-            if self.cs[i][j] != self.algebra.Universal:
-                c = bin(self.cs[i][j]).count("1")
-                self.nodeConnectivity[i] += c
-                self.nodeConnectivity[j] += c
-
     def enforceOneConsistency(self, symbol):
         bitmask = self.algebra.bitmaskFromList([symbol])
         for i in range(self.nodeCount):
             self.cs[i][i] = bitmask
 
-    def listOfMultiRelationConstraints(self):
-        lst = []
-        for (i, j) in Helper.doubleNested(self.nodeCount):
-            c = bin(self.cs[i][j]).count("1")
-            if c > 1 and c < self.algebra.baseCount:  # exclude Universal
-                lst.append([i, j])
-        return lst
+    def initNontractableRelations(self):
+        # init list of nontractable relations
+        for i, j in Helper.doubleNested(self.nodeCount):
+            setCount = len(self.algebra.aTractableSet(self.cs[i][j]))
+            if setCount > 1:
+                self.multiSubsetRelations.append([setCount, i, j])
 
     def listOfNontractableConstraints(self):
         lst = []
-        for (i, j) in Helper.doubleNested(self.nodeCount):
-            relMask = self.cs[i][j]
-            theSet = self.algebra.aTractableSet(relMask)
-            if len(theSet) > 1:
-                lst.append([len(theSet), i, j])
+        for c, i, j in self.multiSubsetRelations:
+            c = len(self.algebra.aTractableSet(self.cs[i][j]))
+            if c > 1:
+                conn = c
+                # for p in range(self.nodeCount):
+                #     u = len(self.algebra.aTractableSet(self.cs[i][p]))
+                #     v = len(self.algebra.aTractableSet(self.cs[j][p]))
+                #     conn = conn + u + v
+                lst.append([conn, i, j])
+        lst.sort(reverse=True)
         return lst
 
     def __str__(self):
         relCount = 0
         s = ""
-        for (a, b) in Helper.doubleNested(self.nodeCount):
+        for a, b in Helper.doubleNested(self.nodeCount):
             if self.cs[a][b] != self.algebra.Universal:
                 s += "%d {%s} %d\n" % (
                     a, self.algebra.nameForBitmask(self.cs[a][b]), b)
