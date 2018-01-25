@@ -1,8 +1,28 @@
 #!/usr/bin/env python
 # coding: utf8
 import LookupTable
+import ReadFile
 
 baseCount = 0
+
+
+def PC():
+    algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
+    alg = Algebra(algFile)
+    alg.equality = "="
+    return alg
+
+
+def Allen():
+    algFile = ReadFile.AlgebraFile("algebra/allen.txt")
+    horn = ReadFile.ATractableSubsetsFile("algebra/ia_ord_horn_all.txt")
+    alg = Algebra(algFile, horn)
+    alg.equality = "EQ"
+    # print(alg)
+    alg.checkIntegrity()
+    print("\n")
+    alg.readCompositionsFile("algebra/allen.compositions")
+    return alg
 
 
 class Algebra(object):
@@ -13,6 +33,8 @@ class Algebra(object):
         baseCount = len(self.BaseRelations)
         self.TName = LookupTable.Names(self.BaseRelations)
         self.Universal = len(self.TName.labels) - 1
+        self.equality = "EQ"
+        self.allCompos = bytearray()
         # Process converses
         self.TConverse = LookupTable.Converse(baseCount)
         for cv in _algebraFile.readConverse():
@@ -32,6 +54,11 @@ class Algebra(object):
             for i, subsets in _aTractableSubsetsFile.readSubset(self.TName):
                 self.TTractable.setClosedSet(i, subsets)
 
+    def readCompositionsFile(self, filename):
+        f = open(filename, "rb")
+        self.allCompos = bytearray(f.read())
+        f.close()
+
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()
         self.TComposition.checkIntegrity()
@@ -46,7 +73,9 @@ class Algebra(object):
         return self.TConverse.converse(rel)
 
     def compose(self, relA, relB):
-        return self.TComposition.composition(relA, relB)
+        idx = ((relA << baseCount) + relB) << 1  # == * 2
+        return (self.allCompos[idx] << 8) + self.allCompos[idx + 1]
+        # return self.TComposition.composition(relA, relB)
 
     def aTractableSet(self, rel):
         return self.TTractable.getClosedSet(rel)
@@ -63,7 +92,7 @@ class Algebra(object):
         txt += "\nComposition Table:\n"
         for x in self.TComposition.compositions:
             txt += "  {:2} ⟐ {:2} : {}\n".format(
-                self.TName.getName(x[0]),
-                self.TName.getName(x[1]),
+                self.TName.getName(x >> baseCount),
+                self.TName.getName(x & ((1 << baseCount) - 1)),
                 self.TName.getName(self.TComposition.compositions[x]))
         return txt

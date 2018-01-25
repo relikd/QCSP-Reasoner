@@ -187,13 +187,7 @@ class Search(object):
         return INCONSISTENT
 
 
-# algFile = ReadFile.AlgebraFile("algebra/point_calculus.txt")
-algFile = ReadFile.AlgebraFile("algebra/allen.txt")
-aTractableFile = ReadFile.ATractableSubsetsFile("algebra/ia_ord_horn_all.txt")
-alg = Algebra.Algebra(algFile, aTractableFile)
-# print(alg)
-alg.checkIntegrity()
-print("\n")
+alg = Algebra.Allen()
 
 # Load test case
 # tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
@@ -208,10 +202,6 @@ for graph in tf.processNext():
         continue
     for i in range(1, len(graph)):
         net.addConstraint(*graph[i])
-
-    # preprocessing
-    # net.enforceOneConsistency("=")
-    net.enforceOneConsistency("EQ")
     net.initNontractableRelations()
 
     print("processing: '%s'" % net.description)

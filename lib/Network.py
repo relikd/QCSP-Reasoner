@@ -14,6 +14,7 @@ class QCSP(object):
                    for a in range(self.nodeCount)]
                    for b in range(self.nodeCount)]
         self.multiSubsetRelations = []
+        self.enforceOneConsistency(algebra.equality)
 
     def addConstraint(self, A, B, constraint):
         if A >= self.nodeCount or B >= self.nodeCount:
