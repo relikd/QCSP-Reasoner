@@ -41,6 +41,7 @@ class Algebra(object):
             a = self.TName.getBitmask(cv[0])
             b = self.TName.getBitmask(cv[1])
             self.TConverse.setConverse(a, b)
+        self.TConverse.precalc()
         # Process compositions
         self.TComposition = LookupTable.Composition(baseCount)
         for cp in _algebraFile.readComposition():  # format: B1 B2 [B1 B2 B3]
