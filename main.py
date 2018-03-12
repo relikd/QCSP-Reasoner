@@ -14,7 +14,7 @@ class Search(object):
     def __init__(self, network):
         super(Search, self).__init__()
         self.net = network
-        self.stack = [["lol", 0]]
+        self.stack = [[-99, 0]]
         self.lastModified = [[[0]
                              for a in range(self.net.nodeCount)]
                              for b in range(self.net.nodeCount)]
@@ -103,8 +103,10 @@ class Search(object):
         global backjumpLevel
         q = Queue.QQueue()
         if arcs is None:
-            for i, j in Helper.doubleNested(self.net.nodeCount):
-                q.enqueue(i, j, self.net.cs[i][j])
+            # for i, j in Helper.doubleNested(self.net.nodeCount):
+            for i in range(0, self.net.nodeCount):
+                for j in range(i + 1, self.net.nodeCount):
+                    q.enqueue(i, j, self.net.cs[i][j])
         else:
             for arc in arcs:
                 q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
@@ -161,7 +163,7 @@ class Search(object):
             prevRel = self.net.cs[i][j]
             # for baseRel in Helper.bits(prevRel):
             for baseRel in self.net.algebra.aTractableSet(prevRel):
-                self.stack.append(["lol", currentLevel])
+                self.stack.append([-99, currentLevel])
                 self.stack.append([i, j, self.net.cs[i][j]])
                 if self.lastModified[i][j][0] < currentLevel:
                     self.lastModified[i][j].insert(0, currentLevel)
@@ -175,7 +177,7 @@ class Search(object):
 
                 while len(self.stack) > 0:  # restore previous state
                     itm = self.stack.pop()
-                    if itm[0] == "lol":
+                    if itm[0] == -99:
                         if backjumpLevel == 0 or itm[1] == backjumpLevel:
                             break
                         continue

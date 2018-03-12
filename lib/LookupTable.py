@@ -13,14 +13,24 @@ class Converse(object):
         self.converses[a] = b
 
     def converse(self, a):
-        try:
-            return self.converses[a]
-        except KeyError:
-            result = 0
-            for baseRel in Helper.bits(a):
-                result |= self.converses[baseRel]
-            self.setConverse(a, result)
-            return result
+        # try:
+        return self.converses[a]
+        # except KeyError:
+        #     result = 0
+        #     for baseRel in Helper.bits(a):
+        #         result |= self.converses[baseRel]
+        #     self.setConverse(a, result)
+        #     return result
+
+    def precalc(self):
+        for x in range(1, 1 << self.baseCount):
+            try:
+                self.converses[x]
+            except KeyError:
+                result = 0
+                for baseRel in Helper.bits(x):
+                    result |= self.converses[baseRel]
+                self.setConverse(x, result)
 
     def checkIntegrity(self):
         print("Checking Converse Integrity ...")
@@ -41,17 +51,17 @@ class Composition(object):
         self.compositions[index] = compositionMask
 
     def composition(self, a, b):
-        try:
-            index = (a << self.baseCount) + b
-            return self.compositions[index]
-        except KeyError:
-            result = 0
-            for baseRelA in Helper.bits(a):
-                for baseRelB in Helper.bits(b):
-                    index = (baseRelA << self.baseCount) + baseRelB
-                    result |= self.compositions[index]
-            self.setComposition(a, b, result)
-            return result
+        # try:
+        index = (a << self.baseCount) + b
+        return self.compositions[index]
+        # except KeyError:
+        #     result = 0
+        #     for baseRelA in Helper.bits(a):
+        #         for baseRelB in Helper.bits(b):
+        #             index = (baseRelA << self.baseCount) + baseRelB
+        #             result |= self.compositions[index]
+        #     self.setComposition(a, b, result)
+        #     return result
 
     def checkIntegrity(self):
         print("Checking Composition Integrity ...")
