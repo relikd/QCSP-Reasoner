@@ -3,6 +3,8 @@
 import heapq
 import Helper
 
+prios = [26, 82, 82, 82, 82, 82, 82, 50, 50, 50, 50, 50, 50]
+
 
 class QQueue(object):
     def __init__(self):
@@ -16,6 +18,9 @@ class QQueue(object):
 
     def enqueue(self, r1, r2, constraint):
         prio = Helper.countBits[constraint]
+        # for x in range(13):
+        #     if constraint & (1 << x):
+        #         prio += prios[x]
         heapq.heappush(self.stack, [prio, r1, r2])
 
     def enqueueNew(self, r1, r2, constraint):
