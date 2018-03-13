@@ -37,10 +37,12 @@ class QCSP(object):
 
     def initNontractableRelations(self):
         # init list of nontractable relations
-        for i, j in Helper.doubleNested(self.nodeCount):
-            setCount = len(self.algebra.aTractableSet(self.cs[i][j]))
-            if setCount > 1:
-                self.multiSubsetRelations.append([setCount, i, j])
+        # for i, j in Helper.doubleNested(self.nodeCount):
+        for i in range(0, self.nodeCount):
+            for j in range(i + 1, self.nodeCount):
+                setCount = len(self.algebra.aTractableSet(self.cs[i][j]))
+                if setCount > 1:
+                    self.multiSubsetRelations.append([setCount, i, j])
 
     def listOfNontractableConstraints(self):
         lst = []
