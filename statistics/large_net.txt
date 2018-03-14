@@ -1,0 +1,5 @@
+13716 Iterations
+  > '1-scale-free' is CONSISTENT (210.956892 s)
+
+10787 Iterations
+  > '1-scale-free' is CONSISTENT (126.516414 s)
