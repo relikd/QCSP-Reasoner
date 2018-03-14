@@ -106,12 +106,12 @@ class Search(object):
             # for i, j in Helper.doubleNested(self.net.nodeCount):
             for i in range(0, self.net.nodeCount):
                 for j in range(i + 1, self.net.nodeCount):
-                    q.enqueue(i, j, self.net.cs[i][j])
+                    q.enqueue(i, j)
         else:
             for arc in arcs:
-                q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
+                q.enqueue(arc[0], arc[1])
 
-        while not q.isEmpty():
+        while q.pq:
             i, j = q.dequeue()
             for k in range(self.net.nodeCount):
                 if k == i or k == j:
@@ -131,18 +131,12 @@ class Search(object):
                     return INCONSISTENT  # early exit
                 if Cik_star != Cik:
                     self.stack.append([i, k, Cik])
-                    # self.stack.append([k, i, Cki])
                     self.net.cs[i][k] = Cik_star
-                    q.enqueueNew(i, k, Cik_star)
-                    # self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
-                    # q.enqueueNew(k, i)
+                    q.enqueue(i, k)
                 if Ckj_star != Ckj:
                     self.stack.append([k, j, Ckj])
-                    # self.stack.append([j, k, Cjk])
                     self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew(k, j, Ckj_star)
-                    # self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
-                    # q.enqueueNew(j, k)
+                    q.enqueue(k, j)
         return CONSISTENT
 
     def refinementV2(self, E=None, listNC=[]):
