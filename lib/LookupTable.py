@@ -143,6 +143,12 @@ class ATractable(object):
                 prev = a  # reset
         return arr + [prev]
 
+    def partitionScore(self, aSet):
+        # prefer fewer, equal sized subsets
+        return sum([len(aSet)**Helper.countBits[x] for x in aSet])
+        # prefer fewer subsets but create large groups
+        return sum([len(aSet) / float(Helper.countBits[x] + 1) for x in aSet])
+
     def calculateCombinations(self, maxSetSize=2):
         print("%d combinations:" % maxSetSize)
         a = int(maxSetSize / 2)
@@ -154,13 +160,17 @@ class ATractable(object):
             b += 1
             for x in firstSet:
                 for y in secondSet:
+                    cmb = self.subsets[x] + self.subsets[y]
                     try:
-                        self.subsets[x | y]
+                        score = self.partitionScore(cmb)
+                        preScore = self.partitionScore(self.subsets[x | y])
+                        if score < preScore:
+                            self.subsets[x | y] = cmb
                         continue  # skip already existing
                     except KeyError:
                         pass
                     # construct new array with both array subsets
-                    self.subsets[x | y] = self.subsets[x] + self.subsets[y]
+                    self.subsets[x | y] = cmb
                     self.defineCounter += 1
             print("Defined combinations %d" % self.defineCounter)
             if self.defineCounter >= self.defineTreshhold:
