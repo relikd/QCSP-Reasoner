@@ -18,6 +18,25 @@ class Search(object):
         self.lastModified = [[[0]
                              for a in range(self.net.nodeCount)]
                              for b in range(self.net.nodeCount)]
+        self.markTried = set([])
+
+    def repair(self, level):
+        while len(self.stack) > 0:  # restore previous state
+            itm = self.stack.pop()
+            if itm[0] == -99:
+                if level == 0 or itm[1] == level:
+                    break
+                # if len(self.stack) > 1:
+                #     self.markTried.discard(self.stack.pop()[1])
+                continue
+            elif itm[0] == -77:
+                # self.markTried.discard(itm[1])
+                continue
+            self.net.cs[itm[0]][itm[1]] = itm[2]
+            if level > 0:
+                modifyArr = self.lastModified[itm[0]][itm[1]]
+                while modifyArr[0] > level:
+                    del(modifyArr[0])
 
     def aClosureV1(self):
         s = True
@@ -179,18 +198,50 @@ class Search(object):
                 if currentLevel > backjumpLevel and backjumpLevel > 0:
                     return INCONSISTENT
 
-                while len(self.stack) > 0:  # restore previous state
-                    itm = self.stack.pop()
-                    if itm[0] == -99:
-                        if backjumpLevel == 0 or itm[1] == backjumpLevel:
-                            break
-                        continue
-                    self.net.cs[itm[0]][itm[1]] = itm[2]
-                    if backjumpLevel > 0:
-                        modifyArr = self.lastModified[itm[0]][itm[1]]
-                        while modifyArr[0] > backjumpLevel:
-                            del(modifyArr[0])
+                self.repair(backjumpLevel)
         return INCONSISTENT
+
+    def refinementV3(self, E=None, listNC=[]):
+        global refinementCounter, backjumpLevel
+
+        aClosed = self.aClosureV3()
+        if aClosed is INCONSISTENT:
+            return INCONSISTENT
+
+        def Select(refineList):
+            for con, c, i, j, prevRel in refineList:
+                for r in self.net.algebra.aTractableSet(prevRel):
+                    mark = (i, j, r)
+                    if mark not in self.markTried:
+                        self.markTried.add(mark)
+                        return mark
+            return (0, 0, 0)
+
+        while True:
+            refinementCounter += 1
+            currentLevel = refinementCounter
+            refineList = self.net.listOfNontractableConstraints()
+            if len(refineList) == 0:
+                break
+
+            i, j, r = Select(refineList)
+            if r == 0:
+                break
+
+            # save repair point
+            self.stack.append([-77, (i, j, r)])
+            self.stack.append([-99, currentLevel])
+            self.stack.append([i, j, self.net.cs[i][j]])
+            if self.lastModified[i][j][0] < currentLevel:
+                self.lastModified[i][j].insert(0, currentLevel)
+
+            # set new value
+            self.net.cs[i][j] = r
+            tried = self.aClosureV3([[i, j]])
+            if tried == INCONSISTENT:
+                self.repair(backjumpLevel)
+        print "hsidfs"
+        return self.aClosureV3()
 
 
 alg = Algebra.Allen()
@@ -211,7 +262,6 @@ for graph in tf.processNext():
     print("processing: '%s'" % net.description)
     refinementCounter = 0
     pre = timeit.default_timer()
-    # valid = Search(net).aClosureV2()
     valid = Search(net).refinementV2()
     print("%d Iterations" % refinementCounter)
     print("  > '%s' is %s (%f s)" % (
