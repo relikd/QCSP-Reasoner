@@ -24,7 +24,7 @@ def printUpdatedTractableSet():
         txt = ""
         tmpOrdered = []
         for subset in theTable.subsets[key]:
-            subsetScore = Helper.subsetScores[subset]  # bin(subset).count("1")
+            subsetScore = Helper.subsetScore[subset]  # bin(subset).count("1")
             tmpOrdered += [(subsetScore, subset)]
         tmpOrdered.sort()
         for (x, subset) in tmpOrdered:

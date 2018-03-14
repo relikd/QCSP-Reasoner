@@ -15,7 +15,7 @@ def PC():
 
 def Allen():
     algFile = ReadFile.AlgebraFile("algebra/allen.txt")
-    horn = ReadFile.ATractableSubsetsFile("algebra/low_normal.txt")
+    horn = ReadFile.ATractableSubsetsFile("algebra/ia_ord_horn_C.txt")
     alg = Algebra(algFile, horn)
     alg.equality = "EQ"
     # print(alg)
