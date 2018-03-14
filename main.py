@@ -145,7 +145,7 @@ class Search(object):
                     # q.enqueueNew(j, k)
         return CONSISTENT
 
-    def refinementV2(self, E=None):
+    def refinementV2(self, E=None, listNC=[]):
         global refinementCounter, backjumpLevel
         refinementCounter += 1
         currentLevel = refinementCounter
@@ -159,8 +159,18 @@ class Search(object):
         if len(refineList) == 0:  # all rel's have 1 base relation
             return CONSISTENT
 
-        for c, i, j in refineList:
-            prevRel = self.net.cs[i][j]
+        for con, c, i, j, prevRel in refineList:
+            # for con2, c2, i2, j2, prevRel2 in listNC:
+            #     if i == i2 and j == j2 and c > c2:
+            #         for x in range(len(self.stack) - 1, 0, -1):
+            #             itm = self.stack[x]
+            #             if itm[0] == -99:
+            #                 break
+            #             self.net.cs[i][j] = itm[2]
+            #             # if currentLevel > 1 and self.lastModified[i][j][0] == currentLevel - 1:
+            #             #     del(self.lastModified[i][j][0])
+            #             del self.stack[x]
+            # prevRel = self.net.cs[i][j]
             # for baseRel in Helper.bits(prevRel):
             for baseRel in self.net.algebra.aTractableSet(prevRel):
                 self.stack.append([-99, currentLevel])
@@ -169,7 +179,7 @@ class Search(object):
                     self.lastModified[i][j].insert(0, currentLevel)
 
                 self.net.cs[i][j] = baseRel
-                if self.refinementV2([[i, j]]) == CONSISTENT:
+                if self.refinementV2([[i, j]], refineList) == CONSISTENT:
                     return CONSISTENT
 
                 if currentLevel > backjumpLevel and backjumpLevel > 0:
@@ -192,9 +202,8 @@ class Search(object):
 alg = Algebra.Allen()
 
 # Load test case
-# tf = ReadFile.TestFile("test cases/test_instances_PC.txt")
 tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
-# tf = ReadFile.TestFile("test cases/test_generated1.txt")
+# tf = ReadFile.TestFile("test cases/30x500_m_3_allen.csp.txt")
 skip = 0
 overall = timeit.default_timer()
 for graph in tf.processNext():
@@ -204,7 +213,6 @@ for graph in tf.processNext():
         continue
     for i in range(1, len(graph)):
         net.addConstraint(*graph[i])
-    net.initNontractableRelations()
 
     print("processing: '%s'" % net.description)
     refinementCounter = 0
