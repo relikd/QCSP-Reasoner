@@ -5,6 +5,18 @@ import re
 countBits = [bin(x).count("1") for x in range(1 << 13)]
 
 
+def calcSubsetScore(bitmask):
+    score = 0
+    for x in range(13):
+        if bitmask & (1 << x):
+            score += allenPriority[x]
+    return score
+
+
+allenPriority = [26, 82, 82, 82, 82, 82, 82, 50, 50, 50, 50, 50, 50]
+subsetScore = [calcSubsetScore(x) for x in range(1 << 13)]
+
+
 def powerset(seq):
     if len(seq) <= 0:
         yield []

@@ -114,21 +114,21 @@ class ATractable(object):
         self.defineTreshhold = int(stopAfter)
 
     def setClosedSet(self, s, subset):
-        try:
-            self.subsets[s]
-            print("ERROR: Key already exist. Should never be overwritten.")
-        except KeyError:
-            self.subsets[s] = subset
-            self.defineCounter += 1
+        # try:
+        #     self.subsets[s]
+        #     print("ERROR: Key already exist. Should never be overwritten.")
+        # except KeyError:
+        self.subsets[s] = subset
+        self.defineCounter += 1
 
     def getClosedSet(self, s):
-        try:
-            return self.subsets[s]
-        except KeyError:
-            arr = self.fastNonOptimalSubset(s)
-            self.setClosedSet(s, arr)
-            # print("WARN: Key doesn't exist. Calculating on the fly.\n%s" % arr)
-            return arr
+        # try:
+        return self.subsets[s]
+        # except KeyError:
+        #     arr = self.fastNonOptimalSubset(s)
+        #     self.setClosedSet(s, arr)
+        #     # print("WARN: Key doesn't exist. Calculating on the fly.\n%s" % arr)
+        #     return arr
 
     def fastNonOptimalSubset(self, s):
         arr = []
@@ -144,6 +144,7 @@ class ATractable(object):
         return arr + [prev]
 
     def partitionScore(self, aSet):
+        return sum([Helper.subsetScore[x] for x in aSet]) * len(aSet)
         # prefer fewer, equal sized subsets
         return sum([len(aSet)**Helper.countBits[x] for x in aSet])
         # prefer fewer subsets but create large groups
