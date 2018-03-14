@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf8
-from lib import LookupTable, ReadFile
+from lib import LookupTable, ReadFile, Helper
 
 algFile = ReadFile.AlgebraFile("algebra/allen.txt")
 BaseRelations = algFile.readBaseRelations()
@@ -24,7 +24,8 @@ def printUpdatedTractableSet():
         txt = ""
         tmpOrdered = []
         for subset in theTable.subsets[key]:
-            tmpOrdered += [(bin(subset).count("1"), subset)]
+            subsetScore = Helper.subsetScores[subset]  # bin(subset).count("1")
+            tmpOrdered += [(subsetScore, subset)]
         tmpOrdered.sort()
         for (x, subset) in tmpOrdered:
             txt += "%s | " % TName.getName(subset)
