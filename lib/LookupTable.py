@@ -118,6 +118,7 @@ class ATractable(object):
         #     self.subsets[s]
         #     print("ERROR: Key already exist. Should never be overwritten.")
         # except KeyError:
+        # subset.reverse()
         self.subsets[s] = subset
         self.defineCounter += 1
 
@@ -143,12 +144,23 @@ class ATractable(object):
                 prev = a  # reset
         return arr + [prev]
 
-    def partitionScore(self, aSet):
-        return sum([Helper.subsetScore[x] for x in aSet]) * len(aSet)
-        # prefer fewer, equal sized subsets
-        return sum([len(aSet)**Helper.countBits[x] for x in aSet])
-        # prefer fewer subsets but create large groups
-        return sum([len(aSet) / float(Helper.countBits[x] + 1) for x in aSet])
+    def partitionScore(self, partitionSet):
+        totalScore = 0
+        setSize = len(partitionSet)
+        for x in partitionSet:
+            partScore = Helper.subsetScore[x]
+            bits = Helper.countBits[x]
+            # A: AVG subset score
+            # totalScore += partScore / float(max(1, bits))
+            # B: Entropy: prefer fewer, equal sized subsets
+            # totalScore += setSize**bits
+            # C: Score weighted Entropy
+            totalScore += setSize**bits / float(max(1, partScore))
+            # D: Asymetric: prefer fewer subsets but create large groups
+            # totalScore += setSize / float(max(bits, 1))
+            # E: Score weighted Asymetric
+            # totalScore += setSize / float(max(partScore, 1))
+        return totalScore
 
     def calculateCombinations(self, maxSetSize=2):
         print("%d combinations:" % maxSetSize)
