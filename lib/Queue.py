@@ -4,7 +4,7 @@ import Helper
 
 USEHEAP = True
 if USEHEAP:
-    import heapq
+    from heapq import heapify, heappush, heappop
 else:
     from collections import deque
 
@@ -14,19 +14,19 @@ class QQueue(object):
         super(QQueue, self).__init__()
         if USEHEAP:  # better for large networks
             self.pq = []
-            heapq.heapify(self.pq)
+            heapify(self.pq)
         else:
             self.pq = deque([])
             self.entry_finder = set([])
 
     if USEHEAP:
         def dequeue(self):
-            p, r1, r2 = heapq.heappop(self.pq)
+            p, r1, r2 = heappop(self.pq)
             return r1, r2
 
         def enqueue(self, r1, r2, constraint):
             prio = Helper.subsetScore[constraint]
-            heapq.heappush(self.pq, [prio, r1, r2])
+            heappush(self.pq, [prio, r1, r2])
 
         def isEmpty(self):
             return len(self.pq) == 0
