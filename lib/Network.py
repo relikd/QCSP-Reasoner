@@ -35,36 +35,20 @@ class QCSP(object):
         for i in range(self.nodeCount):
             self.cs[i][i] = bitmask
 
-    def initNontractableRelations(self):
-        # init list of nontractable relations
-        # for i, j in Helper.doubleNested(self.nodeCount):
-        for i in range(0, self.nodeCount):
-            for j in range(i + 1, self.nodeCount):
-                setCount = len(self.algebra.aTractableSet(self.cs[i][j]))
-                if setCount > 1:
-                    self.multiSubsetRelations.append([setCount, i, j])
-
     def listOfNontractableConstraints(self):
         lst = []
-        for c, i, j in self.multiSubsetRelations:
-            c = len(self.algebra.aTractableSet(self.cs[i][j]))
-            if c > 1:
-                conn = c
-                for p in range(self.nodeCount):
-                    u = Helper.countBits[self.cs[p][i]]
-                    v = Helper.countBits[self.cs[j][p]]
-                    w = Helper.countBits[self.cs[i][p]]
-                    x = Helper.countBits[self.cs[p][j]]
-                    if u > 1 and u < Algebra.baseCount:
-                        conn += 1
-                    if v > 1 and v < Algebra.baseCount:
-                        conn += 1
-                    if w > 1 and w < Algebra.baseCount:
-                        conn += 1
-                    if x > 1 and x < Algebra.baseCount:
-                        conn += 1
-                lst.append([conn, i, j])
-        lst.sort(reverse=True)
+        for i in range(0, self.nodeCount):
+            for j in range(i + 1, self.nodeCount):
+                c = len(self.algebra.aTractableSet(self.cs[i][j]))
+                if c > 1:
+                    conn = (Helper.subsetScore[self.cs[i][j]] + (
+                        Helper.subsetScore[self.cs[j][i]])) / c
+                    # conn = c * 818  # sum of all scores
+                    # for p in range(self.nodeCount):
+                    #     conn -= Helper.subsetScore[self.cs[p][i]]
+                    #     ...
+                    lst.append([conn, c, i, j, self.cs[i][j]])
+        lst.sort()
         return lst
 
     def __str__(self):
