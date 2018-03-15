@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # coding: utf8
 import Helper
-import Algebra
 
 
 class QCSP(object):
@@ -13,8 +12,41 @@ class QCSP(object):
         self.cs = [[self.algebra.Universal
                    for a in range(self.nodeCount)]
                    for b in range(self.nodeCount)]
-        self.multiSubsetRelations = []
+        self.stack = [[-99, 0]]
+        self.lastModified = [[[0]
+                             for a in range(self.nodeCount)]
+                             for b in range(self.nodeCount)]
         self.enforceOneConsistency(algebra.equality)
+
+    def updateConstraint(self, A, B, constraint):
+        self.stack.append([A, B, self.cs[A][B]])
+        self.stack.append([B, A, self.cs[B][A]])
+        self.cs[A][B] = constraint
+        self.cs[B][A] = self.algebra.converse(constraint)
+
+    def triangleChanged(self, i, j, k):
+        return max(self.lastModified[i][k][-1],
+                   self.lastModified[j][k][-1],
+                   self.lastModified[i][j][-1])
+
+    def saveBreakpoint(self, A, B, level):
+        self.stack.append([-99, level])
+        if self.lastModified[A][B][-1] < level:
+            self.lastModified[A][B].append(level)
+            self.lastModified[B][A].append(level)
+
+    def restoreBreakpoint(self, level):
+        while len(self.stack) > 0:  # restore previous state
+            itm = self.stack.pop()
+            if itm[0] == -99:
+                if level == 0 or itm[1] == level:
+                    return
+                continue
+            self.cs[itm[0]][itm[1]] = itm[2]
+            if level > 0:
+                modifyArr = self.lastModified[itm[0]][itm[1]]
+                while modifyArr[-1] > level:
+                    modifyArr.pop()
 
     def addConstraint(self, A, B, constraint):
         if A >= self.nodeCount or B >= self.nodeCount:
