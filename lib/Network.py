@@ -24,10 +24,14 @@ class QCSP(object):
         self.cs[A][B] = constraint
         self.cs[B][A] = self.algebra.converse(constraint)
 
-    def triangleChanged(self, i, j, k):
-        return max(self.lastModified[i][k][-1],
-                   self.lastModified[j][k][-1],
-                   self.lastModified[i][j][-1])
+    def updateOneWay(self, A, B, constraint):
+        self.stack.append([A, B, self.cs[A][B]])
+        self.cs[A][B] = constraint
+
+    def triangleChanged(self, A, B, K):
+        return max(self.lastModified[A][K][-1],
+                   self.lastModified[B][K][-1],
+                   self.lastModified[A][B][-1])
 
     def saveBreakpoint(self, A, B, level):
         self.stack.append([-99, level])

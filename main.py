@@ -97,16 +97,18 @@ class Search(object):
             C_star.cs[i][j] = prevRel
         return INCONSISTENT
 
-    def aClosureV3(self, arcs=None):
+    def aClosureV3(self, arcs):
         global backjumpLevel
         q = Queue.QQueue()
-        if arcs is None:
-            for i in range(0, self.net.nodeCount):
-                for j in range(i + 1, self.net.nodeCount):
-                    q.enqueue(i, j, self.net.cs[i][j])
-        else:
-            for arc in arcs:
-                q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
+        # if arcs is None:
+        #     for i in range(0, self.net.nodeCount):
+        #         for j in range(i + 1, self.net.nodeCount):
+        #             rel = self.net.cs[i][j]
+        #             if rel != self.net.algebra.Universal:
+        #                 q.enqueue(i, j, rel)
+        # else:
+        for arc in arcs:
+            q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
 
         while q.pq:
             i, j = q.dequeue()
@@ -165,6 +167,8 @@ class Search(object):
             for baseRel in self.net.algebra.aTractableSet(prevRel):
                 self.net.saveBreakpoint(i, j, currentLevel)
                 self.net.updateConstraint(i, j, baseRel)
+                # self.net.updateOneWay(i, j, baseRel)
+
                 if self.refinementV2([[i, j]], refineList) == CONSISTENT:
                     return CONSISTENT
 
@@ -231,17 +235,22 @@ tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
 skip = 0
 overall = timeit.default_timer()
 for graph in tf.processNext():
-    net = Network.QCSP(alg, *graph[0])  # First row is always header
     if skip > 0:
         skip -= 1
         continue
-    for i in range(1, len(graph)):
-        net.addConstraint(*graph[i])
+    net = Network.QCSP(alg, *graph[0])  # First row is always header
+    graph = graph[1:]  # remove header
+    # create list for very first A-Closure call
+    initialConstraints = []
+    for A, B, rel in graph:
+        net.addConstraint(A, B, rel)
+        if rel != net.algebra.Universal:
+            initialConstraints.append([A, B])
 
     print("processing: '%s'" % net.description)
     refinementCounter = 0
     pre = timeit.default_timer()
-    valid = Search(net).refinementV2()
+    valid = Search(net).refinementV2(initialConstraints)
     print("%d Iterations" % refinementCounter)
     print("  > '%s' is %s (%f s)" % (
         net.description, valid, timeit.default_timer() - pre))
