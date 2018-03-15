@@ -150,11 +150,15 @@ class Search(object):
                     return INCONSISTENT  # early exit
                 if Cik_star != Cik:
                     self.stack.append([i, k, Cik])
+                    self.stack.append([k, i, Cki])
                     self.net.cs[i][k] = Cik_star
+                    self.net.cs[k][i] = self.net.algebra.converse(Cik_star)
                     q.enqueue(i, k, Cik_star)
                 if Ckj_star != Ckj:
                     self.stack.append([k, j, Ckj])
+                    self.stack.append([j, k, Cjk])
                     self.net.cs[k][j] = Ckj_star
+                    self.net.cs[j][k] = self.net.algebra.converse(Ckj_star)
                     q.enqueue(k, j, Ckj_star)
         return CONSISTENT
 
