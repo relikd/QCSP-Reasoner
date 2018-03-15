@@ -14,29 +14,8 @@ class Search(object):
     def __init__(self, network):
         super(Search, self).__init__()
         self.net = network
-        self.stack = [[-99, 0]]
-        self.lastModified = [[[0]
-                             for a in range(self.net.nodeCount)]
-                             for b in range(self.net.nodeCount)]
         self.markTried = set([])
-
-    def repair(self, level):
-        while len(self.stack) > 0:  # restore previous state
-            itm = self.stack.pop()
-            if itm[0] == -99:
-                if level == 0 or itm[1] == level:
-                    break
-                # if len(self.stack) > 1:
-                #     self.markTried.discard(self.stack.pop()[1])
-                continue
-            elif itm[0] == -77:
-                # self.markTried.discard(itm[1])
-                continue
-            self.net.cs[itm[0]][itm[1]] = itm[2]
-            if level > 0:
-                modifyArr = self.lastModified[itm[0]][itm[1]]
-                while modifyArr[0] > level:
-                    del(modifyArr[0])
+        self.triedStack = []
 
     def aClosureV1(self):
         s = True
@@ -122,7 +101,6 @@ class Search(object):
         global backjumpLevel
         q = Queue.QQueue()
         if arcs is None:
-            # for i, j in Helper.doubleNested(self.net.nodeCount):
             for i in range(0, self.net.nodeCount):
                 for j in range(i + 1, self.net.nodeCount):
                     q.enqueue(i, j, self.net.cs[i][j])
@@ -143,22 +121,13 @@ class Search(object):
                 Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
                 Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
                 if Cik_star == 0 or Ckj_star == 0:
-                    backjumpLevel = max(
-                        self.lastModified[k][i][0], self.lastModified[k][j][0],
-                        self.lastModified[i][k][0], self.lastModified[j][k][0],
-                        self.lastModified[i][j][0], self.lastModified[j][i][0])
+                    backjumpLevel = self.net.triangleChanged(i, j, k)
                     return INCONSISTENT  # early exit
                 if Cik_star != Cik:
-                    self.stack.append([i, k, Cik])
-                    self.stack.append([k, i, Cki])
-                    self.net.cs[i][k] = Cik_star
-                    self.net.cs[k][i] = self.net.algebra.converse(Cik_star)
+                    self.net.updateConstraint(i, k, Cik_star)
                     q.enqueue(i, k, Cik_star)
                 if Ckj_star != Ckj:
-                    self.stack.append([k, j, Ckj])
-                    self.stack.append([j, k, Cjk])
-                    self.net.cs[k][j] = Ckj_star
-                    self.net.cs[j][k] = self.net.algebra.converse(Ckj_star)
+                    self.net.updateConstraint(k, j, Ckj_star)
                     q.enqueue(k, j, Ckj_star)
         return CONSISTENT
 
@@ -179,30 +148,30 @@ class Search(object):
         for con, c, i, j, prevRel in refineList:
             # for con2, c2, i2, j2, prevRel2 in listNC:
             #     if i == i2 and j == j2 and c > c2:
-            #         for x in range(len(self.stack) - 1, 0, -1):
-            #             itm = self.stack[x]
+            #         for x in range(len(self.net.stack) - 1, 0, -1):
+            #             itm = self.net.stack[x]
             #             if itm[0] == -99:
             #                 break
-            #             self.net.cs[i][j] = itm[2]
-            #             # if currentLevel > 1 and self.lastModified[i][j][0] == currentLevel - 1:
-            #             #     del(self.lastModified[i][j][0])
-            #             del self.stack[x]
+            #             elif ((itm[0] == i and itm[1] == j) or
+            #                   (itm[0] == j and itm[1] == i)):
+            #                 self.net.cs[itm[0]][itm[1]] = itm[2]
+            #                 del self.net.stack[x]
+            #                 if (currentLevel > 1 and
+            #                     self.net.lastModified[itm[0]][itm[1]][-1] == (
+            #                         currentLevel - 1)):
+            #                     self.net.lastModified[itm[0]][itm[1]].pop()
             # prevRel = self.net.cs[i][j]
             # for baseRel in Helper.bits(prevRel):
             for baseRel in self.net.algebra.aTractableSet(prevRel):
-                self.stack.append([-99, currentLevel])
-                self.stack.append([i, j, self.net.cs[i][j]])
-                if self.lastModified[i][j][0] < currentLevel:
-                    self.lastModified[i][j].insert(0, currentLevel)
-
-                self.net.cs[i][j] = baseRel
+                self.net.saveBreakpoint(i, j, currentLevel)
+                self.net.updateConstraint(i, j, baseRel)
                 if self.refinementV2([[i, j]], refineList) == CONSISTENT:
                     return CONSISTENT
 
                 if currentLevel > backjumpLevel and backjumpLevel > 0:
                     return INCONSISTENT
 
-                self.repair(backjumpLevel)
+                self.net.restoreBreakpoint(backjumpLevel)
         return INCONSISTENT
 
     def refinementV3(self, E=None, listNC=[]):
@@ -229,21 +198,27 @@ class Search(object):
                 break
 
             i, j, r = Select(refineList)
+            print i, j, r
             if r == 0:
                 break
-
             # save repair point
-            self.stack.append([-77, (i, j, r)])
-            self.stack.append([-99, currentLevel])
-            self.stack.append([i, j, self.net.cs[i][j]])
-            if self.lastModified[i][j][0] < currentLevel:
-                self.lastModified[i][j].insert(0, currentLevel)
+            self.net.saveBreakpoint(i, j, currentLevel)
+            self.triedStack.append((currentLevel, i, j, r))
 
             # set new value
-            self.net.cs[i][j] = r
+            self.net.updateConstraint(i, j, r)
             tried = self.aClosureV3([[i, j]])
             if tried == INCONSISTENT:
-                self.repair(backjumpLevel)
+                self.net.restoreBreakpoint(backjumpLevel)
+                s = len(self.triedStack)
+                while s > 0:
+                    s -= 1
+                    level, i, j, r = self.triedStack.pop()
+                    if level > backjumpLevel:
+                        self.markTried.discard((i, j, r))
+                    else:
+                        self.triedStack.append((level, i, j, r))
+                        break
         print "hsidfs"
         return self.aClosureV3()
 
