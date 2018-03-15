@@ -26,7 +26,7 @@ class QQueue(object):
 
         def enqueue(self, r1, r2, constraint):
             prio = Helper.subsetScore[constraint]
-            heappush(self.pq, [prio, r1, r2])
+            heappush(self.pq, (prio, r1, r2))
 
         def isEmpty(self):
             return len(self.pq) == 0
