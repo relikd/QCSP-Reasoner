@@ -1,0 +1,181 @@
+processing: '1-scale-free'
+3170 Iterations
+  > '1-scale-free' is CONSISTENT (30.591408 s)
+
+
+
+processing: '2-scale-free'
+500 Iterations
+  > '2-scale-free' is CONSISTENT (15.056622 s)
+
+
+
+processing: '3-scale-free'
+497 Iterations
+  > '3-scale-free' is CONSISTENT (15.087309 s)
+
+
+
+processing: '4-scale-free'
+486 Iterations
+  > '4-scale-free' is CONSISTENT (14.791243 s)
+
+
+
+processing: '5-scale-free'
+514 Iterations
+  > '5-scale-free' is CONSISTENT (13.960504 s)
+
+
+
+processing: '6-scale-free'
+494 Iterations
+  > '6-scale-free' is CONSISTENT (14.541598 s)
+
+
+
+processing: '7-scale-free'
+518 Iterations
+  > '7-scale-free' is CONSISTENT (15.185029 s)
+
+
+
+processing: '8-scale-free'
+481 Iterations
+  > '8-scale-free' is CONSISTENT (14.918532 s)
+
+
+
+processing: '9-scale-free'
+502 Iterations
+  > '9-scale-free' is CONSISTENT (14.652999 s)
+
+
+
+processing: '10-scale-free'
+509 Iterations
+  > '10-scale-free' is CONSISTENT (13.972039 s)
+
+
+
+processing: '11-scale-free'
+503 Iterations
+  > '11-scale-free' is CONSISTENT (15.685305 s)
+
+
+
+processing: '12-scale-free'
+527 Iterations
+  > '12-scale-free' is CONSISTENT (14.267797 s)
+
+
+
+processing: '13-scale-free'
+1 Iterations
+  > '13-scale-free' is INCONSISTENT (0.019703 s)
+
+
+
+processing: '14-scale-free'
+471 Iterations
+  > '14-scale-free' is CONSISTENT (13.969522 s)
+
+
+
+processing: '15-scale-free'
+482 Iterations
+  > '15-scale-free' is CONSISTENT (15.973242 s)
+
+
+
+processing: '16-scale-free'
+500 Iterations
+  > '16-scale-free' is CONSISTENT (13.672868 s)
+
+
+
+processing: '17-scale-free'
+1 Iterations
+  > '17-scale-free' is INCONSISTENT (0.022465 s)
+
+
+
+processing: '18-scale-free'
+481 Iterations
+  > '18-scale-free' is CONSISTENT (14.930697 s)
+
+
+
+processing: '19-scale-free'
+481 Iterations
+  > '19-scale-free' is CONSISTENT (14.342589 s)
+
+
+
+processing: '20-scale-free'
+477 Iterations
+  > '20-scale-free' is CONSISTENT (14.237949 s)
+
+
+
+processing: '21-scale-free'
+481 Iterations
+  > '21-scale-free' is CONSISTENT (14.974935 s)
+
+
+
+processing: '22-scale-free'
+509 Iterations
+  > '22-scale-free' is CONSISTENT (15.924912 s)
+
+
+
+processing: '23-scale-free'
+491 Iterations
+  > '23-scale-free' is CONSISTENT (16.055687 s)
+
+
+
+processing: '24-scale-free'
+1 Iterations
+  > '24-scale-free' is INCONSISTENT (0.047752 s)
+
+
+
+processing: '25-scale-free'
+494 Iterations
+  > '25-scale-free' is CONSISTENT (15.034704 s)
+
+
+
+processing: '26-scale-free'
+489 Iterations
+  > '26-scale-free' is CONSISTENT (15.339407 s)
+
+
+
+processing: '27-scale-free'
+1 Iterations
+  > '27-scale-free' is INCONSISTENT (0.032833 s)
+
+
+
+processing: '28-scale-free'
+499 Iterations
+  > '28-scale-free' is CONSISTENT (15.319931 s)
+
+
+
+processing: '29-scale-free'
+492 Iterations
+  > '29-scale-free' is CONSISTENT (14.705067 s)
+
+
+
+processing: '30-scale-free'
+510 Iterations
+  > '30-scale-free' is CONSISTENT (14.415537 s)
+
+
+
+Overall time: 403.572052 s
