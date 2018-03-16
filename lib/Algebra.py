@@ -36,14 +36,14 @@ class Algebra(object):
         self.Universal = len(self.TName.labels) - 1
         self.equality = "EQ"
         self.compose = [[8191
-                          for a in range(1 << baseCount)]
-                          for b in range(1 << baseCount)]
+                        for a in range(1 << baseCount)]
+                        for b in range(1 << baseCount)]
         # Process converses
         self.TConverse = LookupTable.Converse(baseCount)
         for cv in _algebraFile.readConverse():
             a = self.TName.getBitmask(cv[0])
             b = self.TName.getBitmask(cv[1])
-            self.TConverse.setConverse(a, b)
+            self.TConverse.converse[a] = b
         self.TConverse.precalc()
         # Process compositions
         # self.TComposition = LookupTable.Composition(baseCount)
@@ -79,13 +79,7 @@ class Algebra(object):
         return self.TName.getBitmask(array)
 
     def converse(self, rel):
-        return self.TConverse.converse(rel)
-
-    # def compose(self, relA, relB):
-    #     return self.allCompos[relA][relB]
-    #     # idx = ((relA << baseCount) + relB) << 1  # == * 2
-    #     # return (self.allCompos[idx] << 8) + self.allCompos[idx + 1]
-    #     # return self.TComposition.composition(relA, relB)
+        return self.TConverse.converse[rel]
 
     def aTractableSet(self, rel):
         return self.TTractable.getClosedSet(rel)
@@ -97,7 +91,7 @@ class Algebra(object):
         for x in self.TConverse.converses:
             txt += "  {:2} : {:2}\n".format(
                 self.TName.getName(x),
-                self.TName.getName(self.TConverse.converses[x]))
+                self.TName.getName(self.TConverse.converse[x]))
 
         txt += "\nComposition Table:\n"
         for x in self.TComposition.compositions:

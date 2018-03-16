@@ -7,35 +7,19 @@ class Converse(object):
     def __init__(self, numberOfBaseRelations):
         super(Converse, self).__init__()
         self.baseCount = numberOfBaseRelations
-        self.converses = dict()
-
-    def setConverse(self, a, b):
-        self.converses[a] = b
-
-    def converse(self, a):
-        # try:
-        return self.converses[a]
-        # except KeyError:
-        #     result = 0
-        #     for baseRel in Helper.bits(a):
-        #         result |= self.converses[baseRel]
-        #     self.setConverse(a, result)
-        #     return result
+        self.converse = [0 for x in range(1 << self.baseCount)]
 
     def precalc(self):
         for x in range(1, 1 << self.baseCount):
-            try:
-                self.converses[x]
-            except KeyError:
-                result = 0
-                for baseRel in Helper.bits(x):
-                    result |= self.converses[baseRel]
-                self.setConverse(x, result)
+            result = 0
+            for baseRel in Helper.bits(x):
+                result |= self.converse[baseRel]
+            self.converse[x] = result
 
     def checkIntegrity(self):
         print("Checking Converse Integrity ...")
         for i in range(self.baseCount):
-            if self.converses[1 << i] is None:  # Only base relations
+            if self.converse[1 << i] is None:  # Only base relations
                 print("Couldn't find converse for '{:0{}b}'"
                       .format(1 << i, self.baseCount))
 
