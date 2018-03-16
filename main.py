@@ -36,41 +36,6 @@ class Search(object):
                     return INCONSISTENT  # early exit
         return CONSISTENT
 
-    def aClosureV2(self, arcs=None):
-        q = Queue.QQueue()
-        if arcs is None:
-            for i, j in Helper.doubleNested(self.net.nodeCount):
-                q.enqueue(i, j, self.net.cs[i][j])
-        else:
-            for arc in arcs:
-                q.enqueue(arc[0], arc[1], self.net.cs[arc[0]][arc[1]])
-
-        while not q.isEmpty():
-            i, j = q.dequeue()
-            for k in range(self.net.nodeCount):
-                if k == i or k == j:
-                    continue
-                Cij = self.net.cs[i][j]
-                Cjk = self.net.cs[j][k]
-                Cik = self.net.cs[i][k]
-                Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
-                if Cik_star != Cik:
-                    self.net.cs[i][k] = Cik_star
-                    q.enqueueNew(i, k, Cik_star)
-                    self.net.cs[k][i] &= self.net.algebra.converse(Cik_star)
-                    q.enqueueNew(k, i, self.net.cs[k][i])
-                Ckj = self.net.cs[k][j]
-                Cki = self.net.cs[k][i]
-                Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
-                if Ckj_star != Ckj:
-                    self.net.cs[k][j] = Ckj_star
-                    q.enqueueNew(k, j, Ckj_star)
-                    self.net.cs[j][k] &= self.net.algebra.converse(Ckj_star)
-                    q.enqueueNew(j, k, self.net.cs[j][k])
-                if Cik_star == 0 or Ckj_star == 0:
-                    return INCONSISTENT  # early exit
-        return CONSISTENT
-
     def refinementV15(self, E=None):
         global refinementCounter
         refinementCounter += 1
@@ -98,7 +63,7 @@ class Search(object):
             C_star.cs[i][j] = prevRel
         return INCONSISTENT
 
-    def aClosureV3(self, arcs):
+    def aClosureV2(self, arcs):
         global backjumpLevel
         q = Queue.QQueue()
         # if arcs is None:
@@ -121,8 +86,8 @@ class Search(object):
                 Cik = self.net.cs[i][k]
                 Ckj = self.net.cs[k][j]
                 Cki = self.net.cs[k][i]
-                Cik_star = Cik & self.net.algebra.compose(Cij, Cjk)
-                Ckj_star = Ckj & self.net.algebra.compose(Cki, Cij)
+                Cik_star = Cik & self.net.algebra.compose[Cij][Cjk]
+                Ckj_star = Ckj & self.net.algebra.compose[Cki][Cij]
                 if Cik_star == 0 or Ckj_star == 0:
                     backjumpLevel = self.net.triangleChanged(i, j, k)
                     return INCONSISTENT  # early exit
@@ -140,7 +105,7 @@ class Search(object):
         level = refinementCounter
         # print ".",
 
-        aClosed = self.aClosureV3(E)
+        aClosed = self.aClosureV2(E)
         if aClosed is INCONSISTENT:
             return INCONSISTENT
 
