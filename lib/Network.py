@@ -87,6 +87,32 @@ class QCSP(object):
         lst.sort()
         return lst
 
+    def inPreviousNontractableSet(self, c, i, j, level, oldList):
+        lIndex = len(oldList)
+        while lIndex:
+            lIndex -= 1
+            if oldList[lIndex][2] == i and oldList[lIndex][3] == j:
+                if c > oldList[lIndex][1]:
+                    sIndex = len(self.stack)
+                    while sIndex:
+                        sIndex -= 1
+                        itm = self.stack[sIndex]
+                        A = itm[0]
+                        B = itm[1]
+                        if A == -99:
+                            break
+                        elif ((A == i and B == j) or
+                              (A == j and B == i)):
+                            self.cs[A][B] = itm[2]
+                            del self.stack[sIndex]
+                            if level > 1:
+                                modifyArr = self.lastModified[A][B]
+                                if modifyArr[-1] == (level - 1):
+                                    modifyArr.pop()
+                del(oldList[lIndex])
+                return True
+        return False
+
     def __str__(self):
         relCount = 0
         s = ""
