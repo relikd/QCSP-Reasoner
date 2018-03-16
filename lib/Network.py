@@ -71,12 +71,66 @@ class QCSP(object):
         for i in range(self.nodeCount):
             self.cs[i][i] = bitmask
 
-    def listOfNontractableConstraints(self):
+    def listOfNontractableConstraints(self, level, oldList=[]):
+        # prevSorted = []
+        # for prio, c, i, j, rel in oldList:
+        #     prevSorted.append([i, j, c, prio, rel])
+        # prevSorted.sort(reverse=True)  # reversed only for pop()
+
+        # # if len(prevSorted) > 0:
+        # #     print prevSorted
+        # #     prevSorted.pop()
+        # #     print "yay"
+        # #     print prevSorted
+        # #     exit(0)
+        # prevElem = [-1, -1, 99, 0, 0]  # i, j, c, prio, rel
+        # if len(prevSorted) > 0:
+        #     prevElem = prevSorted.pop()
+
         lst = []
         for i in range(0, self.nodeCount):
             for j in range(i + 1, self.nodeCount):
                 c = len(self.algebra.aTractableSet(self.cs[i][j]))
+                # if len(prevSorted) == 0 or prevElem[0] == i and prevElem[1] == j:
+                #     # same element already present in previous list
+                #     if c > prevElem[2] and len(prevSorted) > 0:
+                #         # restore previous relation
+                #         self.cs[i][j] = prevElem[4]
+                #         self.cs[j][i] = self.algebra.converse(prevElem[4])
+                #         if level > 1:
+                #             modifyArr = self.lastModified[i][j]
+                #             if modifyArr[-1] == (level - 1):
+                #                 modifyArr.pop()
+                #                 self.lastModified[j][i].pop()
+                #         c = prevElem[2]
+                #     if c > 1:
+                #         conn = (Helper.subsetScore[self.cs[i][j]] + (
+                #             Helper.subsetScore[self.cs[j][i]])) / c
+                #         # conn = c * 818  # sum of all scores
+                #         # for p in range(self.nodeCount):
+                #         #     conn -= Helper.subsetScore[self.cs[p][i]]
+                #         #     ...
+                #         lst.append([conn, c, i, j, self.cs[i][j]])
+                #     if len(prevSorted) > 0:
+                #         prevElem = prevSorted.pop()
+
                 if c > 1:
+                    # sIndex = len(self.stack)
+                    # while sIndex:
+                    #     sIndex -= 1
+                    #     itm = self.stack[sIndex]
+                    #     A = itm[0]
+                    #     B = itm[1]
+                    #     if A == -99:
+                    #         break
+                    #     elif ((A == i and B == j) or
+                    #           (A == j and B == i)):
+                    #         self.cs[A][B] = itm[2]
+                    #         del self.stack[sIndex]
+                    #         if level > 1:
+                    #             modifyArr = self.lastModified[A][B]
+                    #             if modifyArr[-1] == (level - 1):
+                    #                 modifyArr.pop()
                     conn = (Helper.subsetScore[self.cs[i][j]] + (
                         Helper.subsetScore[self.cs[j][i]])) / c
                     # conn = c * 818  # sum of all scores
