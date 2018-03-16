@@ -35,7 +35,7 @@ class Algebra(object):
         self.TName = LookupTable.Names(self.BaseRelations)
         self.Universal = len(self.TName.labels) - 1
         self.equality = "EQ"
-        self.allCompos = [[8191
+        self.compose = [[8191
                           for a in range(1 << baseCount)]
                           for b in range(1 << baseCount)]
         # Process converses
@@ -66,7 +66,7 @@ class Algebra(object):
             relA = (temporary[x + 0] << 8) + (temporary[x + 1] & 255)
             relB = (temporary[x + 2] << 8) + (temporary[x + 3] & 255)
             comp = (temporary[x + 4] << 8) + (temporary[x + 5] & 255)
-            self.allCompos[relA][relB] = comp
+            self.compose[relA][relB] = comp
 
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()
@@ -81,11 +81,11 @@ class Algebra(object):
     def converse(self, rel):
         return self.TConverse.converse(rel)
 
-    def compose(self, relA, relB):
-        return self.allCompos[relA][relB]
-        # idx = ((relA << baseCount) + relB) << 1  # == * 2
-        # return (self.allCompos[idx] << 8) + self.allCompos[idx + 1]
-        # return self.TComposition.composition(relA, relB)
+    # def compose(self, relA, relB):
+    #     return self.allCompos[relA][relB]
+    #     # idx = ((relA << baseCount) + relB) << 1  # == * 2
+    #     # return (self.allCompos[idx] << 8) + self.allCompos[idx + 1]
+    #     # return self.TComposition.composition(relA, relB)
 
     def aTractableSet(self, rel):
         return self.TTractable.getClosedSet(rel)
