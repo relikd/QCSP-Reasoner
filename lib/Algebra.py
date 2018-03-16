@@ -20,8 +20,9 @@ def Allen():
     alg.equality = "EQ"
     # print(alg)
     alg.checkIntegrity()
+    print("Reading compositions file ...")
     print("\n")
-    alg.readCompositionsFile("algebra/allen.compositions")
+    alg.readCompositionsFile("algebra/allen_small.compositions")
     return alg
 
 
@@ -34,7 +35,9 @@ class Algebra(object):
         self.TName = LookupTable.Names(self.BaseRelations)
         self.Universal = len(self.TName.labels) - 1
         self.equality = "EQ"
-        self.allCompos = bytearray()
+        self.allCompos = [[8191
+                          for a in range(1 << baseCount)]
+                          for b in range(1 << baseCount)]
         # Process converses
         self.TConverse = LookupTable.Converse(baseCount)
         for cv in _algebraFile.readConverse():
@@ -43,12 +46,12 @@ class Algebra(object):
             self.TConverse.setConverse(a, b)
         self.TConverse.precalc()
         # Process compositions
-        self.TComposition = LookupTable.Composition(baseCount)
-        for cp in _algebraFile.readComposition():  # format: B1 B2 [B1 B2 B3]
-            a = self.TName.getBitmask(cp[0])
-            b = self.TName.getBitmask(cp[1])
-            c = self.TName.getBitmask(cp[2])
-            self.TComposition.setComposition(a, b, c)
+        # self.TComposition = LookupTable.Composition(baseCount)
+        # for cp in _algebraFile.readComposition():  # format: B1 B2 [B1 B2 B3]
+        #     a = self.TName.getBitmask(cp[0])
+        #     b = self.TName.getBitmask(cp[1])
+        #     c = self.TName.getBitmask(cp[2])
+        #     self.TComposition.setComposition(a, b, c)
         # Process a-tractable subsets for improved refinement search
         self.TTractable = LookupTable.ATractable(baseCount)
         if _aTractableSubsetsFile is not None:
@@ -57,12 +60,17 @@ class Algebra(object):
 
     def readCompositionsFile(self, filename):
         f = open(filename, "rb")
-        self.allCompos = bytearray(f.read())
+        temporary = bytearray(f.read())
         f.close()
+        for x in range(0, len(temporary), 6):
+            relA = (temporary[x + 0] << 8) + (temporary[x + 1] & 255)
+            relB = (temporary[x + 2] << 8) + (temporary[x + 3] & 255)
+            comp = (temporary[x + 4] << 8) + (temporary[x + 5] & 255)
+            self.allCompos[relA][relB] = comp
 
     def checkIntegrity(self):
         self.TConverse.checkIntegrity()
-        self.TComposition.checkIntegrity()
+        # self.TComposition.checkIntegrity()
 
     def nameForBitmask(self, bitmask):
         return self.TName.getName(bitmask)
@@ -74,8 +82,9 @@ class Algebra(object):
         return self.TConverse.converse(rel)
 
     def compose(self, relA, relB):
-        idx = ((relA << baseCount) + relB) << 1  # == * 2
-        return (self.allCompos[idx] << 8) + self.allCompos[idx + 1]
+        return self.allCompos[relA][relB]
+        # idx = ((relA << baseCount) + relB) << 1  # == * 2
+        # return (self.allCompos[idx] << 8) + self.allCompos[idx + 1]
         # return self.TComposition.composition(relA, relB)
 
     def aTractableSet(self, rel):

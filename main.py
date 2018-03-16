@@ -3,6 +3,7 @@
 from lib import Algebra, ReadFile, Helper, Network, Queue
 import timeit
 import copy
+# import statprof
 
 CONSISTENT = "CONSISTENT"
 INCONSISTENT = "INCONSISTENT"
@@ -221,6 +222,8 @@ tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
 # tf = ReadFile.TestFile("test cases/30x500_m_3_allen.csp.txt")
 skip = 0
 overall = timeit.default_timer()
+# statprof.start()
+# try:
 for graph in tf.processNext():
     if skip > 0:
         skip -= 1
@@ -250,3 +253,6 @@ for graph in tf.processNext():
     # break
 
 print("Overall time: %f s\n\n" % (timeit.default_timer() - overall))
+# finally:
+#     statprof.stop()
+#     statprof.display()
