@@ -143,7 +143,7 @@ class Search(object):
         if aClosed is INCONSISTENT:
             return INCONSISTENT
 
-        refineList = self.net.listOfNontractableConstraints()
+        refineList = self.net.listOfNontractableConstraints(level, listNC)
         if len(refineList) == 0:  # all rel's have 1 base relation
             return CONSISTENT
 
@@ -238,7 +238,7 @@ for graph in tf.processNext():
     refinementCounter = 0
     pre = timeit.default_timer()
     valid = Search(net).refinementV2(initialConstraints,
-                                     net.listOfNontractableConstraints())
+                                     net.listOfNontractableConstraints(0))
     print("%d Iterations" % refinementCounter)
     print("  > '%s' is %s (%f s)" % (
         net.description, valid, timeit.default_timer() - pre))
