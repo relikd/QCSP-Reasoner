@@ -133,10 +133,10 @@ class Search(object):
                     q.enqueue(k, j, Ckj_star)
         return CONSISTENT
 
-    def refinementV2(self, E=None, listNC=[]):
+    def refinementV2(self, E=None, listNC=None):
         global refinementCounter, backjumpLevel
         refinementCounter += 1
-        currentLevel = refinementCounter
+        level = refinementCounter
         # print ".",
 
         aClosed = self.aClosureV3(E)
@@ -148,37 +148,24 @@ class Search(object):
             return CONSISTENT
 
         for con, c, i, j, prevRel in refineList:
-            # for con2, c2, i2, j2, prevRel2 in listNC:
-            #     if i == i2 and j == j2 and c > c2:
-            #         for x in range(len(self.net.stack) - 1, 0, -1):
-            #             itm = self.net.stack[x]
-            #             if itm[0] == -99:
-            #                 break
-            #             elif ((itm[0] == i and itm[1] == j) or
-            #                   (itm[0] == j and itm[1] == i)):
-            #                 self.net.cs[itm[0]][itm[1]] = itm[2]
-            #                 del self.net.stack[x]
-            #                 if (currentLevel > 1 and
-            #                     self.net.lastModified[itm[0]][itm[1]][-1] == (
-            #                         currentLevel - 1)):
-            #                     self.net.lastModified[itm[0]][itm[1]].pop()
-            # prevRel = self.net.cs[i][j]
-            # for baseRel in Helper.bits(prevRel):
+            # if not self.net.inPreviousNontractableSet(c, i, j, level, listNC):
+            #     continue
+
             for baseRel in self.net.algebra.aTractableSet(prevRel):
-                self.net.saveBreakpoint(i, j, currentLevel)
+                self.net.saveBreakpoint(i, j, level)
                 self.net.updateConstraint(i, j, baseRel)
                 # self.net.updateOneWay(i, j, baseRel)
 
                 if self.refinementV2([[i, j]], refineList) == CONSISTENT:
                     return CONSISTENT
 
-                if currentLevel > backjumpLevel and backjumpLevel > 0:
+                if level > backjumpLevel and backjumpLevel > 0:
                     return INCONSISTENT
 
                 self.net.restoreBreakpoint(backjumpLevel)
         return INCONSISTENT
 
-    def refinementV3(self, E=None, listNC=[]):
+    def refinementV3(self, E=None, listNC=None):
         global refinementCounter, backjumpLevel
 
         aClosed = self.aClosureV3()
@@ -250,7 +237,8 @@ for graph in tf.processNext():
     print("processing: '%s'" % net.description)
     refinementCounter = 0
     pre = timeit.default_timer()
-    valid = Search(net).refinementV2(initialConstraints)
+    valid = Search(net).refinementV2(initialConstraints,
+                                     net.listOfNontractableConstraints())
     print("%d Iterations" % refinementCounter)
     print("  > '%s' is %s (%f s)" % (
         net.description, valid, timeit.default_timer() - pre))
