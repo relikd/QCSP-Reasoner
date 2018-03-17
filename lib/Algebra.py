@@ -13,11 +13,18 @@ def PC():
     return alg
 
 
-def Allen():
-    algFile = ReadFile.AlgebraFile("algebra/allen.txt")
-    horn = ReadFile.ATractableSubsetsFile("algebra/ia_ord_horn_C.txt")
+def Allen(fileUsesMathSigns=True):
+    if fileUsesMathSigns:
+        file1 = "algebra/allen2.txt"
+        file2 = "algebra/ia_ord_horn_C2.txt"
+    else:
+        file1 = "algebra/allen.txt"
+        file2 = "algebra/ia_ord_horn_C.txt"
+
+    algFile = ReadFile.AlgebraFile(file1)
+    horn = ReadFile.ATractableSubsetsFile(file2)
     alg = Algebra(algFile, horn)
-    alg.equality = "EQ"
+    alg.equality = ("=" if fileUsesMathSigns else "EQ")
     # print(alg)
     alg.checkIntegrity()
     print("Reading compositions file ...")

@@ -180,11 +180,12 @@ class Search(object):
         return self.aClosureV3()
 
 
-alg = Algebra.Allen()
-
 # Load test case
+alg = Algebra.Allen(False)
 tf = ReadFile.TestFile("test cases/ia_test_instances_10.txt")
+# alg = Algebra.Allen(True)
 # tf = ReadFile.TestFile("test cases/30x500_m_3_allen.csp.txt")
+
 skip = 0
 overall = timeit.default_timer()
 # statprof.start()
