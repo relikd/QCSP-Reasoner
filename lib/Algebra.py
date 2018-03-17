@@ -22,7 +22,7 @@ def Allen():
     alg.checkIntegrity()
     print("Reading compositions file ...")
     print("\n")
-    alg.readCompositionsFile("algebra/allen_small.compositions")
+    alg.readCompositionsFile("algebra/allen.compositions")
     return alg
 
 
